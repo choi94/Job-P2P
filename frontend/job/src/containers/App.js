@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Hello from '../components/Hello.jsx/index.js.js';
-import Mynavbar from './Mynavbar.js/index.js';
+import Hello from '../components/Hello.jsx';
+import Mynavbar from './Mynavbar.js';
 
 class App extends Component{
 
