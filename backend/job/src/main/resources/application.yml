@@ -1,4 +1,12 @@
+server:
+    port: 9000
+
 spring:
+
+    mvc:
+        view:
+            suffix: .html
+
     jpa:
         show-sql: true
         database: mysql
