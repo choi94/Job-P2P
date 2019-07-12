@@ -15,6 +15,6 @@ spring:
 
     datasource:
         driver-class-name: org.mariadb.jdbc.Driver
-        url: jdbc:mariadb://localhost:3306/Job_P2P
-        username: root
-        password: mysql
+        url: jdbc:mariadb://choi.c2q71xxixuky.ap-northeast-2.rds.amazonaws.com/job_p2p
+        username: choi
+        password: todaud135
