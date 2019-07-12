@@ -4,10 +4,12 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+// 유저 관련
+
 @CrossOrigin(origins = "http://localhost:8000", maxAge = 3600)
 @RestController
-@RequestMapping("/main")
-public class MainController {
+@RequestMapping("/account")
+public class MemberController {
 
     
 }
