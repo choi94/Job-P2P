@@ -1,5 +1,6 @@
 package com.p2p.job.repository;
 
+
 import com.p2p.job.entity.Member;
 
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;
