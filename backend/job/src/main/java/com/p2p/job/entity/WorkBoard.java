@@ -1,6 +1,5 @@
 package com.p2p.job.entity;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
@@ -8,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
@@ -18,12 +19,10 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
+@ToString(exclude = "member")
 @Entity
 @Table(name = "work_board")
-public class WorkBoard implements Serializable{
-
-    private static final long serialVersionUID = 1L;
+public class WorkBoard {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -76,8 +75,9 @@ public class WorkBoard implements Serializable{
     @Column(name = "attention")
     private String attention;
 
-    @Column(name = "email", nullable = false)
-    private String email;
+    @ManyToOne
+    @JoinColumn(name = "email")
+    private Member member;
 
     @Column(name = "kakao", nullable = false)
     private String kakao;

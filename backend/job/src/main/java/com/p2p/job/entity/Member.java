@@ -1,12 +1,16 @@
 package com.p2p.job.entity;
 
-import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Index;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -18,10 +22,10 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
-@Table(name = "member")
-public class Member implements Serializable{
+@Table(name = "member", indexes = {@Index(unique = false, columnList = "join_date")},
+        uniqueConstraints = {@UniqueConstraint(columnNames = "nickname")})
+public class Member {
 
-    private static final long serialVersionUID = 1L;
 
     @Id
     @Column(name = "email")
@@ -63,4 +67,10 @@ public class Member implements Serializable{
 
     @Column(name = "request_score", nullable = false, columnDefinition = "Decimal(1,1) default '0' ")
     private double requestScore;
+
+    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
+    private List<Volunteer> volunteer;
+
+    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
+    private List<WorkBoard> workBoard;
 }
