@@ -1,0 +1,9 @@
+.BoardBox{
+    width:30%;
+}
+.card{
+    position:static;
+}
+.card-deck{
+    margin: 5% 0;
+}

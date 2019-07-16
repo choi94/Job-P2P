@@ -1,0 +1,29 @@
+.detail{
+    width: 90%;
+    margin: auto;
+}
+.title{
+    margin-bottom: 0;
+    padding-top:1.5em;
+    padding-bottom:1.5em; 
+    background-color: #fff;
+}
+.title h2{
+    font-weight: bold;
+}
+.table-responsive{
+    border: 1px solid #dee2e6;
+}
+.imfo{
+    width: 96%;
+    margin:4% auto;
+
+}
+.text{
+    width: 96%;
+    margin: auto;
+}
+.map{
+    width: 100%;
+    margin: auto
+}
