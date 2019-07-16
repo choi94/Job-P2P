@@ -1,13 +1,12 @@
 import React from 'react';
-import Member from './member/Member'
-import NavbarPage from './member/NavbarPage'
+import Page from './mypage/Page'
 
-const App = () => (
-  <div>
-    <NavbarPage></NavbarPage>
-    <Member></Member>
-  </div>
-)
+function App() {
+  return (
+    <div>
+      <Page></Page>
+    </div>
+  );
+}
 
 export default App;
- 
