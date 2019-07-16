@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {Figure, Button} from 'react-bootstrap'
-import _bg from './_bg.jpg'
+import _bg from './images/_bg.jpg'
 
 class Info extends Component{
     render(){

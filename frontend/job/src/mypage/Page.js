@@ -3,9 +3,9 @@ import '../assets/css/index.css'
 import {Figure, Button} from 'react-bootstrap'
 import { BrowserRouter as Router, Route, Link,} from "react-router-dom";
 import {Nav} from 'react-bootstrap'
-import _bg from './_bg.jpg'
-import _info from './_info.png'
-import _re from './_re.png'
+import _bg from './images/_bg.jpg'
+import _info from './images/_info.png'
+import _re from './images/_re.png'
 import RecoPage from "./RecoPage"
 import ScraPage from "./ScraPage"
 import AlignPage from "./AlignPage"

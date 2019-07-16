@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import _img from './_img.gif'
-import _icon from './_icon.gif'
-import _search from './_search.gif'
+import _img from './images/_img.gif'
+import _icon from './images/_icon.gif'
+import _search from './images/_search.gif'
 import {Figure, Button} from 'react-bootstrap'
 
 class Resume extends Component{

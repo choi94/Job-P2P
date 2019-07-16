@@ -1,10 +1,10 @@
 import React from 'react';
-import Page from './mypage/Page'
+import Mynavbar from './mypage/Mynavbar'
 
 function App() {
   return (
     <div>
-      <Page></Page>
+      <Mynavbar></Mynavbar>
     </div>
   );
 }

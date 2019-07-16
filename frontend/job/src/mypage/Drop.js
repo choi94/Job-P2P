@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Button, Figure} from 'react-bootstrap'
-import _bg from './_bg.jpg'
-import _ from './_.PNG'
+import _bg from './images/_bg.jpg'
+import _ from './images/_.PNG'
 
 class Password extends Component{
     render(){

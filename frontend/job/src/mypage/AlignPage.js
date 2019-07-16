@@ -1,5 +1,5 @@
 import React from 'react'
-import _or from './_or.png'
+import _or from './images/_or.png'
 import {Figure} from 'react-bootstrap'
 
 const AlignPage = ()=>{

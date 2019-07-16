@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Button, Figure, Nav} from 'react-bootstrap'
 import { BrowserRouter as Route, Link,} from "react-router-dom";
-import _bg from './_bg.jpg'
+import _bg from './images/_bg.jpg'
 import Password from "./Password"
 
 class InfoUpdate extends Component{

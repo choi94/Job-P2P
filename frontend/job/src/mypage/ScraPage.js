@@ -1,5 +1,5 @@
 import React from 'react'
-import _sc from './_sc.png'
+import _sc from './images/_sc.png'
 import {Figure} from 'react-bootstrap'
 
 const ScraPage = ()=>{

@@ -1,5 +1,5 @@
 import React from 'react'
-import _re from './_re.png'
+import _re from './images/_re.png'
 import {Figure} from 'react-bootstrap'
 
 const RecoPage = ()=>{
