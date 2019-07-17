@@ -76,7 +76,7 @@ public class WorkBoard {
     private String attention;
 
     @ManyToOne
-    @JoinColumn(name = "email")
+    @JoinColumn(name = "member_id")
     private Member member;
 
     @Column(name = "kakao", nullable = false)
