@@ -1,8 +1,8 @@
 import React from 'react'
 import {Figure} from 'react-bootstrap'
-import _bg from './images/_bg.jpg'
-import _mng from './images/_mng.png'
-import _sc from './images/_sc.png'
+import _bg from '../images/_bg.jpg'
+import _mng from '../images/_mng.png'
+import _sc from '../images/_sc.png'
 
 const SupPage  = ()=>{
     return(

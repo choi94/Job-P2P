@@ -6,8 +6,8 @@ import {Nav} from 'react-bootstrap'
 import _bg from './images/_bg.jpg'
 import _info from './images/_info.png'
 import _re from './images/_re.png'
-import ResPage from "./ResPage"
-import SupPage from "./SupPage"
+import ResMini from "./click/ResMini"
+import SupMini from "./click/SupMini"
 
 class Page extends Component{
     render(){
@@ -60,8 +60,8 @@ class Page extends Component{
                                 <td class="er"><Link to="/respage"><h2 class="gd">지원 현황</h2></Link></td>
                                 <td class="fr"><Link to="/suppage"><h2 class="gd">등록 현황</h2></Link></td>
                             </Nav>
-                            <Route path="/respage" component={ResPage}/>
-                            <Route path="/suppage" component={SupPage}/>
+                            <Route path="/respage" component={ResMini}/>
+                            <Route path="/suppage" component={SupMini}/>
                         </tr><br/>
                     </div>
                 <table class="tj">

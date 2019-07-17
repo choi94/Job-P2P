@@ -1,16 +1,16 @@
 import React from 'react'
 import {Figure} from 'react-bootstrap'
-import _bg from './images/_bg.jpg'
-import _mng from './images/_mng.png'
-import _sc from './images/_sc.png'
+import _bg from '../images/_bg.jpg'
+import _mng from '../images/_mng.png'
+import _sc from '../images/_sc.png'
 
-const ResPage  = ()=>{
+const SupPage  = ()=>{
     return(
         <div class="ff">
             <h1>
                 <div class="header3">
                     <a href="/"><Figure.Image width={100} height={200} src={_bg}/></a>
-                    <span class="head3">지원 현황</span>
+                    <span class="head3">등록 현황</span>
                 </div>
                 <table class="header2" align="right">
                     <th><a href="/">홈 |</a></th>
@@ -23,8 +23,8 @@ const ResPage  = ()=>{
             <hr class="line2"></hr>
                 <div class="tb">
                     <p class="te"><Figure.Image width={100} height={200} src={_mng}/></p>
-                    <li class="ui">최근 1년 이내의 지원내역을 확인할 수 있습니다.</li>
-                    <li class="ui">지원 후 내 정보를 수정해도 지원에는 반영되지 않습니다.</li>
+                    <li class="ui">최근 1년 이내의 등록내역을 확인할 수 있습니다.</li>
+                    <li class="ui">등록 후 내 정보를 수정해도 지원에는 반영되지 않습니다.</li>
                 </div>
                 <table class="side">
                     <div align="left">
@@ -70,15 +70,15 @@ const ResPage  = ()=>{
                 </table>
                 <table align="center"> 
                     <div className="title">
-                        <th width="200" class="tit">지원일</th>
-                        <th width="300" class="tit">지원내역</th>
+                        <th width="200" class="tit">등록일</th>
+                        <th width="300" class="tit">등록내역</th>
                         <th width="500" class="tit">일자리명 / 모집제목</th>
                         <th width="100" class="tit">급여</th>
                         <th width="200" class="tit">마감일</th>
                     </div><br/><br/><br/>
                     <div className="ti">
                         <Figure.Image width={200} height={180} src={_sc}/><br/><br/>
-                        <p className="pp"> 지원한 공고가 없습니다.</p>
+                        <p className="pp"> 등록한 공고가 없습니다.</p>
                         <a href="/mypage" target="_blank">
                         </a>
                     </div>
@@ -87,4 +87,4 @@ const ResPage  = ()=>{
     );
 }
 
-export default ResPage;
+export default SupPage;
