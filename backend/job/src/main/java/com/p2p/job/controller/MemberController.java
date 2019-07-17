@@ -42,7 +42,7 @@ public class MemberController {
         Supplier<List<Object>> findAll = () -> {
             QMember qMember = QMember.member;
             List<Object> result = new ArrayList<>();
-
+            
             query.from(qMember)
             .orderBy(qMember.joinDate.asc())
             .fetch().forEach(arr -> {

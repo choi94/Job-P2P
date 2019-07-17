@@ -9,21 +9,21 @@ class Password extends Component{
         return (
             <div>
                 <h1 class="head">
-                    <a href="/app"><Figure.Image width={100} height={200} src={_bg}/></a>
+                    <a href="/"><Figure.Image width={100} height={200} src={_bg}/></a>
                     <span class="gd">회원정보</span>
                 <table class="header" align="right">
-                    <th><a href="/app">홈 |</a></th>
-                    <th><a href="/app">개인서비스 |</a></th>
-                    <th><a href="/app">채용정보 |</a></th>
-                    <th><a href="/app">FAQ |</a></th>
-                    <th><a href="/app">캠페인</a></th>
+                    <th><a href="/">홈 |</a></th>
+                    <th><a href="/">개인서비스 |</a></th>
+                    <th><a href="/">채용정보 |</a></th>
+                    <th><a href="/">FAQ |</a></th>
+                    <th><a href="/">캠페인</a></th>
                 </table>
                 </h1>
                 <hr class="line"></hr>
                 <br/>
                 <div>
                     <tr align="center">
-                        <Nav className="mr-auto">
+                        <Nav>
                             <td width="200" class="ed"><Link to="/infoupdate"><h2 class="gd">회원정보 수정</h2></Link></td>
                             <td width="200" class="ee"><h2 class="gd">비밀번호 변경</h2></td>
                         </Nav>

@@ -7,28 +7,28 @@ class Info extends Component{
         return (
             <div>
                 <h1 class="head">
-                    <a href="/app"><Figure.Image width={100} height={200} src={_bg}/></a>
+                    <a href="/"><Figure.Image width={100} height={200} src={_bg}/></a>
                     <span class="gd">회원정보</span>
                 <table class="header" align="right">
-                    <th><a href="/app">홈 |</a></th>
-                    <th><a href="/app">개인서비스 |</a></th>
-                    <th><a href="/app">채용정보 |</a></th>
-                    <th><a href="/app">FAQ |</a></th>
-                    <th><a href="/app">캠페인</a></th>
+                    <th><a href="/">홈 |</a></th>
+                    <th><a href="/">개인서비스 |</a></th>
+                    <th><a href="/">채용정보 |</a></th>
+                    <th><a href="/">FAQ |</a></th>
+                    <th><a href="/">캠페인</a></th>
                 </table>
                 </h1>
                 <hr class="line"></hr>
                 <br/>
 
                 <div class="head2">
-                <h2><span class="gd">홍길동님</span>의 <span class="gd">JOB PtoP</span> 회원정보</h2>
+                <h2><span class="hd">홍길동님</span>의 <span class="hd">JOB PtoP</span> 회원정보</h2>
                 <p class="ex" align="right">JOB PtoP를 더이상 이용하지 않는다면 <a href="/drop">회원탈퇴</a></p>
                 </div>
                 <div class="info">
                     <table class="bo">
                         <div align="left"><br/>
                             <tr>
-                                <td class="pp">회원정보</td>
+                                <td class="pb">회원정보</td>
                                 <td><Button variant="warning" class="bb" onClick={update}>수정</Button></td>
                             </tr><br/>
                             <p class="aa">안전한 정보보호를 위해 연락처 일부만 확인 가능하며,<br/>
@@ -59,7 +59,7 @@ class Info extends Component{
                     <table class="bi">
                         <div align="left"><br/>
                             <tr>
-                                <td class="pp">비밀번호</td>
+                                <td class="pb">비밀번호</td>
                                 <td><Button variant="success" class="bb" onClick={change}>변경</Button></td>
                             </tr><br/>
                             <p class="aa">비밀번호를 주기적으로 변경하여<br/>

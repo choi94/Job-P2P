@@ -32,14 +32,12 @@ class Resume extends Component{
                         <table class="gm">
                             <tr align="center">
                                 <td>
-                                    <p class="ce">After 원본사진</p>
-                                </td>
-                                <td>
-                                    <p class="ce">Before 사진</p>
+                                    <span class="ie">After 원본사진</span>
+                                    <span class="ke">Before 사진</span>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="hm">
+                                <td class="hm" class="jm">
                                     <span class="hm"><Figure.Image width={200} height={150} src={_search}/></span>
                                     <span class="im"><Figure.Image width={10} height={10} src={_icon}/></span>
                                     <span class="im"><Figure.Image width={103} height={132} src={_search}/></span>
@@ -47,7 +45,9 @@ class Resume extends Component{
                             </tr>
                         </table>
                     </div>
-                <Button>등록</Button>
+                    <div align="center">
+                        <Button variant="success">등록</Button>
+                    </div>
             </div>
         )
     }
