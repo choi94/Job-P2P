@@ -39,6 +39,6 @@ public class NoticeBoard {
     private LocalDateTime write_date;
 
     @ManyToOne
-    @JoinColumn(name = "nickname")
+    @JoinColumn(name = "member_id")
     private Member member;
 }
