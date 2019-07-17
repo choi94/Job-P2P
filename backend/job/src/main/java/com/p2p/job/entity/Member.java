@@ -6,6 +6,8 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.OneToMany;
@@ -22,13 +24,16 @@ import lombok.ToString;
 @Setter
 @ToString
 @Entity
-@Table(name = "member", indexes = {@Index(unique = false, columnList = "join_date")},
-        uniqueConstraints = {@UniqueConstraint(columnNames = "nickname")})
+@Table(name = "member", indexes = {@Index(columnList = "join_date", name = "idx_join_data"), @Index(columnList = "email", name = "idx_email")},
+        uniqueConstraints = {@UniqueConstraint(columnNames = {"nickname"})})
 public class Member {
 
-
     @Id
-    @Column(name = "email")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "member_id")
+    private Long id;
+
+    @Column(name = "email", nullable = false)
     private String email;
 
     @Column(name = "nickname", nullable = false)
@@ -46,8 +51,8 @@ public class Member {
     @Column(name = "ssn", nullable = false)
     private String ssn;
 
-    @Column(name = "gender", nullable = false, columnDefinition = "boolean")
-    private int gender;
+    @Column(name = "gender", nullable = false, columnDefinition = "char(2)")
+    private String gender;
 
     @Column(name = "join_date", nullable = false)
     @CreationTimestamp

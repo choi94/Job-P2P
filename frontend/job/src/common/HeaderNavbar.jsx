@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {Navbar,Nav,Juombo,Footer} from 'react-bootstrap';
-import Main from '../main/Main.jsx'
+import Main from '../Main/Main.jsx'
 import Board from '../board/Board.jsx'
 
 import './commom.css'

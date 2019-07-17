@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,10 +25,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 // 유저 관련
 
-@CrossOrigin(origins = "http://localhost:8000", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @Transactional
 @RestController
-@RequestMapping("/account")
+@RequestMapping("/member")
 public class MemberController {
 
     @Autowired
@@ -39,7 +40,6 @@ public class MemberController {
     @GetMapping("/")
     public List<Object> findAll() {
 
-        Supplier<List<Object>> findAll = () -> {
             QMember qMember = QMember.member;
             List<Object> result = new ArrayList<>();
 
@@ -48,10 +48,8 @@ public class MemberController {
             .fetch().forEach(arr -> {
                 result.add(arr);
             });
-            return result;
-        };
 
-        return findAll.get();
+        return result;
     }
 
     @GetMapping("/search/{key}/{value}")
@@ -78,7 +76,7 @@ public class MemberController {
                     break;
 
                 case "gender" :
-                    builder.and(qMember.gender.like(value));
+                    builder.and(qMember.gender.contains(value));
                     break;
 
                 case "admin" :
@@ -97,6 +95,13 @@ public class MemberController {
             };
 
         return findByMember.get();
+    }
+
+    @PostMapping("/")
+    public String saveMember(@RequestBody Member member) {
+        System.out.println(member.toString());
+        // memberRepo.save(member);
+        return null;
     }
 
     @DeleteMapping("/")

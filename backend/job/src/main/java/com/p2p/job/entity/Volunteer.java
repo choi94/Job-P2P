@@ -30,7 +30,7 @@ public class Volunteer {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "email")
+    @JoinColumn(name = "member_id")
     private Member member;
 
     @ManyToOne

@@ -1,10 +1,10 @@
 import React from 'react';
-import Mynavbar from './mypage/Mynavbar'
+import Member from './member/Member'
 
 function App() {
   return (
     <div>
-      <Mynavbar></Mynavbar>
+      <Member></Member>
     </div>
   );
 }
