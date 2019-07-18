@@ -34,7 +34,7 @@ const FormPage = () => {
     if(validator.validate(e.target.value)) {
       axios.get(`${localhost}/member/search/email/${e.target.value}`)
         .then( res => {
-          if (!res.data){
+          if (res.data.length != 0){
             setEmail_boolean(false)
             setEmail_check("이미 존재하는 이메일입니다.")
           }
@@ -57,7 +57,7 @@ const FormPage = () => {
     if (n.target.value != '') {
       axios.get(`${localhost}/member/search/nickname/${n.target.value}`)
         .then(res => {
-          if (!res.data) {
+          if (res.data.length != 0) {
             setNickname_boolean(false)
             setNickname_check('이미 존재하는 닉네임입니다.')
           }
@@ -78,7 +78,7 @@ const FormPage = () => {
   const join = m => {
     if (pass_one === pass_two && email_boolean && nickname_boolean){
       setPassword(pass_one)
-      if (name && ssn & phone) {
+      if (name && ssn & phone && radio) {
         let data = {
           email : email,
           nickname : nickname,
@@ -86,19 +86,19 @@ const FormPage = () => {
           name : name,
           ssn : ssn,
           phone : phone,
-          radio : radio
+          gender : radio
         }
 
         axios.post(`${localhost}/member/`, data)
           .then( res => {
-            console.dir('axios 성공')
+            // this.props.history.push()
           })
           .catch( error => {
             console.dir('axios 실패')
           })
       }
     } else {
-      alert()
+      alert('내용을 입력하세요.')
     }
   }
 
@@ -124,7 +124,7 @@ const FormPage = () => {
                 <div class="d-flex" className="red-text">{email_check}</div>
                 <MDBInput
                   label="닉네임"
-                  icon="envelope"
+                  icon="id-card"
                   group
                   type="text"
                   validate

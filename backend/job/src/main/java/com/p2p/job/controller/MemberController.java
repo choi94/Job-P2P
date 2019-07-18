@@ -56,7 +56,6 @@ public class MemberController {
     public List<Object> findByMember(@PathVariable("key")String key,
                                     @PathVariable("value")String value) {
         
-        Supplier<List<Object>> findByMember = () -> {
             BooleanBuilder builder = new BooleanBuilder();
             QMember qMember = QMember.member;
             
@@ -91,17 +90,25 @@ public class MemberController {
                             result.add(arr);
                         });
 
-            return result;
-            };
 
-        return findByMember.get();
+        return result;
+    }
+
+    @PostMapping("/login")
+    public String login(@RequestBody Member member) {
+        QMember qMember = QMember.member;
+
+                    
+
+        return null;
     }
 
     @PostMapping("/")
     public String saveMember(@RequestBody Member member) {
         System.out.println(member.toString());
-        // memberRepo.save(member);
-        return null;
+        member.setJoinWay("JOB");
+        memberRepo.save(member);
+        return "가입에 완료 되었습니다.";
     }
 
     @DeleteMapping("/")
