@@ -36,7 +36,7 @@ public class BoardController {
     public String index(){
         return "index";
     }
-     //리스트 뿌리기
+     //리스트 뿌    리기
 
      @GetMapping("")
      public List<Board> findAll() {
