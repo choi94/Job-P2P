@@ -41,10 +41,8 @@ class Password extends Component{
                                 <table class="ge" border="1">
                                 <tr align="center">
                                     <td class="he">게시물 작성</td>
-                                    <td class="he">댓글 작성</td>
                                 </tr>
                                 <tr align="center">
-                                    <td class="ce">총 0건</td>
                                     <td class="ce">총 0건</td>
                                 </tr>
                                 </table><br/>

@@ -147,7 +147,7 @@ td:first-child{
   width : 800px;
   padding-left:30rem;
   margin-left: 14rem;
-  margin-top: -28rem;
+  margin-top: -26rem;
   border:1px solid rgb(207, 207, 207);
 }
 
@@ -187,6 +187,7 @@ td:first-child{
 .ff {
   width: 800px;
   margin-top: -1rem;
+  padding-left : 12rem;
 }
 
 .gg {
@@ -467,6 +468,7 @@ td:first-child{
 
 .jm{
   border-right: 2px solid rgb(207, 207, 207);
+  margin-left: 2rem;
 }
 
 .km {
@@ -507,11 +509,13 @@ td:first-child{
 
 .fr {
   width: 395px;
+  margin-top: 1rem;
 }
 
 .er{
   width: 400px;
   border-right : 3px solid rgb(207, 207, 207);
+  margin-top: 1rem;
 }
 
 .ex{
@@ -569,19 +573,14 @@ td:first-child{
 }
 
 .header2 {
-  margin-right: -14.5rem;
+  margin-right: -26.5rem;
   margin-top : -0.6rem;
 }
 
 .header3 {
-  padding-top : 2rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
+  padding-top : 3rem;
   margin-bottom : -1rem;
-  margin-right: 30rem;
-}
-
-.header4 {
-  margin-top : -0.6rem;
 }
 
 .head{
@@ -613,7 +612,14 @@ td:first-child{
 
 .line2 {
   border : 5px solid rgb(248, 143, 6);
-  width: 1020px;
+  width: 92.2em;
+  margin-left: -15rem;
+}
+
+.line3 {
+  border : 5px solid rgb(248, 143, 6);
+  width: 790px;
+  margin-top: 0.5rem;
 }
 
 .lin{
@@ -629,5 +635,84 @@ td:first-child{
 }
 
 .side {
-  margin-top: -4rem;
+  margin-top: -5rem;
+}
+
+.tb2{
+  margin-left: -30rem;
+  margin-top: -2rem;
+}
+
+.te2{
+  margin-top: 3rem;
+  margin-bottom: -0.5rem;
+  margin-left: 2rem;
+}
+
+.ui1{
+  width:600px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-right: 1.5rem;
+  margin-left: 32.5rem;
+  background: rgb(199, 197, 197);
+}
+
+.ui2{
+  width:600px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 2.4em;
+  margin-left: 32.5rem;
+  background: rgb(199, 197, 197);
+}
+
+.tk2{
+  width : 600px;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  border:1px solid rgb(207, 207, 207);
+}
+
+.gg2{
+  font-size: 13px;
+  font-weight: bold;
+  padding-left : 1rem;
+  padding-top : 1rem;
+  padding-bottom : 1rem;
+}
+
+.hh2 {
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.ii2 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 0rem;
+}
+
+.jj2{
+  font-size: 13px;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.pp2{
+  font-size: 29px;
+  margin-left: -9rem;
+  margin-top: 2rem;
+  color:rgb(248, 143, 6);
+  font-weight: bold;
+}
+
+.title2{
+  width : 600px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 2.6rem;
+  background: #22b8cf;
+  color: white;
 }

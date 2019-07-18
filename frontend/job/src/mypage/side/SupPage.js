@@ -79,8 +79,6 @@ const SupPage  = ()=>{
                     <div className="ti">
                         <Figure.Image width={200} height={180} src={_sc}/><br/><br/>
                         <p className="pp"> 등록한 공고가 없습니다.</p>
-                        <a href="/mypage" target="_blank">
-                        </a>
                     </div>
                 </table>
         </div>

@@ -37,7 +37,7 @@ class Resume extends Component{
                                 </td>
                             </tr>
                             <tr>
-                                <td class="hm" class="jm">
+                                <td class="jm">
                                     <span class="hm"><Figure.Image width={200} height={150} src={_search}/></span>
                                     <span class="im"><Figure.Image width={10} height={10} src={_icon}/></span>
                                     <span class="im"><Figure.Image width={103} height={132} src={_search}/></span>

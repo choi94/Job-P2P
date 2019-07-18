@@ -201,7 +201,7 @@ class InfoUpdate extends Component{
                         </tr>
                         <tr>
                         <td>광고 알림 수신</td>
-                        <td><input type="radio" value="email" checked={true}/>이메일 알림</td>
+                        <td class="d"><input type="radio" value="email" checked={true}/>이메일 알림</td>
                         <td><input type="radio" value="phone"/>문자 알림</td>
                         </tr>
                     </div><br/><br/>

@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Link,} from "react-router-dom";
 import {Nav} from 'react-bootstrap'
 import _bg from './images/_bg.jpg'
 import _info from './images/_info.png'
-import _re from './images/_re.png'
 import ResMini from "./click/ResMini"
 import SupMini from "./click/SupMini"
 
@@ -57,11 +56,11 @@ class Page extends Component{
                 <div class="tg">
                         <tr align="center">
                             <Nav>
-                                <td class="er"><Link to="/respage"><h2 class="gd">지원 현황</h2></Link></td>
-                                <td class="fr"><Link to="/suppage"><h2 class="gd">등록 현황</h2></Link></td>
+                                <td class="er"><Link to="/res"><h2 class="gd">지원 현황</h2></Link></td>
+                                <td class="fr"><Link to="/sup"><h2 class="gd">등록 현황</h2></Link></td>
                             </Nav>
-                            <Route path="/respage" component={ResMini}/>
-                            <Route path="/suppage" component={SupMini}/>
+                            <Route path="/res" component={ResMini}/>
+                            <Route path="/sup" component={SupMini}/>
                         </tr><br/>
                     </div>
                 <table class="tj">
