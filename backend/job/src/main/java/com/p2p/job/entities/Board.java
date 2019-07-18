@@ -1,4 +1,4 @@
-package com.p2p.job.entities;
+package com.job.web.entities;
 
 import java.io.Serializable;
 

@@ -1,5 +1,4 @@
-package com.p2p.job.service;
-
+package com.job.web.service;
 
 /**
  * BordService

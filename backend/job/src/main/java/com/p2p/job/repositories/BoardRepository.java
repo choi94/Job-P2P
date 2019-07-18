@@ -1,8 +1,8 @@
-package com.p2p.job.repositories;
+package com.job.web.repositories;
 
 import java.util.List;
 
-import com.p2p.job.entities.Board;
+import com.job.web.entities.Board;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

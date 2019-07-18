@@ -1,4 +1,5 @@
-package com.p2p.job.common.util;
+package com.job.web.common.util;
+
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;

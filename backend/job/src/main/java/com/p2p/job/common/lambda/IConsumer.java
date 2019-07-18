@@ -1,4 +1,4 @@
-package com.p2p.job.common.lambda;
+package com.job.web.common.lambda;
 
 import java.util.function.Consumer;
 
