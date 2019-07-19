@@ -73,6 +73,9 @@ public class Member {
     @Column(name = "request_score", nullable = false, columnDefinition = "Decimal(1,1) default '0' ")
     private double requestScore;
 
+    @Column(name = "point", nullable = false, columnDefinition = "int default 0")
+    private int point;
+
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<Volunteer> volunteer;
 

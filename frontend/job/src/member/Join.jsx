@@ -91,7 +91,7 @@ const FormPage = () => {
 
         axios.post(`${localhost}/member/`, data)
           .then( res => {
-            // this.props.history.push()
+            this.props.history.push("/");
           })
           .catch( error => {
             console.dir('axios 실패')
