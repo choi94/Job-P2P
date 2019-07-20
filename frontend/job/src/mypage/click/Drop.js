@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {Button, Figure} from 'react-bootstrap'
-import _bg from '../images/_bg.jpg'
 import _ from '../images/_.PNG'
 
 class Password extends Component{
@@ -8,21 +7,12 @@ class Password extends Component{
         return (
             <div>
                 <h1 class="head">
-                    <a href="/"><Figure.Image width={100} height={200} src={_bg}/></a>
-                    <span>회원탈퇴</span>
-                <table class="header" align="right">
-                    <th><a href="/">홈 |</a></th>
-                    <th><a href="/">개인서비스 |</a></th>
-                    <th><a href="/">채용정보 |</a></th>
-                    <th><a href="/">FAQ |</a></th>
-                    <th><a href="/">캠페인</a></th>
-                </table>
+                    <span class="gd">Job P2P</span>
+                    <span class="gd">회원탈퇴</span>
                 </h1>
-                <hr class="line"></hr>
                 <br/><br/>
                 <div>
-                    <h2 class="head2">Job PtoP <span>회원탈퇴</span></h2>
-                    <div class="info">
+                    <div class="ff">
                         <table class="ao">
                             <div align="left"><br/>
                                 <tr>
@@ -52,8 +42,8 @@ class Password extends Component{
                             </div><br/>
                         </table>
                     </div><br/><br/>
-                    <p class="cd">탈퇴 신청</p>
-                    <table class="ad">
+                    <p class="cd">탈퇴신청</p>
+                    <table class="ad" id="chk_leave">
                         <th>
                                 <td class="fd"><label class="k">*</label>아이디</td>
                                 <td class="bd">Hong</td>
@@ -64,9 +54,9 @@ class Password extends Component{
                         </th>
                     </table>
                     <p class="dd">※탈퇴 후에는 동일 아이디로 다시 가입할 수 없으며, 아이디와 데이터는 복구할 수 없으니 신중하게 선택해 주세요.</p>
-                    <div align="center">
-                        <Button variant="" class="bb">취소</Button>
-                        <Button variant="warning" class="bb">탈퇴 신청</Button>
+                    <div class="hh" align="center">
+                        <Button variant="" class="hh">취소</Button>
+                        <Button variant="warning" class="hh">탈퇴 신청</Button>
                     </div>
                 </div>
             </div>

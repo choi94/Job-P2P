@@ -26,7 +26,7 @@ const HeaderNavbar =()=>{
         <Nav className="mr-auto">
           <Nav.Link href="/Board">탐색</Nav.Link>
           <Nav.Link href="#pricing">공지사항</Nav.Link>
-          <Nav.Link href="#pricing">페이지</Nav.Link>
+          <Nav.Link href="/page">마이 페이지</Nav.Link>
           <Nav.Link href="#pricing">Board</Nav.Link>
         </Nav>
         <Nav>
