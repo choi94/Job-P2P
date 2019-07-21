@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import {MDBBtn, MDBInput } from 'mdbreact';
-import HeaderNavbar from '../common/HeaderNavbar'
 import validator from 'email-validator'
 
-const FormPage = () => {
+const Join = ({history}) => {
   const localhost = 'http://localhost:9000'
 
   const [radio, setRadio] = useState()
@@ -32,7 +31,7 @@ const FormPage = () => {
 
   const email_checking = e => {
     if(validator.validate(e.target.value)) {
-      axios.get(`${localhost}/member/search/email/${e.target.value}`)
+      axios.get(`${localhost}/member/join/email/${e.target.value}`)
         .then( res => {
           if (res.data.length != 0){
             setEmail_boolean(false)
@@ -55,7 +54,7 @@ const FormPage = () => {
 
   const nickname_checking = n => {
     if (n.target.value != '') {
-      axios.get(`${localhost}/member/search/nickname/${n.target.value}`)
+      axios.get(`${localhost}/member/join/nickname/${n.target.value}`)
         .then(res => {
           if (res.data.length != 0) {
             setNickname_boolean(false)
@@ -75,7 +74,7 @@ const FormPage = () => {
       setNickname_check('') 
     }
 
-  const join = m => {
+  const join_check = m => {
     if (pass_one === pass_two && email_boolean && nickname_boolean){
       setPassword(pass_one)
       if (name && ssn & phone && radio) {
@@ -91,7 +90,7 @@ const FormPage = () => {
 
         axios.post(`${localhost}/member/`, data)
           .then( res => {
-            this.props.history.push("/");
+            history.push("/");
           })
           .catch( error => {
             console.dir('axios 실패')
@@ -105,7 +104,6 @@ const FormPage = () => {
 
   return (
     <div>
-      <HeaderNavbar></HeaderNavbar>
           <div class="col-12 mt-5">
             <form style={{marginLeft : '40%', marginRight : '40%'}}>
               <p className="h5 text-center mb-4">회원가입</p>
@@ -192,7 +190,7 @@ const FormPage = () => {
                   id="radio2" />
               </div>  
               <div className="text-center mb-5">
-                <MDBBtn onClick={join} color="primary">가입하기</MDBBtn>
+                <MDBBtn onClick={join_check} color="primary">가입하기</MDBBtn>
               </div>
             </form>
           </div>
@@ -200,4 +198,4 @@ const FormPage = () => {
   );
 };
 
-export default FormPage;
+export default Join;

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import { MDBInput, MDBBtn } from 'mdbreact';
-import HeaderNavbar from '../common/HeaderNavbar';
 
 
-const FormPage = () => {
+const Login = ({history}) => {
 
     const localhost = 'http://localhost:9000'
 
@@ -22,7 +21,7 @@ const FormPage = () => {
               if (res.data != '환영합니다.'){
                 alert(res.data)
               } else {
-                this.props.history.push("/");
+                history.push("/");
               }
             })
             .catch( error => {
@@ -35,7 +34,6 @@ const FormPage = () => {
 
   return (
       <div>
-        <HeaderNavbar></HeaderNavbar>
         <div class="col-12 mt-5">
             <form style={{marginLeft : '40%', marginRight : '40%'}}>
             <p className="h5 text-center mb-4">로그인</p>
@@ -68,4 +66,4 @@ const FormPage = () => {
   );
 };
 
-export default FormPage;
+export default Login;

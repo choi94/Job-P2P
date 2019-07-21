@@ -7,6 +7,6 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 
 ReactDOM.render(
-<App/>, document.getElementById('root'));
+        <App/>, document.getElementById('root'));
 
 serviceWorker.unregister();

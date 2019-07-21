@@ -81,4 +81,7 @@ public class Member {
 
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<WorkBoard> workBoard;
+
+    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
+    private List<Attention> attention;
 }

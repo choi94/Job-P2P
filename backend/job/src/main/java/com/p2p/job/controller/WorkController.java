@@ -2,6 +2,7 @@ package com.p2p.job.controller;
 
 import javax.transaction.Transactional;
 
+import com.p2p.job.entity.Member;
 import com.p2p.job.entity.WorkBoard;
 import com.p2p.job.repository.WorkRepository;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -30,8 +31,12 @@ public class WorkController {
     @Autowired
     WorkRepository workRepo;
 
-    @PostMapping("/details")
-    public void saveWorkBoard(@RequestBody WorkBoard workBoard) {
+    @PostMapping("/details/{id}")
+    public void saveWorkBoard(@PathVariable("id") Long member_id,
+                            @RequestBody WorkBoard workBoard) {
+        Member member = new Member();
+        member.setId(member_id);
+        workBoard.setMember(member);
         workRepo.save(workBoard);
     }
 
@@ -44,6 +49,7 @@ public class WorkController {
     public void updateWorkBoard(@RequestBody WorkBoard workBoard) {
         
     }
+
 
     
 

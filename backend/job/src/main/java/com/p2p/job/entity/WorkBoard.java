@@ -36,9 +36,6 @@ public class WorkBoard {
     @Column(name = "write_date")
     private LocalDateTime writeDate;
 
-    @Column(name = "nickname")
-    private String nickname;
-
     @Column(name = "details")
     private String details;
 
@@ -46,7 +43,7 @@ public class WorkBoard {
     private String recruit;
 
     @Column(name = "work_day", nullable = false)
-    private String workDay;
+    private int workDay;
 
     @Column(name = "work_time", nullable = false)
     private String workTime;
@@ -72,16 +69,13 @@ public class WorkBoard {
     @Column(name = "special")
     private String special;
 
-    @Column(name = "attention")
-    private String attention;
+    @Column(name = "kakao", nullable = false)
+    private String kakao;
+    
+    @Column(name = "progress_state", nullable = false)
+    private String progressState;
 
     @ManyToOne
     @JoinColumn(name = "member_id")
     private Member member;
-
-    @Column(name = "kakao", nullable = false)
-    private String kakao;
-
-    @Column(name = "progress_state", nullable = false)
-    private String progressState;
 }

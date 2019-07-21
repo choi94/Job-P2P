@@ -21,23 +21,24 @@ import lombok.ToString;
 @Setter
 @ToString(exclude = {"member", "workBoard"})
 @Entity
-@Table(name = "volunteer")
-public class Volunteer {
+@Table(name = "attention")
+public class Attention {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "volunteer_id")
+    @Column(name = "attention_id")
     private Long id;
+    
+    @ManyToOne
+    @JoinColumn(name = "work_id")
+    private WorkBoard workBoard;
 
     @ManyToOne
     @JoinColumn(name = "member_id")
     private Member member;
 
-    @ManyToOne
-    @JoinColumn(name = "work_id")
-    private WorkBoard workBoard;
-
     @CreationTimestamp
-    private LocalDateTime volunteer_Date;
+    @Column(name = "attention_date")
+    private LocalDateTime attentionDate;
     
 }
