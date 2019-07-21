@@ -1,10 +1,9 @@
 import React from 'react';
-import HeaderNavbar from './common/HeaderNavbar'
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <HeaderNavbar></HeaderNavbar>
     </div>
   );
 }

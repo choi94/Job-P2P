@@ -1,25 +1,15 @@
 import React, {Component} from 'react'
 import {Button, Figure, Nav} from 'react-bootstrap'
 import { BrowserRouter as Route, Link,} from "react-router-dom";
-import _bg from '../images/_bg.jpg'
 import Password from "./Password"
 
 class InfoUpdate extends Component{
     render(){
         return (
             <div>
-                <h1 class="head">
-                    <a href="/"><Figure.Image width={100} height={200} src={_bg}/></a>
-                    <span class="gd">회원정보</span>
-                <table class="header" align="right">
-                    <th><a href="/">홈 |</a></th>
-                    <th><a href="/">개인서비스 |</a></th>
-                    <th><a href="/">채용정보 |</a></th>
-                    <th><a href="/">FAQ |</a></th>
-                    <th><a href="/">캠페인</a></th>
-                </table>
-                </h1>
-                <hr class="line"></hr>
+                <div class="head">
+                    <span class="gd">Job P2P 회원정보</span>
+                </div>
                 <br/>
                 <div>
                     <tr align="center">
@@ -35,13 +25,13 @@ class InfoUpdate extends Component{
                     </tr>
                     <hr class="lin"></hr>
                     <div class="b">
+                        <tr className="d">
+                            <td class="j">닉네임<label class="k">*</label></td>
+                            <td><input type="text" className="a" name ="name" value="Hong"/></td>
+                        </tr><br/>
                         <tr>
                             <td class="j">이메일<label class="k">*</label></td>
                             <td><input type="text" className="a" name ="email" value="Hong@naver.com"/></td>
-                        </tr><br/>
-                        <tr className="d">
-                            <td class="j">닉네임<label class="k">*</label></td>
-                            <td><input type="text" className="a" name ="name" value="홍길동"/></td>
                         </tr><br/>
                         <tr>
                             <td class="j">연락처<label class="k">*</label></td>
@@ -90,99 +80,7 @@ class InfoUpdate extends Component{
                         <tr>
                             <td class="j">생년월일/성별<label class="k">*</label></td>
                             <td>
-                                <span className="d">
-                                    <select id="year" width={300}>
-                                    <option value="">년도</option>
-                                    <option value="">2019</option>
-                                    <option value="">2018</option>
-                                    <option value="">2017</option>
-                                    <option value="">2016</option>
-                                    <option value="">2015</option>
-                                    <option value="">2014</option>
-                                    <option value="">2013</option>
-                                    <option value="">2012</option>
-                                    <option value="">2011</option>
-                                    <option value="">2010</option>
-                                    <option value="">2009</option>
-                                    <option value="">2008</option>
-                                    <option value="">2007</option>
-                                    <option value="">2006</option>
-                                    <option value="">2005</option>
-                                    <option value="">2004</option>
-                                    <option value="">2003</option>
-                                    <option value="">2002</option>
-                                    <option value="">2001</option>
-                                    <option value="">2000</option>
-                                    <option value="">1999</option>
-                                    <option value="">1998</option>
-                                    <option value="">1997</option>
-                                    <option value="">1996</option>
-                                    <option value="">1995</option>
-                                    <option value="">1994</option>
-                                    <option value="">1993</option>
-                                    <option value="">1992</option>
-                                    <option value="">1991</option>
-                                    <option value="">1990</option>
-                                    <option value="">1989</option>
-                                    <option value="">1988</option>
-                                    <option value="">1987</option>
-                                    <option value="">1986</option>
-                                    <option value="">1985</option>
-                                    </select>
-                                </span>
-                                <span className="d">
-                                    <select id="month" width={200}>
-                                    <option value="">월</option>
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">05</option>
-                                    <option value="">06</option>
-                                    <option value="">07</option>
-                                    <option value="">08</option>
-                                    <option value="">09</option>
-                                    <option value="">10</option>
-                                    <option value="">11</option>
-                                    <option value="">12</option>
-                                    </select>
-                                </span>
-                                <span className="d">
-                                    <select id="day" width={200}>
-                                    <option value="">일</option>
-                                    <option value="">01</option>
-                                    <option value="">02</option>
-                                    <option value="">03</option>
-                                    <option value="">04</option>
-                                    <option value="">05</option>
-                                    <option value="">06</option>
-                                    <option value="">07</option>
-                                    <option value="">08</option>
-                                    <option value="">09</option>
-                                    <option value="">10</option>
-                                    <option value="">11</option>
-                                    <option value="">12</option>
-                                    <option value="">13</option>
-                                    <option value="">14</option>
-                                    <option value="">15</option>
-                                    <option value="">16</option>
-                                    <option value="">17</option>
-                                    <option value="">18</option>
-                                    <option value="">19</option>
-                                    <option value="">20</option>
-                                    <option value="">21</option>
-                                    <option value="">22</option>
-                                    <option value="">23</option>
-                                    <option value="">24</option>
-                                    <option value="">25</option>
-                                    <option value="">26</option>
-                                    <option value="">27</option>
-                                    <option value="">28</option>
-                                    <option value="">29</option>
-                                    <option value="">30</option>
-                                    <option value="">31</option>
-                                    </select>
-                                </span>
+                                <span className="d"><input type="text" value="950525-1******"/></span>
                                 <label className="c">/</label>
                                 <span className="d"><input type="radio" value="man"/>남</span>
                                 <span><input type="radio" value="woman"/>여</span>
