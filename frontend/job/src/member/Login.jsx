@@ -13,7 +13,21 @@ const FormPage = () => {
 
     const login = () => {
         if (email && password) {
-            axios.post(`${localhost}/member/`)
+          let data = {
+            email : email,
+            password : password
+          }
+          axios.post(`${localhost}/member/login`, data)
+            .then( res => {
+              if (res.data != '환영합니다.'){
+                alert(res.data)
+              } else {
+                this.props.history.push("/");
+              }
+            })
+            .catch( error => {
+              
+            })
         } else {
             alert('내용을 입력하세요.')
         }

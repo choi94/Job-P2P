@@ -1,4 +1,5 @@
 import React from 'react';
+
 import HeaderNavbar from './common/HeaderNavbar.jsx'
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import Page from "./mypage/Page"
@@ -10,7 +11,7 @@ import SupMini from "./mypage/click/SupMini"
 
 function App() {
   return (
-    <div>
+  <div> 
       <HeaderNavbar/>
 
       <Router>
@@ -21,7 +22,7 @@ function App() {
         <Route path="/drop" component={Drop}/>
         <Route path="/sup" component={SupMini}/>
       </Router>
-    </div>
+  </div>
   );
 }
 

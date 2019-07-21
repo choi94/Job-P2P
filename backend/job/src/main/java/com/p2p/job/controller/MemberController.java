@@ -2,7 +2,6 @@ package com.p2p.job.controller;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Supplier;
 
 import javax.transaction.Transactional;
 
@@ -90,36 +89,33 @@ public class MemberController {
                             result.add(arr);
                         });
 
-
         return result;
     }
 
     @PostMapping("/login")
     public String login(@RequestBody Member member) {
         QMember qMember = QMember.member;
+        int result = query.from(qMember)
+            .where(qMember.email.eq(member.getEmail()), qMember.password.eq(member.getPassword()))
+            .fetch().size();
 
-                    
-
-        return null;
+        return result == 0 ? "존재하지 않는 아이디거나, 비밀번호가 틀렸습니다." : "환영합니다.";
     }
 
     @PostMapping("/")
-    public String saveMember(@RequestBody Member member) {
+    public void saveMember(@RequestBody Member member) {
         System.out.println(member.toString());
         member.setJoinWay("JOB");
         memberRepo.save(member);
-        return "가입에 완료 되었습니다.";
     }
 
     @DeleteMapping("/")
-    public String deleteById(@PathVariable("email")String email) {
+    public void deleteById(@PathVariable("email")String email) {
         memberRepo.deleteById(email);
-        return "삭제 완료";
     }
 
     @PutMapping("/")
-    public String updateMember(@RequestBody Member member) {
+    public void updateMember(@RequestBody Member member) {
         memberRepo.save(member);
-        return "업데이트 완료";
     }
 }
