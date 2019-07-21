@@ -11,6 +11,7 @@ import SupMini from "./mypage/click/SupMini"
 
 function App() {
   return (
+    
   <div> 
       <HeaderNavbar/>
 
