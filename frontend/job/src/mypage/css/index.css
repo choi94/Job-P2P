@@ -418,17 +418,21 @@ code {
 
 .myPageBox1{
 width: 100%;
+height: 50vh;
 border: 1px solid #000;
+
 }
 .myPageBox1_1{
 
+ float: left;
+ 
 }
 .myPageBox1_2{
+
 
 }
 .myPageBox2{
  
-  clear: both;
 }
 .myPageBox3{
 
