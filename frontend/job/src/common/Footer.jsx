@@ -1,28 +1,47 @@
 import React from 'react'
 import {Jumbotron,Button,Card} from 'react-bootstrap';
-import './commom.css'
+import './css/commom.css'
 
 const Footer=()=>{
     return(
-        <div className="footer">
-    <Jumbotron> 
-          <h1>편리하게 일자리를 구할 수 있습니다.</h1>
-          <p></p>
-          <p>
-            <Button variant="primary">Try Member</Button>
-          </p>
-    </Jumbotron>
         <Card className="text-center">
-            <Card.Header></Card.Header>
-            <Card.Body>
-                <Card.Title>Footer</Card.Title>
-                <Card.Text>
-                With supporting text below as a natural lead-in to additional content.
-                </Card.Text>
-            </Card.Body>
-            <Card.Footer className="text-muted">@capiright create : 정인근 최동훈 심신강</Card.Footer>
-        </Card>
+            <Card.Body className="footerBody">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h5>정인근</h5>
+                    <ul>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5>최동훈</h5>
+                    <ul>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <h5>심신강</h5>
+                    <ul>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </div>
         </div>
+        </Card.Body>
+        <Card.Footer className="footer-text">
+           <div class="container">
+                <h2> JOBP2P</h2>
+            </div>
+            <div>
+                <p>copyright@ 2019</p>
+            </div>
+        </Card.Footer>
+        </Card>
     )
 }
 export default Footer

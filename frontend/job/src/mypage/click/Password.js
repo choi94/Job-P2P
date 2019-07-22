@@ -1,25 +1,15 @@
 import React, {Component} from 'react'
 import {Button, Figure, Nav} from 'react-bootstrap'
 import { BrowserRouter as Route, Link,} from "react-router-dom";
-import _bg from '../images/_bg.jpg'
 import InfoUpdate from './InfoUpdate';
 
 class Password extends Component{
     render(){
         return (
             <div>
-                <h1 class="head">
-                    <a href="/"><Figure.Image width={100} height={200} src={_bg}/></a>
-                    <span class="gd">회원정보</span>
-                <table class="header" align="right">
-                    <th><a href="/">홈 |</a></th>
-                    <th><a href="/">개인서비스 |</a></th>
-                    <th><a href="/">채용정보 |</a></th>
-                    <th><a href="/">FAQ |</a></th>
-                    <th><a href="/">캠페인</a></th>
-                </table>
-                </h1>
-                <hr class="line"></hr>
+                <div class="head">
+                    <span class="gd">Job P2P 회원정보</span>
+                </div>
                 <br/>
                 <div>
                     <tr align="center">
@@ -44,7 +34,7 @@ class Password extends Component{
                         </tr><br/>
                         <tr className="d">
                             <td class="j">새 비밀번호</td>
-                            <td><input type="text" className="e" name ="name"/></td>
+                            <td><input type="text" class="e" name ="name"/></td>
                         </tr><br/>
                         <tr>
                             <td class="j">새 비밀번호 확인</td>

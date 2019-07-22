@@ -1,0 +1,33 @@
+
+.Header{
+    background-color: #0c151c;
+    padding: 1% 0 ;
+    /**background: linear-gradient( to bottom, #f8f9fa 94%, rgba(238, 237, 237, 0.986) 1% );*/
+}
+.HeaderScroll{
+    position: fixed;
+    width: 100%;
+    top:0;
+}
+.navbar-light .navbar-toggler{
+    color: #ffffff !important;
+}
+.navbar-brand{
+    font-weight: bold;
+    color: #ffffff !important;
+}
+.navbar-nav{
+    margin-right: 1.5em;
+}
+.navbar-light .navbar-nav .nav-link{
+    font-weight: bold;
+    color: #ffffff;
+}
+.mr-auto{
+    margin-left: 10%;
+}
+/**반응*/
+.row{
+    width: 50%;
+    margin: auto;
+}
