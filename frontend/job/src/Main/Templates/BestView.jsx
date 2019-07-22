@@ -1,24 +1,15 @@
 import React from 'react'
 import {Card} from 'react-bootstrap';
-<<<<<<< HEAD
 import { BrowserRouter as Link, Router } from "react-router-dom";
-=======
-import { BrowserRouter as Link,Router } from "react-router-dom";
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 import '../Main.css'
 import test from '../image/test.png';
 
 const BestView =()=>{
     return(
-<<<<<<< HEAD
       <div className="listingsMain">
 		  	<div className="listingsMainTitle">
 		    <h1>best Job</h1>
 			</div>
-=======
-      <div className="listings1">
-		    <h1>best Job</h1>
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 			<ul className="properties_list">
 				<li>
 				<Link to="/Detail">

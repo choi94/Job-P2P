@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-// 일자리 관련 
 
 @Transactional
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
@@ -40,6 +39,7 @@ public class WorkController {
                             @RequestBody WorkBoard workBoard) {
         Member member = new Member();
         member.setId(member_id);
+
         workBoard.setMember(member);
         workRepo.save(workBoard);
     }
@@ -53,6 +53,7 @@ public class WorkController {
     public void updateWorkBoard(@RequestBody WorkBoard workBoard) {
         
     }
+
 
 
     

@@ -2,13 +2,14 @@
      margin: 6% auto;
 }
 .box{
-    width: 44%;
+    width: 25%;
     margin: auto;
-
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 .box2{
     text-align: center;
-    width: 40%;
+    width: 18%;
     margin: auto;
 }
 .box h1 {
@@ -18,7 +19,7 @@
     color: #fff;
     display: block;
     width: 100%;
-    background-color: #333030;
+    background-color: #0c151c;
 
     padding: .5rem 1rem;
     font-size: 1.25rem;
@@ -35,9 +36,28 @@
     line-height: 1.5;
     border-radius: .3rem;
     background-color: #a3a1a1;
-
+}
+.button3{
+    color: #fff;
+    width: 70%;
+    background-color: #0c151c;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .4rem;
+}
+.join{
+    color:rgb(189, 186, 186);
+    letter-spacing: 0.4rem;
 }
 
+.k{
+    color: rgb(255, 81, 0);
+}
+
+.grey-text{
+    font-weight: bold;
+}
 @media (max-width:1500px){
  
 

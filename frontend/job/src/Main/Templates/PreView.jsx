@@ -6,16 +6,9 @@ import test from '../image/test.png';
 
 const PreView =()=>{
     return(
-<<<<<<< HEAD
       <div className="listingsMain">
 		  	<div className="listingsMainTitle" >
 				<h1>최근에 올라온 Job</h1>
-=======
-      <div className="listings1">
-		  	<div>
-		    <h1>최근에 올라온 Job</h1>
-			<p>인근이니이니니</p>
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 			</div>
 			<ul className="properties_list">
 				<li>
@@ -77,12 +70,6 @@ const PreView =()=>{
 					</Card>
 				</li>
 			</ul>
-<<<<<<< HEAD
-=======
-			<div>
-				더보기
-			</div>
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
     </div>
     );
 }

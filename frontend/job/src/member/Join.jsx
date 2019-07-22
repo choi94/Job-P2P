@@ -83,7 +83,7 @@ const Join = ({history}) => {
             history.push("/");
           })
           .catch( error => {
-            alert('예상치 못한 오류가 발생 했습니다.')
+            console.dir('axios 실패')
           })
       }
     } else {
@@ -94,10 +94,10 @@ const Join = ({history}) => {
     <div>
           <div class="col-12 mt-5">
             <form style={{marginLeft : '40%', marginRight : '40%'}}>
-              <p className="h5 text-center mb-4">회원가입</p>
+              <h1 align="center">회원가입</h1>
               <div className="grey-text">
+                <label>이메일<label class="k">*</label></label>
                 <MDBInput
-                  label="이메일"
                   icon="envelope"
                   group
                   type="email"
@@ -108,8 +108,8 @@ const Join = ({history}) => {
                   onChange={ e => {setEmail(e.target.value)}}
                 />
                 <div class="d-flex" className="red-text">{email_check}</div>
+                <label>닉네임<label class="k">*</label></label>
                 <MDBInput
-                  label="닉네임"
                   icon="id-card"
                   group
                   type="text"
@@ -120,8 +120,8 @@ const Join = ({history}) => {
                   onChange={ e => {setNickname(e.target.value)}}
                 />
                 <div class="d-flex" className="red-text">{nickname_check}</div>
+                <label>비밀번호<label class="k">*</label></label>
                 <MDBInput
-                  label="비밀번호"
                   icon="lock"
                   group
                   type="password"
@@ -129,8 +129,8 @@ const Join = ({history}) => {
                   onBlur={(p) => {setPass_one(p.target.value)}}
                   onChange={ e => {setPassword(e.target.value)}}
                 />
+                <label>비밀번호 재입력<label class="k">*</label></label>
                 <MDBInput
-                  label="비밀번호 재입력"
                   icon="exclamation-triangle"
                   group
                   type="password"
@@ -140,8 +140,8 @@ const Join = ({history}) => {
                   onBlur={(p) => {setPass_two(p.target.value)}}
                 />
                 <div className="red-text">{pass_one != pass_two ? "재입력 비밀번호가 다릅니다." : null}</div>
+                <label>성함<label class="k">*</label></label>
                 <MDBInput
-                  label="성함"
                   icon="user"
                   group
                   type="text"
@@ -150,8 +150,8 @@ const Join = ({history}) => {
                   success="right"
                   onChange={ e => {setName(e.target.value)}}
                 />
+                <label>주민번호 앞 6자리<label class="k">*</label></label>
                 <MDBInput
-                  label="주민번호 앞 6자리"
                   icon="user"
                   group
                   type="text"
@@ -160,8 +160,8 @@ const Join = ({history}) => {
                   success="right"
                   onChange={ e => {setSsn(e.target.value)}}
                 />
+                <label>연락처 (예 : 01012345678)<label class="k">*</label></label>
                 <MDBInput
-                  label="연락처 (예 : 01012345678)"
                   icon="user"
                   group
                   type="text"
@@ -178,8 +178,7 @@ const Join = ({history}) => {
                   id="radio2" />
               </div>  
               <div className="text-center mb-5">
-                
-                <MDBBtn onClick={join} color="primary">가입하기</MDBBtn>
+                <MDBBtn onClick={join} className="button3">가입</MDBBtn>
               </div>
             </form>
           </div>

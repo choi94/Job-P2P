@@ -4,10 +4,6 @@ import './css/commom.css'
 
 const Footer=()=>{
     return(
-<<<<<<< HEAD
-=======
-        <div className="footer">
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
         <Card className="text-center">
             <Card.Body className="footerBody">
             <div class="row">

@@ -16,13 +16,8 @@ class Page extends Component{
                         <span class="gd">Job P2P 프로필</span>
                     </div>
                     <br/>
-<<<<<<< HEAD
                     <div>
                         <table>                 
-=======
-                    <div class="">
-                        <table class="">                 
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
                             <td class="pa">
                             <br/>
                                 <p class="am"><label class="k">*</label> 개인 기본 정보</p>
@@ -31,20 +26,15 @@ class Page extends Component{
                                 <span class="res">1985년생</span>
                                 <hr class="re"/>
                                 <p class="am">휴대폰 - </p>
-                                <p class="am">이메일 - </p>
+                                <p class="am">이메일 - </p><br/>
                                 <p class="am"><Button onClick={info}>내 정보</Button></p>
                             </td>
                         </table>
                     </div>
 
                     <div class="tg">
-<<<<<<< HEAD
                         <table>
                         <tr>
-=======
-                        <table align="">
-                        <tr >
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
                             <Nav>
                                 <td class="er"><Link to="/res"><h2 class="gd">지원 현황</h2></Link></td>
                                 <td class="fr"><Link to="/sup"><h2 class="gd">등록 현황</h2></Link></td>
@@ -53,16 +43,9 @@ class Page extends Component{
                             <Route path="/sup" component={SupMini}/>
                         </tr><br/>
                         </table>
-<<<<<<< HEAD
                     </div>
 
                     <div>
-=======
-                    
-                    </div>
-
-                    <div class="">
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
                         <table>
                             <th class="jj">
                                 <Figure.Image width={350} height={200} src={_info}/>
@@ -96,12 +79,6 @@ class Page extends Component{
 function info(e){
     e.preventDefault()
     window.location = './Info'
-}
-
-function picture(e){
-    e.preventDefault()
-    var url='./Resume';
-    window.open(url,"Resume","width=600,height=700,left=400");
 }
 
 export default Page;

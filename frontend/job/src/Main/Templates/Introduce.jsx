@@ -9,7 +9,7 @@ const Introduce =()=>{
                 <Card.Body>
                 <Card.Title>1단계</Card.Title>
                 <Card.Text>
-                    회원가입 후 해주세요.
+                    회원가입을 해주세요.
                 </Card.Text>
                 </Card.Body>
             </Card>
@@ -17,8 +17,7 @@ const Introduce =()=>{
                 <Card.Body>
                 <Card.Title>2단계</Card.Title>
                 <Card.Text>
-                    게시글을 보고 신청하거나
-                    일자리를 등록해 주세요.
+                    게시글을 보고 일자리를<br/>신청하거나 등록해 주세요.
                 </Card.Text>
                 </Card.Body>
             </Card>

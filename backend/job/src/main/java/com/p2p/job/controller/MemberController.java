@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
 import com.p2p.job.entity.Member;
@@ -38,8 +39,11 @@ public class MemberController {
     BooleanBuilder builder;
 
     @Autowired
+    EntityManager entityManager;
+
+    @Autowired
     MemberRepository memberRepo;
-    
+
     @GetMapping("/")
     public ResponseEntity<List<?>> findAll() {
             QMember qMember = QMember.member;
@@ -163,7 +167,12 @@ public class MemberController {
 
     @PutMapping("/")
     public ResponseEntity<String> updateMember(@RequestBody Member member) {
-        memberRepo.save(member);
+
+//		QMember qMember = QMember.member;
+//		new JPAUpdateClause(entityManager, qMember).where(qMember.id.eq(1L))
+//				.set(qMember.nickname, "GM!")
+//				.execute();
+
         return ResponseEntity.ok("회원정보를 변경했습니다.");
     }
 }
