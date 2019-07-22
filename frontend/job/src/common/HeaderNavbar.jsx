@@ -4,8 +4,6 @@ import {Navbar,Nav,Juombo,Footer} from 'react-bootstrap';
 import Login from '../member/Login'
 import Join from '../member/Join'
 import Main from '../Main/Main.jsx'
-import Login from '../member/Login.jsx'
-import Join from '../member/Join.jsx'
 import Board from '../board/Board.jsx'
 import Detail from '../board/Detail/Detail.jsx'
 

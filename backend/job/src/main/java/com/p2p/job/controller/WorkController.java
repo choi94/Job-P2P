@@ -5,6 +5,7 @@ import javax.transaction.Transactional;
 import com.p2p.job.entity.Member;
 import com.p2p.job.entity.WorkBoard;
 import com.p2p.job.repository.WorkRepository;
+import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/work")
 public class WorkController {
+
+    @Autowired
+    BooleanBuilder builder;
 
     @Autowired
     JPAQueryFactory query;

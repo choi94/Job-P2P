@@ -1,7 +1,9 @@
 package com.p2p.job.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.transaction.Transactional;
 
@@ -33,11 +35,13 @@ public class MemberController {
     JPAQueryFactory query;
 
     @Autowired
+    BooleanBuilder builder;
+
+    @Autowired
     MemberRepository memberRepo;
     
     @GetMapping("/")
-    public List<Object> findAll() {
-
+    public ResponseEntity<List<?>> findAll() {
             QMember qMember = QMember.member;
             List<Object> result = new ArrayList<>();
             
@@ -47,44 +51,39 @@ public class MemberController {
                 result.add(arr);
             });
 
-        return result;
+        return ResponseEntity.ok(result);
     }
 
     @GetMapping("/join/{keyword}/{value}")
-    public List<Object> findByMember(@PathVariable("keyword")String keyword,
+    public ResponseEntity<List<?>> findByMember(@PathVariable("keyword")String keyword,
                                     @PathVariable("value")String value) {
-        
-            QMember qMember = QMember.member;
-            BooleanBuilder builder = new BooleanBuilder();
+        QMember qMember = QMember.member;
+        List<Object> result = new ArrayList<>();
+
+        switch (keyword) {
+            case "email" :
+                builder.and(qMember.email.eq(value));
+                break;
             
-            List<Object> result = new ArrayList<>();
+            case "nickname" :
+                builder.and(qMember.nickname.eq(value));
+                break;
+        }
 
-            switch (keyword) {
-                case "email" :
-                    builder.and(qMember.email.eq(value));
-                    break;
-                
-                case "nickname" :
-                    builder.and(qMember.nickname.eq(value));
-                    break;
-            }
+        query.from(qMember)
+                    .where(builder.and(qMember.id.gt(0)))
+                    .fetch()
+                    .forEach(arr -> {
+                        result.add(arr);
+                    });
 
-            query.from(qMember)
-                        .where(builder)
-                        .fetch()
-                        .forEach(arr -> {
-                            result.add(arr);
-                        });
-
-        return result;
+        return ResponseEntity.ok(result);
     }
 
     @GetMapping("/search/{keyword}/{value}")
-    public List<Object> search(@PathVariable("keyword")String keyword,
+    public ResponseEntity<?> search(@PathVariable("keyword")String keyword,
                                 @PathVariable("value")String value) {
-        
         QMember qMember = QMember.member;
-        BooleanBuilder builder = new BooleanBuilder();
         
         switch (keyword) {
             case "email":
@@ -115,48 +114,56 @@ public class MemberController {
                 break;
         }
 
-        // List<Object> result = query.from(qMember)
-        //                         .where(builder)
-        //                         .fetch();
-
         List<Object> result = new ArrayList<>();
         query.from(qMember)
-            .where(builder)
+            .where(builder.and(qMember.id.gt(0)))
             .fetch()
             .forEach(arr -> {
                 result.add(result);
             });
 
-        return result;
+        if (result.isEmpty())
+            return ResponseEntity.notFound().build();
+
+        return ResponseEntity.ok(result);
     }
 
     @PostMapping("/login")
-    public String login(@RequestBody Member member) {
+    public ResponseEntity<Map<?,?>> login(@RequestBody Member member) {
         QMember qMember = QMember.member;
-        int result = query.from(qMember)
-            .where(qMember.email.eq(member.getEmail()), qMember.password.eq(member.getPassword()))
-            .fetch()
-            .size();
+        Map<String,Object> result = new HashMap<>();
 
-        return result == 0 ? "존재하지 않는 아이디거나, 비밀번호가 틀렸습니다." : "환영합니다.";
+        builder.and(qMember.email.eq(member.getEmail())
+            .and(qMember.password.eq(member.getPassword())
+            .and(qMember.id.gt(0))
+            ));
+
+        memberRepo.findAll(builder).forEach(arr -> {
+            result.put("id", arr.getId()); 
+        });
+
+        if (result.isEmpty())
+            return ResponseEntity.notFound().build();
+
+        return ResponseEntity.ok(result);
     }
 
     @PostMapping("/")
-    public ResponseEntity saveMember(@RequestBody Member member) {
-        System.out.println(member.toString());
+    public ResponseEntity<String> saveMember(@RequestBody Member member) {
         member.setJoinWay("JOB");
         memberRepo.save(member);
-
-        return null;
+        return ResponseEntity.ok("회원가입 성공");
     }
 
     @DeleteMapping("/")
-    public void deleteById(@PathVariable("email")String email) {
+    public ResponseEntity<String> deleteById(@PathVariable("email")String email) {
         memberRepo.deleteById(email);
+        return ResponseEntity.ok("회원을 탈퇴했습니다.");
     }
 
     @PutMapping("/")
-    public void updateMember(@RequestBody Member member) {
+    public ResponseEntity<String> updateMember(@RequestBody Member member) {
         memberRepo.save(member);
+        return ResponseEntity.ok("회원정보를 변경했습니다.");
     }
 }

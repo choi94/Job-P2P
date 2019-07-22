@@ -53,7 +53,6 @@ public class JobApplicationTests {
 
         workRepo.save(workBoard);
 
-
 	}
 
 }
