@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import axios from 'axios';
+<<<<<<< HEAD
+=======
+import { MDBInput, MDBBtn } from 'mdbreact';
+
+
+const Login = ({history}) => {
+
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 import {Button,Form} from 'react-bootstrap';
 import {MDBInput} from 'mdbreact';
 import HeaderNavbar from '../common/HeaderNavbar';
@@ -12,13 +20,60 @@ const FormPage = () => {
     const [password, setPassword] = useState()
     const login = () => {
         if (email && password) {
-            axios.post(`${localhost}/member/`)
+          let data = {
+            email : email,
+            password : password
+          }
+          axios.post(`${localhost}/member/login`, data)
+            .then( res => {
+              if (res.data != '환영합니다.'){
+                alert(res.data)
+              } else {
+                history.push("/");
+              }
+            })
+            .catch( error => {
+              
+            })
         } else {
             alert('내용을 입력하세요.')
         }
     }
   return (
+<<<<<<< HEAD
       <div className="bigbox">
+=======
+      <div>
+        <div class="col-12 mt-5">
+            <form style={{marginLeft : '40%', marginRight : '40%'}}>
+            <p className="h5 text-center mb-4">로그인</p>
+            <div className="grey-text">
+              <MDBInput
+                label="이메일"
+                icon="envelope"
+                group
+                type="email"
+                validate
+                error="wrong"
+                success="right"
+                onChange={e => {setEmail(e.target.value)}}
+              />
+              <MDBInput
+                label="비밀번호"
+                icon="lock"
+                group
+                type="password"
+                validate
+                onChange={e => {setPassword(e.target.value)}}
+              />
+            </div>
+            <div className="text-center">
+              <MDBBtn onClick={login}>로그인</MDBBtn>
+            </div>
+          </form>
+        </div>
+      {/* <div className="bigbox">
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
         <div className="box">
           <Form>
             <h1>로그인</h1>
@@ -35,9 +90,13 @@ const FormPage = () => {
       <div className="box2">
         <button onClick={login} className="button1">로그인</button>
         <button onClick={login} className="button2">회원가입</button>
+<<<<<<< HEAD
       </div>
+=======
+      </div> */}
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
     </div>
   );
 };
-
-export default FormPage;
+}
+export default Login;

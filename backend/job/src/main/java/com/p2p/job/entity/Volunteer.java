@@ -19,7 +19,7 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
+@ToString(exclude = {"member", "workBoard"})
 @Entity
 @Table(name = "volunteer")
 public class Volunteer {

@@ -19,26 +19,26 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString(exclude = "member")
+@ToString(exclude = {"member", "workBoard"})
 @Entity
-@Table(name = "notice_board")
-public class NoticeBoard {
+@Table(name = "attention")
+public class Attention {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "notice_id")
+    @Column(name = "attention_id")
     private Long id;
-
-    @Column(nullable = false)
-    private String title;
-
-    @Column(nullable = false)
-    private String contents;
-
-    @CreationTimestamp
-    private LocalDateTime write_date;
+    
+    @ManyToOne
+    @JoinColumn(name = "work_id")
+    private WorkBoard workBoard;
 
     @ManyToOne
     @JoinColumn(name = "member_id")
     private Member member;
+
+    @CreationTimestamp
+    @Column(name = "attention_date")
+    private LocalDateTime attentionDate;
+    
 }

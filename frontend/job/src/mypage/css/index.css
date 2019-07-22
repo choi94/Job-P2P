@@ -21,6 +21,47 @@ code {
 
 .ui{
   list-style: none;
+<<<<<<< HEAD
+}
+
+.ui1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgb(199, 197, 197);
+}
+
+.ui2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgb(199, 197, 197);
+}
+
+.title{
+  width : 40rem;
+  text-align: center;
+  margin-top: 10%;
+  background: #22b8cf;
+  color: white;
+}
+
+.pp{
+  font-size: 2rem;
+  text-align: center;
+  color:rgb(248, 143, 6);
+  font-weight: bold;
+}
+
+
+/** Page **/
+.head{
+  padding:10px;
+  padding-top : 1rem;
+  margin-bottom: -1rem;
+  margin-left: 1rem;
+}
+
+.gd {
+=======
 }
 
 .ui1{
@@ -64,6 +105,88 @@ code {
   font-weight: bold;
 }
 
+.pa {
+  padding-bottom: 10%;
+}
+
+.resu {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-right: 2rem;
+}
+
+.res {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.re {
+  border : 2px solid #6AAFE6;
+  width: 36rem;
+}
+
+.am {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.tg{
+  height: 40rem;
+}
+
+.fr {
+  width: 12rem;
+  padding-left: 3rem;
+}
+
+.er{
+  width: 13rem;
+  border-right : 3px solid rgb(207, 207, 207);
+}
+
+.jj {
+  padding-right: 2rem;
+}
+
+.kk {
+  font-weight: bold;
+}
+
+.ll {
+  margin-right: 1rem;
+}
+
+.fi {
+  margin-right: 3.4rem;
+}
+
+.gi {
+  margin-right: 3.3rem;
+}
+
+.hi {
+  margin-right: 3.1rem;
+}
+
+/** Info **/
+.head2{
+  padding-top: 2rem;
+}
+
+.f{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.hd {
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+<<<<<<< HEAD
 .pa {
   padding-bottom: 10%;
 }
@@ -118,6 +241,185 @@ code {
 
 .fi {
   padding-right: 3.4rem;
+=======
+.head1{
+  margin-top: -7rem;
+  margin-left: 1.1rem;
+}
+
+.ex{
+  margin-top: -5rem;
+  font-weight: bold;
+}
+
+.info{
+  float: left;
+  padding-top: 5rem;
+  padding-right: 2rem;
+}
+
+.bo{
+  width: 31rem;
+  border-top : 2px solid rgb(207, 207, 207);
+  border-left : 2px solid rgb(207, 207, 207);
+  border-right : 2px solid rgb(207, 207, 207);
+}
+
+.pb {
+  font-size: 1.5rem;
+  color:#6AAFE6;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+.aa{
+  font-size: 1rem;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.de{
+  width: 31rem;
+  border-bottom : 2px solid rgb(207, 207, 207);
+  border-left : 2px solid rgb(207, 207, 207);
+  border-right : 2px solid rgb(207, 207, 207);
+}
+
+.bb{
+  font-size: 1.4rem;
+  padding-left: 0.7em;
+  font-weight: bold;
+}
+
+.cc {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.di {
+  float: left;
+  padding-top: 5rem;
+}
+
+.bi {
+  border : 2px solid rgb(207, 207, 207);
+}
+
+.ccc{
+  padding-top: 1rem;
+}
+
+/**  **/
+
+.a{
+  margin-left: 3.8rem;
+}
+
+.b{
+  width:800px;
+  font-size: 20px;
+  padding-left: 3em;
+  margin-left: 20rem;
+}
+
+.c {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(221, 221, 221);
+  padding-right:20px;
+}
+
+.d {
+  padding-right:20px;
+}
+
+.e{
+  margin-left: 5rem;
+}
+
+.g{
+  padding-left:65px;
+  padding-right:30px;
+}
+
+.h{
+  padding-left:65px;
+  padding-right:55px;
+}
+
+.i{
+  margin-left:52px;
+}
+
+.j{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.k{
+  color: rgb(255, 115, 0);
+}
+
+.l{
+  margin-left: 2.2rem;
+}
+
+td:first-child{
+  padding-right:50px;
+}
+
+.dd {
+  font-size: 15px;
+  font-weight: bold;
+  color: red;
+  margin-top:1rem;
+  margin-left: 25rem;
+}
+
+.ee{
+  width: 370px;
+  border-top : 2px solid rgb(207, 207, 207);
+  border-right : 2px solid rgb(207, 207, 207);
+  border-left : 2px solid rgb(207, 207, 207);
+}
+
+.ff {
+  float: left;
+  margin-left: 25rem;
+  margin-right: 2rem;
+}
+
+.gg{
+  margin-top: -2rem;
+  margin-left: 2rem;
+}
+
+.hh{
+  margin-top: 3rem;
+}
+
+.ae {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.be {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.ce{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.fe {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 1rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
 .gi {
@@ -128,6 +430,7 @@ code {
   padding-right: 3.1rem;
 }
 
+<<<<<<< HEAD
 /** Info **/
 .head2{
   padding-top: 2rem;
@@ -148,6 +451,21 @@ code {
   border-top : 2px solid #274c5e;
   border-left : 2px solid #274c5e;
   border-right : 2px solid #274c5e;
+=======
+.je {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.ad {
+  width: 800px;
+  border-top : 2px solid rgb(207, 207, 207);
+  border-right : 2px solid rgb(207, 207, 207);
+  border-left : 2px solid rgb(207, 207, 207);
+  border-bottom : 2px solid rgb(207, 207, 207);
+  margin-left: 25rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
 .pb {
@@ -159,12 +477,28 @@ code {
   padding-right: 2rem;
 }
 
+<<<<<<< HEAD
 .de{
   width: 25rem;
   margin-bottom: 2rem;
   border-bottom : 2px solid #274c5e;
   border-left : 2px solid #274c5e;
   border-right : 2px solid #274c5e;
+=======
+.cd {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 25rem;
+  margin-top: 24rem;
+}
+
+.ed{
+  width: 370px;
+  border-top : 2px solid rgb(207, 207, 207);
+  border-right : 2px solid rgb(207, 207, 207);
+  border-left : 2px solid rgb(207, 207, 207);
+  margin-left: 20rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
 .aa{
@@ -174,6 +508,7 @@ code {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 .bb{
   font-size: 1.4rem;
   padding-left: 0.7em;
@@ -200,6 +535,29 @@ code {
   border-top : 2px solid #274c5e;
   border-right : 2px solid #274c5e;
   border-left : 2px solid #274c5e;
+=======
+.ci{
+  width:860px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 2em;
+  margin-left: 20rem;
+  background: rgb(199, 197, 197);
+}
+
+.ei{
+  padding-left: 10rem;
+}
+
+.ii{
+  width: 72%;
+}
+
+.li {
+  border : 5px solid rgb(240, 238, 238);
+  width: 850px;
+  margin-left: 20rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
 .km {
@@ -218,6 +576,7 @@ code {
   background: rgb(199, 197, 197);
 }
 
+<<<<<<< HEAD
 .lin{
   border : 3px solid #274c5e;
 }
@@ -249,6 +608,32 @@ code {
   font-size: 1rem;
   font-weight: bold;
   padding-left: 6.5rem;
+=======
+.ao{
+  width: 820px;
+  border : 2px solid rgb(207, 207, 207);
+}
+
+.eo{
+  width: 332.5px;
+}
+
+.resume{
+  width : 50rem;
+  background: white;
+}
+
+.lin{
+  border : 5px solid rgb(240, 238, 238);
+  width: 730px;
+  margin-left: 20rem;
+}
+
+.lin2{
+  border : 5px solid rgb(240, 238, 238);
+  width: 730px;
+  margin-left: -4rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
 .g{
@@ -257,6 +642,7 @@ code {
   padding-left: 4.5rem;
 }
 
+<<<<<<< HEAD
 .h{
   font-weight: bold;
   padding-right: 3.3rem;
@@ -344,15 +730,103 @@ code {
   font-size: 1.5rem;
   font-weight: bold;
   padding-top: 1rem;
+=======
+.fff {
+  float: left;
+  width: 25%;
+  background-color: antiquewhite;
+  padding-left: 20px;
 }
 
+.hhh{
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: 20px;
+}
+
+.ggg {
+  background-color: white;
+  padding:20px;
+  margin-top: 20px;
+}
+
+.ccc:after{
+  content: "";
+  display: table;
+  margin-top: 20px;
+}
+
+.iii{
+  padding:10px;
+  text-align : center;
+  background-color: white;
+  margin-top: 20px;
+}
+
+@media (max-width:320px){
+  .head2{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width:375px){
+  .pa, .re{
+    width: 100%;
+  }
+
+  .tg{
+    margin-right: 20%;
+  }
+
+  .line3{
+    width: 65%;
+    margin-right: 16.7rem;
+  }
+}
+
+@media (max-width:375px){
+  .te2{
+    width: 80%;
+    height:30%;
+  }
+}
+
+@media (max-width:500px){
+  .bo, .de{
+    width: 111%;
+  }
+}
+
+@media (max-width:425px){
+
+}
+
+
+@media screen and (max-width : 500px){
+  .bi{
+    width: 105%;
+  }
+}
+
+@media (max-width:1500px){
+
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
+}
+@media (max-width: 1150px){
+
+<<<<<<< HEAD
 .dd {
   font-size: 1rem;
   font-weight: bold;
   color: red;
   padding-top:1rem;
+=======
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
+@media (max-width:800px){
 
+<<<<<<< HEAD
 .fd {
   background: #4784a3;  
   font-size: 1.2rem;
@@ -412,4 +886,10 @@ code {
 }
 @media (max-width : 500px){
   
+=======
+}
+
+@media (max-width:700px){
+
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }

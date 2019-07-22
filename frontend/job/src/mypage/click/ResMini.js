@@ -12,7 +12,11 @@ const ResMini  = ()=>{
                 <li class="ui2">지원 후 내 정보를 수정해도 지원에는 반영되지 않습니다.</li>
             </ul>
             <table align=""> 
+<<<<<<< HEAD
                 <div class="title">
+=======
+                <div className="title">
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
                     <th width="200">지원일</th>
                     <th width="300">지원내역</th>
                     <th width="500">일자리명 / 모집제목</th>
@@ -20,7 +24,11 @@ const ResMini  = ()=>{
                     <th width="200">마감일</th>
                 </div><br/><br/><br/>
                 <div>
+<<<<<<< HEAD
                     <p class="pp"> 지원한 공고가 없습니다.</p>
+=======
+                    <p className="pp"> 지원한 공고가 없습니다.</p>
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
                 </div>
             </table>
         </div>

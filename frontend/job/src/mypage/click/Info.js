@@ -4,18 +4,37 @@ import {Figure, Button} from 'react-bootstrap'
 class Info extends Component{
     render(){
         return (
+<<<<<<< HEAD
             <div align="center">
                 <div class="head">
                     <span class="gd">Job P2P 회원정보</span>
                 </div>
+=======
+            <div>
+                <div class="head">
+                    <span class="gd">Job P2P 회원정보</span>
+                </div>
+                <br/><br/>
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 
                 <div class="head2">
                     <h2 class="f"><span class="hd">(닉네임)님의</span> 회원정보</h2>
                 </div>
+<<<<<<< HEAD
                 <br/><br/>
                 <div>
                     <table class="bo">
                         <div>
+=======
+
+                <div class="head1">
+                    <p class="ex">JOB P2P를 더이상 이용하지 않는다면 <a href="/drop">회원탈퇴</a></p> 
+                </div>
+
+                <div class="info">
+                    <table class="bo">
+                        <div><br/>
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
                             <tr>
                                 <td class="pb">회원정보</td>
                                 <td><Button variant="warning" onClick={update}>수정</Button></td>
@@ -59,6 +78,7 @@ class Info extends Component{
                     </table>
                 </div>
 
+<<<<<<< HEAD
                 <div>
                     <table class="bi">
                         <tr>
@@ -68,6 +88,17 @@ class Info extends Component{
                         <tr>
                             <td colSpan="2">
                                 <p class="aa">JOB P2P를 더이상 이용하지 않는다면 회원탈퇴</p>
+=======
+                <div class="di">
+                    <table class="bi">
+                        <tr>
+                            <td class="pb">비밀번호</td>
+                            <td class="ccc"><Button variant="success" onClick={change}>변경</Button></td>
+                        </tr>
+                        <tr>
+                            <td colSpan="2">
+                                <p class="aa">비밀번호를 주기적으로 변경하여 소중한 개인정보를<br/>안전하게 보호하세요<br/>(6개월마다 알림)</p>
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
                             </td>
                         </tr>
                     </table>
@@ -84,7 +115,11 @@ function update(e){
 
 function change(e){
     e.preventDefault()
+<<<<<<< HEAD
     window.location = './Drop'
+=======
+    window.location = './Password'
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
 export default Info;
