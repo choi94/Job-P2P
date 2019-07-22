@@ -14,7 +14,7 @@ const BestView =()=>{
 				<li>
 				<Link to="/Detail">
 					<Card>
-					<Card.Img variant="top" src={test} />
+					<Card.Img variant="top"  />
 					<Card.Body>
 					<Card.Title>을지로 청소 구합니다.</Card.Title>
 					<Card.Text>
