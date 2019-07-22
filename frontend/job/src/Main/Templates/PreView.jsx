@@ -6,10 +6,9 @@ import test from '../image/test.png';
 
 const PreView =()=>{
     return(
-      <div className="listings1">
-		  	<div>
-		    <h1>최근에 올라온 Job</h1>
-			<p>인근이니이니니</p>
+      <div className="listingsMain">
+		  	<div className="listingsMainTitle" >
+				<h1>최근에 올라온 Job</h1>
 			</div>
 			<ul className="properties_list">
 				<li>
@@ -71,9 +70,6 @@ const PreView =()=>{
 					</Card>
 				</li>
 			</ul>
-			<div>
-				더보기
-			</div>
     </div>
     );
 }

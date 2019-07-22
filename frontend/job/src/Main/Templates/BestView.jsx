@@ -1,13 +1,15 @@
 import React from 'react'
 import {Card} from 'react-bootstrap';
-import { BrowserRouter as Link,Router } from "react-router-dom";
+import { BrowserRouter as Link, Router } from "react-router-dom";
 import '../Main.css'
 import test from '../image/test.png';
 
 const BestView =()=>{
     return(
-      <div className="listings1">
+      <div className="listingsMain">
+		  	<div className="listingsMainTitle">
 		    <h1>best Job</h1>
+			</div>
 			<ul className="properties_list">
 				<li>
 				<Link to="/Detail">

@@ -1,43 +1,65 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import {Button,Form} from 'react-bootstrap';
-import {MDBInput} from 'mdbreact';
-import HeaderNavbar from '../common/HeaderNavbar';
-import './css/common.css'
+import { MDBInput, MDBBtn } from 'mdbreact';
 
 
-const FormPage = () => {
+const Login = ({history}) => {
     const localhost = 'http://localhost:9000'
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
+    
     const login = () => {
         if (email && password) {
-            axios.post(`${localhost}/member/`)
+          let data = {
+            email : email,
+            password : password
+          }
+          axios.post(`${localhost}/member/login`, data)
+            .then( res => {
+                console.log(res.data);
+                sessionStorage.setItem('id', res.data.id)
+                history.push("/");
+            })
+            .catch( error => {
+              alert('존재하지 않는 계정이거나, 비밀번호가 틀렸습니다.')
+            })
         } else {
             alert('내용을 입력하세요.')
         }
     }
   return (
-      <div className="bigbox">
-        <div className="box">
-          <Form>
-            <h1>로그인</h1>
-          <Form.Group controlId="formGroupEmail" >
-            <Form.Label>이메일</Form.Label>
-            <Form.Control type="email"  onChange={e => {setEmail(e.target.value)}} />
-          </Form.Group>
-          <Form.Group controlId="formGroupPassword">
-            <Form.Label>비밀번호</Form.Label>
-            <Form.Control type="password"  onChange={e => {setPassword(e.target.value)}}/>
-          </Form.Group>
-        </Form>
-      </div>
-      <div className="box2">
-        <button onClick={login} className="button1">로그인</button>
-        <button onClick={login} className="button2">회원가입</button>
-      </div>
+      <div>
+        <div class="col-12 mt-5">
+            <form style={{marginLeft : '40%', marginRight : '40%'}}>
+            <p className="h5 text-center mb-4">로그인</p>
+            <div className="grey-text">
+              <MDBInput
+                label="이메일"
+                icon="envelope"
+                group
+                type="email"
+                validate
+                error="wrong"
+                success="right"
+                onChange={e => {setEmail(e.target.value)}}
+              />
+              <MDBInput
+                label="비밀번호"
+                icon="lock"
+                group
+                type="password"
+                validate
+                onChange={e => {setPassword(e.target.value)}}
+              />
+            </div>
+            <div className="text-center">
+              <MDBBtn onClick={login}>로그인</MDBBtn>
+            </div>
+          </form>
+        </div>
+
     </div>
   );
-};
+}
 
-export default FormPage;
+export default Login;

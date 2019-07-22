@@ -5,11 +5,8 @@ import BestView from './Templates/BestView.jsx'
 import PreView from './Templates/PreView.jsx'
 import FooterIntro from './Templates/FooterIntro.jsx'
 import Footer from '../common/Footer.jsx'
-
-import im from './image/시안4.png'
 import './Main.css'
-
-
+import im from './image/시안4.png'
 
 class Main extends Component{
     constructor(props){
@@ -19,9 +16,7 @@ class Main extends Component{
         return(
     <div className="Mainbody">
         <div className="m1" style={Im}>
-            <div className="m1_1">
                 <Juombo/>
-            </div>
         </div>
         <div className="m2">
             <Introduce/>
@@ -29,6 +24,9 @@ class Main extends Component{
         <div className="m3">
             <PreView/>
         </div>
+        <div className="PreviewMoreBox">
+			<button onClick={Board} class="more_listing_btn">+ 더보기</button>
+			</div>
         <div className="m4">
             <BestView/>
         </div>
@@ -42,6 +40,11 @@ class Main extends Component{
         )
     }
 }
+function Board(e){
+    e.preventDefault()
+    window.location = './Board'
+}
+
 const Im ={
     backgroundImage: `url(${im})`,
     backgroundSize:`auto`,

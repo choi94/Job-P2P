@@ -8,67 +8,141 @@
 /**Jumbo,jsx*/
 .m1{
     width: 100%;
-    margin: auto;
-    background-color:#F2F2F1;
-    height: 70vh;
+    height: 500px;
+    background-color:#0c151c;
 }
 .m1_1{
+    position: relative;
+    height: 100%;
     width: 80%;
-    margin: auto;
 }
+.MainTexBox{
+    font-family:"NotoSans-Bold";
+    text-align: center;
+    padding-top:8%; 
+    width: 80%;
+    margin:auto;
+    color: #ffff;
+    font-size: 2em;
+}
+
+
 /**Introduce,jsx*/
 .m2{
     width: 80%;
     margin: 4% auto;
 }
 
-/**predicate_view.jsx*/
-.m2{
-    width: 80%;
-    margin: 4% auto;
+/**predicate_view.jsx, BestView.jsx*/
+.m3{
+    margin: 5% 0;
 }
-
-.listings1{
+.m4{
+    margin: 5% 0;
+}
+.listingsMain{
     width: 80%;
     margin: auto;
+    
+}
+.listingsMain .listingsMainTitle
+{
+    width: 96%;
+    margin: auto;
+    margin-bottom:1%; 
+}
+.listingsMain .listingsMainTitle h1{
+ font-size: 2em;
+ line-height: 1.5em;
+ font-weight: bold;
+}
+.listingsMain .listingsMainTitle p{
+    font-size: 1.2em;
 }
 
-.listings1 .properties_list{
+
+.listingsMain .properties_list{
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     overflow: hidden;
     padding: 0;
 }
-
-.listings1 .properties_list li:nth-child(4n+0){
+.listingsMain .properties_list li:nth-child(4n+0){
     margin-right: 0;
 }
-.listings1 .properties_list
-{}
-
-.listings1 ul.properties_list li{
+.listingsMain ul.properties_list li{
     display: block;
-    width: 20.90909090909091%;
+    width: 18.90909090909091%;
     height: auto;
     position: relative;
-    float: left;
-    margin: 0 2%;
+    margin: 0 2.5%;
 }
-.listings1 ul.properties_list li img.property_img{
+.listingsMain ul.properties_list li img.property_img{
     width: 100%;
     height: auto!important;
     vertical-align: top;
 }
 
+.PreviewMoreBox{
+    width: 15%;
+    clear: both;
+    margin: auto;
+    text-align: center;
+}
+.more_listing_btn{
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 2px solid #bfd9f1;
+    border-radius: 30px;
+    color: #afcbe6;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    transition: all .2s linear;
+}
+
+.more_listing_btn:hover{
+    color: #a0c3e5;
+    border: 2px solid #a0c3e5;    
+}
+
+
+
+
+
+
+
+
+
+/**FooterInfo*/
+
+.footerInfoBox{
+    font-family: "NotoSans-Bold";
+    font-size: 1em;
+    margin-bottom: 0 !important;
+    background-color:#ffff;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width:1500px) {
 
-    .listings1 .properties_list li:nth-child(4n+0){
+    .listingsMain .properties_list li:nth-child(4n+0){
         margin-right: 0;
     }
-    .listings1 .properties_list
+    .listingsMain .properties_list
     {}
     
-    .listings1 ul.properties_list li{
+    .listingsMain ul.properties_list li{
         display: block;
         width: 20.90909090909091%;
         height: auto;
@@ -76,7 +150,7 @@
         float: left;
         margin: 0 2%;
     }
-    .listings1 ul.properties_list li img.property_img{
+    .listingsMain ul.properties_list li img.property_img{
         width: 100%;
         height: auto!important;
         vertical-align: top;
@@ -86,14 +160,13 @@
 
 @media (max-width: 1150px){
 
-
 }
 @media  (max-width:900px){
 
-    .listings1 .properties_list li:nth-child(3n+0){
+    .listingsMain .properties_list li:nth-child(3n+0){
         margin-right: 0;
     }
-    .listings1 ul.properties_list li{
+    .listingsMain ul.properties_list li{
         display: block;
         width: 20.90909090909091%;
         height: auto;
@@ -101,7 +174,7 @@
         float: left;
         margin: 0 2%;
     }
-    .listings1 ul.properties_list li img.property_img{
+    .listingsMain ul.properties_list li img.property_img{
         width: 100%;
         height: auto!important;
         vertical-align: top;
@@ -109,10 +182,10 @@
 
 }
 @media (max-width:700px){
-    .listings1 .properties_list li:nth-child(3n+0){
+    .listingsMain .properties_list li:nth-child(3n+0){
         margin-right: 0;
     }
-    .listings1 ul.properties_list li{
+    .listingsMain ul.properties_list li{
         width: 100%;
         margin-bottom: 60px!important;
         float: none;
@@ -122,7 +195,7 @@
 
 
 @media (max-width:500px){
-    .listings1 ul.properties_list li{
+    .listingsMain ul.properties_list li{
         width: 100%;
         margin-bottom: 60px!important;
         float: none;
@@ -131,12 +204,12 @@
 }
 
 @media (min-width:300px) and (max-width:500px) {
-    .listings1 ul.properties_list li{
+    .listingsMain ul.properties_list li{
         width: 100%;
         margin-bottom: 60px!important;
         float: none;
     }
-    .listings1 ul.properties_list li img.property_img{
+    .listingsMain ul.properties_list li img.property_img{
         display: block;
         width: 100%;
         height: auto!important;
