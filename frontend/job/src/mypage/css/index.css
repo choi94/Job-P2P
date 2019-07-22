@@ -21,6 +21,47 @@ code {
 
 .ui{
   list-style: none;
+<<<<<<< HEAD
+}
+
+.ui1{
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgb(199, 197, 197);
+}
+
+.ui2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: rgb(199, 197, 197);
+}
+
+.title{
+  width : 40rem;
+  text-align: center;
+  margin-top: 10%;
+  background: #22b8cf;
+  color: white;
+}
+
+.pp{
+  font-size: 2rem;
+  text-align: center;
+  color:rgb(248, 143, 6);
+  font-weight: bold;
+}
+
+
+/** Page **/
+.head{
+  padding:10px;
+  padding-top : 1rem;
+  margin-bottom: -1rem;
+  margin-left: 1rem;
+}
+
+.gd {
+=======
 }
 
 .ui1{
@@ -139,11 +180,68 @@ code {
 }
 
 .hd {
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
   font-size: 2rem;
   font-weight: bold;
   padding-left: 1rem;
 }
 
+<<<<<<< HEAD
+.pa {
+  padding-bottom: 10%;
+}
+
+.am {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.resu {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-right: 2rem;
+}
+
+.res {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.re {
+  border : 2px solid #274c5e;
+  width: 36rem;
+}
+
+.tg{
+  height: 40rem;
+}
+
+.fr {
+  width: 12rem;
+  padding-left: 3rem;
+}
+
+.er{
+  width: 13rem;
+  border-right : 3px solid rgb(207, 207, 207);
+}
+
+.jj {
+  padding-right: 2rem;
+}
+
+.kk {
+  font-weight: bold;
+}
+
+.ll {
+  padding-right: 1rem;
+}
+
+.fi {
+  padding-right: 3.4rem;
+=======
 .head1{
   margin-top: -7rem;
   margin-left: 1.1rem;
@@ -321,20 +419,39 @@ td:first-child{
   font-size: 15px;
   font-weight: bold;
   padding-left: 1rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
-.ge {
-  width: 600px;
-  margin-left: 1rem;
-  border : 2px solid rgb(207, 207, 207);
+.gi {
+  padding-right: 3.3rem;
 }
 
-.he {
-  background: #e2e1e1;
-  font-size: 15px;
+.hi {
+  padding-right: 3.1rem;
+}
+
+<<<<<<< HEAD
+/** Info **/
+.head2{
+  padding-top: 2rem;
+}
+
+.f{
+  font-size: 1.6rem;
   font-weight: bold;
 }
 
+.hd {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bo{
+  width: 25rem;
+  border-top : 2px solid #274c5e;
+  border-left : 2px solid #274c5e;
+  border-right : 2px solid #274c5e;
+=======
 .je {
   font-size: 15px;
   font-weight: bold;
@@ -348,14 +465,26 @@ td:first-child{
   border-left : 2px solid rgb(207, 207, 207);
   border-bottom : 2px solid rgb(207, 207, 207);
   margin-left: 25rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
-.bd {
-  font-size: 15px;
+.pb {
+  font-size: 1.5rem;
+  color:#274c5e;
+  letter-spacing: 1rem;
   font-weight: bold;
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 
+<<<<<<< HEAD
+.de{
+  width: 25rem;
+  margin-bottom: 2rem;
+  border-bottom : 2px solid #274c5e;
+  border-left : 2px solid #274c5e;
+  border-right : 2px solid #274c5e;
+=======
 .cd {
   font-size: 20px;
   font-weight: bold;
@@ -369,15 +498,44 @@ td:first-child{
   border-right : 2px solid rgb(207, 207, 207);
   border-left : 2px solid rgb(207, 207, 207);
   margin-left: 20rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
-.fd {
-  background: #e2e1e1;
-  font-size: 15px;
+.aa{
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
   font-weight: bold;
-  padding-left: 2rem;
 }
 
+<<<<<<< HEAD
+.bb{
+  font-size: 1.4rem;
+  padding-left: 0.7em;
+  font-weight: bold;
+}
+
+.cc {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.bi {
+  border : 2px solid #274c5e;
+}
+
+/** InfoUpdate **/
+
+.jd{
+  text-align: center;
+}
+
+.ed{
+  width: 20rem;
+  border-top : 2px solid #274c5e;
+  border-right : 2px solid #274c5e;
+  border-left : 2px solid #274c5e;
+=======
 .ci{
   width:860px;
   font-size: 20px;
@@ -399,26 +557,58 @@ td:first-child{
   border : 5px solid rgb(240, 238, 238);
   width: 850px;
   margin-left: 20rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
 .km {
-  width:740px;
-  font-size: 20px;
+  width:700px;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding-left: 3em;
-  margin-left: 20rem;
+  padding-left: 2em;
   background: rgb(199, 197, 197);
 }
 
 .um{
-  width:740px;
-  font-size: 20px;
-  padding-left: 4.3em;
+  width:700px;
+  font-size: 1.2rem;
+  padding-left: 3.3em;
   font-weight: bold;
-  margin-left: 20rem;
   background: rgb(199, 197, 197);
 }
 
+<<<<<<< HEAD
+.lin{
+  border : 3px solid #274c5e;
+}
+
+.a{
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 5rem;
+}
+
+.b{
+  width: 40rem;
+  padding-left: 3em;
+}
+
+.c {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(221, 221, 221);
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.d {
+  padding-left: 3.4rem;
+}
+
+.e{
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 6.5rem;
+=======
 .ao{
   width: 820px;
   border : 2px solid rgb(207, 207, 207);
@@ -443,17 +633,104 @@ td:first-child{
   border : 5px solid rgb(240, 238, 238);
   width: 730px;
   margin-left: -4rem;
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 
-.titl {
-  width : 1000px;
+.g{
+  font-weight: bold;
+  padding-right: 2rem;
+  padding-left: 4.5rem;
+}
+
+<<<<<<< HEAD
+.h{
+  font-weight: bold;
+  padding-right: 3.3rem;
+  padding-left: 4.5rem;
+}
+
+.i{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.j{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.k{
+  color: rgb(255, 115, 0);
+}
+
+.l{
+  padding-left: 6rem;
+}
+
+.lin2{
+  border : 3px solid #274c5e;
+}
+
+/** Drop **/
+
+.ao{
+  width: 51rem;
+  border : 2px solid #274c5e;
+}
+
+.ae {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.be {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.ce{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.fe {
   font-size: 1rem;
-  text-align: center;
-  background: #22b8cf;
-  margin-top: -1.5rem;
-  color: white;
+  font-weight: bold;
+  padding-left: 1rem;
 }
 
+.ge {
+  width: 15rem;
+  border : 2px solid #4784a3;
+}
+
+.he {
+  width: 15rem;
+  background: #4784a3;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ad {
+  width: 40rem;
+  border-top : 2px solid #274c5e;
+  border-right : 2px solid #274c5e;
+  border-left : 2px solid #274c5e;
+  border-bottom : 2px solid #274c5e;
+}
+
+.bd {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 2rem;
+}
+
+.cd {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
+=======
 .fff {
   float: left;
   width: 25%;
@@ -534,14 +811,85 @@ td:first-child{
 
 @media (max-width:1500px){
 
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 @media (max-width: 1150px){
 
+<<<<<<< HEAD
+.dd {
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+  padding-top:1rem;
+=======
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }
 @media (max-width:800px){
 
+<<<<<<< HEAD
+.fd {
+  background: #4784a3;  
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width:375px){
+  .pa, .re{
+    width: 100%;
+  }
+}
+
+@media (max-width:500px){
+  .bo, .de{
+    width: 95%;
+  }
+}
+
+@media (max-width:500px){
+  .pb{
+    width: 50%;
+  }
+}
+
+@media (max-width : 500px){
+  .km, .um{
+    width: 56%;
+  }
+}
+
+@media (max-width : 500px){
+  .lin, .lin2{
+    width: 60%;
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width:500px){
+  .ao{
+    width: 80%;
+  }  
+}
+
+@media (max-width:500px){
+  .ao{
+    width: 101%;
+  }
+}
+
+@media (max-width:500px){
+  .ad{
+    width: 130%;
+  } 
+}
+@media (max-width : 500px){
+  
+=======
 }
 
 @media (max-width:700px){
 
+>>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 }

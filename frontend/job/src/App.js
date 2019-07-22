@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom";
-
+import Login from './member/Login.jsx'
+import HeaderNavbar from './common/HeaderNavbar.jsx'
+import Page from './mypage/Page.js'
 function App() {
   return (
     <div>

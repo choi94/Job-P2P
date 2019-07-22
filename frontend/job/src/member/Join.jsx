@@ -83,7 +83,7 @@ const Join = ({history}) => {
             history.push("/");
           })
           .catch( error => {
-            console.dir('axios 실패')
+            alert('예상치 못한 오류가 발생 했습니다.')
           })
       }
     } else {
