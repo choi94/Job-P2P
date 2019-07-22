@@ -1,6 +1,3 @@
-
-<<<<<<< HEAD
-=======
 /*  General CSS  */
 body{
     background: #fff;
@@ -34,7 +31,6 @@ h1, h2, h3, h4, h5 ,h6{
     *zoom: 1;  
 }
 
->>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
 
 /*  listings section  */
 /**predicate_view.jsx*/
@@ -53,8 +49,6 @@ h1, h2, h3, h4, h5 ,h6{
 .listings .properties_list li:nth-child(4n+0){
     margin-right: 0;
 }
-.listings .properties_list
-{}
 
 .listings ul.properties_list li{
     display: block;

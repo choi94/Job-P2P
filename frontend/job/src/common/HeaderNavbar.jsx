@@ -6,6 +6,7 @@ import Join from '../member/Join'
 import Main from '../Main/Main.jsx'
 import Board from '../board/Board.jsx'
 import Detail from '../board/Detail/Detail.jsx'
+import MyPage from '../mypage/MyPage.jsx'
 
 import './css/commom.css'
 
@@ -28,6 +29,8 @@ const HeaderNavbar =()=>{
         <Nav className="mr-auto">
           <Link to="/Board" className="nav-link">탐색</Link>
           <Link to="/Board2" className="nav-link">공지사항</Link>
+          <Link to="/Mypage" className="nav-link">Mypage</Link>
+          <Link to="/Info" className="nav-link">Info</Link>
         </Nav>
         <Nav>
           <Link to="/login" className="nav-link">Sign in</Link>
@@ -39,7 +42,9 @@ const HeaderNavbar =()=>{
       <Route path="/Board" component={Board}/>
       <Route path="/Login" component={Login}/>
       <Route path="/Join" component={Join}/>
+      <Route path="/Mypage" component={MyPage}/>
       <Route path="/Detail" component={Detail}/>
+      
       </Router>
     )
 }
