@@ -2,17 +2,18 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import {Navbar,Nav,Juombo,Footer} from 'react-bootstrap';
 import Main from '../Main/Main.jsx'
+import Login from '../member/Login.jsx'
+import Join from '../member/Join.jsx'
 import Board from '../board/Board.jsx'
+import Detail from '../board/Detail/Detail.jsx'
 
 import './commom.css'
 
 const HeaderNavbar =()=>{
-
     return(
-<div className="Header">
   <Router>
-  <Navbar collapseOnSelect expand="lg" bg="light" >
-    <Navbar.Brand href="/">
+  <Navbar collapseOnSelect expand="lg" className="Header"  >
+      <Link to="/" className="navbar-brand">
       <img
         alt=""
         src="/logo.svg"
@@ -21,25 +22,39 @@ const HeaderNavbar =()=>{
         className="d-inline-block align-top"
       />
       {' JOPP2P'}
-    </Navbar.Brand>
+      </Link>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/Board">탐색</Nav.Link>
-          <Nav.Link href="#pricing">공지사항</Nav.Link>
-          <Nav.Link href="#pricing">페이지</Nav.Link>
-          <Nav.Link href="#pricing">Board</Nav.Link>
+          <Link to="/Board" className="nav-link">탐색</Link>
+          <Link to="/Board2" className="nav-link">공지사항</Link>
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">Sign in</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">REGISTER</Nav.Link>
+          <Link to="/login" className="nav-link">Sign in</Link>
+          <Link to="/Join" className="nav-link">Join</Link>
         </Nav>
       </Navbar.Collapse>
      </Navbar>
-      <Route path="/Main" component={Main}/>
+      <Route path={"/"} exact component = {Main} />
       <Route path="/Board" component={Board}/>
+      <Route path="/Login" component={Login}/>
+      <Route path="/Join" component={Join}/>
+      <Route path="/Detail" component={Detail}/>
       </Router>
-    </div>
     )
 }
+
+function scrollToTop(){
+  let scroll = document.getElementsByClassName("Header");
+    if(window.scrollToTop>=50)
+    {
+      scroll.addClass('.HeaderScroll')
+    }
+    else{
+      scroll.removeClass('.HeaderScroll')
+    }
+};
+
+
 
 export default HeaderNavbar

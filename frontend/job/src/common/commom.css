@@ -4,16 +4,18 @@
    bottom: 0;
    width: 100%;
 }
+
+.Header{
+    background-color: #F2F2F1;
+    padding: 1% 0 ;
+    /**background: linear-gradient( to bottom, #f8f9fa 94%, rgba(238, 237, 237, 0.986) 1% );*/
+}
 .HeaderScroll{
     position: fixed;
     width: 100%;
     top:0;
 }
 
-.jumbotron{
-    text-align: center;
-    margin-bottom:0;
-}
 .navbar-brand{
     font-weight: bold;
 }
@@ -24,10 +26,17 @@
     font-weight: bold;
     color: rgb(63, 60, 60);
 }
-.Header{
-    padding: 0.5% 0 ;
-    background: linear-gradient( to bottom, #f8f9fa 94%, rgba(238, 237, 237, 0.986) 1% );
-}
 .mr-auto{
     margin-left: 10%;
+}
+
+
+
+/**반응*/
+
+.navbar-toggler{
+    margin-right: 3%;
+}
+.navbar-collapse {
+    
 }

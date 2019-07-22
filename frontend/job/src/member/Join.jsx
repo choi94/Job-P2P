@@ -6,30 +6,22 @@ import validator from 'email-validator'
 
 const FormPage = () => {
   const localhost = 'http://localhost:9000'
-
   const [radio, setRadio] = useState()
-
   const [nickname_check, setNickname_check] = useState()
   const [nickname_boolean, setNickname_boolean] = useState(false)
-
   const [email_check, setEmail_check] = useState()
   const [email_boolean, setEmail_boolean] = useState(false)
-
   const [pass_one, setPass_one] = useState()
   const [pass_two, setPass_two] = useState()
-
-  
   const [email, setEmail] = useState()
   const [nickname, setNickname] = useState()
   const [password, setPassword] = useState()
   const [name, setName] = useState()
   const [ssn, setSsn] = useState()
   const [phone, setPhone] = useState()
-
   const gender = b => {
     setRadio(b.target.value)
   }
-
   const email_checking = e => {
     if(validator.validate(e.target.value)) {
       axios.get(`${localhost}/member/search/email/${e.target.value}`)
@@ -74,7 +66,6 @@ const FormPage = () => {
       setNickname_boolean(false)
       setNickname_check('') 
     }
-
   const join = m => {
     if (pass_one === pass_two && email_boolean && nickname_boolean){
       setPassword(pass_one)
@@ -88,7 +79,6 @@ const FormPage = () => {
           phone : phone,
           gender : radio
         }
-
         axios.post(`${localhost}/member/`, data)
           .then( res => {
             // this.props.history.push()
@@ -101,11 +91,8 @@ const FormPage = () => {
       alert('내용을 입력하세요.')
     }
   }
-
-
   return (
     <div>
-      <HeaderNavbar></HeaderNavbar>
           <div class="col-12 mt-5">
             <form style={{marginLeft : '40%', marginRight : '40%'}}>
               <p className="h5 text-center mb-4">회원가입</p>
@@ -192,6 +179,7 @@ const FormPage = () => {
                   id="radio2" />
               </div>  
               <div className="text-center mb-5">
+                
                 <MDBBtn onClick={join} color="primary">가입하기</MDBBtn>
               </div>
             </form>

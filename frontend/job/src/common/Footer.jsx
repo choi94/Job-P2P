@@ -5,13 +5,6 @@ import './commom.css'
 const Footer=()=>{
     return(
         <div className="footer">
-    <Jumbotron> 
-          <h1>편리하게 일자리를 구할 수 있습니다.</h1>
-          <p></p>
-          <p>
-            <Button variant="primary">Try Member</Button>
-          </p>
-    </Jumbotron>
         <Card className="text-center">
             <Card.Header></Card.Header>
             <Card.Body>

@@ -12,17 +12,15 @@ class Page extends Component{
     render(){
         return(
             <Router>
-            <div class="pa"><br/><br/>
+            <div class="pa">
                 <table class="tc">
                     <div class="ta" align="center">
-                        <br/>
+                      
                         <Figure.Image width={200} height={180} src={_bg}/>
-                        <br/><br/><br/>
                         <Button variant="success" onClick={picture}>사진 등록</Button>
                     </div>
                     <table class="resume">                 
                         <td class="pi">
-                        <br/>
                             <p class="am"><label class="k">*</label> 개인 기본 정보</p>
                             <span class="resu">홍길동</span>
                             <span class="res">남자</span> <label class="c">/</label>

@@ -1,6 +1,5 @@
 import React,{Component} from 'react'
 import {Badge,Button,Table,Card,Jumbotron,Form} from 'react-bootstrap';
-import SimpleMap from '../Detail/module/SimpleMap.jsx'
 import './Detail.css'
 class Detail extends Component {
 
@@ -95,7 +94,7 @@ class Detail extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                    <SimpleMap/>
+       
                     </tbody>
             </Table>
             </div>
