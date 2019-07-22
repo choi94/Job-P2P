@@ -4,17 +4,18 @@ import {Navbar,Nav,Juombo,Footer} from 'react-bootstrap';
 import Login from '../member/Login'
 import Join from '../member/Join'
 import Main from '../Main/Main.jsx'
+import Login from '../member/Login.jsx'
+import Join from '../member/Join.jsx'
 import Board from '../board/Board.jsx'
+import Detail from '../board/Detail/Detail.jsx'
 
 import './commom.css'
 
 const HeaderNavbar =()=>{
-
     return(
-<div className="Header">
   <Router>
-  <Navbar collapseOnSelect expand="lg" bg="light" >
-    <Navbar.Brand href="/">
+  <Navbar collapseOnSelect expand="lg" className="Header"  >
+      <Link to="/" className="navbar-brand">
       <img
         alt=""
         src="/logo.svg"
@@ -23,7 +24,8 @@ const HeaderNavbar =()=>{
         className="d-inline-block align-top"
       />
       {' JOPP2P'}
-    </Navbar.Brand>
+      </Link>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="/board">탐색</Nav.Link>
@@ -42,8 +44,20 @@ const HeaderNavbar =()=>{
       <Route path="/login" component={Login}/>
       <Route path="/join" component={Join}/>
       </Router>
-    </div>
     )
 }
+
+function scrollToTop(){
+  let scroll = document.getElementsByClassName("Header");
+    if(window.scrollToTop>=50)
+    {
+      scroll.addClass('.HeaderScroll')
+    }
+    else{
+      scroll.removeClass('.HeaderScroll')
+    }
+};
+
+
 
 export default HeaderNavbar

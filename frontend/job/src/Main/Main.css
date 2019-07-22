@@ -1,4 +1,154 @@
-.jumbotron{
-    text-align: center;
+/**Main,jsx*/
+.Mainbody{
+    width: 100%;
+
+    background-color: #ffff;
 }
+
+/**Jumbo,jsx*/
+.m1{
+    width: 100%;
+    margin: auto;
+    background-color:#F2F2F1;
+    height: 70vh;
+}
+.m1_1{
+    width: 80%;
+    margin: auto;
+}
+/**Introduce,jsx*/
+.m2{
+    width: 80%;
+    margin: 4% auto;
+}
+
+/**predicate_view.jsx*/
+.m2{
+    width: 80%;
+    margin: 4% auto;
+}
+
+.listings1{
+    width: 80%;
+    margin: auto;
+}
+
+.listings1 .properties_list{
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+.listings1 .properties_list li:nth-child(4n+0){
+    margin-right: 0;
+}
+.listings1 .properties_list
+{}
+
+.listings1 ul.properties_list li{
+    display: block;
+    width: 20.90909090909091%;
+    height: auto;
+    position: relative;
+    float: left;
+    margin: 0 2%;
+}
+.listings1 ul.properties_list li img.property_img{
+    width: 100%;
+    height: auto!important;
+    vertical-align: top;
+}
+
+
+@media (max-width:1500px) {
+
+    .listings1 .properties_list li:nth-child(4n+0){
+        margin-right: 0;
+    }
+    .listings1 .properties_list
+    {}
+    
+    .listings1 ul.properties_list li{
+        display: block;
+        width: 20.90909090909091%;
+        height: auto;
+        position: relative;
+        float: left;
+        margin: 0 2%;
+    }
+    .listings1 ul.properties_list li img.property_img{
+        width: 100%;
+        height: auto!important;
+        vertical-align: top;
+    }
+
+}
+
+@media (max-width: 1150px){
+
+
+}
+@media  (max-width:900px){
+
+    .listings1 .properties_list li:nth-child(3n+0){
+        margin-right: 0;
+    }
+    .listings1 ul.properties_list li{
+        display: block;
+        width: 20.90909090909091%;
+        height: auto;
+        position: relative;
+        float: left;
+        margin: 0 2%;
+    }
+    .listings1 ul.properties_list li img.property_img{
+        width: 100%;
+        height: auto!important;
+        vertical-align: top;
+    }
+
+}
+@media (max-width:700px){
+    .listings1 .properties_list li:nth-child(3n+0){
+        margin-right: 0;
+    }
+    .listings1 ul.properties_list li{
+        width: 100%;
+        margin-bottom: 60px!important;
+        float: none;
+    }
+
+}
+
+
+@media (max-width:500px){
+    .listings1 ul.properties_list li{
+        width: 100%;
+        margin-bottom: 60px!important;
+        float: none;
+    }
+
+}
+
+@media (min-width:300px) and (max-width:500px) {
+    .listings1 ul.properties_list li{
+        width: 100%;
+        margin-bottom: 60px!important;
+        float: none;
+    }
+    .listings1 ul.properties_list li img.property_img{
+        display: block;
+        width: 100%;
+        height: auto!important;
+        vertical-align: top;
+    }
+
+}
+
+
+
+
+
+
+
 

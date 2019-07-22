@@ -1,0 +1,102 @@
+.bigbox{
+     margin: 6% auto;
+}
+.box{
+    width: 44%;
+    margin: auto;
+
+}
+.box2{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+.box h1 {
+    text-align: center;
+}
+.button1{
+    color: #fff;
+    display: block;
+    width: 100%;
+    background-color: #333030;
+
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .4rem;
+    margin-bottom: 2%;
+}
+.button2{
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    background-color: #a3a1a1;
+
+}
+
+@media (max-width:1500px){
+ 
+
+}
+@media (max-width: 1150px){
+
+}
+
+@media (max-width:800px){
+    .box{
+        width: 60%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .box2{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (max-width:700px){
+
+}
+
+@media (max-width:500px){
+    .box{
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .box2{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width:411px){
+    .box{
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .box2{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width:320px){
+    .box{
+        width: 80%;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .box2{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+}

@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import Cards from './view/Cards.jsx'
-
+import Footer from '../common/Footer'
 
 class Board extends Component{
     
@@ -11,6 +11,7 @@ class Board extends Component{
         return(
             <div>
            <Cards/>
+           <Footer/>
             </div>
         )
     }
