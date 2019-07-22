@@ -4,20 +4,22 @@ import axios from 'axios';
 =======
 import { MDBInput, MDBBtn } from 'mdbreact';
 
+<<<<<<< HEAD
 
 const Login = ({history}) => {
 
 >>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
+=======
+>>>>>>> origin/choi
 import {Button,Form} from 'react-bootstrap';
-import {MDBInput} from 'mdbreact';
 import HeaderNavbar from '../common/HeaderNavbar';
 import './css/common.css'
 
-
-const FormPage = () => {
+const Login = ({history}) => {
     const localhost = 'http://localhost:9000'
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
+    
     const login = () => {
         if (email && password) {
           let data = {
@@ -26,14 +28,11 @@ const FormPage = () => {
           }
           axios.post(`${localhost}/member/login`, data)
             .then( res => {
-              if (res.data != '환영합니다.'){
-                alert(res.data)
-              } else {
+                sessionStorage.setItem('id', res.data.id)
                 history.push("/");
-              }
             })
             .catch( error => {
-              
+              alert('존재하지 않는 계정이거나, 비밀번호가 틀렸습니다.')
             })
         } else {
             alert('내용을 입력하세요.')
@@ -97,6 +96,5 @@ const FormPage = () => {
 >>>>>>> 538c11c0cae80e2bcf322cdad7517cadd25ff7ac
     </div>
   );
-};
 }
 export default Login;
