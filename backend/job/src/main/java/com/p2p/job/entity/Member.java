@@ -26,7 +26,6 @@ import lombok.ToString;
 @Table(name = "member", /* indexes = {@Index(columnList = "join_date", name = "idx_join_data"), @Index(columnList = "email", name = "idx_email")} */
         uniqueConstraints = {@UniqueConstraint(columnNames = {"nickname"})})
 public class Member {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "member_id")

@@ -18,22 +18,21 @@ const Join = ({history}) => {
   const [name, setName] = useState()
   const [ssn, setSsn] = useState()
   const [phone, setPhone] = useState()
+
   const gender = b => {
     setRadio(b.target.value)
   }
+
   const email_checking = e => {
     if(validator.validate(e.target.value)) {
       axios.get(`${localhost}/member/join/email/${e.target.value}`)
         .then( res => {
-          if (res.data.length != 0){
-            setEmail_boolean(false)
-            setEmail_check("이미 존재하는 이메일입니다.")
-          }
-          else {
             setEmail_boolean(true)
             setEmail_check('')
-          }
         })
+      .catch( error => {
+        setEmail_check("이미 존재하는 이메일입니다.")
+      })
     } else if(e.target.value === '') {
       setEmail_boolean(false)
       setEmail_check('')
@@ -65,7 +64,7 @@ const Join = ({history}) => {
       setNickname_boolean(false)
       setNickname_check('') 
     }
-  const join = m => {
+  const join_check = m => {
     if (pass_one === pass_two && email_boolean && nickname_boolean){
       setPassword(pass_one)
       if (name && ssn & phone && radio) {
@@ -178,7 +177,7 @@ const Join = ({history}) => {
                   id="radio2" />
               </div>  
               <div className="text-center mb-5">
-                <MDBBtn onClick={join} className="button3">가입</MDBBtn>
+                <MDBBtn onClick={join_check} className="button3">가입</MDBBtn>
               </div>
             </form>
           </div>

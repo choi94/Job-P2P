@@ -31,12 +31,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/member")
 public class MemberController {
-
     @Autowired
     JPAQueryFactory query;
-
-    @Autowired
-    BooleanBuilder builder;
 
     @Autowired
     EntityManager entityManager;
@@ -45,7 +41,7 @@ public class MemberController {
     MemberRepository memberRepo;
 
     @GetMapping("/")
-    public ResponseEntity<List<?>> findAll() {
+    public ResponseEntity findAll() {
             QMember qMember = QMember.member;
             List<Object> result = new ArrayList<>();
             
@@ -59,9 +55,10 @@ public class MemberController {
     }
 
     @GetMapping("/join/{keyword}/{value}")
-    public ResponseEntity<List<?>> findByMember(@PathVariable("keyword")String keyword,
+    public ResponseEntity findByMember(@PathVariable("keyword")String keyword,
                                     @PathVariable("value")String value) {
         QMember qMember = QMember.member;
+        BooleanBuilder builder = new BooleanBuilder();
         List<Object> result = new ArrayList<>();
 
         switch (keyword) {
@@ -81,13 +78,17 @@ public class MemberController {
                         result.add(arr);
                     });
 
-        return ResponseEntity.ok(result);
+        if (result.size() != 0) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok().build();
     }
 
     @GetMapping("/search/{keyword}/{value}")
-    public ResponseEntity<?> search(@PathVariable("keyword")String keyword,
+    public ResponseEntity search(@PathVariable("keyword")String keyword,
                                 @PathVariable("value")String value) {
         QMember qMember = QMember.member;
+        BooleanBuilder builder = new BooleanBuilder();
         
         switch (keyword) {
             case "email":
@@ -103,15 +104,15 @@ public class MemberController {
                 break;
 
             case "gender":
-                builder.and(qMember.email.eq(value));
+                builder.and(qMember.gender.eq(value));
                 break;
 
             case "admin":
-                builder.and(qMember.email.eq(value));
+                builder.and(qMember.admin.eq(Integer.parseInt(value)));
                 break;
 
             case "point":
-                builder.and(qMember.email.gt(value));
+                builder.and(qMember.point.gt(Double.parseDouble(value)));
                 break;
 
             default:
@@ -133,9 +134,10 @@ public class MemberController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Map<?,?>> login(@RequestBody Member member) {
+    public ResponseEntity login(@RequestBody Member member) {
         QMember qMember = QMember.member;
         Map<String,Object> result = new HashMap<>();
+        BooleanBuilder builder = new BooleanBuilder();
 
         builder.and(qMember.email.eq(member.getEmail())
             .and(qMember.password.eq(member.getPassword())
@@ -152,21 +154,39 @@ public class MemberController {
         return ResponseEntity.ok(result);
     }
 
+    @GetMapping("/my/{id}")
+    public ResponseEntity mypage(@PathVariable("id")Long id) {
+        QMember qMember = QMember.member;
+        BooleanBuilder builder = new BooleanBuilder();
+        builder.and(qMember.id.eq(1L));
+
+        List<Object> list = new ArrayList<>();
+
+        memberRepo.findAll(builder).forEach(arr -> {
+            list.add(arr);
+        });
+
+        list.stream()
+                .map(O)
+
+        return null;
+    }
+
     @PostMapping("/")
-    public ResponseEntity<String> saveMember(@RequestBody Member member) {
+    public ResponseEntity saveMember(@RequestBody Member member) {
         member.setJoinWay("JOB");
         memberRepo.save(member);
         return ResponseEntity.ok("회원가입 성공");
     }
 
     @DeleteMapping("/")
-    public ResponseEntity<String> deleteById(@PathVariable("email")String email) {
+    public ResponseEntity deleteById(@PathVariable("email")String email) {
         memberRepo.deleteById(email);
         return ResponseEntity.ok("회원을 탈퇴했습니다.");
     }
 
     @PutMapping("/")
-    public ResponseEntity<String> updateMember(@RequestBody Member member) {
+    public ResponseEntity updateMember(@RequestBody Member member) {
 
 //		QMember qMember = QMember.member;
 //		new JPAUpdateClause(entityManager, qMember).where(qMember.id.eq(1L))

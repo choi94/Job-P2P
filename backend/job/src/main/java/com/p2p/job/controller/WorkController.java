@@ -26,9 +26,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class WorkController {
 
     @Autowired
-    BooleanBuilder builder;
-
-    @Autowired
     JPAQueryFactory query;
 
     @Autowired
