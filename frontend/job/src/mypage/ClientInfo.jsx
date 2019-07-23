@@ -17,4 +17,5 @@ const ClientInfo =()=>{
      </div>
     );
 }
+
 export default ClientInfo

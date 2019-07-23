@@ -17,7 +17,7 @@ class Detail extends Component {
             </Jumbotron>
             <Jumbotron className="title">
                     <p>마감 일자 : 2019년 7월 15일</p>
-                    <Button variant="primary">지원하기</Button>
+                    <Button variant="primary" >지원하기</Button>
             </Jumbotron>
             <hr/>
 

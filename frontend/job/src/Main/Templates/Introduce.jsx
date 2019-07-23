@@ -2,31 +2,38 @@ import React from 'react'
 import {CardDeck,Card} from 'react-bootstrap';
 
 const Introduce =()=>{
-
     return(
         <CardDeck>
             <Card>
-                <Card.Body>
-                <Card.Title>1단계</Card.Title>
+            <Card.Body>
+                <Card.Title className="card1">채용 사이트</Card.Title>
                 <Card.Text>
-                    회원가입을 해주세요.
+                도전하는 인재를 위한 열린 가능성
                 </Card.Text>
                 </Card.Body>
             </Card>
             <Card>
                 <Card.Body>
-                <Card.Title>2단계</Card.Title>
+                <Card.Title className="card1">일자리를 찾으시나요?</Card.Title>
                 <Card.Text>
-                    게시글을 보고 일자리를<br/>신청하거나 등록해 주세요.
+                    지원하기 전 평점을 확인하세요.<br/>
+                    평점이 높을수록 안전한 일자리 입니다.
                 </Card.Text>
                 </Card.Body>
             </Card>
             <Card>
                 <Card.Body>
-                <Card.Title>3단계</Card.Title>
+                <Card.Title className="card1">잠깐!</Card.Title>
                 <Card.Text>
-                  일이 끝난 후 결재를 하여
-                  포인트로 쌓아가세요.
+                  지금 로그인 하시고 당신의 재능에 기반한 일자리를 만나보세요.
+                </Card.Text>
+                </Card.Body>
+            </Card>
+            <Card>
+                <Card.Body>
+                <Card.Title className="card1">중요!</Card.Title>
+                <Card.Text>
+                일이 끝난 후 결재를 통해 포인트를 쌓아가세요.
                 </Card.Text>
                 </Card.Body>
             </Card>

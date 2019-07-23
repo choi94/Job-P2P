@@ -6,14 +6,14 @@
 }
 
 /**Jumbo,jsx*/
-.peo{
+.MainTex{
     font-size: 1rem;
     color: #1a85f0
 }
-.pe{
+.MainTex1{
     font-weight: bold;
 }
-.p{
+.MainTex2{
     font-size: 1.5rem;
 }
 .m1{
@@ -35,13 +35,22 @@
     color: #ffff;
     font-size: 2em;
 }
+.MainTexBox_1{
+ text-align: left;
+    float: left;
+}
 
-
-/**Introduce,jsx*/
+/**Introduce.jsx*/
 .m2{
     width: 80%;
     margin: 4% auto;
 }
+.card1{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 
 /**predicate_view.jsx, BestView.jsx*/
 .m3{
@@ -72,8 +81,6 @@
 .listingsMain .listingsMainTitle p{
     font-size: 1.2em;
 }
-
-
 .listingsMain .properties_list{
     display: flex;
     flex-wrap: wrap;
@@ -121,14 +128,6 @@
     border: 2px solid #a0c3e5;    
 }
 
-
-
-
-
-
-
-
-
 /**FooterInfo*/
 
 .footerInfoBox{
@@ -136,6 +135,14 @@
     font-size: 1em;
     margin-bottom: 0 !important;
     background-color:#ffff;
+}
+
+.footerInfo{
+    font-weight: bold;
+}
+
+.footerInfo1{
+    font-size: 1.2rem;
 }
 
 

@@ -11,6 +11,7 @@ import MyPage from '../mypage/MyPage.jsx'
 import './css/commom.css'
 
 const HeaderNavbar =()=>{
+   
     return(
   <Router>
   <Navbar collapseOnSelect expand="lg" className="Header"   variant="dark" >
@@ -22,7 +23,7 @@ const HeaderNavbar =()=>{
         height="30"
         className="d-inline-block align-top"
       />
-      {' JOPP2P'}
+      {' JOP P2P'}
       </Link>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
