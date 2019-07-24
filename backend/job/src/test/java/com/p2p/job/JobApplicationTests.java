@@ -3,19 +3,17 @@ package com.p2p.job;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
-import com.p2p.job.entity.Member;
-import com.p2p.job.entity.QMember;
-import com.p2p.job.entity.WorkBoard;
+import com.p2p.job.repository.MemberRepository;
 import com.p2p.job.repository.WorkRepository;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
-import com.querydsl.jpa.impl.JPAUpdateClause;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.Commit;
 import org.springframework.test.context.junit4.SpringRunner;
+
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -28,6 +26,9 @@ public class JobApplicationTests {
 
 	@Autowired
 	WorkRepository workRepo;
+
+	@Autowired
+	MemberRepository memberRepo;
 
 	@Autowired
 	EntityManager entityManager;
@@ -58,6 +59,19 @@ public class JobApplicationTests {
 //
 //
 //        workRepo.save(workBoard);
+
+
+
+
+//		List<Object> result = new ArrayList<>();
+
+//		query.from(qMember)
+//				.where(qMember.id.eq(1L))
+//				.fetch()
+//				.forEach(arr -> {
+//					System.out.println(arr.);
+//				});
+
 
 
 

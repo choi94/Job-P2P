@@ -37,5 +37,4 @@ public class Progress {
 
     @Column(name = "finish_date")
     private LocalDateTime finishDate;
-    
 }

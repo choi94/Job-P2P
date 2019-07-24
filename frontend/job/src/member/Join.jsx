@@ -17,22 +17,21 @@ const Join = ({history}) => {
   const [name, setName] = useState()
   const [ssn, setSsn] = useState()
   const [phone, setPhone] = useState()
+
   const gender = b => {
     setRadio(b.target.value)
   }
+
   const email_checking = e => {
     if(validator.validate(e.target.value)) {
       axios.get(`${localhost}/member/join/email/${e.target.value}`)
         .then( res => {
-          if (res.data.length != 0){
-            setEmail_boolean(false)
-            setEmail_check("이미 존재하는 이메일입니다.")
-          }
-          else {
             setEmail_boolean(true)
             setEmail_check('')
-          }
         })
+      .catch( error => {
+        setEmail_check("이미 존재하는 이메일입니다.")
+      })
     } else if(e.target.value === '') {
       setEmail_boolean(false)
       setEmail_check('')

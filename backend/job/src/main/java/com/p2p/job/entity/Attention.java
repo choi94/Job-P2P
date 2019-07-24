@@ -23,7 +23,6 @@ import lombok.ToString;
 @Entity
 @Table(name = "attention")
 public class Attention {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "attention_id")
@@ -40,5 +39,4 @@ public class Attention {
     @CreationTimestamp
     @Column(name = "attention_date")
     private LocalDateTime attentionDate;
-    
 }
