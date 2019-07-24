@@ -18,12 +18,15 @@ class Main extends Component{
     <div className="Mainbody">
         <div className="m1" style={Im}>
                 <Juombo/>
+
         </div>
         <div className="m2">
             <Introduce/>
+
         </div>
         <div className="m3">
             <PreView/>
+            
         </div>
         <div className="PreviewMoreBox">
 			<button onClick={Board} class="more_listing_btn">+ 더보기</button>

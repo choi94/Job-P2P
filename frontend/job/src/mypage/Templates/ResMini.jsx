@@ -6,7 +6,7 @@ const ResMini  = ()=>{
     return(
     <Table responsive>
         <thead>
-        <tr>
+        <tr className="res">
             <th>#</th>
             <th>지원일</th>
             <th>등록내역</th>

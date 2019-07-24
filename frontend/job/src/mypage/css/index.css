@@ -6,19 +6,14 @@
 .myPageBox_1{
     width: 100%;
     margin-top: 2%;
-
 }
 .myPageBox_1 h1{
-
     margin: 1.5% 1.5% ;
-
 }
 
 .myPageBox2{
-
     margin-top: 1%;
 }
-
 
 .DropBox{
     width: 80%;
@@ -26,22 +21,20 @@
 }
 .DropBtnBox{
     margin-top: 1%;
- text-align: center;
+    text-align: center;
 }
-
 
 .UpdateFrom{
     margin: 0 30%;
     text-align: left;
 }
+
 .UpdateFrom label {
     margin: 1% 0 ;
 }
 
 /** nav tap*/
-
 .list-nav{
-
     width: 100%;
 }
 
@@ -52,20 +45,63 @@
 
 
 /**InUpdate*/
-
 .buttonBox{
     text-align: center;
 }
+
 .buttonBox button{
     margin: 0 0.5%;
 }
 
+.update1{
+    font-size: 1.1rem;
+}
+
+.grey-text{
+    font-size: 1.1rem;
+}
+
+.line{
+    border: 2px solid rgb(221, 220, 220);
+}
 
 
+/**Drop*/
+.DropBox1{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.DropBox2{
+    color:red;
+    font-weight: bold;
+}
+/**Info*/
+.aa{
+    font-weight: bold;
+}
+
+.bb{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cc{
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+/**CliInfo*/
+.list-nav{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.res{
+    font-size: 1.1rem;
+}
 
 @media (max-width:1500px){
-    
- 
 
 }
 @media (max-width: 1150px){
@@ -95,8 +131,7 @@
 .UpdateFrom{
         margin: 0 20%;
         text-align: left;
-    }    
-
+    }   
 }
 
 @media (max-width:500px){
@@ -110,13 +145,11 @@
 }
 @media (max-width:411px){
 
-    
 /**InUpdate*/
 .UpdateFrom{
         margin: 0 10%;
         text-align: left;
     }
-    
 }
 
 @media (max-width:320px){

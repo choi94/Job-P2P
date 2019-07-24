@@ -92,19 +92,14 @@ const InfoUpdate = ({history}) => {
 
         
     return (
-            <div align="center">
-                <div class="head">
-                </div>
-                <br/>
-                <div>
-                        <div class="jd">
-                            <td class="ed"><h2 class="gd">회원정보 수정</h2></td>
-                        </div><br/>
-                        <div class="">
-                            <p>회원정보는 개인정보처리방침에 따라 안전하게 보호되며, 회원님의</p>
-                            <p>동의 없이 공개 또는 제 3자에게 제공되지 않습니다.</p>
-                        </div>
-        <hr class="lin"/>
+      <div align="center">
+      <br/>
+        <h2>회원정보 수정</h2>
+        <br/>
+        <div class="update1">
+          <p>회원정보는 개인정보처리방침에 따라 안전하게 보호되며, 회원님의 동의 없이 공개 또는 제 3자에게 제공되지 않습니다.</p>
+        </div>
+        <hr class="line"/>
         <form className="UpdateFrom">
               <div className="grey-text">
                 <label>이메일<label class="k">*</label></label>
@@ -190,12 +185,16 @@ const InfoUpdate = ({history}) => {
               </div>  
             </form>
                 <div className="buttonBox">
-                    <Button variant="dark">수정 완료</Button>
-                    <Button variant="danger">취소</Button>
+                    <Button variant="dark" onClick={update}>수정 완료</Button>
+                    <Button variant="danger" onClick={update}>취소</Button>
                 </div>   
-            </div>
         </div>
         );
+}
+
+function update(e){
+  e.preventDefault()
+  window.location = './Mypage'
 }
 
 export default InfoUpdate;

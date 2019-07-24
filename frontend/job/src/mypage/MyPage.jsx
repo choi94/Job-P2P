@@ -21,13 +21,5 @@ class MyPage extends Component{
         )
     }
 }
-function update(e){
-    e.preventDefault()
-    window.location = './InfoUpdate'
-}
-function change(e){
-    e.preventDefault()
-    window.location = './Drop'
-}
 
 export default MyPage

@@ -1,12 +1,13 @@
 import React from 'react'
 import {CardGroup,Card,Button} from 'react-bootstrap'
+
 const DeclarInfo =()=>{
 
     return(
         <CardGroup>
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title>***님의 정보</Card.Title>
+                    <Card.Title className="aa">***님의 정보</Card.Title>
                     <Card.Text>
                     <table>
                         <tr>
@@ -27,25 +28,28 @@ const DeclarInfo =()=>{
             </Card>
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title>평점/Point</Card.Title>
+                    <Card.Title className="aa">평점/Point</Card.Title>
                     <Card.Text>
                     <table>
                         <tr>
-                            <td>지원 평점: 0점 / 5점</td>
+                            <td class="bb">지원 평점 :</td>
+                            <td class="cc">0점 / 5점</td>
                         </tr>
                     </table>
                     </Card.Text>
                     <Card.Text>
                     <table>
                         <tr>
-                            <td>의뢰 평점: 0점 / 5점</td>
+                            <td class="bb">의뢰 평점 :</td>
+                            <td class="cc">0점 / 5점</td>
                         </tr>
                     </table>
                     </Card.Text>
                     <Card.Text>
                     <table>
                         <tr>
-                            <td>포인트: 30000</td>
+                            <td class="bb">포인트 :</td>
+                            <td class="cc">30000점</td>
                         </tr>
                     </table>
                     </Card.Text>
@@ -54,10 +58,10 @@ const DeclarInfo =()=>{
  
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title>회원정보 <Button variant="warning">수정</Button></Card.Title>
+                    <Card.Title className="aa">회원정보 <Button variant="warning" onClick={update}>수정</Button></Card.Title>
                     <Card.Text>
                     </Card.Text>
-                    <Card.Title>회원탈퇴 <Button variant="success">탈퇴</Button></Card.Title>
+                    <Card.Title className="aa">회원탈퇴 <Button variant="success" onClick={drop}>탈퇴</Button></Card.Title>
                     <Card.Text>
                     </Card.Text>
                 </Card.Body>
@@ -65,4 +69,15 @@ const DeclarInfo =()=>{
     </CardGroup>
     )
 }
+
+function update(e){
+    e.preventDefault()
+    window.location = './InfoUpdate'
+}
+
+function drop(e){
+    e.preventDefault()
+    window.location = './Drop'
+}
+
 export default DeclarInfo
