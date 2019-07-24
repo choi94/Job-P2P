@@ -162,12 +162,12 @@ public class MemberController {
 
         List<Object> list = new ArrayList<>();
 
-        memberRepo.findAll(builder).forEach(arr -> {
-            list.add(arr);
-        });
-
-        list.stream()
-                .map(O)
+//        memberRepo.findAll(builder).forEach(arr -> {
+//            list.add(arr);
+//        });
+//
+//        list.stream()
+//                .map(O)
 
         return null;
     }
