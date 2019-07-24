@@ -16,7 +16,7 @@ class Detail extends Component {
                 <Badge variant="success">#등록일</Badge>
             </Jumbotron>
             <Jumbotron className="title">
-                    <p>마감 일자 : 2019년 7월 15일</p>
+                    <p>마감 일자 : 2019년 7월 15일</p><br/>
                     <Button variant="primary" >지원하기</Button>
             </Jumbotron>
             <hr/>
@@ -30,31 +30,27 @@ class Detail extends Component {
                     </thead>
                     <tbody>
                         <tr>
-                        <td>급여 : 인근이</td>
+                            <td>일시 : 2019/07/24 ~</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                        <td>인근 :</td>
-
+                            <td>인원 : 2명</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                        <td>인근 :</td>
-
+                            <td>성별 : 무관</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                        <td>인근 :</td>
-
+                            <td>연령 : 무관</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                        <td>인근 :</td>
-
+                            <td>급여 : 50000원</td>
                         </tr>
                     </tbody>
             </Table>

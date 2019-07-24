@@ -8,14 +8,14 @@ class Drop extends Component{
         return (
             <div className="DropBox">
                 <Card>
-                    <Card.Header>회원님, Job PtoP 서비스를 이용하시는데 불편함이 있으셨나요?</Card.Header>
+                    <Card.Header className="DropBox1">회원님, Job PtoP 서비스를 이용하시는데 불편함이 있으셨나요?</Card.Header>
                     <Card.Body>
-                        <Card.Title>탈퇴 안내 및 유의사항</Card.Title>
+                        <Card.Title className="DropBox1">탈퇴 안내 및 유의사항</Card.Title>
                         <Card.Text>
                         <ul>
-                        <li> 탈퇴하신 아이디는 복구가 불가능하며, 추후 동일한 아이디로 재가입이 안됩니다.</li>
-                        <li> 구직 활동내역, 유료서비스, 머니가 모두 삭제되며, 삭제된 데이터는 복구되지 않습니다.</li>
-                        <li> 회원탈퇴 시 등록하신 게시물은 삭제되지 않으므로 삭제를 원하시면 회원탈퇴 전에 삭제해 주세요.</li>
+                            <li> 탈퇴하신 아이디는 복구가 불가능하며, 추후 동일한 아이디로 재가입이 안됩니다.</li>
+                            <li> 구직 활동내역, 유료서비스, 포인트가 모두 삭제되며, 삭제된 데이터는 복구되지 않습니다.</li>
+                            <li> 회원탈퇴 시 등록하신 게시물은 삭제되지 않으므로 삭제를 원하시면 회원탈퇴 전에 삭제해 주세요.</li>
                         </ul>
                         </Card.Text>
                     </Card.Body>
@@ -49,23 +49,33 @@ class Drop extends Component{
                                 <Col sm="10">
                                 <Form.Control type="password" placeholder="Password" />
                                 </Col>
+                                <Col sm="10">
+                                    <label className="DropBox2">※ 탈퇴 후에는 동일 아이디로 다시 가입할 수 없으며, <br/>아이디와 데이터는 복구할 수 없으니 신중하게 선택해 주세요.</label>
+                                </Col>
                             </Form.Group>
                             </Form>
                             </div>
                         <div className="DropBtnBox">
-                            <Button variant="warning">탈퇴</Button>
-                            <Button variant="">취소</Button>
+                            <Button variant="warning" onClick={drop}>탈퇴</Button>
+                            <Button variant="" onClick={cancle}>취소</Button>
                         </div>
                         </Card.Body>
                         </Accordion.Collapse>
                     </Card>
                 </Accordion>
-              
             </div>        
         );
     }
 }
 
+function drop(e){
+    e.preventDefault()
+    window.location = './'
+}
 
+function cancle(e){
+    e.preventDefault()
+    window.location = './Mypage'
+}
 
 export default Drop;

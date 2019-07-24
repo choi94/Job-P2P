@@ -31,11 +31,7 @@ const HeaderNavbar =()=>{
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Link to="/Board" className="nav-link">탐색</Link>
-          <Link to="/Board2" className="nav-link">공지사항</Link>
           <Link to="/Mypage" className="nav-link">Mypage</Link>
-          <Link to="/InfoUpdate" className="nav-link">InfoUpdate</Link>
-          <Link to="/Drop" className="nav-link">drop</Link>
-
         </Nav>
         <Nav>
           <Link to="/login" className="nav-link">Sign in</Link>
@@ -51,7 +47,6 @@ const HeaderNavbar =()=>{
       <Route path="/Detail" component={Detail}/>
       <Route path="/InfoUpdate" component={InfoUpdate}/>
       <Route path="/Drop" component={Drop}/>
-      
       </Router>
     )
 }
