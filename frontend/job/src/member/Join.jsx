@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from 'axios';
 import {MDBBtn, MDBInput } from 'mdbreact';
 import validator from 'email-validator'
-
 const Join = ({history}) => {
   const localhost = 'http://localhost:9000'
   const [radio, setRadio] = useState()
@@ -43,7 +42,6 @@ const Join = ({history}) => {
       setEmail_check("이메일 형식이 올바르지 않습니다.")
     }
   }
-
   const nickname_checking = n => {
     if (n.target.value != '') {
       axios.get(`${localhost}/member/join/nickname/${n.target.value}`)
@@ -56,7 +54,6 @@ const Join = ({history}) => {
             setNickname_boolean(true)
             setNickname_check('')
           }
-
         }).catch(error => {
           setNickname_boolean(false)
           alert('비정상적인 오류가 발생 했습니다.')
@@ -65,7 +62,7 @@ const Join = ({history}) => {
       setNickname_boolean(false)
       setNickname_check('') 
     }
-  const join = m => {
+  const join_check = m => {
     if (pass_one === pass_two && email_boolean && nickname_boolean){
       setPassword(pass_one)
       if (name && ssn & phone && radio) {
@@ -178,12 +175,11 @@ const Join = ({history}) => {
                   id="radio2" />
               </div>  
               <div className="text-center mb-5">
-                <MDBBtn onClick={join} className="button3">가입</MDBBtn>
+                <MDBBtn onClick={join_check} className="button3">가입</MDBBtn>
               </div>
             </form>
           </div>
     </div>
   );
 };
-
 export default Join;
