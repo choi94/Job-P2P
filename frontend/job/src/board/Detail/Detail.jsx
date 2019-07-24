@@ -9,11 +9,12 @@ class Detail extends Component {
             <hr/>
             <Jumbotron className="title">
             <h2>
-                저희집에서 일할 분 구합니다.<Badge variant="secondary">New</Badge>   
-            </h2>
+                저희집에서 일할 분 구합니다.<Badge variant="secondary">New</Badge>
+            </h2><br/>
                 <Badge variant="primary">#서울</Badge>
                 <Badge variant="secondary">#직종</Badge>
                 <Badge variant="success">#등록일</Badge>
+                <button type="button" class="title1">관심 JOB</button>
             </Jumbotron>
             <Jumbotron className="title">
                     <p>마감 일자 : 2019년 7월 15일</p><br/>
@@ -25,12 +26,17 @@ class Detail extends Component {
             <Table responsive>
                     <thead>
                         <tr>
-                        <th colSpan="3">일자리 정보</th>
+                            <th colSpan="3" className="imfo1">모집 조건</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>일시 : 2019/07/24 ~</td>
+                            <td>일시 : 2019/07/17 ~ 2019/07/19</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>장소 : 인원을 뽑은 후 알림</td>
                         </tr>
                     </tbody>
                     <tbody>
@@ -45,12 +51,12 @@ class Detail extends Component {
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>연령 : 무관</td>
+                            <td>연령 : 20세 이상</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>급여 : 50000원</td>
+                            <td>급여 : 1일 8만원</td>
                         </tr>
                     </tbody>
             </Table>
@@ -59,29 +65,44 @@ class Detail extends Component {
             <Table responsive>
                     <thead>
                         <tr>
-                        <th colSpan="3">의뢰인 정보</th>
+                            <th colSpan="3" className="imfo1">의뢰인 정보</th>
                         </tr>
                     </thead>
                     <tbody>
-                    <Card>
-                        <Card.Body>
-                        <Button variant="primary">지원하기</Button>
-                        <Button variant="primary">지원하기</Button>
-                        </Card.Body>
-                    </Card>
+                        <tr>
+                            <td>카카오톡 ID : Hong</td>
+                        </tr>
+                        <tr>
+                            <td>의뢰인의 평점 : </td>
+                        </tr>
                     </tbody>
             </Table>
             </div>
-            
+
             <div className="text">
-            <Form>
-            <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label><h3>상세내용</h3></Form.Label>
-                <Form.Control as="textarea" rows="25" />
-            </Form.Group>
-            </Form>
+            <Table responsive>
+                    <thead>
+                        <tr>
+                            <th colSpan="3" className="imfo1">상세내용</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>유형 : 이사를 한 후 집안 정리를 도와주실 분</td>
+                        </tr>
+                        <tr>
+                            <td>기간 : 3일, 11시~17시(상황에 따라 바뀔 수 있음)</td>
+                        </tr>
+                        <tr>
+                            <td>급여 : 1일 8만원</td>
+                        </tr>
+                        <tr>
+                            <td>비고 : 점심 제공</td>
+                        </tr>
+                    </tbody>
+            </Table>
             </div>
-          
+              
             <div className="imfo">
             <Table responsive>
                     <thead>
@@ -99,15 +120,15 @@ class Detail extends Component {
             <Table responsive>
                     <thead>
                         <tr>
-                        <th colSpan="3">꼭 확인하세요!</th>
+                        <th colSpan="3" className="imfo1">꼭 확인하세요!</th>
                         </tr>
                     </thead>
                     <tbody>
                 <Card>
                     <Card.Body>
                     <ul>
-                    <li>꼭! 확인하고 지원하세요.</li>
-                    <li>지원할때 꼭 해야합니다.</li>
+                        <li>꼭! 확인하고 지원하세요.</li>
+                        <li>지원할때 꼭 해야합니다.</li>
                     </ul>
                     </Card.Body>
                 </Card>

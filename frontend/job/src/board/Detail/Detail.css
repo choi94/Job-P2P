@@ -8,6 +8,13 @@
     padding-bottom:1.5em; 
     background-color: #fff;
 }
+.title1{
+    margin-left: 1rem;
+    background:rgb(255, 176, 4);
+    font-weight: bold;
+    color: white;
+    border: white;
+}
 .title h2{
     font-weight: bold;
 }
@@ -17,7 +24,10 @@
 .imfo{
     width: 96%;
     margin:4% auto;
-
+}
+.imfo1{
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 .text{
     width: 96%;
@@ -27,7 +37,10 @@
     width: 100%;
     margin: auto
 }
-
+.write{
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
 p{
     font-size:1.2rem;
 }

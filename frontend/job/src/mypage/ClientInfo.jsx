@@ -12,6 +12,9 @@ const ClientInfo =()=>{
             <Tab eventKey="profile" title="등록 현황">
                 <SupMini/>
             </Tab>
+            <Tab eventKey="1" title="관심 Job">
+                <p>11111</p>
+            </Tab>
         </Tabs>
     );
 }
