@@ -9,6 +9,7 @@ import Detail from '../board/Detail/Detail.jsx'
 import MyPage from '../mypage/MyPage.jsx'
 import InfoUpdate from '../mypage/InfoUpdate.jsx'
 import Drop from '../mypage/Drop.jsx'
+import Write from '../board/Write/Write'
 
 import './css/commom.css'
 
@@ -47,6 +48,7 @@ const HeaderNavbar =()=>{
       <Route path="/Detail" component={Detail}/>
       <Route path="/InfoUpdate" component={InfoUpdate}/>
       <Route path="/Drop" component={Drop}/>
+      <Route path="/Write" component={Write}/>
       </Router>
     )
 }

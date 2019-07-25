@@ -1,25 +1,15 @@
 import React,{Component} from 'react'
-import {Badge,Button,Table,Card,Jumbotron,Form} from 'react-bootstrap';
-import './Detail.css'
+import {Form, Button, Table, Card, Col} from 'react-bootstrap';
+import './Write.css'
 
-class Detail extends Component {
+class Wirte extends Component{
     render(){
         return(
-            <div className="detail">
+            <div className="write">
             <hr/>
-            <Jumbotron className="title">
-            <h2>
-                저희집에서 일할 분 구합니다.<Badge variant="secondary">New</Badge>
-            </h2><br/>
-                <Badge variant="primary">#서울</Badge>
-                <Badge variant="secondary">#직종</Badge>
-                <Badge variant="success">#등록일</Badge>
-                <button type="button" class="title1">관심 JOB</button>
-            </Jumbotron>
-            <Jumbotron className="title">
-                    <p>마감 일자 : 2019년 7월 15일</p><br/>
-                    <Button variant="primary" >지원하기</Button>
-            </Jumbotron>
+            
+            <h2 className="write1">글쓰기</h2><br/>
+            <p className="title">제목 : <input typr="text" /></p><br/>
             <hr/>
 
             <div className="imfo">
@@ -31,32 +21,39 @@ class Detail extends Component {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>일시 : 2019/07/17 ~ 2019/07/19</td>
+                            <td>
+                                <Form.Label column sm="2">
+                                    일시
+                                </Form.Label>
+                                <Col sm="10">
+                                <Form.Control type="text" />
+                                </Col>
+                            </td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>장소 : 인원을 뽑은 후 알림</td>
+                            <td>장소 : <input type="text"/></td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>인원 : 2명</td>
+                            <td>인원 : </td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>성별 : 무관</td>
+                            <td>성별 : </td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>연령 : 20세 이상</td>
+                            <td>연령 : </td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>급여 : 1일 8만원</td>
+                            <td>급여 : </td>
                         </tr>
                     </tbody>
             </Table>
@@ -71,16 +68,16 @@ class Detail extends Component {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>유형 : 이사를 한 후 집안 정리를 도와주실 분</td>
+                            <td>유형 : </td>
                         </tr>
                         <tr>
-                            <td>기간 : 3일, 11시~17시(상황에 따라 바뀔 수 있음)</td>
+                            <td>기간 : </td>
                         </tr>
                         <tr>
-                            <td>급여 : 1일 8만원</td>
+                            <td>급여 : </td>
                         </tr>
                         <tr>
-                            <td>비고 : 점심 제공</td>
+                            <td>비고 : </td>
                         </tr>
                     </tbody>
             </Table>
@@ -95,7 +92,7 @@ class Detail extends Component {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>카카오톡 ID : Hong</td>
+                            <td>카카오톡 ID : </td>
                         </tr>
                         <tr>
                             <td>의뢰인의 평점 : </td>
@@ -135,10 +132,16 @@ class Detail extends Component {
                     </tbody>
             </Table>
             </div>
-           
-            </div>
-        )
+                <div className="buttonBox">
+                    <Button variant="dark">작성</Button>
+                    <Button variant="danger">취소</Button>
+                </div>
+        </div>
+        );
     }
 }
 
-export default Detail
+export default Wirte
+
+
+
