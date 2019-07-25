@@ -10,15 +10,18 @@ class Board extends Component{
     }
     render(){
         return(
-            <div>
-                <p align="right"><Button variant="primary">글쓰기</Button></p>
+            <div class="write">
+                <p align="right"><Button variant="success" onClick={write}>글쓰기</Button></p><br/>
            <Cards/>
            <Footer/>
             </div>
         )
     }
-
-    
-
 }
+
+function write(e){
+    e.preventDefault()
+    window.location = './Write'
+}
+
 export default Board

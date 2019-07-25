@@ -9,6 +9,7 @@ import Detail from '../board/Detail/Detail.jsx'
 import MyPage from '../mypage/MyPage.jsx'
 import InfoUpdate from '../mypage/InfoUpdate.jsx'
 import Drop from '../mypage/Drop.jsx'
+import Write from '../board/Write/Write'
 
 import './css/commom.css'
 

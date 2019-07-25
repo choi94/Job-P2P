@@ -36,10 +36,12 @@
 /** nav tap*/
 .list-nav{
     width: 100%;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .list-nav a{
-    width: 50%;
+    width: 30%;
     text-align: center;
 }
 
@@ -91,11 +93,7 @@
     font-weight: bold;
 }
 
-/**CliInfo*/
-.list-nav{
-    font-size: 1.3rem;
-    font-weight: bold;
-}
+
 
 .res{
     font-size: 1.1rem;

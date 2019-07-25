@@ -13,11 +13,11 @@ const Footer=()=>{
                 </div>
                 <div class="col-sm-4">
                     <h5>최동훈</h5>
-                    <a href="https://github.com/IngeunJ">https://github.com/choi94</a>
+                    <a href="https://github.com/choi94">https://github.com/choi94</a>
                 </div>
                 <div class="col-sm-4">
                     <h5>심신강</h5>
-                    <a href="https://github.com/IngeunJ">https://github.com/simsinkang</a>
+                    <a href="https://github.com/simsinkang">https://github.com/simsinkang</a>
                 </div>
         </div>
         </Card.Body>
