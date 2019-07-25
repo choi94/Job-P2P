@@ -61,6 +61,23 @@ class Detail extends Component {
                     </tbody>
             </Table>
             </div>
+            <div className="imfo">
+            <Table responsive>
+                    <thead>
+                        <tr>
+                            <th colSpan="3" className="imfo1">의뢰인 정보</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>카카오톡 ID : Hong</td>
+                        </tr>
+                        <tr>
+                            <td>의뢰인의 평점 : </td>
+                        </tr>
+                    </tbody>
+            </Table>
+            </div>
 
             <div className="text">
             <Table responsive>
@@ -85,25 +102,7 @@ class Detail extends Component {
                     </tbody>
             </Table>
             </div>
-
-            <div className="imfo">
-            <Table responsive>
-                    <thead>
-                        <tr>
-                            <th colSpan="3" className="imfo1">의뢰인 정보</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>카카오톡 ID : Hong</td>
-                        </tr>
-                        <tr>
-                            <td>의뢰인의 평점 : </td>
-                        </tr>
-                    </tbody>
-            </Table>
-            </div>
-            
+              
             <div className="imfo">
             <Table responsive>
                     <thead>
@@ -128,6 +127,7 @@ class Detail extends Component {
                 <Card>
                     <Card.Body>
                     <ul>
+
                         <li>지원할때 꼭 해야합니다.</li>
                     </ul>
                     </Card.Body>

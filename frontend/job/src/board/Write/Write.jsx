@@ -22,10 +22,17 @@ class Wirte extends Component{
                     <tbody>
                         <tr>
                             <td>
-                                <Form.Label column sm="2">
-                                    일시
-                                </Form.Label>
+                                <div>
+                                    <div>
+                                        
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+          
                                 <Col sm="10">
+                                <p>일시 : </p>
                                 <Form.Control type="text" />
                                 
                                 </Col>
@@ -88,25 +95,10 @@ class Wirte extends Component{
             <Table responsive>
                     <thead>
                         <tr>
-                            <th colSpan="3" className="imfo1">의뢰인 정보</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>카카오톡 ID : </td>
-                        </tr>
-                        <tr>
-                            <td>의뢰인의 평점 : </td>
-                        </tr>
-                    </tbody>
-            </Table>
-            </div>
-            
-            <div className="imfo">
-            <Table responsive>
-                    <thead>
-                        <tr>
                         <th colSpan="3">근무 위치</th>
+                        </tr>
+                        <tr>
+                        <th colSpan="3"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -119,14 +111,14 @@ class Wirte extends Component{
             <Table responsive>
                     <thead>
                         <tr>
-                        <th colSpan="3" className="imfo1">꼭 확인하세요!</th>
+                        <th colSpan="3">저장하기 전 꼭 확인하세요!</th>
                         </tr>
                     </thead>
                     <tbody>
                 <Card>
                     <Card.Body>
                     <ul>
-                        <li>지원할때 꼭 해야합니다.</li>
+                        <li></li>
                     </ul>
                     </Card.Body>
                 </Card>
