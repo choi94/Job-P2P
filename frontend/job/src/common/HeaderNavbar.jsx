@@ -77,6 +77,7 @@ class HeaderNavbar extends Component {
                   <Route path="/detail" component={Detail}/>
                   <Route path="/infoUpdate" component={InfoUpdate}/>
                   <Route path="/drop" component={Drop}/>
+                  <Route path="/Write" component={Write}/>
             </Router>
         )
     }
