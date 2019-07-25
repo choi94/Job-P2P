@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/job/target/" />
@@ -43,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+            <state relative-caret-position="644">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,6 +130,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,7 +198,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -286,6 +284,7 @@
       <workItem from="1563931315401" duration="5094000" />
       <workItem from="1563947076174" duration="3595000" />
       <workItem from="1564012835717" duration="114000" />
+      <workItem from="1564031037239" duration="199000" />
     </task>
     <servers />
   </component>
@@ -322,7 +321,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36205000" />
+    <option name="totallyTimeSpent" value="36404000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -336,7 +335,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.22336328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.22593068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -607,8 +606,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        <state relative-caret-position="644">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
