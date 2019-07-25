@@ -27,6 +27,7 @@ class Wirte extends Component{
                                 </Form.Label>
                                 <Col sm="10">
                                 <Form.Control type="text" />
+                                
                                 </Col>
                             </td>
                         </tr>
