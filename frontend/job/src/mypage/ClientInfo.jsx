@@ -1,6 +1,7 @@
 import React from 'react'
 import ResMini from "./Templates/ResMini.jsx"
 import SupMini from "./Templates/SupMini.jsx"
+import AttMini from "./Templates/AttMini.jsx"
 import {Tabs,Tab} from 'react-bootstrap'
 
 const ClientInfo =()=>{
@@ -13,7 +14,7 @@ const ClientInfo =()=>{
                 <SupMini/>
             </Tab>
             <Tab eventKey="1" title="관심 Job">
-                <p>11111</p>
+                <AttMini/>
             </Tab>
         </Tabs>
     );

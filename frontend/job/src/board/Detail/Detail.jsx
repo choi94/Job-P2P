@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import {Badge,Button,Table,Card,Jumbotron,Form} from 'react-bootstrap';
-import './Detail.css'
+import '../view/main.css'
 
 class Detail extends Component {
     render(){
@@ -31,7 +31,7 @@ class Detail extends Component {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>일시 : 2019/07/17 ~ 2019/07/19</td>
+                            <td>기간 : 2019/07/17 ~ 2019/07/19</td>
                         </tr>
                     </tbody>
                     <tbody>
@@ -51,12 +51,15 @@ class Detail extends Component {
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>연령 : 20세 이상</td>
+                            <td>연령 : 20대 이상</td>
                         </tr>
                     </tbody>
                     <tbody>
                         <tr>
-                            <td>급여 : 1일 8만원</td>
+                            <td>하루 급여 : 8만원</td>
+                        </tr>
+                        <tr>
+                            <td>총 급여 : 24만원</td>
                         </tr>
                     </tbody>
             </Table>
@@ -91,13 +94,13 @@ class Detail extends Component {
                             <td>유형 : 이사를 한 후 집안 정리를 도와주실 분</td>
                         </tr>
                         <tr>
-                            <td>기간 : 3일, 11시~17시(상황에 따라 바뀔 수 있음)</td>
-                        </tr>
-                        <tr>
-                            <td>급여 : 1일 8만원</td>
+                            <td>일시 : 3일, 11시~17시(상황에 따라 바뀔 수 있음)</td>
                         </tr>
                         <tr>
                             <td>비고 : 점심 제공</td>
+                        </tr>
+                        <tr>
+                            <td>우대 사항 : 힘이 좋은 사람</td>
                         </tr>
                     </tbody>
             </Table>
@@ -116,26 +119,20 @@ class Detail extends Component {
             </Table>
             </div>
 
-            <div className="imfo">
-            <Table responsive>
-                    <thead>
-                        <tr>
-                        <th colSpan="3" className="imfo1">꼭 확인하세요!</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                <Card>
-                    <Card.Body>
-                    <ul>
-
-                        <li>지원할때 꼭 해야합니다.</li>
-                    </ul>
-                    </Card.Body>
-                </Card>
-                    </tbody>
-            </Table>
-            </div>
-           
+                <div className="imfo">
+                    <Table responsive>
+                        <thead>
+                            <tr>
+                                <th colSpan="3" className="imfo1">꼭 확인하세요!</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>지원하기 전 다시 한 번 확인하세요.</td>
+                            </tr>
+                        </tbody>
+                    </Table>
+                </div>
             </div>
         )
     }

@@ -63,3 +63,100 @@ h1, h2, h3, h4, h5 ,h6{
     height: auto!important;
     vertical-align: top;
 }
+
+
+/**Write*/
+.write{
+    width: 80%;
+    margin: auto;
+}
+
+.w_write{
+    padding-left: 2rem;
+    display: flex;
+}
+
+.w_title p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.w_title1{
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.w_table{
+    display: flex;
+}
+
+.w_table1{
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.w_table2 label{
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.gender{
+    font-size: 1.3rem;
+}
+
+.age{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.buttonBox button{
+    margin: 0 0.5%;
+}
+
+
+
+/**Detail*/
+.detail{
+    width: 90%;
+    margin: auto;
+}
+.title{
+    margin-bottom: 0;
+    padding-top:1.5em;
+    padding-bottom:1.5em; 
+    background-color: #fff;
+}
+.title1{
+    margin-left: 1rem;
+    background:rgb(255, 176, 4);
+    font-weight: bold;
+    color: white;
+    border: white;
+}
+.title h2{
+    font-weight: bold;
+}
+.table-responsive{
+    border: 1px solid #dee2e6;
+}
+.imfo{
+    width: 96%;
+    margin:4% auto;
+}
+.imfo1{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.text{
+    width: 96%;
+    margin: auto;
+}
+.map{
+    width: 100%;
+    margin: auto
+}
+p{
+    font-size:1.2rem;
+}
