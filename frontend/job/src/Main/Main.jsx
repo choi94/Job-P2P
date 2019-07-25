@@ -33,6 +33,7 @@ class Main extends Component{
 			</div>
         <div className="m4">
             <BestView/>
+            
         </div>
         <div className="m5">
             <FooterIntro/>
