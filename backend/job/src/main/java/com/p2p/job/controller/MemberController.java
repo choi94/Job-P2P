@@ -78,9 +78,9 @@ public class MemberController {
                         result.add(arr);
                     });
 
-        if (result.size() != 0) {
+        if (result.size() != 0)
             return ResponseEntity.notFound().build();
-        }
+
         return ResponseEntity.ok().build();
     }
 
@@ -160,16 +160,13 @@ public class MemberController {
         BooleanBuilder builder = new BooleanBuilder();
         builder.and(qMember.id.eq(1L));
 
-        List<Object> list = new ArrayList<>();
+        List<Member> list = new ArrayList<>();
 
-//        memberRepo.findAll(builder).forEach(arr -> {
-//            list.add(arr);
-//        });
-//
-//        list.stream()
-//                .map(O)
+        memberRepo.findAll(builder).forEach(arr -> {
+            list.add(arr);
+        });
 
-        return null;
+        return ResponseEntity.ok(list);
     }
 
     @PostMapping("/")
