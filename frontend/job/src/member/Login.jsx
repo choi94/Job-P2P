@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import { MDBInput, MDBBtn } from 'mdbreact';
-import {Form,Container} from 'react-bootstrap';
+import {Form} from 'react-bootstrap';
 import './css/common.css'
 
-const Login = ({history}) => {
+const Login = ({history, logins}) => {
     const localhost = 'http://localhost:9000'
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
@@ -17,8 +16,7 @@ const Login = ({history}) => {
           }
           axios.post(`${localhost}/member/login`, data)
             .then( res => {
-                console.log(res.data);
-                sessionStorage.setItem('id', res.data.id)
+                logins(res.data.id)
                 history.push("/");
             })
             .catch( error => {
@@ -28,6 +26,7 @@ const Login = ({history}) => {
             alert('내용을 입력하세요.')
         }
     }
+
   return (
       <div className="bigbox">
         <div className="box">
