@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc8ebaa2-e7f5-4053-8b27-29c8cdb6adcf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Info.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/job/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -37,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/job/src/mypage/Info.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="150">
+              <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -157,12 +151,12 @@
       <option name="presentableId" value="Default" />
       <updated>1564031221441</updated>
       <workItem from="1564031222826" duration="13575000" />
-      <workItem from="1564056949445" duration="99000" />
+      <workItem from="1564056949445" duration="1190000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13674000" />
+    <option name="totallyTimeSpent" value="14765000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
@@ -250,8 +244,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/mypage/Info.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+        <state relative-caret-position="150">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
         </state>
       </provider>
     </entry>
