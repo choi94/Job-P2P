@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import { MDBInput, MDBBtn } from 'mdbreact';
 import {Form,Container} from 'react-bootstrap';
 import './css/common.css'
 
@@ -45,7 +44,7 @@ const Login = ({history}) => {
       </div>
       <div className="box2">
         <button onClick={login} className="button1">로그인</button>
-        <p class="join">아직 계정이 없으신가요? <a href="/Join">계정 만들기></a></p>
+        <p className="join">아직 계정이 없으신가요? <a href="/Join">계정 만들기></a></p>
       </div>
     </div>
   );
