@@ -14,6 +14,7 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.Getter;
@@ -40,7 +41,7 @@ public class Member {
     @Column(name = "nickname", nullable = false)
     private String nickname;
 
-    @JsonIgnore
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Column(name = "password", nullable = false)
     private String password;
 
@@ -50,7 +51,7 @@ public class Member {
     @Column(name = "name" ,nullable = false)
     private String name;
 
-    @JsonIgnore
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Column(name = "ssn", nullable = false)
     private String ssn;
 
@@ -67,7 +68,6 @@ public class Member {
     @Column(name = "withdrawal")
     private LocalDateTime withdrawal;
 
-    @JsonIgnore
     @Column(name = "admin", nullable = false, columnDefinition = "boolean default 0")
     private int admin;
 

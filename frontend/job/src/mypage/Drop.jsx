@@ -1,9 +1,47 @@
 import React, {Component} from 'react'
+import axios from 'axios'
+import { Link } from "react-router-dom";
 import {Button, Card,Accordion,Form,Col,Row} from 'react-bootstrap'
 import './css/index.css'
 
 
 class Drop extends Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            localhost : 'http://localhost:9000',
+            email : this.props.location.state.email,
+            password : null
+        }
+    }
+
+    drop_pass = () => {
+        let data = {
+            email : this.state.email,
+            password : this.state.password
+        }
+
+        axios.post(`${this.state.localhost}/member/login`, data)
+            .then( res => {
+                this.drop_member()
+            })
+            .catch( error => {
+                alert('비밀번호가 틀렸습니다.')
+            })
+
+    }
+
+    drop_member = () => {
+        axios.delete(`${this.state.localhost}/member/${sessionStorage.getItem('id')}`)
+            .then( res => {
+                sessionStorage.clear()
+                this.props.history.push('/')
+            })
+            .catch( error => {
+                alert('오류가 발생했습니다.')
+            })
+    }
+
     render(){
         return (
             <div className="DropBox">
@@ -38,7 +76,7 @@ class Drop extends Component{
                                 Email
                                 </Form.Label>
                                 <Col sm="10">
-                                <Form.Control plaintext readOnly defaultValue="email@example.com" />
+                                <Form.Control plaintext readOnly defaultValue={this.props.location.state.email} />
                                 </Col>
                             </Form.Group>
 
@@ -47,7 +85,7 @@ class Drop extends Component{
                                 Password
                                 </Form.Label>
                                 <Col sm="10">
-                                <Form.Control type="password" placeholder="Password" />
+                                <Form.Control type="password" placeholder="Password" onChange={ e => {this.setState({password : e.target.value})}}/>
                                 </Col>
                                 <Col sm="10">
                                     <label className="DropBox2">※ 탈퇴 후에는 동일 아이디로 다시 가입할 수 없으며, <br/>아이디와 데이터는 복구할 수 없으니 신중하게 선택해 주세요.</label>
@@ -56,8 +94,8 @@ class Drop extends Component{
                             </Form>
                             </div>
                         <div className="DropBtnBox">
-                            <Button variant="warning" onClick={drop}>탈퇴</Button>
-                            <Button variant="" onClick={cancle}>취소</Button>
+                            <Button variant="warning" onClick={this.drop_pass}>탈퇴</Button>
+                            <Link to="/Mypage"><Button variant="">취소</Button></Link>
                         </div>
                         </Card.Body>
                         </Accordion.Collapse>

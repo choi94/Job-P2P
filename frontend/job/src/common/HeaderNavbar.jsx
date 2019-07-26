@@ -22,6 +22,11 @@ class HeaderNavbar extends Component {
         }
     }
 
+    componentDidMount() {
+        this.setState({login_checked : sessionStorage.getItem('id')})
+        console.log('디드 마운트!')
+    }
+
     login_checking = e => {
         sessionStorage.setItem('id', e)
         this.setState({login_checked : sessionStorage.getItem('id')})
@@ -73,7 +78,7 @@ class HeaderNavbar extends Component {
                   <Route path="/board" component={Board}/>
                   <Route path="/login" component={(props) => <Login {...props} logins={this.login_checking}/>}/>
                   <Route path="/join" component={Join}/>
-                  <Route path="/mypage" component={MyPage}/>
+                  <Route path="/mypage" component={MyPage}/>}/>
                   <Route path="/detail" component={Detail}/>
                   <Route path="/infoUpdate" component={InfoUpdate}/>
                   <Route path="/drop" component={Drop}/>

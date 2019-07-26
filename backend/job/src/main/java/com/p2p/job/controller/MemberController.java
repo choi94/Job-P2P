@@ -134,26 +134,24 @@ public class MemberController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity login(@RequestBody HashMap<String,Object> member) {
+    public ResponseEntity login(@RequestBody Member member) {
+
+        System.out.println(member.toString());
         QMember qMember = QMember.member;
         Map<String,Object> result = new HashMap<>();
         BooleanBuilder builder = new BooleanBuilder();
 
-        System.out.println(member.toString());
-        System.out.println(member.get("email"));
-        System.out.println(member.get("password"));
+        builder.and(qMember.email.eq(member.getEmail())
+            .and(qMember.password.eq(member.getPassword())
+            .and(qMember.id.gt(0))
+            ));
 
-//        builder.and(qMember.email.eq(member.getEmail())
-//            .and(qMember.password.eq(member.getPassword())
-//            .and(qMember.id.gt(0))
-//            ));
-//
-//        memberRepo.findAll(builder).forEach(arr -> {
-//            result.put("id", arr.getId());
-//        });
-//
-//        if (result.isEmpty())
-//            return ResponseEntity.notFound().build();
+        memberRepo.findAll(builder).forEach(arr -> {
+            result.put("id", arr.getId());
+        });
+
+        if (result.isEmpty())
+            return ResponseEntity.notFound().build();
 
         return ResponseEntity.ok(result);
     }
@@ -182,9 +180,9 @@ public class MemberController {
         return ResponseEntity.ok("회원가입 성공");
     }
 
-    @DeleteMapping("/")
-    public ResponseEntity deleteById(@PathVariable("email")String email) {
-        memberRepo.deleteById(email);
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteById(@PathVariable("id")Long id) {
+        memberRepo.deleteById(id);
         return ResponseEntity.ok("회원을 탈퇴했습니다.");
     }
 

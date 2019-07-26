@@ -5,15 +5,17 @@ import Footer from '../common/Footer.jsx'
 
 import '../mypage/css/index.css';
 class MyPage extends Component{
-
+    constructor(props) {
+        super(props)
+    }
 
     render(){
         return(
         <div className="myPageBox">
             <div className="myPageBox_1">
                 <h1 >MyPage</h1>
-                <Info/>       
-            </div>    
+                <Info/>
+            </div>
             <div className="myPageBox2">
                <ClientInfo/>
             </div>

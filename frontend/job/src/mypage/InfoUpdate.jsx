@@ -4,7 +4,7 @@ import {MDBBtn, MDBInput } from 'mdbreact';
 import validator from 'email-validator'
 import {Button} from 'react-bootstrap'
 
-const InfoUpdate = ({history}) => {
+const InfoUpdate = ({history,location}) => {
         const localhost = 'http://localhost:9000'
         const [radio, setRadio] = useState()
         const [nickname_check, setNickname_check] = useState()
@@ -19,9 +19,11 @@ const InfoUpdate = ({history}) => {
         const [name, setName] = useState()
         const [ssn, setSsn] = useState()
         const [phone, setPhone] = useState()
+
         const gender = b => {
           setRadio(b.target.value)
         }
+
         const email_checking = e => {
           if(validator.validate(e.target.value)) {
             axios.get(`${localhost}/member/join/email/${e.target.value}`)

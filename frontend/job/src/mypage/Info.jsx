@@ -1,6 +1,8 @@
 import React, {useState, useE, useEffect} from 'react'
 import axios from 'axios'
 import {CardGroup,Card,Button} from 'react-bootstrap'
+import { Link } from "react-router-dom";
+
 
 const DeclarInfo = ({history}) => {
     const localhost = 'http://localhost:9000'
@@ -13,10 +15,8 @@ const DeclarInfo = ({history}) => {
     const [point, setPoint] = useState()
 
     useEffect( () => {
-        console.log('res')
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
-                console.dir(res)
                 setName(res.data.member.name)
                 setNickname(res.data.member.nickname)
                 setEmail(res.data.member.email)
@@ -87,10 +87,10 @@ const DeclarInfo = ({history}) => {
  
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title className="aa">회원정보 <Button variant="warning" onClick={update}>수정</Button></Card.Title>
+                    <Card.Title className="aa">회원정보 <Link to={{pathname : '/infoUpdate', state : {email : email}}}><Button  variant="warning" >수정</Button></Link></Card.Title>
                     <Card.Text>
                     </Card.Text>
-                    <Card.Title className="aa">회원탈퇴 <Button variant="success" onClick={drop}>탈퇴</Button></Card.Title>
+                    <Card.Title className="aa">회원탈퇴 <Link to={{pathname : '/drop', state : {email : email}}}><Button variant="success">탈퇴</Button></Link></Card.Title>
                     <Card.Text>
                     </Card.Text>
                 </Card.Body>
@@ -99,14 +99,14 @@ const DeclarInfo = ({history}) => {
     )
 }
 
-function update(e){
-    e.preventDefault()
-    window.location = './InfoUpdate'
-}
-
-function drop(e){
-    e.preventDefault()
-    window.location = './Drop'
-}
+// function update(e){
+//     e.preventDefault()
+//     window.location = './InfoUpdate'
+// }
+//
+// function drop(e){
+//     e.preventDefault()
+//     window.location = './Drop'
+// }
 
 export default DeclarInfo

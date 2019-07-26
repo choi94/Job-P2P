@@ -76,6 +76,7 @@ const Join = ({history}) => {
         }
         axios.post(`${localhost}/member/`, data)
           .then( res => {
+            console.log('성공')
             history.push("/");
           })
           .catch( error => {
