@@ -43,16 +43,12 @@ public class JobApplicationTests {
         member.setId(1L);
 
         workBoard.setTitle("제목 : ");
-        workBoard.setDetails("내용 : ");
         workBoard.setWorkDay(1);
         workBoard.setWorkTime("09:00 ~ 18:00");
         workBoard.setCityArea("서울 관악구 봉천동");
-        workBoard.setCityDetails("문정빌딩 203호");
         workBoard.setWorkAge("20대 ~ 40대");
-        workBoard.setWorkCategory("집안일");
         workBoard.setDaySalary(150000);
         workBoard.setTotalSalary(150000 * 1);
-        workBoard.setSpecial("힘 쌔신분");
         workBoard.setKakao("ehdgns94@KAKAO.com");
         workBoard.setRecruit("2019_07_10 ~ 2019_07_10");
         workBoard.setProgressState("모집중");

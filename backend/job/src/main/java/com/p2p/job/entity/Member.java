@@ -87,8 +87,4 @@ public class Member {
     @JsonIgnore
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<WorkBoard> workBoard;
-
-    @JsonIgnore
-    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
-    private List<Attention> attention;
 }

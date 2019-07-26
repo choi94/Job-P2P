@@ -3,15 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Attention.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/repository/AttentionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/action/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/common/HeaderNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/common/HeaderNavbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/member/Join.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/member/Join.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Drop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Drop.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/InfoUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/InfoUpdate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/reducers/index.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/job/target/" />
@@ -47,11 +50,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+            <state relative-caret-position="301">
+              <caret line="178" column="32" lean-forward="true" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,17 +86,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="467">
+              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Progress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-202">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="447">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,14 +125,14 @@
         <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/common/config/Querydsl.java" />
         <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Progress.java" />
         <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Attention.java" />
-        <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java" />
         <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Volunteer.java" />
         <option value="$PROJECT_DIR$/job/pom.xml" />
         <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" />
-        <option value="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" />
-        <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java" />
         <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/repository/MemberRepository.java" />
         <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java" />
+        <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java" />
+        <option value="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" />
+        <option value="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java" />
       </list>
     </option>
   </component>
@@ -315,7 +339,7 @@
       <workItem from="1563947076174" duration="3595000" />
       <workItem from="1564012835717" duration="114000" />
       <workItem from="1564031037239" duration="9107000" />
-      <workItem from="1564100218654" duration="6078000" />
+      <workItem from="1564100218654" duration="8997000" />
     </task>
     <servers />
   </component>
@@ -352,7 +376,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51390000" />
+    <option name="totallyTimeSpent" value="54309000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -367,7 +391,7 @@
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.22849807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49795082" visible="true" weight="0.22849807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -378,7 +402,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.37311384" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49935815" visible="true" weight="0.3048193" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49935815" visible="true" weight="0.3048193" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32831737" />
@@ -517,24 +541,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Attention.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Progress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -650,23 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/repository/ProgressRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -676,8 +669,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="66" column="22" lean-forward="true" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+        <state relative-caret-position="301">
+          <caret line="178" column="32" lean-forward="true" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="65" column="14" lean-forward="true" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Progress.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

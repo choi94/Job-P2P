@@ -35,7 +35,7 @@ class Drop extends Component{
         axios.delete(`${this.state.localhost}/member/${sessionStorage.getItem('id')}`)
             .then( res => {
                 sessionStorage.clear()
-                this.props.history.push('/')
+                window.location = './'
             })
             .catch( error => {
                 alert('오류가 발생했습니다.')

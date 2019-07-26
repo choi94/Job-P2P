@@ -1,4 +1,4 @@
-import React, {useState, useE, useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import {CardGroup,Card,Button} from 'react-bootstrap'
 import { Link } from "react-router-dom";
@@ -17,6 +17,7 @@ const DeclarInfo = ({history}) => {
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
+                console.dir(res)
                 setName(res.data.member.name)
                 setNickname(res.data.member.nickname)
                 setEmail(res.data.member.email)

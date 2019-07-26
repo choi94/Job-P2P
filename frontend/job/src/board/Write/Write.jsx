@@ -1,9 +1,21 @@
-import React,{Component} from 'react'
-import {Form, Button, Table, Card, Col} from 'react-bootstrap';
+import React,{useState} from 'react'
+import {Form, Button, Table, Card} from 'react-bootstrap';
 import '../view/main.css'
 
-class Wirte extends Component{
-    render(){
+const Write = () => {
+    const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+    // const [title, setTitle] = useState()
+
+
         return(
             <div className="write">
             <hr/>
@@ -161,7 +173,7 @@ class Wirte extends Component{
                                     <div className="w_table1">
                                         <Form.Control type="text" />
                                     </div>
-                                </div> 
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -173,7 +185,7 @@ class Wirte extends Component{
                                     <div className="w_table1">
                                         <Form.Control type="text" />
                                     </div>
-                                </div> 
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -185,7 +197,7 @@ class Wirte extends Component{
                                     <div className="w_table1">
                                         <Form.Control type="text" />
                                     </div>
-                                </div> 
+                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -240,7 +252,6 @@ class Wirte extends Component{
                 </div>
         </div>
         );
-    }
 }
 
 function write(e){
@@ -249,7 +260,7 @@ function write(e){
 
 }
 
-export default Wirte
+export default Write
 
 
 

@@ -27,53 +27,41 @@ public class WorkBoard {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "work_id")
-    private Long id;
+    private Long id; //
 
     @Column(name = "title", nullable = false)
-    private String title;
+    private String title; //
 
     @CreationTimestamp
     @Column(name = "write_date")
-    private LocalDateTime writeDate;
-
-    @Column(name = "details")
-    private String details;
+    private LocalDateTime writeDate; //
 
     @Column(name = "recruit", nullable = false)
-    private String recruit;
+    private String recruit; //
 
     @Column(name = "work_day", nullable = false)
-    private int workDay;
+    private int workDay; //
 
     @Column(name = "work_time", nullable = false)
-    private String workTime;
+    private String workTime; //
 
     @Column(name = "work_age", nullable = false)
-    private String workAge;
-
-    @Column(name = "work_category", nullable = false)
-    private String workCategory;
+    private String workAge; //
 
     @Column(name = "city_area", nullable = false)
-    private String cityArea;
-
-    @Column(name = "city_details", nullable = false)
-    private String cityDetails;
+    private String cityArea; //
 
     @Column(name = "day_salary", nullable = false)
-    private int daySalary;
+    private int daySalary; //
 
     @Column(name = "total_salary", nullable = false)
-    private int totalSalary;
-
-    @Column(name = "special")
-    private String special;
+    private int totalSalary; //
 
     @Column(name = "kakao", nullable = false)
-    private String kakao;
+    private String kakao; //
     
     @Column(name = "progress_state", nullable = false)
-    private String progressState;
+    private String progressState; //
 
     @ManyToOne
     @JoinColumn(name = "member_id")
