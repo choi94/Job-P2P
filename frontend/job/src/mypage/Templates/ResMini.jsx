@@ -9,7 +9,7 @@ const ResMini  = ()=>{
         <tr className="res">
             <th>#</th>
             <th>지원일</th>
-            <th>일자리명 / 모집제목</th>
+            <th>일자리명 </th>
             <th>급여</th>
             <th>마감일</th>
         </tr>
