@@ -13,6 +13,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.Getter;
@@ -26,6 +27,8 @@ import lombok.ToString;
 @Table(name = "member", /* indexes = {@Index(columnList = "join_date", name = "idx_join_data"), @Index(columnList = "email", name = "idx_email")} */
         uniqueConstraints = {@UniqueConstraint(columnNames = {"nickname"})})
 public class Member {
+
+    @JsonIgnore
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "member_id")
@@ -37,6 +40,7 @@ public class Member {
     @Column(name = "nickname", nullable = false)
     private String nickname;
 
+    @JsonIgnore
     @Column(name = "password", nullable = false)
     private String password;
 
@@ -46,6 +50,7 @@ public class Member {
     @Column(name = "name" ,nullable = false)
     private String name;
 
+    @JsonIgnore
     @Column(name = "ssn", nullable = false)
     private String ssn;
 
@@ -62,6 +67,7 @@ public class Member {
     @Column(name = "withdrawal")
     private LocalDateTime withdrawal;
 
+    @JsonIgnore
     @Column(name = "admin", nullable = false, columnDefinition = "boolean default 0")
     private int admin;
 
@@ -74,12 +80,15 @@ public class Member {
     @Column(name = "point", nullable = false, columnDefinition = "int default 0")
     private int point;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<Volunteer> volunteer;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<WorkBoard> workBoard;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
     private List<Attention> attention;
 }

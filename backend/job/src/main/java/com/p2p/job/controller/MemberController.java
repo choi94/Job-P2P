@@ -134,22 +134,26 @@ public class MemberController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity login(@RequestBody Member member) {
+    public ResponseEntity login(@RequestBody HashMap<String,Object> member) {
         QMember qMember = QMember.member;
         Map<String,Object> result = new HashMap<>();
         BooleanBuilder builder = new BooleanBuilder();
 
-        builder.and(qMember.email.eq(member.getEmail())
-            .and(qMember.password.eq(member.getPassword())
-            .and(qMember.id.gt(0))
-            ));
+        System.out.println(member.toString());
+        System.out.println(member.get("email"));
+        System.out.println(member.get("password"));
 
-        memberRepo.findAll(builder).forEach(arr -> {
-            result.put("id", arr.getId()); 
-        });
-
-        if (result.isEmpty())
-            return ResponseEntity.notFound().build();
+//        builder.and(qMember.email.eq(member.getEmail())
+//            .and(qMember.password.eq(member.getPassword())
+//            .and(qMember.id.gt(0))
+//            ));
+//
+//        memberRepo.findAll(builder).forEach(arr -> {
+//            result.put("id", arr.getId());
+//        });
+//
+//        if (result.isEmpty())
+//            return ResponseEntity.notFound().build();
 
         return ResponseEntity.ok(result);
     }
@@ -158,15 +162,17 @@ public class MemberController {
     public ResponseEntity mypage(@PathVariable("id")Long id) {
         QMember qMember = QMember.member;
         BooleanBuilder builder = new BooleanBuilder();
-        builder.and(qMember.id.eq(1L));
+        builder.and(qMember.id.eq(id));
 
-        List<Member> list = new ArrayList<>();
+        Map<String,Object> result = new HashMap<>();
 
         memberRepo.findAll(builder).forEach(arr -> {
-            list.add(arr);
+            result.put("member", arr);
+            result.put("volunteer", arr.getVolunteer());
         });
 
-        return ResponseEntity.ok(list);
+
+        return ResponseEntity.ok(result);
     }
 
     @PostMapping("/")
