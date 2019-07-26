@@ -13,7 +13,7 @@ const ClientInfo =()=>{
             <Tab eventKey="profile" title="등록 현황">
                 <SupMini/>
             </Tab>
-            <Tab eventKey="1" title="관심 Job">
+            <Tab eventKey="1" title="거래">
                 <AttMini/>
             </Tab>
         </Tabs>

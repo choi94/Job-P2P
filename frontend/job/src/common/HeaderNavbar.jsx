@@ -10,6 +10,7 @@ import MyPage from '../mypage/MyPage.jsx'
 import InfoUpdate from '../mypage/InfoUpdate.jsx'
 import Drop from '../mypage/Drop.jsx'
 import Write from '../board/Write/Write'
+import Trans from '../mypage/Trans'
 
 import './css/commom.css'
 
@@ -82,7 +83,8 @@ class HeaderNavbar extends Component {
                   <Route path="/detail" component={Detail}/>
                   <Route path="/infoUpdate" component={InfoUpdate}/>
                   <Route path="/drop" component={Drop}/>
-                <Route path="/write" component={Write}/>
+                  <Route path="/write" component={Write}/>
+                  <Route path="/trans" component={Trans}/>
             </Router>
         )
     }

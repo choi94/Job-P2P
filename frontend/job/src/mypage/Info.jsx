@@ -26,7 +26,7 @@ const DeclarInfo = ({history}) => {
                 setPoint(res.data.member.point)
             })
             .catch( error => {
-                alert('오류가 발생했습니다.')
+                // alert('오류가 발생했습니다.')
             })
     },[])
 

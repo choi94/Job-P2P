@@ -1,47 +1,41 @@
 import React from 'react'
-import {Table} from 'react-bootstrap'
+import {Table, Button} from 'react-bootstrap'
 
 
 const ResMini  = ()=>{
     return(
     <Table responsive>
         <thead>
-        <tr className="res">
-            <th>#</th>
-            <th>관심일</th>
-            <th>일자리명 / 모집제목</th>
-            <th>급여</th>
-            <th>마감일</th>
-        </tr>
+            <tr className="res">
+                <th>#</th>
+                <th>일자리 명</th>
+                <th>거래페이지로 가기</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>1</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-
-        </tr>
+            <tr>
+                <td>1</td>
+                <td>Table cell</td>
+                <td><Button variant="success" onClick={trans}>거래</Button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Table cell</td>
+                <td><Button variant="success" >거래</Button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Table cell</td>
+                <td><Button variant="success" >거래</Button></td>
+            </tr>
         </tbody>
-</Table>
+    </Table>
     );
+}
+
+function trans(e){
+    e.preventDefault()
+    window.location = './Trans'
 }
 
 export default ResMini;
