@@ -44,7 +44,7 @@ const Login = ({history, logins}) => {
       </div>
       <div className="box2">
         <button onClick={login} className="button1">로그인</button>
-        <p class="join">아직 계정이 없으신가요? <a href="/Join">계정 만들기></a></p>
+        <p className="join">아직 계정이 없으신가요? <a href="/Join">계정 만들기></a></p>
       </div>
     </div>
   );

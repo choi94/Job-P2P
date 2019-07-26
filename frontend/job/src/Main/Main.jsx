@@ -47,7 +47,7 @@ class Main extends Component{
 }
 function Board(e){
     e.preventDefault()
-    window.location = './Board'
+
 }
 
 const Im ={

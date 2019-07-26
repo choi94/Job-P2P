@@ -2,17 +2,37 @@ import React,{Component} from 'react'
 import Cards from './view/Cards.jsx'
 import Footer from '../common/Footer'
 import {Button} from 'react-bootstrap';
+import axios from 'axios';
+
+
+
 
 class Board extends Component{
-    
-    constructor(props){
-        super(props)
+    state={
+    BoardData:[
+        ]
+    }
+    componentDidMount(){
+        axios.get(`http://localhost:9000/board/BoardList`)
+        .then(res => {
+            res.data.forEach((a)=>{
+                this.setState({
+                    BoardData: this.state.BoardData.concat(a)
+                })
+            })
+         })
     }
     render(){
         return(
-            <div class="write">
-                <p align="right"><Button variant="success" onClick={write}>글쓰기</Button></p><br/>
-           <Cards/>
+            <div>
+                <p><Button variant="primary">글쓰기</Button></p>
+            <div className="Board_listings">
+            <ul className="properties_list">
+                {this.state.BoardData.map((BoardDatas, index) =>{
+                return <Cards title={BoardDatas} key={index}/>
+                    })} 
+             </ul>
+            </div>
            <Footer/>
             </div>
         )
