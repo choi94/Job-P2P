@@ -13,6 +13,7 @@ const DeclarInfo = ({history}) => {
     const [volunteer, setVolunteer] = useState()
     const [request, setRequest] = useState()
     const [point, setPoint] = useState()
+    const [phone, setPhone] = useState()
 
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
@@ -25,6 +26,7 @@ const DeclarInfo = ({history}) => {
                 setVolunteer(res.data.member.volunteerScore)
                 setRequest(res.data.member.requestScore)
                 setPoint(res.data.member.point)
+                setPhone(res.data.member.phone)
             })
             .catch( error => {
                 // alert('오류가 발생했습니다.')
@@ -88,7 +90,15 @@ const DeclarInfo = ({history}) => {
  
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title className="aa">회원정보 <Link to={{pathname : '/infoUpdate', state : {email : email}}}><Button  variant="warning" >수정</Button></Link></Card.Title>
+                    <Card.Title className="aa">회원정보 <Link to={{pathname : '/infoUpdate',
+                        state : {
+                            email : email,
+                            nickname : nickname,
+                            phone : phone
+                        }
+                    }
+                    }>
+                    <Button  variant="warning" >수정</Button></Link></Card.Title>
                     <Card.Text>
                     </Card.Text>
                     <Card.Title className="aa">회원탈퇴 <Link to={{pathname : '/drop', state : {email : email}}}><Button variant="success">탈퇴</Button></Link></Card.Title>

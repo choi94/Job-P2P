@@ -4,16 +4,6 @@ import '../view/main.css'
 
 const Write = () => {
     const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
-    // const [title, setTitle] = useState()
 
 
         return(

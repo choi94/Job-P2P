@@ -57,6 +57,9 @@ public class WorkBoard {
     @Column(name = "total_salary", nullable = false)
     private int totalSalary; //
 
+    @Column(name = "contents", nullable = false)
+    private String contents;
+
     @Column(name = "kakao", nullable = false)
     private String kakao; //
     

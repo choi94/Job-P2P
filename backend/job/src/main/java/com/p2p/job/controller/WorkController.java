@@ -3,6 +3,7 @@ package com.p2p.job.controller;
 import javax.transaction.Transactional;
 
 import com.p2p.job.entity.Member;
+import com.p2p.job.entity.QWorkBoard;
 import com.p2p.job.entity.WorkBoard;
 import com.p2p.job.repository.WorkRepository;
 import com.querydsl.core.BooleanBuilder;
@@ -11,6 +12,9 @@ import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Transactional
@@ -29,10 +33,39 @@ public class WorkController {
     public ResponseEntity search(@PathVariable("keyword")String keyword,
                                  @PathVariable("value")String value) {
 
+        BooleanBuilder builder = new BooleanBuilder();
+        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
 
+        switch (keyword) {
+            case "all":
+//                builder.and(qWorkBoard..contains(value));
+                break;
 
+            case "title":
+//                builder.and(qMember.nickname.contains(value));
+                break;
 
-        return null;
+            case "temp":
+//                builder.and(qMember.name.contains(value));
+                break;
+
+            default:
+                break;
+        }
+
+        List<Object> result = new ArrayList<>();
+
+//        query.from(qMember)
+//                .where(builder.and(qMember.id.gt(0)))
+//                .fetch()
+//                .forEach(arr -> {
+//                    result.add(result);
+//                });
+
+        if (result.isEmpty())
+            return ResponseEntity.notFound().build();
+
+        return ResponseEntity.ok(result);
     }
 
     @PostMapping("/details/{id}")

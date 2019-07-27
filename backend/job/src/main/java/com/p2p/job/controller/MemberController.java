@@ -14,17 +14,10 @@ import com.p2p.job.repository.MemberRepository;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
+import com.querydsl.jpa.impl.JPAUpdateClause;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
 @Transactional
@@ -56,19 +49,19 @@ public class MemberController {
 
     @GetMapping("/join/{keyword}/{value}")
     public ResponseEntity findByMember(@PathVariable("keyword")String keyword,
-                                    @PathVariable("value")String value) {
-        QMember qMember = QMember.member;
-        BooleanBuilder builder = new BooleanBuilder();
-        List<Object> result = new ArrayList<>();
+                                        @PathVariable("value")String value) {
+            QMember qMember = QMember.member;
+            BooleanBuilder builder = new BooleanBuilder();
+            List<Object> result = new ArrayList<>();
 
-        switch (keyword) {
-            case "email" :
-                builder.and(qMember.email.eq(value));
-                break;
-            
-            case "nickname" :
-                builder.and(qMember.nickname.eq(value));
-                break;
+            switch (keyword) {
+                case "email" :
+                    builder.and(qMember.email.eq(value));
+                    break;
+
+                case "nickname" :
+                    builder.and(qMember.nickname.eq(value));
+                    break;
         }
 
         query.from(qMember)
@@ -158,6 +151,7 @@ public class MemberController {
 
     @GetMapping("/my/{id}")
     public ResponseEntity mypage(@PathVariable("id")Long id) {
+        System.out.println("들어옴");
         QMember qMember = QMember.member;
         BooleanBuilder builder = new BooleanBuilder();
         builder.and(qMember.id.eq(id));
@@ -186,13 +180,15 @@ public class MemberController {
         return ResponseEntity.ok("회원을 탈퇴했습니다.");
     }
 
-    @PutMapping("/")
+    @PatchMapping("/")
     public ResponseEntity updateMember(@RequestBody Member member) {
-
-//		QMember qMember = QMember.member;
-//		new JPAUpdateClause(entityManager, qMember).where(qMember.id.eq(1L))
-//				.set(qMember.nickname, "GM!")
-//				.execute();
+        System.out.println(member.toString());
+		QMember qMember = QMember.member;
+		new JPAUpdateClause(entityManager, qMember).where(qMember.id.eq(member.getId()))
+				.set(qMember.nickname, member.getNickname())
+                .set(qMember.password, member.getPassword())
+                .set(qMember.phone, member.getPhone())
+				.execute();
 
         return ResponseEntity.ok("회원정보를 변경했습니다.");
     }
