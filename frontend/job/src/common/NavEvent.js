@@ -5,10 +5,10 @@
     let scroll = document.getElementsByClassName("Header");
       if(window.scrollToTop>=50)
       {
-        scroll.addClass('.HeaderScroll')
+        scroll.addClassName('HeaderScroll')
       }
       else{
-        scroll.removeClass('.HeaderScroll')
+        scroll.removeClass('HeaderScroll')
       }
   };
   

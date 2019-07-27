@@ -1,12 +1,12 @@
 import React from 'react'
-import {Jumbotron, Button, Card} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
 import './css/commom.css'
 
 const Footer=()=>{
     return(
         <Card className="text-center">
             <Card.Body className="footerBody">
-            <div className="row">
+        <div className="row">
                 <div className="col-sm-4">
                     <h5>정인근</h5>
                     <a href="https://github.com/IngeunJ">https://github.com/IngeunJ</a>

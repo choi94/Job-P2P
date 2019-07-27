@@ -44,7 +44,6 @@ public class MemberController {
     public ResponseEntity findAll() {
             QMember qMember = QMember.member;
             List<Object> result = new ArrayList<>();
-            
             query.from(qMember)
             .orderBy(qMember.joinDate.asc())
             .fetch().forEach(arr -> {
@@ -53,24 +52,20 @@ public class MemberController {
 
         return ResponseEntity.ok(result);
     }
-
     @GetMapping("/join/{keyword}/{value}")
     public ResponseEntity findByMember(@PathVariable("keyword")String keyword,
                                     @PathVariable("value")String value) {
         QMember qMember = QMember.member;
         BooleanBuilder builder = new BooleanBuilder();
         List<Object> result = new ArrayList<>();
-
         switch (keyword) {
             case "email" :
                 builder.and(qMember.email.eq(value));
                 break;
-            
             case "nickname" :
                 builder.and(qMember.nickname.eq(value));
                 break;
         }
-
         query.from(qMember)
                     .where(builder.and(qMember.id.gt(0)))
                     .fetch()
@@ -80,7 +75,6 @@ public class MemberController {
 
         if (result.size() != 0)
             return ResponseEntity.notFound().build();
-
         return ResponseEntity.ok().build();
     }
 
@@ -94,31 +88,24 @@ public class MemberController {
             case "email":
                 builder.and(qMember.email.contains(value));
                 break;
-
             case "nickname":
                 builder.and(qMember.nickname.contains(value));
                 break;
-
             case "name":
                 builder.and(qMember.name.contains(value));
                 break;
-
             case "gender":
                 builder.and(qMember.gender.eq(value));
                 break;
-
             case "admin":
                 builder.and(qMember.admin.eq(Integer.parseInt(value)));
                 break;
-
             case "point":
                 builder.and(qMember.point.gt(Double.parseDouble(value)));
                 break;
-
             default:
                 break;
         }
-
         List<Object> result = new ArrayList<>();
         query.from(qMember)
             .where(builder.and(qMember.id.gt(0)))
@@ -126,16 +113,13 @@ public class MemberController {
             .forEach(arr -> {
                 result.add(result);
             });
-
         if (result.isEmpty())
             return ResponseEntity.notFound().build();
-
         return ResponseEntity.ok(result);
     }
 
     @PostMapping("/login")
     public ResponseEntity login(@RequestBody Member member) {
-
         System.out.println(member.toString());
         QMember qMember = QMember.member;
         Map<String,Object> result = new HashMap<>();
@@ -145,11 +129,9 @@ public class MemberController {
             .and(qMember.password.eq(member.getPassword())
             .and(qMember.id.gt(0))
             ));
-
         memberRepo.findAll(builder).forEach(arr -> {
             result.put("id", arr.getId());
         });
-
         if (result.isEmpty())
             return ResponseEntity.notFound().build();
 
@@ -168,8 +150,6 @@ public class MemberController {
             result.put("member", arr);
             result.put("volunteer", arr.getVolunteer());
         });
-
-
         return ResponseEntity.ok(result);
     }
 

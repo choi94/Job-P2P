@@ -5,12 +5,11 @@ import {Button} from 'react-bootstrap';
 import axios from 'axios';
 
 
-
-
 class Board extends Component{
     state={
     BoardData:[
-        ]
+        ],
+    Member:{}   
     }
     componentDidMount(){
         axios.get(`http://localhost:9000/board/BoardList`)
@@ -24,8 +23,9 @@ class Board extends Component{
     }
     render(){
         return(
-            <div>
-                <p><Button variant="primary">글쓰기</Button></p>
+        <div>
+            
+            <p><Button variant="primary">글쓰기</Button></p>
             <div className="Board_listings">
             <ul className="properties_list">
                 {this.state.BoardData.map((BoardDatas, index) =>{
@@ -34,7 +34,7 @@ class Board extends Component{
              </ul>
             </div>
            <Footer/>
-            </div>
+        </div>
         )
     }
 }

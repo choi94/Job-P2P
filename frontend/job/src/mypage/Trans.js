@@ -14,7 +14,6 @@ const TransVol  = ()=>{
                                 <td className="vol">정보</td>
                             </tr>
                         </thead>
-                        
                         <tbody>
                             <tr>
                                 <th>일자리 제목</th>
@@ -74,7 +73,6 @@ const TransVol  = ()=>{
                 </Tab>
             </Tabs>
             <div>
-
             </div>
         </div>
     )

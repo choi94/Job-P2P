@@ -91,8 +91,6 @@ const InfoUpdate = ({history,location}) => {
             alert('내용을 입력하세요.')
           }
 }
-
-        
     return (
       <div align="center">
       <br/>

@@ -29,9 +29,6 @@ public class WorkController {
     public ResponseEntity search(@PathVariable("keyword")String keyword,
                                  @PathVariable("value")String value) {
 
-
-
-
         return null;
     }
 
