@@ -65,55 +65,6 @@ h1, h2, h3, h4, h5 ,h6{
 }
 
 
-/**Write*/
-.write{
-    width: 80%;
-    margin: auto;
-}
-
-.w_write{
-    padding-left: 2rem;
-    display: flex;
-}
-
-.w_title p{
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.w_title1{
-    padding-left: 1rem;
-    font-weight: bold;
-}
-
-.w_table{
-    display: flex;
-}
-
-.w_table1{
-    padding-left: 1rem;
-    font-weight: bold;
-}
-
-.w_table2 label{
-    padding-left: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.gender{
-    font-size: 1.3rem;
-}
-
-.age{
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.buttonBox button{
-    margin: 0 0.5%;
-}
 
 
 

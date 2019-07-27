@@ -20,7 +20,6 @@ class Drop extends Component{
             email : this.state.email,
             password : this.state.password
         }
-
         axios.post(`${this.state.localhost}/member/login`, data)
             .then( res => {
                 this.drop_member()
@@ -28,7 +27,6 @@ class Drop extends Component{
             .catch( error => {
                 alert('비밀번호가 틀렸습니다.')
             })
-
     }
 
     drop_member = () => {
@@ -104,16 +102,6 @@ class Drop extends Component{
             </div>        
         );
     }
-}
-
-function drop(e){
-    e.preventDefault()
-    window.location = './'
-}
-
-function cancle(e){
-    e.preventDefault()
-    window.location = './Mypage'
 }
 
 export default Drop;

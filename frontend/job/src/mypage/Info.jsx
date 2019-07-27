@@ -110,14 +110,4 @@ const DeclarInfo = ({history}) => {
     )
 }
 
-// function update(e){
-//     e.preventDefault()
-//     window.location = './InfoUpdate'
-// }
-//
-// function drop(e){
-//     e.preventDefault()
-//     window.location = './Drop'
-// }
-
 export default DeclarInfo

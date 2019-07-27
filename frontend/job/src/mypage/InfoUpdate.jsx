@@ -70,6 +70,51 @@ const InfoUpdate = ({history,location}) => {
     }
 
         
+        const nickname_checking = n => {
+          if (n.target.value != '') {
+            axios.get(`${localhost}/member/join/nickname/${n.target.value}`)
+              .then(res => {
+                if (res.data.length != 0) {
+                  setNickname_boolean(false)
+                  setNickname_check('이미 존재하는 닉네임입니다.')
+                }
+                else {
+                  setNickname_boolean(true)
+                  setNickname_check('')
+                }
+              }).catch(error => {
+                setNickname_boolean(false)
+                alert('비정상적인 오류가 발생 했습니다.')
+              })
+            }
+            setNickname_boolean(false)
+            setNickname_check('') 
+          }
+        const join_check = m => {
+          if (pass_one === pass_two && email_boolean && nickname_boolean){
+            setPassword(pass_one)
+            if (name && ssn & phone && radio) {
+              let data = {
+                email : email,
+                nickname : nickname,
+                password : password,
+                name : name,
+                ssn : ssn,
+                phone : phone,
+                gender : radio
+              }
+              axios.post(`${localhost}/member/`, data)
+                .then( res => {
+                  history.push("/");
+                })
+                .catch( error => {
+                  console.dir('axios 실패')
+                })
+            }
+          } else {
+            alert('내용을 입력하세요.')
+          }
+}
     return (
       <div align="center">
       <br/>

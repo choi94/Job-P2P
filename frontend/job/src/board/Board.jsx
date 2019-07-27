@@ -6,12 +6,11 @@ import { MDBInput, MDBCol, MDBBtn } from "mdbreact";
 import axios from 'axios';
 
 
-
-
 class Board extends Component{
     state={
     BoardData:[
-        ]
+        ],
+    Member:{}   
     }
     componentDidMount(){
         axios.get(`http://localhost:9000/board/boardList`)
@@ -48,7 +47,7 @@ class Board extends Component{
              </ul>
             </div>
            <Footer/>
-            </div>
+        </div>
         )
     }
 }

@@ -9,25 +9,21 @@ import Detail from '../board/Detail/Detail.jsx'
 import MyPage from '../mypage/MyPage.jsx'
 import InfoUpdate from '../mypage/InfoUpdate.jsx'
 import Drop from '../mypage/Drop.jsx'
-import Write from '../board/Write/Write'
+import Write from '../board/Write/Write.jsx'
 import Trans from '../mypage/Trans'
-
 import './css/commom.css'
 
 class HeaderNavbar extends Component {
-
     constructor(props) {
         super(props)
         this.state = {
             login_checked : sessionStorage.getItem('id')
         }
     }
-
     login_checking = e => {
         sessionStorage.setItem('id', e)
         this.setState({login_checked : sessionStorage.getItem('id')})
     }
-
     logout_checking = () => {
         sessionStorage.clear()
         this.setState({login_checked : sessionStorage.getItem('id')})
@@ -36,7 +32,7 @@ class HeaderNavbar extends Component {
     render() {
         return(
             <Router>
-                <Navbar collapseOnSelect expand="lg" className="Header" variant="dark" >
+                <Navbar collapseOnSelect expand="lg" className="Header"  variant="dark" >
                   <Link to="/" className="navbar-brand">
                   <img
                     alt=""
@@ -66,10 +62,8 @@ class HeaderNavbar extends Component {
                               <Link to="/join" className="nav-link">Join</Link>
                           </Nav>
                       }
-
                   </Navbar.Collapse>
                  </Navbar>
-
                   <Route path="/" exact component = {Main} />
                   <Route path="/board" component={Board}/>
                   <Route path="/login" component={(props) => <Login {...props} logins={this.login_checking}/>}/>
@@ -85,16 +79,6 @@ class HeaderNavbar extends Component {
     }
 }
 
-function scrollToTop(){
-  let scroll = document.getElementsByClassName("Header");
-    if(window.scrollToTop >= 50)
-    {
-      scroll.addClass('.HeaderScroll')
-    }
-    else{
-      scroll.removeClass('.HeaderScroll')
-    }
-};
 
 
 
