@@ -4,7 +4,6 @@ import Footer from '../common/Footer'
 import {Button} from 'react-bootstrap';
 import axios from 'axios';
 
-
 class Board extends Component{
     state={
     BoardData:[
@@ -20,11 +19,12 @@ class Board extends Component{
                 })
             })
          })
+
+         
     }
     render(){
         return(
         <div>
-            
             <p><Button variant="primary">글쓰기</Button></p>
             <div className="Board_listings">
             <ul className="properties_list">
