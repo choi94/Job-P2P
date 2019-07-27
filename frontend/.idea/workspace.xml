@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ebaa2-e7f5-4053-8b27-29c8cdb6adcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../backend/.idea/backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/entity/Progress.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/entity/Progress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/DetailCon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/DetailCon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/FootView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/FootView.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/Location.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/Location.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/Recruit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/Recruit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/title.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/title.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Write.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Write.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/board/Write/Write.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Write.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Info.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/mypage/InfoUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/InfoUpdate.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/job/node_modules/" />
@@ -28,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="33" column="65" lean-forward="true" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+            <state relative-caret-position="360">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job/src/mypage/Drop.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="360">
+              <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -53,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/job/src/mypage/Info.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -61,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job/src/board/Write/Write.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="30">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -71,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/job/src/member/Join.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+              <caret column="40" selection-start-column="40" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -79,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job/src/mypage/InfoUpdate.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+            <state relative-caret-position="578">
+              <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -120,8 +119,8 @@
         <option value="$PROJECT_DIR$/job/src/mypage/Drop.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/Info.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Write/Write.jsx" />
-        <option value="$PROJECT_DIR$/job/src/mypage/InfoUpdate.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Board.jsx" />
+        <option value="$PROJECT_DIR$/job/src/mypage/InfoUpdate.jsx" />
       </list>
     </option>
   </component>
@@ -163,6 +162,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="board" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="board" type="462c0819:PsiDirectoryNode" />
+              <item name="Write" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mypage" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -202,16 +216,15 @@
       <updated>1564031221441</updated>
       <workItem from="1564031222826" duration="13575000" />
       <workItem from="1564056949445" duration="17589000" />
-      <workItem from="1564206227207" duration="6191000" />
+      <workItem from="1564206227207" duration="6441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37355000" />
+    <option name="totallyTimeSpent" value="37605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2178594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -298,48 +311,48 @@
     <entry file="file://$PROJECT_DIR$/job/src/mypage/Info.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/member/Join.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/board/Write/Write.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/mypage/InfoUpdate.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
+          <caret column="40" selection-start-column="40" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/mypage/Drop.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="360">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/board/Write/Write.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/mypage/InfoUpdate.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="33" column="65" lean-forward="true" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+        <state relative-caret-position="360">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

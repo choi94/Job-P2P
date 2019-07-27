@@ -5,7 +5,6 @@ import {Button} from 'react-bootstrap';
 import { MDBInput, MDBCol, MDBBtn } from "mdbreact";
 import axios from 'axios';
 
-
 class Board extends Component{
     state={
     BoardData:[
@@ -21,6 +20,8 @@ class Board extends Component{
                 })
             })
          })
+
+         
     }
     render(){
         return(

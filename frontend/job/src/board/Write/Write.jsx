@@ -7,9 +7,8 @@ import Location from './Template/Location.jsx'
 import FootView from './Template/FootView.jsx'
 import './Write.css'
 
-const Write = () => {
-    const [title, setTitle] = useState()
-
+class Wirte extends Component{
+    render(){
         return(
         <div className="write">
             <h2 className="">글쓰기</h2>
@@ -36,6 +35,7 @@ const Write = () => {
             </div>
         </div>
         );
+    }
 }
 
 function write(e){
@@ -44,7 +44,7 @@ function write(e){
 
 }
 
-export default Write
+export default Wirte
 
 
 
