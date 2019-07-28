@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/DetailCon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/DetailCon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/FootView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/FootView.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/Location.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/Location.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/Recruit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/Recruit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/title.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/title.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +139,8 @@
       <workItem from="1564031037239" duration="9107000" />
       <workItem from="1564100218654" duration="9521000" />
       <workItem from="1564206234312" duration="1419000" />
-      <workItem from="1564208911751" duration="3865000" />
+      <workItem from="1564208911751" duration="3866000" />
+      <workItem from="1564357171551" duration="305000" />
     </task>
     <servers />
   </component>
