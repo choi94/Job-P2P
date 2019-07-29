@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
 import axios from 'axios'
 
-import WriteLocal from './Template/WriteLocal'
+import WriteLocal from './Template/WriteLocal.jsx'
 
 const Write = () => {
 

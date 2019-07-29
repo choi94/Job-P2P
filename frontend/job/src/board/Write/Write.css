@@ -35,6 +35,12 @@
 }
 
 
+.footerConfom{
+    list-style-type: disc;
+    margin-left: 2%;
+}
+
+
 /**title*/
 .w_write{
    width: 100%;
@@ -54,5 +60,6 @@
     width: 100%;
     margin: auto;
 }
+
 
 

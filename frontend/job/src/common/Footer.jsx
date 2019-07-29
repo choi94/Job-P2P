@@ -2,6 +2,7 @@ import React from 'react'
 import {Card} from 'react-bootstrap';
 import './css/commom.css'
 
+
 const Footer=()=>{
     return(
         <Card className="text-center">
