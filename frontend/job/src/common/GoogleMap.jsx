@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import Location from './Location.png'
-import '../Detail.css'
+import Location from './image/Location.png'
+
 
 //구글맵 확인해야할 사항
 //1.redux로 react-googlemap ..

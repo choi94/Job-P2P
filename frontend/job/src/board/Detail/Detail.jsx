@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import {ListGroup,Button,Table,Card,Jumbotron} from 'react-bootstrap';
-import GoogleMap from './module/GoogleMap.jsx'
+import GoogleMap from './module/GoogleMap.jsx/index.js.js'
 import Geocode from "react-geocode";
 import './Detail.css'
 
@@ -91,10 +91,9 @@ class Detail extends Component {
                         <th colSpan="3">근무 위치</th>
                         </tr>
                     </thead>
-                    <tbody>
-                      <GoogleMap/>
-                    </tbody>
             </Table>
+            
+            <GoogleMap/>
             </div>
             <div className="D_imfo">
                 <Table responsive>
@@ -105,7 +104,20 @@ class Detail extends Component {
                     </thead>
                     <tbody>
                         <ListGroup>
-                            <ListGroup.Item>지원하기전에 꼭 확인하세요.</ListGroup.Item>
+                            <ListGroup.Item>
+                            <Card>
+                                <Card.Body>
+                                    <Card.Title>지원하기전에 3가지를 꼭 확인하세요.</Card.Title>
+                                    <Card.Text>
+                                        <ul className="footerConfom">
+                                            <li>1. 자신과 맞는 일자리 인지 확인하세요.</li>
+                                            <li>2. 일자리 의뢰인 정보를 꼭 확인하세요.</li>
+                                            <li>3. 지원하기 전 근무 위치를 꼭 확인하세요.</li>
+                                        </ul>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            </ListGroup.Item>
                         </ListGroup>
                     </tbody>
                 </Table>

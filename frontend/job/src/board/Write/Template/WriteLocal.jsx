@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import '../Write.css'
-import {Button, Card, Col, Form, Table} from "react-bootstrap";
+import {Button, Card, Col, Form, Table,ListGroup,} from "react-bootstrap";
 
 const WriteLocal = (props) => {
     const [title, setTitle] = useState()
@@ -231,17 +231,26 @@ const WriteLocal = (props) => {
                 <Table responsive>
                     <thead>
                     <tr>
-                        <th colSpan="3"  className="imfo1">저장하기 전 꼭 확인하세요!</th>
+                        <th colSpan="3"  className="imfo1">꼭 확인하세요!</th>
                     </tr>
                     </thead>
                     <tbody>
-                    <Card>
-                        <Card.Body>
-                            <ul>
-                                <li></li>
-                            </ul>
-                        </Card.Body>
-                    </Card>
+                  <ListGroup>
+                        <ListGroup.Item>
+                            <Card>
+                                <Card.Body>
+                                    <Card.Title>저장 하기전에 3가지를 꼭 확인하세요.</Card.Title>
+                                    <Card.Text>
+                                        <ul className="footerConfom">
+                                            <li>일자리 명과 근무 위치를 적었는지 확인하세요.</li>
+                                            <li>상세내용을 정확하게 기입해주세요.</li>
+                                            <li>급여를 정확하게 기입해주세요.</li>
+                                        </ul>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                            </ListGroup.Item>
+                        </ListGroup>
                     </tbody>
                 </Table>
             </div>

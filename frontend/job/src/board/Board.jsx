@@ -8,8 +8,11 @@ import axios from 'axios';
 class Board extends Component{
     state={
     BoardData:[
+        
         ],
-    Member:{}
+    Member:{
+
+      }   
     }
     componentDidMount(){
         axios.get(`http://localhost:9000/work/board/list/0`)
@@ -23,7 +26,8 @@ class Board extends Component{
     render(){
         return(
             <div>
-                <div> {/*검색*/}
+                <div> 
+                {/*검색*/}
                     <MDBCol className="d-flex">
                         <div>
                             <select className="browser-default custom-select">
@@ -34,16 +38,17 @@ class Board extends Component{
                         </div>
                         <MDBInput hint="Search" type="text" containerClass="mt-0" />
                         <MDBBtn color="primary">검색</MDBBtn>
+                        <p><Button variant="primary">글쓰기</Button></p>
                     </MDBCol>
                 </div>
-                <p><Button variant="primary">글쓰기</Button></p>
-            <div className="Board_listings">
-            <ul className="properties_list">
-                {this.state.BoardData.map((BoardDatas, index) =>{
-                return <Cards title={BoardDatas} key={index}/>
-                    })} 
-             </ul>
-            </div>
+               
+                    <div className="Board_listings">
+                    <ul className="properties_list">
+                        {this.state.BoardData.map((BoardDatas, index) =>{
+                        return <Cards title={BoardDatas} key={index}/>
+                            })} 
+                    </ul>
+                    </div>
            <Footer/>
         </div>
         )
