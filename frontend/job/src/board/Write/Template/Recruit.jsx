@@ -86,7 +86,6 @@ const Recruit = () =>{
                             <Form.Control type="email" placeholder="근무지" />
                             </Col>
                         </Form.Group>
-                
                         <Form.Group controlId="exampleForm.ControlSelect1">
                             <Form.Label  column sm={2}>모집연령</Form.Label>
                             <Col sm={10}>
@@ -116,14 +115,6 @@ const Recruit = () =>{
                                 <option>100</option>
                                 </Form.Control>
                                 </Col>  
-                        </Form.Group>
-                        <Form.Group controlId="formHorizontalEmail">
-                            <Form.Label column sm={2}>
-                            장소
-                            </Form.Label>
-                            <Col sm={10}>
-                            <Form.Control type="email" placeholder="장소" />
-                            </Col>
                         </Form.Group>
                         <Form.Group controlId="formHorizontalEmail">
                             <Form.Label column sm={2}>

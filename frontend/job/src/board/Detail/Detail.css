@@ -1,46 +1,44 @@
+
+/**common**/
 .detail{
-    width: 90%;
-    margin: auto;
+    width: 80%;
+    margin: 3% auto;
 }
+.D_imfo{
+    width: 96%;
+    margin:4% auto;
+}
+
+.table-responsive{
+    border: 1px solid #dee2e6;
+}
+.D_imfoFont{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+/**title*/
+
 .title{
     margin-bottom: 0;
+    margin-top: 2%;
     padding-top:1.5em;
     padding-bottom:1.5em; 
     background-color: #fff;
 }
-.title1{
-    margin-left: 1rem;
-    background:rgb(255, 176, 4);
-    font-weight: bold;
-    color: white;
-    border: white;
-}
 .title h2{
     font-weight: bold;
 }
-.table-responsive{
-    border: 1px solid #dee2e6;
+.title p{
+    margin-bottom: 1%;
 }
-.imfo{
-    width: 96%;
-    margin:4% auto;
-}
-.imfo1{
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-.text{
-    width: 96%;
-    margin: auto;
-}
-.map{
+
+
+.D_googleMap{
     width: 100%;
-    margin: auto
+    height: 100%;
+    position:absoulte;
 }
-.write{
-    padding-top: 1rem;
-    padding-right: 1rem;
-}
-p{
-    font-size:1.2rem;
-}
+
+

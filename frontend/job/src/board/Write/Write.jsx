@@ -3,7 +3,6 @@ import {Form, Button, Table, Card, Col} from 'react-bootstrap';
 import Title from './Template/title.jsx'
 import Recruit from './Template/Recruit.jsx'
 import DetailCon from './Template/DetailCon.jsx'
-import Location from './Template/Location.jsx'
 import FootView from './Template/FootView.jsx'
 import './Write.css'
 
@@ -20,17 +19,15 @@ class Wirte extends Component{
             <Recruit/>
             </div>
             <hr/>
-            <div className="w_Location">
+            <div className="imfo">
             <DetailCon/>
             </div>
-            <hr/>
-    
             <hr/>
             <div className="imfo">
             <FootView/>
             </div>
             <div className="buttonBox">
-                <Button variant="dark" onClick={write}>작성</Button>
+                <Button variant="dark">작성</Button>
                 <Button variant="danger">취소</Button>
             </div>
         </div>
@@ -38,11 +35,7 @@ class Wirte extends Component{
     }
 }
 
-function write(e){
-    e.preventDefault()
-    window.location = './Board'
 
-}
 
 export default Wirte
 

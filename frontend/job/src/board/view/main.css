@@ -92,18 +92,8 @@ h1, h2, h3, h4, h5 ,h6{
 .table-responsive{
     border: 1px solid #dee2e6;
 }
-.imfo{
-    width: 96%;
-    margin:4% auto;
-}
-.imfo1{
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-.text{
-    width: 96%;
-    margin: auto;
-}
+
+
 .map{
     width: 100%;
     margin: auto

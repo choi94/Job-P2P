@@ -1,6 +1,9 @@
 import React from 'react'
 import {Form, Table} from 'react-bootstrap';
 import '../Write.css'
+
+
+
 const DetailCon = ()=>{
 
     return(
@@ -18,8 +21,6 @@ const DetailCon = ()=>{
                     </tr>
                 </tbody>
             </Table>
-                    
-            
     )
 }
 export default DetailCon
