@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ebaa2-e7f5-4053-8b27-29c8cdb6adcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/job/src/board/Detail/module/GoogleMap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/job/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/job/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/board/Detail/Detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Detail/Detail.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/board/Detail/module/SimpleMap.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/DetailCon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/DetailCon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/Location.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/Recruit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/Recruit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Write.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Write.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/WriteLocal.js" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/WriteLocal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/board/Write/Write.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Write.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/board/view/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/view/main.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/job/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -30,11 +20,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/job/src/board/Write/Write.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="135">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
-                <element signature="e#13#51#0" expanded="true" />
-                <element signature="e#252#289#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job/src/board/Write/Template/WriteLocal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3415">
-              <caret line="236" column="52" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
+            <state relative-caret-position="540">
+              <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -87,8 +76,8 @@
         <option value="$PROJECT_DIR$/job/src/board/Board.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Write/Template/title.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Write/Template/Recruit.jsx" />
-        <option value="$PROJECT_DIR$/job/src/board/Write/Write.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Write/Template/WriteLocal.js" />
+        <option value="$PROJECT_DIR$/job/src/board/Write/Write.jsx" />
       </list>
     </option>
   </component>
@@ -202,18 +191,18 @@
       <workItem from="1564031222826" duration="13575000" />
       <workItem from="1564056949445" duration="17589000" />
       <workItem from="1564206227207" duration="6441000" />
-      <workItem from="1564357181583" duration="5762000" />
+      <workItem from="1564357181583" duration="7737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43367000" />
+    <option name="totallyTimeSpent" value="45342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2178594" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2178594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,7 +214,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49968335" visible="true" weight="0.23855421" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49968335" visible="true" weight="0.23855421" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003167" side_tool="true" weight="0.27349398" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -379,8 +368,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/board/Write/Template/WriteLocal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3415">
-          <caret line="236" column="52" selection-start-line="236" selection-start-column="52" selection-end-line="236" selection-end-column="52" />
+        <state relative-caret-position="540">
+          <caret line="36" column="32" lean-forward="true" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -389,11 +378,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/board/Write/Write.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <element signature="e#13#51#0" expanded="true" />
-            <element signature="e#252#289#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

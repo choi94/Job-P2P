@@ -5,10 +5,13 @@ import WriteLocal from './Template/WriteLocal'
 
 const Write = () => {
 
+    const write_summit = w => {
+        console.dir(w)
+    }
 
     return(
             <div>
-                <WriteLocal/>
+                <WriteLocal write_summit={write_summit}/>
             </div>
         );
 }
