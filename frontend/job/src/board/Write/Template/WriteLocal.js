@@ -3,14 +3,13 @@ import '../Write.css'
 import {Button, Card, Col, Form, Table} from "react-bootstrap";
 
 const WriteLocal = (props) => {
-    const [id, setId] = useState(sessionStorage.getItem('id'))
     const [title, setTitle] = useState()
     const [workDay, setWorkDay] = useState()
     const [workDateDay, setWorkDateDay] = useState()
     const [workTimeOne, setWorkTimeOne] = useState()
     const [workTimeTwo, setWorkTimeTwo] = useState()
     const [cityArea, setCityArea] = useState()
-    const [startAgeOne, setStartAgeOne] = useState()
+    const [startAgeOne, setStartAgeOne] = useState('10')
     const [startAgeTwo, setStartAgeTwo] = useState()
     const [daySalary, setDaySalary] = useState()
     const [kakao, setKakao] = useState()
@@ -20,13 +19,12 @@ const WriteLocal = (props) => {
 
     const write_check = () => {
         let data = {
-            id : id,
             title : title,
             workDay : workDay,
             workDateDay : workDateDay,
             workTime : workTimeOne.concat(` ~ ` + workTimeTwo),
             cityArea : cityArea,
-            startAge : startAgeOne.concat(' ~ ' + startAgeTwo),
+            workAge : startAgeOne.concat(' ~ ' + startAgeTwo),
             daySalary : daySalary,
             totalSalary : daySalary * workDateDay,
             kakao : kakao,

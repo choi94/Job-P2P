@@ -135,7 +135,6 @@ public class MemberController {
 
     @GetMapping("/my/{id}")
     public ResponseEntity mypage(@PathVariable("id")Long id) {
-        System.out.println("들어옴");
         QMember qMember = QMember.member;
         BooleanBuilder builder = new BooleanBuilder();
         builder.and(qMember.id.eq(id));
