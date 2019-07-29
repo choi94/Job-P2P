@@ -6,7 +6,6 @@ import WriteLocal from './Template/WriteLocal'
 const Write = () => {
 
 
-
     return(
             <div>
                 <WriteLocal/>

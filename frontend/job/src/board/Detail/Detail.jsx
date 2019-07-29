@@ -1,112 +1,90 @@
 import React,{Component} from 'react'
-import {Badge,Button,Table,Card,Jumbotron,Form} from 'react-bootstrap';
-import '../view/main.css'
+import {ListGroup,Button,Table,Card,Jumbotron} from 'react-bootstrap';
+import GoogleMap from './module/GoogleMap.jsx'
+import Geocode from "react-geocode";
+import './Detail.css'
+
+
+
+Geocode.setApiKey("AIzaSyCX4elAhSF-1mAFON3hiV0JrhMmIxLugz4");
+// Enable or disable logs. Its optional.
+// Get address from latidude & longitude.
+Geocode.fromAddress("서울특별시 강북구 인수동").then(
+  response => {
+    const { lat, lng } = response.results[0].geometry.location;
+    console.log(lat, lng);
+  },
+  error => {
+    console.error(error);
+  }
+);
+
 
 class Detail extends Component {
     render(){
         return(
             <div className="detail">
-            <hr/>
-            <Jumbotron className="title">
-            <h2>
-                저희집에서 일할 분 구합니다.<Badge variant="secondary">New</Badge>
-            </h2><br/>
-                <Badge variant="primary">#서울</Badge>
-                <Badge variant="secondary">#직종</Badge>
-                <Badge variant="success">#등록일</Badge>
-                <button type="button" class="title1">관심 JOB</button>
-            </Jumbotron>
-            <Jumbotron className="title">
-                    <p>마감 일자 : 2019년 7월 15일</p><br/>
-                    <Button variant="primary" >지원하기</Button>
-            </Jumbotron>
+                <Jumbotron className="title">
+                <h2>
+                    저희집에서 일할 분 구합니다. 
+                </h2>          
+                </Jumbotron>
+                <Jumbotron className="title">
+                        <p>시작 일자 : 2019년 7월 15일</p>
+                        <p>마감 일자 : 2019년 7월 15일</p>
+                        <Button variant="primary" >지원하기</Button>
+                </Jumbotron>
             <hr/>
 
-            <div className="imfo">
+            <div className="D_imfo">
             <Table responsive>
                     <thead>
                         <tr>
-                            <th colSpan="3" className="imfo1">모집 조건</th>
+                            <th colSpan="3" className="D_imfoFont">모집 조건</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>기간 : 2019/07/17 ~ 2019/07/19</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>장소 : 인원을 뽑은 후 알림</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>인원 : 2명</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>성별 : 무관</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>연령 : 20대 이상</td>
-                        </tr>
-                    </tbody>
-                    <tbody>
-                        <tr>
-                            <td>하루 급여 : 8만원</td>
-                        </tr>
-                        <tr>
-                            <td>총 급여 : 24만원</td>
-                        </tr>
+                    <ListGroup>
+                        <ListGroup.Item>근무기간 : 2019/07/17 ~ 2019/07/19</ListGroup.Item>
+                        <ListGroup.Item>근무시간 : 인원을 뽑은 후 알림</ListGroup.Item>
+                        <ListGroup.Item>모집연령 : 2명</ListGroup.Item>
+                        <ListGroup.Item>근무지 : </ListGroup.Item>
+                        <ListGroup.Item>연령 : </ListGroup.Item>
+                        <ListGroup.Item>하루 급여 : 8만원</ListGroup.Item>
+                        <ListGroup.Item>총 급여 : 24만원</ListGroup.Item>
+                    </ListGroup>
                     </tbody>
             </Table>
             </div>
-            <div className="imfo">
+            <div className="D_imfo">
             <Table responsive>
                     <thead>
                         <tr>
-                            <th colSpan="3" className="imfo1">의뢰인 정보</th>
+                            <th colSpan="3" className="D_imfoFont">의뢰인 정보</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>카카오톡 ID : Hong</td>
-                        </tr>
-                        <tr>
-                            <td>의뢰인의 평점 : </td>
-                        </tr>
+                    <ListGroup>
+                        <ListGroup.Item>카카오톡 ID : Hong</ListGroup.Item>
+                        <ListGroup.Item>의뢰인의 평점 : </ListGroup.Item>
+                    </ListGroup>
                     </tbody>
             </Table>
             </div>
 
-            <div className="text">
+            <div className="D_imfo">
             <Table responsive>
                     <thead>
                         <tr>
-                            <th colSpan="3" className="imfo1">상세내용</th>
+                            <th colSpan="3" className="D_imfoFont">상세내용</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>유형 : 이사를 한 후 집안 정리를 도와주실 분</td>
-                        </tr>
-                        <tr>
-                            <td>일시 : 3일, 11시~17시(상황에 따라 바뀔 수 있음)</td>
-                        </tr>
-                        <tr>
-                            <td>비고 : 점심 제공</td>
-                        </tr>
-                        <tr>
-                            <td>우대 사항 : 힘이 좋은 사람</td>
-                        </tr>
-                    </tbody>
+                        <Card body>인근이</Card>
+                   </tbody>
             </Table>
             </div>
-              
-            <div className="imfo">
+            <div className="D_imfo">
             <Table responsive>
                     <thead>
                         <tr>
@@ -114,25 +92,24 @@ class Detail extends Component {
                         </tr>
                     </thead>
                     <tbody>
-       
+                      <GoogleMap/>
                     </tbody>
             </Table>
             </div>
-
-                <div className="imfo">
-                    <Table responsive>
-                        <thead>
-                            <tr>
-                                <th colSpan="3" className="imfo1">꼭 확인하세요!</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>지원하기 전 다시 한 번 확인하세요.</td>
-                            </tr>
-                        </tbody>
-                    </Table>
-                </div>
+            <div className="D_imfo">
+                <Table responsive>
+                    <thead>
+                        <tr>
+                            <th colSpan="3" className="D_imfoFont">꼭 확인하세요!</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <ListGroup>
+                            <ListGroup.Item>지원하기전에 꼭 확인하세요.</ListGroup.Item>
+                        </ListGroup>
+                    </tbody>
+                </Table>
+            </div>
             </div>
         )
     }

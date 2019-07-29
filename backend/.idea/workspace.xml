@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/WriteLocal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/WorkBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/service/BordService.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/job/src/board/Detail/module/GoogleMap.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/DetailCon.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/FootView.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/Recruit.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/title.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Detail/module/SimpleMap.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/DetailCon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/DetailCon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/Location.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/Recruit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/Recruit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/view/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/view/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +152,7 @@
       <workItem from="1564100218654" duration="9521000" />
       <workItem from="1564206234312" duration="1419000" />
       <workItem from="1564208911751" duration="3866000" />
-      <workItem from="1564357171551" duration="2753000" />
+      <workItem from="1564357171551" duration="3160000" />
     </task>
     <servers />
   </component>
