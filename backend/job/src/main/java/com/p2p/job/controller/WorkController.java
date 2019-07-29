@@ -45,7 +45,7 @@ public class WorkController {
 //                builder.and(qMember.nickname.contains(value));
                 break;
 
-            case "temp":
+            case "nickname":
 //                builder.and(qMember.name.contains(value));
                 break;
 
@@ -68,7 +68,7 @@ public class WorkController {
         return ResponseEntity.ok(result);
     }
 
-    @PostMapping("/details/{id}")
+    @PostMapping("/write/{id}")
     public ResponseEntity saveWorkBoard(@PathVariable("id") Long member_id,
                                         @RequestBody WorkBoard workBoard) {
         Member member = new Member();

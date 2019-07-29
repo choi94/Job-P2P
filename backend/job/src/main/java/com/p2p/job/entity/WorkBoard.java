@@ -60,6 +60,9 @@ public class WorkBoard {
     @Column(name = "contents", nullable = false)
     private String contents;
 
+    @Column(name = "write_data_day", nullable = false)
+    private int workDateDay;
+
     @Column(name = "kakao", nullable = false)
     private String kakao; //
     
