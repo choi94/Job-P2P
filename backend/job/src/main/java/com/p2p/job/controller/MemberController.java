@@ -19,7 +19,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600)
 @Transactional
 @RestController
 @RequestMapping("/member")
@@ -45,6 +45,7 @@ public class MemberController {
 
         return ResponseEntity.ok(result);
     }
+
     @GetMapping("/join/{keyword}/{value}")
     public ResponseEntity findByMember(@PathVariable("keyword")String keyword,
                                         @PathVariable("value")String value) {
@@ -172,5 +173,10 @@ public class MemberController {
 				.execute();
 
         return ResponseEntity.ok("회원정보를 변경했습니다.");
+    }
+
+    @GetMapping("/test")
+    public String test() {
+        return "성공";
     }
 }

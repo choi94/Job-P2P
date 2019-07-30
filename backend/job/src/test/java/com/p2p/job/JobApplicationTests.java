@@ -47,6 +47,7 @@ public class JobApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 //        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
 //        BooleanBuilder builder = new BooleanBuilder();
 //

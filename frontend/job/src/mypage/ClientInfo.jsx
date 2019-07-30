@@ -4,7 +4,7 @@ import SupMini from "./Templates/SupMini.jsx"
 import AttMini from "./Templates/AttMini.jsx"
 import {Tabs,Tab} from 'react-bootstrap'
 
-const ClientInfo =()=>{
+const ClientInfo = () => {
     return (
         <Tabs defaultActiveKey="home" transition={false} id="noanim-tab-example" className="list-nav" >
             <Tab eventKey="home" title="지원 현황">

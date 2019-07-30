@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import {Table, Modal, Button, ListGroup} from 'react-bootstrap'
 
@@ -7,6 +7,18 @@ const SupMini = () => {
     
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const localhost = 'http://localhost:9000'
+
+    useEffect( () => {
+        axios.get(`${localhost}/work/board/registr/${sessionStorage.getItem('id')}`)
+            .then( res => {
+                console.dir(res)
+            })
+            .catch( error => {
+                alert('로그인을 해주세요')
+            })
+    },[])
     
     const state = {
         array : [

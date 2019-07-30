@@ -23,7 +23,7 @@ import java.util.Map;
 
 
 @Transactional
-@CrossOrigin(origins = "http://localhost:3000", maxAge = 3600)
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/work")
 public class WorkController {
@@ -104,6 +104,32 @@ public class WorkController {
         return ResponseEntity.ok(result);
     }
 
+    @GetMapping("/board/registr/{id}")
+    public ResponseEntity registrBoard(@PathVariable("id")Long id) {
+        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+        List<Object> list = new ArrayList<>();
+
+        query.from(qWorkBoard)
+                .where(qWorkBoard.member.id.eq(id))
+                .fetch()
+                .forEach(arr -> list.add(arr));
+
+        return ResponseEntity.ok(list);
+    }
+
+//    @GetMapping("/board/progress/{pro_id}")
+//    public ResponseEntity progressSave(@PathVariable("id")Long id) {
+//        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+//        List<Object> list = new ArrayList<>();
+//
+//        query.from(qWorkBoard)
+//                .where(qWorkBoard.member.id.eq(id))
+//                .fetch()
+//                .forEach(arr -> list.add(arr));
+//
+//        return null;
+//    }
+
     @DeleteMapping("/")
     public ResponseEntity deleteWorkBoard(@PathVariable("num")Long num) {
         workRepo.deleteById(num);
@@ -112,7 +138,6 @@ public class WorkController {
 
     @PutMapping("/")
     public ResponseEntity updateWorkBoard(@RequestBody WorkBoard workBoard) {
-
         return ResponseEntity.ok().build();
     }
 
