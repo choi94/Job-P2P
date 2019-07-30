@@ -88,7 +88,7 @@ public class WorkController {
         QWorkBoard qWorkBoard = QWorkBoard.workBoard;
         BooleanBuilder builder = new BooleanBuilder();
 
-        Pageable page = PageRequest.of(id, 6, Sort.Direction.DESC, "id");
+        Pageable page = PageRequest.of(id, 8, Sort.Direction.DESC, "id");
         List<Object> board_list = new ArrayList<>();
         List<Object> member_list = new ArrayList<>();
         Map<String, List<Object>> result = new HashMap<>();

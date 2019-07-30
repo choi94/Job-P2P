@@ -4,7 +4,7 @@ import {Form} from 'react-bootstrap';
 import './css/common.css'
 
 const Login = ({history, logins}) => {
-    const localhost = 'http://localhost:9000'
+    const localhost = 'http://ec2-54-180-117-161.ap-northeast-2.compute.amazonaws.com:9000'
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
     
