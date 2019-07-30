@@ -80,7 +80,7 @@ const WriteLocal = (props) => {
                                 </Form.Group>
                                 <Form.Group controlId="formHorizontalEmail">
                                     <Form.Label column sm={2}>
-                                        근무 기간 일
+                                    근무기간 일
                                     </Form.Label>
                                     <Col sm={10}>
                                         <Form.Control onChange={e => setWorkDateDay(e.target.value)} type="text" placeholder="근무 기간 일" />
@@ -150,29 +150,21 @@ const WriteLocal = (props) => {
                                     <Form.Label column sm={2}>모집연령</Form.Label>
                                     <Col sm={10}>
                                         <Form.Control onChange={e => setStartAgeOne(e.target.value)} as="select" className="w_choo1">
-                                            <option>10</option>
-                                            <option>20</option>
-                                            <option>30</option>
-                                            <option>40</option>
-                                            <option>50</option>
-                                            <option>60</option>
-                                            <option>70</option>
-                                            <option>80</option>
-                                            <option>90</option>
-                                            <option>100</option>
+                                            <option>10대</option>
+                                            <option>20대</option>
+                                            <option>30대</option>
+                                            <option>40대</option>
+                                            <option>50대</option>
+                                            <option>60대</option>
                                         </Form.Control>
                                         <p className="w_choo2">~</p>
                                         <Form.Control onChange={e => setStartAgeTwo(e.target.value)} as="select" className="w_choo3">
-                                            <option>10</option>
-                                            <option>20</option>
-                                            <option>30</option>
-                                            <option>40</option>
-                                            <option>50</option>
-                                            <option>60</option>
-                                            <option>70</option>
-                                            <option>80</option>
-                                            <option>90</option>
-                                            <option>100</option>
+                                            <option>10대</option>
+                                            <option>20대</option>
+                                            <option>30대</option>
+                                            <option>40대</option>
+                                            <option>50대</option>
+                                            <option>60대</option>
                                         </Form.Control>
                                     </Col>
                                 </Form.Group>
@@ -186,18 +178,18 @@ const WriteLocal = (props) => {
                                 </Form.Group>
                                 <Form.Group controlId="formHorizontalEmail">
                                     <Form.Label column sm={2}>
-                                        카카오톡 ID
-                                    </Form.Label>
-                                    <Col sm={10}>
-                                        <Form.Control onChange={e => setKakao(e.target.value)} type="text" placeholder="카카오톡 ID" />
-                                    </Col>
-                                </Form.Group>
-                                <Form.Group controlId="formHorizontalEmail">
-                                    <Form.Label column sm={2}>
                                         하루 급여
                                     </Form.Label>
                                     <Col sm={10}>
                                         <Form.Control onChange={e => setDaySalary(e.target.value)}  type="text" placeholder="급여"/>
+                                    </Col>
+                                </Form.Group>
+                                <Form.Group controlId="formHorizontalEmail">
+                                    <Form.Label column sm={2}>
+                                        카카오톡 ID
+                                    </Form.Label>
+                                    <Col sm={10}>
+                                        <Form.Control onChange={e => setKakao(e.target.value)} type="text" placeholder="카카오톡 ID" />
                                     </Col>
                                 </Form.Group>
                             </Form>

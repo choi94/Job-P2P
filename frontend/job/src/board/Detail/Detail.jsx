@@ -30,8 +30,8 @@ class Detail extends Component {
                 </h2>          
                 </Jumbotron>
                 <Jumbotron className="title">
-                        <p>시작 일자 : 2019년 7월 15일</p>
-                        <p>마감 일자 : 2019년 7월 15일</p>
+                        <p>진행 상태 : 진행 중</p>
+                        <p>마감 일자 : 2019년 8월 15일</p><br/>
                         <Button variant="primary" >지원하기</Button>
                 </Jumbotron>
             <hr/>
@@ -46,10 +46,10 @@ class Detail extends Component {
                     <tbody>
                     <ListGroup>
                         <ListGroup.Item>근무기간 : 2019/07/17 ~ 2019/07/19</ListGroup.Item>
-                        <ListGroup.Item>근무시간 : 인원을 뽑은 후 알림</ListGroup.Item>
-                        <ListGroup.Item>모집연령 : 2명</ListGroup.Item>
+                        <ListGroup.Item>근무기간 일 : 3일</ListGroup.Item>
+                        <ListGroup.Item>근무시간 : 11:00 ~ 15:00</ListGroup.Item>
+                        <ListGroup.Item>모집연령 : 20대 ~ 30대</ListGroup.Item>
                         <ListGroup.Item>근무지 : </ListGroup.Item>
-                        <ListGroup.Item>연령 : </ListGroup.Item>
                         <ListGroup.Item>하루 급여 : 8만원</ListGroup.Item>
                         <ListGroup.Item>총 급여 : 24만원</ListGroup.Item>
                     </ListGroup>
@@ -80,7 +80,7 @@ class Detail extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <Card body>인근이</Card>
+                        <Card.Body>인근이</Card.Body>
                    </tbody>
             </Table>
             </div>
