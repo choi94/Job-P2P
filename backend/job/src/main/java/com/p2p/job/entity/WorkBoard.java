@@ -25,7 +25,6 @@ import lombok.ToString;
 public class WorkBoard {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "work_id")
     private Long id; //
 
@@ -34,13 +33,13 @@ public class WorkBoard {
 
     @CreationTimestamp
     @Column(name = "write_date")
-    private LocalDateTime writeDate; //
+    private LocalDateTime writeDate;
 
     @Column(name = "recruit", nullable = false)
     private String recruit; //
 
     @Column(name = "work_day", nullable = false)
-    private int workDay; //
+    private String workDay; //
 
     @Column(name = "work_time", nullable = false)
     private String workTime; //

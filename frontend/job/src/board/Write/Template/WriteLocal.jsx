@@ -3,24 +3,37 @@ import '../Write.css'
 import {Button, Card, Col, Form, Table,ListGroup,} from "react-bootstrap";
 
 const WriteLocal = (props) => {
-    const [id, setId] = useState(sessionStorage.getItem('id'))
     const [title, setTitle] = useState()
     const [workDay, setWorkDay] = useState()
     const [workDateDay, setWorkDateDay] = useState()
     const [workTimeOne, setWorkTimeOne] = useState()
     const [workTimeTwo, setWorkTimeTwo] = useState()
-    const [workTime, setWorkTime] = useState()
     const [cityArea, setCityArea] = useState()
-    const [startAgeOne, setStartAgeOne] = useState()
+    const [startAgeOne, setStartAgeOne] = useState('10')
     const [startAgeTwo, setStartAgeTwo] = useState()
-    const [startAge, setStartAge] = useState()
     const [daySalary, setDaySalary] = useState()
-    const [totalSalary, setTotalSalary] = useState()
     const [kakao, setKakao] = useState()
     const [recruit, setRecruit] = useState()
     const [progressState, setProgressState] = useState('모집중')
     const [contents, setContents] = useState()
 
+    const write_check = () => {
+        let data = {
+            title : title,
+            workDay : workDay,
+            workDateDay : workDateDay,
+            workTime : workTimeOne.concat(` ~ ` + workTimeTwo),
+            cityArea : cityArea,
+            workAge : startAgeOne.concat(' ~ ' + startAgeTwo),
+            daySalary : daySalary,
+            totalSalary : daySalary * workDateDay,
+            kakao : kakao,
+            recruit : recruit,
+            progressState : progressState,
+            contents : contents
+        }
+        props.write_summit(data)
+    }
 
     return (
         <div className="write">
@@ -242,7 +255,7 @@ const WriteLocal = (props) => {
                 </Table>
             </div>
             <div className="buttonBox">
-                <Button variant="dark" >작성</Button>
+                <Button onClick={write_check} variant="dark">작성</Button>
                 <Button variant="danger">취소</Button>
             </div>
         </div>

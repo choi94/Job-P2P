@@ -29,7 +29,6 @@ import lombok.ToString;
         uniqueConstraints = {@UniqueConstraint(columnNames = {"nickname"})})
 public class Member {
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "member_id")

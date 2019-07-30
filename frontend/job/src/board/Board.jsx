@@ -15,16 +15,13 @@ class Board extends Component{
       }   
     }
     componentDidMount(){
-        axios.get(`http://localhost:9000/board/boardList`)
+        axios.get(`http://localhost:9000/work/board/list/0`)
         .then(res => {
-            res.data.forEach((a)=>{
-                this.setState({
-                    BoardData: this.state.BoardData.concat(a)
-                })
-            })
+            console.dir(res)
          })
-
-         
+        .catch( error => {
+            alert('실패')
+        })
     }
     render(){
         return(

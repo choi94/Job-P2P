@@ -10,11 +10,16 @@ import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @Transactional
@@ -76,6 +81,27 @@ public class WorkController {
         workBoard.setMember(member);
         workRepo.save(workBoard);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/board/list/{id}")
+    public ResponseEntity selectBoard(@PathVariable("id")int id) {
+        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+        BooleanBuilder builder = new BooleanBuilder();
+
+        Pageable page = PageRequest.of(id, 6, Sort.Direction.DESC, "id");
+        List<Object> board_list = new ArrayList<>();
+        List<Object> member_list = new ArrayList<>();
+        Map<String, List<Object>> result = new HashMap<>();
+
+        workRepo.findByIdGreaterThan(0L, page).forEach(arr -> {
+            board_list.add(arr);
+            member_list.add(arr.getMember());
+        });
+
+        result.put("board", board_list);
+        result.put("member", member_list);
+
+        return ResponseEntity.ok(result);
     }
 
     @DeleteMapping("/")
