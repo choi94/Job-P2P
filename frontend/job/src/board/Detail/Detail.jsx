@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import {ListGroup,Button,Table,Card,Jumbotron} from 'react-bootstrap';
-import GoogleMap from './module/GoogleMap.jsx/index.js.js'
+import GoogleMap from './module/GoogleMap.jsx'
 import Geocode from "react-geocode";
 import './Detail.css'
 
