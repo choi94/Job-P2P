@@ -1,5 +1,6 @@
 import React from 'react'
 import {Button} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import '../Main.css'
 
 const Juombo =()=>{
@@ -14,16 +15,11 @@ const Juombo =()=>{
                   당신에게 가장 잘 맞는 일자리와 매칭됩니다.
               </p>
               <p>
-                <Button variant="primary" onClick={job}>일자리 구하기</Button>
+              <Link to={{pathname : '/board'}}><Button variant="primary">일자리 구하기</Button></Link>
               </p>
             </div>
           </div>
     )
-}
-
-function job(e){
-  e.preventDefault()
-  window.location = './Board'
 }
 
 export default Juombo

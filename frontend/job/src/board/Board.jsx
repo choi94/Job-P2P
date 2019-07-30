@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import Cards from './view/Cards.jsx'
 import Footer from '../common/Footer'
+import { Link } from "react-router-dom";
 import {Button} from 'react-bootstrap';
 import { MDBInput, MDBCol, MDBBtn } from "mdbreact";
 import axios from 'axios';
@@ -20,7 +21,7 @@ class Board extends Component{
             console.dir(res)
          })
         .catch( error => {
-            alert('실패')
+            //alert('실패')
         })
     }
     render(){
@@ -38,7 +39,7 @@ class Board extends Component{
                         </div>
                         <MDBInput hint="Search" type="text" containerClass="mt-0" />
                         <MDBBtn color="primary">검색</MDBBtn>
-                        <p><Button variant="primary">글쓰기</Button></p>
+                        <p><Link to={{pathname : '/write'}}><Button variant="primary">글쓰기</Button></Link></p>
                     </MDBCol>
                 </div>
                
@@ -53,11 +54,6 @@ class Board extends Component{
         </div>
         )
     }
-}
-
-function write(e){
-    e.preventDefault()
-    window.location = './Write'
 }
 
 export default Board
