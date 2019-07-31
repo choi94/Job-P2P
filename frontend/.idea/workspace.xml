@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ebaa2-e7f5-4053-8b27-29c8cdb6adcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../backend/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/VolunteerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/mypage/Templates/ResMiniList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/mypage/ClientInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/ClientInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/mypage/MyPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/MyPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/mypage/Templates/ResMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Templates/ResMini.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/mypage/Templates/SupMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Templates/SupMini.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/job/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -86,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/ResMini.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="315">
+              <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -293,12 +280,12 @@
       <workItem from="1564056949445" duration="17589000" />
       <workItem from="1564206227207" duration="6441000" />
       <workItem from="1564357181583" duration="20431000" />
-      <workItem from="1564531893304" duration="14258000" />
+      <workItem from="1564531893304" duration="14545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72294000" />
+    <option name="totallyTimeSpent" value="72581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
@@ -515,8 +502,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/ResMini.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="315">
+          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
