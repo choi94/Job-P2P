@@ -2,49 +2,18 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import {Table, Modal, Button, ListGroup} from 'react-bootstrap'
 
-const SupMini = () => {
+const SupMini = (props) => {
     const [show, setShow] = useState(false);
     
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
     const localhost = 'http://localhost:9000'
-
-    useEffect( () => {
-        axios.get(`${localhost}/work/board/registr/${sessionStorage.getItem('id')}`)
-            .then( res => {
-                console.dir(res)
-            })
-            .catch( error => {
-                alert('로그인을 해주세요')
-            })
-    },[])
-    
-    const state = {
-        array : [
-            {
-                name: '홍길동',
-                age: '27',
-                gender: '남',
-                phone: '010-0000-0000'
-            },
-            {
-                name: '길동',
-                age: '26',
-                gender: '남',
-                phone: '010-1111-0000'
-            }
-        ]
-    } 
-
-    const handleCreate = (data) => {
-        const { array } = state;
-        state({
-            array: array.concat({ id: this.id++, ...data })
-        })
-    }
-
-    const { array } = state;
+    const [boardList, setBoardList] = useState()
+    const [id, setId] = useState()
+    const [title, setTitle] = useState()
+    const [writeDate, setWriteDate] = useState()
+    const [recruit, setRecruit] = useState()
 
     const array2 = [
         '홍길동',
@@ -54,6 +23,13 @@ const SupMini = () => {
     ]
 
     const [name, age, gender, phone] = array2;
+
+    const test10 = () => {
+        props.boardList.map( (value, index) => {
+            console.log(value)
+        })
+
+    }
         
         return(
             <div>
@@ -69,20 +45,20 @@ const SupMini = () => {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
+                            <td>{id}</td>
+                            <td>{writeDate}</td>
+                            <td>{title}</td>
+                            <td>{recruit}</td>
                             <td>
-                                <div onCreate={handleCreate}>
+                                <div>
                                     <Button variant="primary" onClick={handleShow}>지원자 현황</Button>
                                     <Modal show={show} onHide={handleClose}>
                                         <Modal.Header closeButton>
                                             <Modal.Title>지원자 현황</Modal.Title>
                                         </Modal.Header>
-                                        <Modal.Body data={state.array}>
+                                        <Modal.Body>
                                             <ListGroup>
-                                                <ListGroup.Item >
+                                                <ListGroup.Item>
                                                     <span className="list">이름 : {name}</span>
                                                     <span className="list">나이 : {age}</span>
                                                     <span className="list">성별 : {gender}</span>
@@ -95,7 +71,6 @@ const SupMini = () => {
                                         </Modal.Footer>
                                     </Modal>
                                 </div>
-                                <div onCreate={handleCreate}>{JSON.stringify(array)}</div>
                             </td>
                         </tr>
                         <tr>
@@ -113,6 +88,7 @@ const SupMini = () => {
                             <td><div/></td>
                         </tr>
                     </tbody>
+                    <input type="button" value="테스트" onClick={test10}/>
                 </Table>
                 
             </div>

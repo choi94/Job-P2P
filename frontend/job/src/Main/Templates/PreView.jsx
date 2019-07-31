@@ -1,76 +1,32 @@
 import React from 'react'
 import {Card} from 'react-bootstrap';
-import { BrowserRouter as Link,Router } from "react-router-dom";
+import { NavLink } from 'react-router-dom'
 import '../Main.css'
 import test from '../image/test.png';
 
-const PreView =()=>{
+const PreView =({board})=>{
     return(
-      <div className="listingsMain">
-		  	<div className="listingsMainTitle" >
-				<h1>최근에 올라온 Job</h1>
-			</div>
-			<ul className="properties_list">
-				<li>
-				<Link to="/Detail">
-					<Card>
-					<Card.Img variant="top" src={test} />
-					<Card.Body>
-					<Card.Title>을지로 청소 구합니다.</Card.Title>
-					<Card.Text>
-						일자리 간단한 소개
-					</Card.Text>
-					</Card.Body>
-					<Card.Footer>
-					<small className="text-muted">갑의 평점</small>
-					</Card.Footer>
-					</Card>
-				</Link>
-				</li> 
-				<li>
-					<Card>
-					<Card.Img variant="top" src={test} />
-					<Card.Body>
-					<Card.Title>을지로 청소 구합니다.</Card.Title>
-					<Card.Text>
-						일자리 간단한 소개
-					</Card.Text>
-					</Card.Body>
-					<Card.Footer>
-					<small className="text-muted">갑의 평점</small>
-					</Card.Footer>
-					</Card>
-				</li> 
-				<li>
-					<Card>
-					<Card.Img variant="top" src={test} />
-					<Card.Body>
-					<Card.Title>을지로 청소 구합니다.</Card.Title>
-					<Card.Text>
-						일자리 간단한 소개
-					</Card.Text>
-					</Card.Body>
-					<Card.Footer>
-					<small className="text-muted">갑의 평점</small>
-					</Card.Footer>
-					</Card>
-				</li> 
-				<li>
-					<Card>
-					<Card.Img variant="top" src={test} />
-					<Card.Body>
-					<Card.Title>을지로 청소 구합니다.</Card.Title>
-					<Card.Text>
-						일자리 간단한 소개
-					</Card.Text>
-					</Card.Body>
-					<Card.Footer>
-					<small className="text-muted">갑의 평점</small>
-					</Card.Footer>
-					</Card>
-				</li>
-			</ul>
-    </div>
+      
+		<li>
+		<NavLink to ={`/Detail/`+board.id}>
+		   <Card className="BoardList_Card">
+		   <Card.Body>
+		   <Card.Title>{board.title}</Card.Title>
+		   <Card.Text>
+				{board.contents}
+		   </Card.Text>
+		   <Card.Text>
+				  <p className="text-muted">{board.cityArea} 총{board.totalSalary}만원</p>  
+		   </Card.Text>
+		   </Card.Body>
+		   <Card.Footer>
+			  <p className="text-muted">작성자 : {board.member.nickname} 평점 {board.member.volunteerScore}/5 </p>        
+		   </Card.Footer>
+		   
+		   </Card>
+		</NavLink>   
+	  </li> 
+
     );
 }
 

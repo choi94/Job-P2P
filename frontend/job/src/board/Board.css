@@ -8,13 +8,10 @@
     margin: 5% 0;
 }
 
-
-
-
 /*  listings section  */
 .Board_listings{
     width: 80%;
-    margin: auto;
+    margin: 5% auto;
     
 }
 .Board_listings .listingsMainTitle
@@ -49,21 +46,24 @@
     width: 18.90909090909091%;
     height: auto;
     position: relative;
-    margin: 0 2.5%;
+    margin: 2% 2.5%;
 }
-.Board_listings ul.properties_list li img.property_img{
-    width: 100%;
-    height: auto!important;
-    vertical-align: top;
+.BoardList_Card{
+   border: 2px solid #cbced3;
+   text-overflow: ellipsis;
+   overflow: hidden;
 }
+.card-title{
+white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+font-weight: bold;
+}
+.card-text{
+white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+}
+.d-flex{
+    margin:5% auto;
 
-.PreviewMoreBox{
-    width: 15%;
-    clear: both;
-    margin: auto;
-    text-align: center;
 }
-
 
 
 @media (max-width:1500px) {
@@ -74,14 +74,7 @@
     .Board_listings .properties_list
     {}
     
-    .Board_listings ul.properties_list li{
-        display: block;
-        width: 20.90909090909091%;
-        height: auto;
-        position: relative;
-        float: left;
-        margin: 0 2%;
-    }
+
     .Board_listings ul.properties_list li img.property_img{
         width: 100%;
         height: auto!important;

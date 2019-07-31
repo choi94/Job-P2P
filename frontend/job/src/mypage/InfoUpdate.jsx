@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
-import {MDBBtn, MDBInput } from 'mdbreact';
+import { MDBInput } from 'mdbreact';
 import {Button} from 'react-bootstrap'
 
 const InfoUpdate = ({history,location}) => {

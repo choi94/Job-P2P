@@ -32,18 +32,9 @@ class HeaderNavbar extends Component {
     render() {
         return(
             <Router>
-                <Navbar collapseOnSelect expand="lg" className="Header"  variant="dark" >
-                  <Link to="/" className="navbar-brand">
-                  <img
-                    alt=""
-                    src="/logo.svg"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                  />
-                  {' JOP P2P'}
-                  </Link>
-                  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar collapseOnSelect expand="lg" className="Header"  variant="dark">
+                  <Navbar.Brand className="navbar-brand"><Link to="/" className="navbar-brand">JOP P2P</Link></Navbar.Brand>
+                  <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                   <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                       <Link to="/board" className="nav-link">탐색</Link>
@@ -51,17 +42,15 @@ class HeaderNavbar extends Component {
                             this.state.login_checked ? <Link to="/mypage" className="nav-link">Mypage</Link> : null
                         }
                     </Nav>
-                      {
-                          this.state.login_checked ?
-                          <Nav onClick={this.logout_checking}>
-                              <Link to="/" className="nav-link">Logout</Link>
-                          </Nav>
-                            :
-                          <Nav>
-                              <Link to={{pathname : "/login"}} className="nav-link">Sign in</Link>
-                              <Link to="/join" className="nav-link">Join</Link>
-                          </Nav>
-                      }
+                    {this.state.login_checked ?
+                    <Nav className="nav-items"  onClick={this.logout_checking}>
+                        <Link to="/" className="nav-link">Logout</Link>
+                    </Nav>
+                    :
+                    <Nav className="nav-items">
+                        <Link to={{pathname : "/login"}} className="nav-link">Sign in</Link>
+                        <Link to="/join" className="nav-link">Join</Link>
+                    </Nav>}
                   </Navbar.Collapse>
                  </Navbar>
                   <Route path="/" exact component = {Main} />
@@ -69,7 +58,7 @@ class HeaderNavbar extends Component {
                   <Route path="/login" component={(props) => <Login {...props} logins={this.login_checking}/>}/>
                   <Route path="/join" component={Join}/>
                   <Route path="/mypage" component={MyPage}/>
-                  <Route path="/detail" component={Detail}/>
+                  <Route path="/detail/:id" component={Detail}/>
                   <Route path="/infoUpdate" component={InfoUpdate}/>
                   <Route path="/drop" component={Drop}/>
                   <Route path="/write" component={Write}/>
