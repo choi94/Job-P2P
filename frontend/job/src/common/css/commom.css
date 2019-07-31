@@ -1,9 +1,9 @@
 
 .Header{
     background-color: #0c151c;
-    padding: 1% 0 ;
     /**background: linear-gradient( to bottom, #f8f9fa 94%, rgba(238, 237, 237, 0.986) 1% );*/
 }
+
 .HeaderScroll{
     position: fixed;
     width: 100%;
@@ -15,6 +15,7 @@
 .navbar-brand{
     font-weight: bold;
     color: #ffffff !important;
+    margin-left: 1rem;
 }
 .navbar-nav{
     margin-right: 1.5em;
@@ -30,4 +31,12 @@
 .row{
     width: 50%;
     margin: auto;
+}
+.nav-items{
+    margin-left: 10%;
+
+}
+
+.nav-link:hover{
+    color: #ffff !important;
 }
