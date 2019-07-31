@@ -6,6 +6,7 @@ import PreView from './Templates/PreView.jsx'
 import FooterIntro from './Templates/FooterIntro.jsx'
 import Footer from '../common/Footer.jsx'
 import './Main.css'
+import axios from 'axios'
 import im from './image/시안4.png'
 import { NavLink } from 'react-router-dom'
 
@@ -15,13 +16,24 @@ class Main extends Component{
         PreviewData:[
                
             ],
-        BestData:[
-        
-        ],
         Member:{
     
           }   
         }
+    componentDidMount(){
+        axios.get(`http://localhost:9000/work/board/list/0`)
+        .then(res => {
+            console.log(res.data)
+                res.data.board.forEach((a)=>{
+                    this.setState({
+                        PreviewData: this.state.PreviewData.concat(a)
+                    })
+                })
+        }).catch( error => {
+                alert('실패')
+        })
+    }
+    
     render(){
         return(
     <div className="Mainbody">
@@ -39,15 +51,15 @@ class Main extends Component{
                 </div>
                 <ul className="properties_list">
                 {this.state.PreviewData.map((PreviewDatas, index) =>{
-                        return <PreView title={PreviewDatas} key={index}/>
-                            })} 
+                        return <PreView board={PreviewDatas} key={index}/>
+                })} 
                 </ul>
             </div>
         </div>
         <div className="PreviewMoreBox">
 			<NavLink to ="/Board" className="more_listing_btn">+더보기</NavLink>
 			</div>
-        <div className="m4">
+{/*         <div className="m4">
             <div className="listingsMain">
                 <div className="listingsMainTitle" >
                     <h1>best Job</h1>
@@ -59,7 +71,7 @@ class Main extends Component{
                 </ul>
             </div>
         </div>    
-
+ */}
 
         <div className="m5">
             <FooterIntro/>
@@ -72,12 +84,6 @@ class Main extends Component{
     </div>
         )
     }
-
-    BoardMove =(e) =>
-    {
-        e.preventDefault()
-    }
-
 }
 
 const Im ={

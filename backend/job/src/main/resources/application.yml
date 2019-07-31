@@ -6,13 +6,11 @@ spring:
     mvc:
         view:
             suffix: .html
-
     jpa:
         show-sql: true
         database: mysql
         hibernate:
             ddl-auto: update
-
     datasource:
         driver-class-name: org.mariadb.jdbc.Driver
         url: jdbc:mariadb://choi.c2q71xxixuky.ap-northeast-2.rds.amazonaws.com/job_p2p

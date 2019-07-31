@@ -3,24 +3,25 @@ import Cards from './view/Cards.jsx'
 import Footer from '../common/Footer'
 import {Button} from 'react-bootstrap';
 import { MDBInput, MDBCol, MDBBtn } from "mdbreact";
+import { NavLink } from 'react-router-dom'
 import axios from 'axios';
 
 class Board extends Component{
     state={
-    BoardData:[
-        
-        ],
-    Member:{
-
-      }   
+    BoardData:[   
+    ],
     }
     componentDidMount(){
         axios.get(`http://localhost:9000/work/board/list/0`)
         .then(res => {
-            console.dir(res)
-         })
-        .catch( error => {
-            alert('실패')
+            console.log(res.data)
+                res.data.board.forEach((a)=>{
+                    this.setState({
+                        BoardData: this.state.BoardData.concat(a)
+                    })
+                })
+        }).catch( error => {
+                alert('실패')
         })
     }
     render(){
@@ -41,15 +42,17 @@ class Board extends Component{
                         <p><Button variant="primary">글쓰기</Button></p>
                     </MDBCol>
                 </div>
-               
                     <div className="Board_listings">
                     <ul className="properties_list">
-                        {this.state.BoardData.map((BoardDatas, index) =>{
-                        return <Cards title={BoardDatas} key={index}/>
+                        {this.state.BoardData.map((BoardDatas,index) =>{
+                        return <Cards board={BoardDatas} key={index}/>
                             })} 
                     </ul>
                     </div>
-           <Footer/>
+                    <div className="PreviewMoreBox">
+                    <NavLink to ="/Board" className="more_listing_btn">+더보기</NavLink>
+                    </div>
+            <Footer/>
         </div>
         )
     }
