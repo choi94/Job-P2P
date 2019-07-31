@@ -25,6 +25,7 @@ import lombok.ToString;
 public class WorkBoard {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "work_id")
     private Long id; //
 

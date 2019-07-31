@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios';
 import {Form} from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import './css/common.css'
 
 const Login = ({history, logins}) => {
@@ -44,7 +45,8 @@ const Login = ({history, logins}) => {
       </div>
       <div className="box2">
         <button onClick={login} className="button1">로그인</button>
-        <p className="join">아직 계정이 없으신가요? <a href="/Join">계정 만들기></a></p>
+        <p className="join">아직 계정이 없으신가요?</p>
+        <p><Link to={{pathname : '/join'}}>계정 만들기></Link></p>
       </div>
     </div>
   );

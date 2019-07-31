@@ -82,7 +82,7 @@ const DeclarInfo = (props) => {
                     <table>
                         <tr>
                             <td class="bb">포인트 :</td>
-                            <td class="cc">{point}점</td>
+                            <td class="cc">{point}점 <Button variant="info" size="sm">충전하기</Button></td>
                         </tr>
                     </table>
                     </Card.Text>

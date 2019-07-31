@@ -40,7 +40,7 @@ class Board extends Component{
                             </select>
                         </div>
                         <MDBInput hint="Search" type="text" containerClass="mt-0" />
-                        <MDBBtn color="primary">검색</MDBBtn>
+                        <MDBBtn color="secondary">검색</MDBBtn>
                         <p><Link to={{pathname :'/write'}}><Button variant="primary">글쓰기</Button></Link></p>
                     </MDBCol>
                 </div>

@@ -69,9 +69,9 @@ font-weight: bold;
 white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
 }
 .d-flex{
-    margin:5% auto;
-
+    margin: 5% auto;
 }
+
 
 
 @media (max-width:1500px) {

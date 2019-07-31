@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from "react-router-dom";
 import '../Write.css'
 import {Button, Card, Col, Form, Table,ListGroup,} from "react-bootstrap";
 
@@ -248,7 +249,7 @@ const WriteLocal = (props) => {
             </div>
             <div className="buttonBox">
                 <Button onClick={write_check} variant="dark">작성</Button>
-                <Button variant="danger">취소</Button>
+                <Link to='/board'><Button variant="danger">취소</Button></Link>
             </div>
         </div>
     )
