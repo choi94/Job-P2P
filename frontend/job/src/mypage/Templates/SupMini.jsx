@@ -1,40 +1,54 @@
-import React, {useEffect, useState} from 'react'
-import axios from 'axios';
-import {Table, Modal, Button, ListGroup} from 'react-bootstrap'
+import React, {useEffect, useState, Component} from 'react'
+import {Table} from 'react-bootstrap'
+import SupMiniList from './SupMiniList'
+import axios from "axios";
 
-const SupMini = (props) => {
-    const [show, setShow] = useState(false);
-    
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+class SupMini extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            list : []
+        }
+    }
 
-    const localhost = 'http://localhost:9000'
-    const [boardList, setBoardList] = useState()
-    const [id, setId] = useState()
-    const [title, setTitle] = useState()
-    const [writeDate, setWriteDate] = useState()
-    const [recruit, setRecruit] = useState()
 
-    const array2 = [
-        '홍길동',
-        '27',
-        '남',
-        '010-0000-0000'
-    ]
+    // const localhost = 'http://localhost:9000'
+    // const [registrList, setRegistrList] = useState()
 
-    const [name, age, gender, phone] = array2;
+    // useEffect( () => {
+    //     axios.get(`${localhost}/work/board/registr/${sessionStorage.getItem('id')}`)
+    //         .then( res => {
+    //             console.dir(res.data)
+    //             setRegistrList(res.data)
+    //         })
+    //         .catch( error => {
+    //             alert('로그인을 해주세요')
+    //         })
+    // },[])
 
-    const test10 = () => {
-        props.boardList.map( (value, index) => {
-            console.log(value)
-        })
+    // componentWillUnmount() {
+    // }
+
+    componentWillMount() {
+        let localhost = 'http://localhost:9000'
+
+        axios.get(`${localhost}/work/board/registr/${sessionStorage.getItem('id')}`)
+                .then( res => {
+                    res.data.forEach( arr => {
+                        this.setState({list : this.state.list.concat(arr)})
+                    })
+                })
+                .catch( error => {
+                    alert('로그인을 해주세요')
+                })
 
     }
-        
+
+    render() {
         return(
-            <div>
-                <Table responsive>
-                    <thead>
+                <div>
+                    <Table responsive>
+                        <thead>
                         <tr className="res">
                             <th>#</th>
                             <th>등록일</th>
@@ -42,57 +56,15 @@ const SupMini = (props) => {
                             <th>마감일</th>
                             <th>지원자 현황 보기</th>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>{id}</td>
-                            <td>{writeDate}</td>
-                            <td>{title}</td>
-                            <td>{recruit}</td>
-                            <td>
-                                <div>
-                                    <Button variant="primary" onClick={handleShow}>지원자 현황</Button>
-                                    <Modal show={show} onHide={handleClose}>
-                                        <Modal.Header closeButton>
-                                            <Modal.Title>지원자 현황</Modal.Title>
-                                        </Modal.Header>
-                                        <Modal.Body>
-                                            <ListGroup>
-                                                <ListGroup.Item>
-                                                    <span className="list">이름 : {name}</span>
-                                                    <span className="list">나이 : {age}</span>
-                                                    <span className="list">성별 : {gender}</span>
-                                                    <span className="list">번호 : {phone}</span>
-                                                </ListGroup.Item>
-                                            </ListGroup>
-                                        </Modal.Body>
-                                        <Modal.Footer>
-                                            <Button variant="secondary" onClick={handleClose}>Close</Button>
-                                        </Modal.Footer>
-                                    </Modal>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
-                            <td><div/></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
-                            <td>Table cell</td>
-                            <td><div/></td>
-                        </tr>
-                    </tbody>
-                    <input type="button" value="테스트" onClick={test10}/>
-                </Table>
-                
-            </div>
+                        </thead>
+                        {this.state.list.map( (value, index) => {
+                            return <SupMiniList list={value} index={index}/>
+                        })}
+
+                    </Table>
+                </div>
         );
     }
 
+}
 export default SupMini;

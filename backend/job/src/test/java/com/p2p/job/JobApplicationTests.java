@@ -3,10 +3,9 @@ package com.p2p.job;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 
-import com.p2p.job.entity.Member;
-import com.p2p.job.entity.QWorkBoard;
-import com.p2p.job.entity.WorkBoard;
+import com.p2p.job.entity.*;
 import com.p2p.job.repository.MemberRepository;
+import com.p2p.job.repository.VolunteerRepository;
 import com.p2p.job.repository.WorkRepository;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -18,6 +17,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.Commit;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -45,8 +45,36 @@ public class JobApplicationTests {
 	@Autowired
 	EntityManager entityManager;
 
+	@Autowired
+	VolunteerRepository volRepo;
+
 	@Test
 	public void contextLoads() {
+		Member member = new Member();
+		WorkBoard workBoard = new WorkBoard();
+		Volunteer volunteer = new Volunteer();
+
+//		member.setId(1L);
+//		workBoard.setId(4L);
+//
+//		volunteer.setWorkBoard(workBoard);
+//		volunteer.setMember(member);
+
+		QVolunteer qVolunteer = QVolunteer.volunteer;
+
+//		volRepo.save(volunteer);
+
+		// 요청을 받으면 게시판 상태 바꾸기
+
+		query.selectFrom(qVolunteer)
+				.where(qVolunteer.member.id.eq(1L))
+				.fetch()
+				.forEach(arr -> {
+					System.out.println(arr.getWorkBoard());
+				});
+
+
+
 
 //        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
 //        BooleanBuilder builder = new BooleanBuilder();

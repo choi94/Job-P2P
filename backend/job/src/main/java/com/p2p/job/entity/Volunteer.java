@@ -11,6 +11,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.Getter;
@@ -29,6 +30,7 @@ public class Volunteer {
     @Column(name = "volunteer_id")
     private Long id;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "member_id")
     private Member member;

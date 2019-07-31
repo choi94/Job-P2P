@@ -103,6 +103,28 @@ public class WorkController {
 
         return ResponseEntity.ok(result);
     }
+    @GetMapping("/board/detailList/{id}")
+    public ResponseEntity detailBoard(@PathVariable("id")int id) {
+        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+        BooleanBuilder builder = new BooleanBuilder();
+
+        Pageable page = PageRequest.of(id, 1, Sort.Direction.DESC, "id");
+        List<Object> board_list = new ArrayList<>();
+        List<Object> member_list = new ArrayList<>();
+        Map<String, List<Object>> result = new HashMap<>();
+
+        workRepo.findByIdGreaterThan(0L, page).forEach(arr -> {
+            board_list.add(arr);
+            member_list.add(arr.getMember());
+        });
+
+        result.put("board", board_list);
+        result.put("member", member_list);
+        System.out.println(result);
+
+        return ResponseEntity.ok(result);
+    }
+
 
     @GetMapping("/board/registr/{id}")
     public ResponseEntity registrBoard(@PathVariable("id")Long id) {
@@ -111,9 +133,9 @@ public class WorkController {
 
         query.from(qWorkBoard)
                 .where(qWorkBoard.member.id.eq(id))
+                .orderBy(qWorkBoard.id.desc())
                 .fetch()
                 .forEach(arr -> list.add(arr));
-
         return ResponseEntity.ok(list);
     }
 

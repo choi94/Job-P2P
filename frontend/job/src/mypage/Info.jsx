@@ -4,7 +4,7 @@ import {CardGroup,Card,Button} from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
 
-const DeclarInfo = ({history}) => {
+const DeclarInfo = (props) => {
     const localhost = 'http://localhost:9000'
     const [email, setEmail] = useState()
     const [name, setName] = useState()
@@ -18,7 +18,7 @@ const DeclarInfo = ({history}) => {
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
-                console.dir(res)
+                console.dir(res.data)
                 setName(res.data.member.name)
                 setNickname(res.data.member.nickname)
                 setEmail(res.data.member.email)
@@ -27,6 +27,7 @@ const DeclarInfo = ({history}) => {
                 setRequest(res.data.member.requestScore)
                 setPoint(res.data.member.point)
                 setPhone(res.data.member.phone)
+                props.vol_boardList(res.data.volunteer_board)
             })
             .catch( error => {
                 // alert('오류가 발생했습니다.')

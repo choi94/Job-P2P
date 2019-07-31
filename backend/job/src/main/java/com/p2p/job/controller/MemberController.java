@@ -10,6 +10,7 @@ import javax.transaction.Transactional;
 
 import com.p2p.job.entity.Member;
 import com.p2p.job.entity.QMember;
+import com.p2p.job.entity.QVolunteer;
 import com.p2p.job.repository.MemberRepository;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -137,15 +138,25 @@ public class MemberController {
     @GetMapping("/my/{id}")
     public ResponseEntity mypage(@PathVariable("id")Long id) {
         QMember qMember = QMember.member;
-        BooleanBuilder builder = new BooleanBuilder();
-        builder.and(qMember.id.eq(id));
+        QVolunteer qVolunteer = QVolunteer.volunteer;
 
         Map<String,Object> result = new HashMap<>();
+        List<Object> vol_list = new ArrayList<>();
 
-        memberRepo.findAll(builder).forEach(arr -> {
-            result.put("member", arr);
-            result.put("volunteer", arr.getVolunteer());
-        });
+
+        query.from(qMember)
+                .where(qMember.id.eq(id))
+                .fetch()
+                .forEach(arr -> result.put("member", arr));
+
+        query.selectFrom(qVolunteer)
+                .where(qVolunteer.member.id.eq(id))
+                .fetch()
+                .forEach(arr -> {
+                    vol_list.add(arr);
+                });
+        result.put("volunteer_board", vol_list);
+
         return ResponseEntity.ok(result);
     }
 
