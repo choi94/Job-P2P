@@ -13,8 +13,7 @@ import { NavLink } from 'react-router-dom'
 
 class Main extends Component{   
     state={
-        PreviewData:[
-               
+        PreviewData:[ 
             ],
         Member:{
     
@@ -23,7 +22,6 @@ class Main extends Component{
     componentDidMount(){
         axios.get(`http://localhost:9000/work/board/list/0`)
         .then(res => {
-            console.log(res.data)
                 res.data.board.forEach((a)=>{
                     this.setState({
                         PreviewData: this.state.PreviewData.concat(a)
@@ -51,7 +49,7 @@ class Main extends Component{
                 </div>
                 <ul className="properties_list">
                 {this.state.PreviewData.map((PreviewDatas, index) =>{
-                        return <PreView board={PreviewDatas} key={index}/>
+                        return <PreView board={PreviewDatas} num={index} key={index}/>
                 })} 
                 </ul>
             </div>

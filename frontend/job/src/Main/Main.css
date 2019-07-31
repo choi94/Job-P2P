@@ -103,12 +103,7 @@ button a:hover{
     width: 18.90909090909091%;
     height: auto;
     position: relative;
-    margin: 0 2.5%;
-}
-.listingsMain ul.properties_list li img.property_img{
-    width: 100%;
-    height: auto!important;
-    vertical-align: top;
+    margin: 2% 2.5%;
 }
 
 
