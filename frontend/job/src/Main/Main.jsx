@@ -13,6 +13,7 @@ import { NavLink } from 'react-router-dom'
 
 class Main extends Component{   
     state={
+        bno:8,
         PreviewData:[ 
             ],
         Member:{
@@ -20,7 +21,7 @@ class Main extends Component{
           }   
         }
     componentDidMount(){
-        axios.get(`http://localhost:9000/work/board/list/0`)
+        axios.get(`http://localhost:9000/work/board/list/0/${this.state.bno}`)
         .then(res => {
                 res.data.board.forEach((a)=>{
                     this.setState({

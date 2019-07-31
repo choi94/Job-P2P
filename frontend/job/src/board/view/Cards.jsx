@@ -17,8 +17,8 @@ const Cards =({board,num})=>{
          <NavLink to ={`/detail/`+board.id+`/`+num} >
             <Card className="BoardList_Card">
             <Card.Body>
-            <Card.Title>{board.title}</Card.Title>
-            <Card.Text>
+            <Card.Title className="b-card-title">{board.title}</Card.Title>
+            <Card.Text className="b-card-text">
                  {board.contents}
             </Card.Text>
             <Card.Text>
