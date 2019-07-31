@@ -111,6 +111,7 @@ public class WorkController {
 
         query.from(qWorkBoard)
                 .where(qWorkBoard.member.id.eq(id))
+                .orderBy(qWorkBoard.id.desc())
                 .fetch()
                 .forEach(arr -> list.add(arr));
 

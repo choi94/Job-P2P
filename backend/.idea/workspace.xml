@@ -7,27 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/VolunteerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/ResMiniList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Volunteer.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Volunteer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/BestView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/BestView.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/FooterIntro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/FooterIntro.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/Juombo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/Juombo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/PreView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/PreView.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Board.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/view/Cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/view/Cards.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/view/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/view/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/common/GoogleMap.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/common/HeaderNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/common/HeaderNavbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/common/commom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/common/css/commom.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/common/css/commom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/common/image/Location.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/ClientInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/ClientInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/MyPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/MyPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/ResMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/ResMini.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMini.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +55,13 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="job" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -179,7 +180,7 @@
       <workItem from="1564357171551" duration="11767000" />
       <workItem from="1564387291456" duration="10000" />
       <workItem from="1564387380461" duration="9442000" />
-      <workItem from="1564531897742" duration="321000" />
+      <workItem from="1564531897742" duration="9466000" />
     </task>
     <servers />
   </component>

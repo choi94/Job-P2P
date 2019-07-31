@@ -1,8 +1,10 @@
 import React, { useState}from 'react'
 import {Table} from 'react-bootstrap'
+import ResMiniList from './ResMiniList'
 
 
-const ResMini  = ()=>{
+const ResMini  = (props) => {
+    console.dir(props)
     return(
         <div>
              <Table responsive>
@@ -11,36 +13,14 @@ const ResMini  = ()=>{
                     <th>#</th>
                     <th>지원일</th>
                     <th>일자리명 </th>
-                    <th>급여</th>
+                    <th>총 급여</th>
                     <th>마감일</th>
+                    <th>상태</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-                    <td>Table cell</td>
-
-                </tr>
-                </tbody>
+                 {props.vol_boardList.map( (value, index) => {
+                 return <ResMiniList list={value} index={index}/>
+                })}
             </Table>
         </div>
     );
