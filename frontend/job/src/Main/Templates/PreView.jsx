@@ -4,11 +4,11 @@ import { NavLink } from 'react-router-dom'
 import '../Main.css'
 import test from '../image/test.png';
 
-const PreView =({board})=>{
+const PreView =({board,num})=>{
     return(
       
 		<li>
-		<NavLink to ={`/Detail/`+board.id}>
+		<NavLink to ={`/detail/`+board.id+`/`+num} >
 		   <Card className="BoardList_Card">
 		   <Card.Body>
 		   <Card.Title>{board.title}</Card.Title>
