@@ -3,7 +3,7 @@ import axios from 'axios';
 import {MDBBtn, MDBInput } from 'mdbreact';
 import validator from 'email-validator'
 const Join = ({history}) => {
-  const localhost = 'ec2-54-180-117-161.ap-northeast-2.compute.amazonaws.com:9000'
+  const localhost = 'http://localhost:9000'
   const [radio, setRadio] = useState()
   const [nickname_check, setNickname_check] = useState()
   const [nickname_boolean, setNickname_boolean] = useState(false)

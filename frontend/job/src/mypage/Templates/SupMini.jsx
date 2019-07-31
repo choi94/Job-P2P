@@ -58,7 +58,7 @@ const SupMini = (props) => {
                                         </Modal.Header>
                                         <Modal.Body>
                                             <ListGroup>
-                                                <ListGroup.Item >
+                                                <ListGroup.Item>
                                                     <span className="list">이름 : {name}</span>
                                                     <span className="list">나이 : {age}</span>
                                                     <span className="list">성별 : {gender}</span>
