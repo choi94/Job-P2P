@@ -50,7 +50,6 @@ public class Member {
     @Column(name = "name" ,nullable = false)
     private String name;
 
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Column(name = "ssn", nullable = false)
     private String ssn;
 

@@ -11,36 +11,18 @@ class SupMini extends Component {
         }
     }
 
-
-    // const localhost = 'http://localhost:9000'
-    // const [registrList, setRegistrList] = useState()
-
-    // useEffect( () => {
-    //     axios.get(`${localhost}/work/board/registr/${sessionStorage.getItem('id')}`)
-    //         .then( res => {
-    //             console.dir(res.data)
-    //             setRegistrList(res.data)
-    //         })
-    //         .catch( error => {
-    //             alert('로그인을 해주세요')
-    //         })
-    // },[])
-
-    // componentWillUnmount() {
-    // }
-
     componentWillMount() {
         let localhost = 'http://localhost:9000'
 
-        axios.get(`${localhost}/work/board/registr/${sessionStorage.getItem('id')}`)
-                .then( res => {
-                    res.data.forEach( arr => {
-                        this.setState({list : this.state.list.concat(arr)})
-                    })
+        axios.get(`${localhost}/work/test/${sessionStorage.getItem('id')}`)
+            .then( res => {
+                res.data.forEach( arr => {
+                    this.setState({list : this.state.list.concat(arr)})
                 })
-                .catch( error => {
-                    alert('로그인을 해주세요')
-                })
+            })
+            .catch( error => {
+                alert('실패')
+            })
 
     }
 

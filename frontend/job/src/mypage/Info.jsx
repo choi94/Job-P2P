@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
+import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBInput } from 'mdbreact';
 import {CardGroup,Card,Button} from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
@@ -15,10 +16,12 @@ const DeclarInfo = (props) => {
     const [point, setPoint] = useState()
     const [phone, setPhone] = useState()
 
+    const [modal , setModal] = useState(false)
+    const [radio, setRadio] = useState(10000)
+
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
-                console.dir(res.data)
                 setName(res.data.member.name)
                 setNickname(res.data.member.nickname)
                 setEmail(res.data.member.email)
@@ -33,6 +36,30 @@ const DeclarInfo = (props) => {
                 // alert('오류가 발생했습니다.')
             })
     },[])
+
+
+
+    const point_charging = () => {
+        if (window.confirm("정말로 충전 하시겠습니까?")){
+            setModal(!modal)
+                axios.patch(`${localhost}/member/${sessionStorage.getItem('id')}/${point + radio}`)
+                    .then( res => {
+                        setPoint(point + radio)
+                        alert("포인트 충전 완료")
+                    })
+                    .catch( error => {
+                        alert("알수 없는 오류가 발생했습니다.")
+                    })
+        }
+    }
+
+    const modal_toggle = () => {
+        setModal(!modal)
+    }
+
+    const onClick = (nr) => () => {
+        setRadio(nr)
+    }
 
 
 
@@ -82,7 +109,7 @@ const DeclarInfo = (props) => {
                     <table>
                         <tr>
                             <td class="bb">포인트 :</td>
-                            <td class="cc">{point}점 <Button variant="info" size="sm">충전하기</Button></td>
+                            <td class="cc">{point}원 <MDBBtn color="info" onClick={modal_toggle} size="sm">충전하기</MDBBtn></td>
                         </tr>
                     </table>
                     </Card.Text>
@@ -107,6 +134,26 @@ const DeclarInfo = (props) => {
                     </Card.Text>
                 </Card.Body>
             </Card>
+
+            {/*modal*/}
+            <MDBModal isOpen={modal} toggle={modal_toggle} centered>
+                <MDBModalHeader toggle={modal_toggle}>포인트 충전</MDBModalHeader>
+                <MDBModalBody className="d-flex justify-content-center">
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(10000)} checked={radio === 10000 ? true : false} label="1만원" type="radio"
+                              id="radio1" />
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(50000)} checked={radio === 50000 ? true : false} label="5만원" type="radio"
+                              id="radio2" />
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(100000)} checked={radio === 100000 ? true : false} label="10만원" type="radio"
+                              id="radio3" />
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(300000)} checked={radio === 300000 ? true : false} label="30만원" type="radio"
+                              id="radio4" />
+                </MDBModalBody>
+                <MDBModalFooter>
+                    <MDBBtn color="secondary" onClick={modal_toggle}>취소</MDBBtn>
+                    <MDBBtn color="primary" onClick={point_charging}>충전하기</MDBBtn>
+                </MDBModalFooter>
+            </MDBModal>
+
     </CardGroup>
     )
 }

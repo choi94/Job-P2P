@@ -11,7 +11,8 @@ class Detail extends Component{
         super(props)
         this.state = {
             Location : [],
-            test:null
+            boardId : null,
+            memberId : null
         }
     }
 
@@ -22,11 +23,18 @@ class Detail extends Component{
                 this.setState({
                     [key] : res.data.board[key]
                 })
+                if (key == 'id') {
+                    this.setState({boardId : res.data.board[key]})
+                }
             }
+
             for(let key in res.data.board.member) {
                 this.setState({
                     [key] : res.data.board.member[key]
                 })
+                if (key == 'id') {
+                    this.setState({memberId : res.data.board.member[key]})
+                }
             }
 
             Geocode.setApiKey("AIzaSyCX4elAhSF-1mAFON3hiV0JrhMmIxLugz4");
@@ -50,6 +58,20 @@ class Detail extends Component{
         })
     }
 
+    volunteer = () => {
+
+        if (window.confirm("정말로 지원 하시겠습니까?")) {
+            axios.post(`http://localhost:9000/volunteer/request/${this.state.memberId}/${this.state.boardId}`)
+                .then( res => {
+                    alert("지원에 성공했습니다.")
+                    this.props.history.push("/mypage")
+                })
+                .catch( error => {
+                    alert("알수 없는 오류가 발생 했습니다.")
+                })
+            }
+    }
+
     render(){
         return(
             <div className="detail">
@@ -61,7 +83,7 @@ class Detail extends Component{
                 <Jumbotron className="title">
                         <p>진행 상태 : {this.state.progressState}</p>
                         <p>마감 일자 : {this.state.recruit}</p>
-                        <Button variant="primary" >지원하기</Button>
+                        <Button onClick={this.volunteer} variant="primary">지원하기</Button>
                 </Jumbotron>
             <hr/>
             <div className="D_imfo">
