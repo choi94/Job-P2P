@@ -187,6 +187,17 @@ public class MemberController {
         return ResponseEntity.ok("회원정보를 변경했습니다.");
     }
 
+    @PatchMapping("/{id}/{point}")
+    public ResponseEntity updatePoint(@PathVariable("id")Long id,
+                                      @PathVariable("point")int point) {
+        QMember qMember = QMember.member;
+        new JPAUpdateClause(entityManager, qMember).where(qMember.id.eq(id))
+                .set(qMember.point, point)
+                .execute();
+
+        return ResponseEntity.ok("충전 완료");
+    }
+
     @GetMapping("/test")
     public String test() {
         return "성공";

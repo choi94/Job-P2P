@@ -2,9 +2,7 @@ package com.p2p.job.controller;
 
 import javax.transaction.Transactional;
 
-import com.p2p.job.entity.Member;
-import com.p2p.job.entity.QWorkBoard;
-import com.p2p.job.entity.WorkBoard;
+import com.p2p.job.entity.*;
 import com.p2p.job.repository.WorkRepository;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -129,8 +127,47 @@ public class WorkController {
                 .orderBy(qWorkBoard.id.desc())
                 .fetch()
                 .forEach(arr -> list.add(arr));
+
         return ResponseEntity.ok(list);
     }
+
+
+    @GetMapping("/test/{id}")
+    public ResponseEntity test(@PathVariable("id")Long id) {
+        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+        QVolunteer qVolunteer = QVolunteer.volunteer;
+
+        List<HashMap<String, Object>> result = new ArrayList<>();
+        List<WorkBoard> board_list = new ArrayList<>();
+
+        query.selectFrom(qWorkBoard)
+                .where(qWorkBoard.member.id.eq(id))
+                .orderBy(qWorkBoard.id.desc())
+                .fetch()
+                .forEach(board -> { // 이 리스트를 해쉬맵에 담고 해쉬맵에 값 추가
+                    board_list.add(board);
+                });
+
+        for (int i = 0; i < board_list.size(); i++) {
+            List<Member> member_list = new ArrayList<>();
+            HashMap<String, Object> list = new HashMap<>();
+
+            query.selectFrom(qVolunteer)
+                    .where(qVolunteer.workBoard.id.eq(board_list.get(i).getId()))
+                    .fetch()
+                    .forEach(vol -> {
+                        member_list.add(vol.getMember());
+                    });
+
+            list.put("board", board_list.get(i));
+            list.put("member", member_list);
+            result.add(list);
+        }
+
+        return ResponseEntity.ok(result);
+    }
+
+
 
 //    @GetMapping("/board/progress/{pro_id}")
 //    public ResponseEntity progressSave(@PathVariable("id")Long id) {

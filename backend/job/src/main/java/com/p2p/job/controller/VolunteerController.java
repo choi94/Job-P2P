@@ -25,10 +25,10 @@ public class VolunteerController {
 
     @PostMapping("/request/{memberId}/{workId}")
     public ResponseEntity volSave(@PathVariable("memberId")Long memberId,
-                                  @PathVariable("workId")Long workId,
-                                  @RequestBody Volunteer volunteer) {
+                                  @PathVariable("workId")Long workId) {
         Member member = new Member();
         WorkBoard workBoard = new WorkBoard();
+        Volunteer volunteer = new Volunteer();
 
         member.setId(memberId);
         workBoard.setId(workId);

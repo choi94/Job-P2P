@@ -51,6 +51,63 @@ public class JobApplicationTests {
 	@Test
 	public void contextLoads() {
 
+		// 내가 쓴글의 지원자 정보
+
+//		board.memberid = boardId -> vol.List -> memberId -> memberList
+		QVolunteer qVolunteer = QVolunteer.volunteer;
+		QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+		QMember qMember = QMember.member;
+
+		List<WorkBoard> board_list = new ArrayList<>();
+		List<Member> vol_member_list = new ArrayList<>();
+
+		HashMap<String, Object> values = new HashMap<>();
+		List<HashMap<String, Object>> result = new ArrayList<>();
+
+		query.selectFrom(qWorkBoard)
+				.where(qWorkBoard.member.id.eq(1L))
+				.orderBy(qWorkBoard.id.desc())
+				.fetch()
+				.forEach(board -> { // 이 리스트를 해쉬맵에 담고 해쉬맵에 값 추가
+					board_list.add(board);
+					values.put("board", board_list);
+
+					query.selectFrom(qVolunteer) // 여러개
+							.where(qVolunteer.workBoard.id.eq(board.getId()))
+							.fetch()
+							.forEach(vol -> {
+								query.selectFrom(qMember)
+										.where(qMember.id.eq(vol.getMember().getId()))
+										.fetch()
+										.forEach(mem -> {
+											vol_member_list.add(mem);
+										});
+							});
+
+					values.put("member", vol_member_list);
+					result.add(values);
+
+					board_list.clear();
+					vol_member_list.clear();
+				});
+
+
+//		for (int i = 0; i < board_list.size(); i++) {
+//			values.put("board", board_list.get(i));
+//
+//			query.selectFrom(qMember)
+//					.where(qMember.id.eq(vol_list.get(i).getId()))
+//					.fetch()
+//					.forEach(mem -> {
+//						vol_member_list.add(mem);
+//
+//					});
+//
+//		}
+
+
+
+
 
 
 
