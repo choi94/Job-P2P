@@ -40,7 +40,7 @@ const SupMiniList = (props) => {
                     </div>
                 </td>
             </tr>
-            </tbody>
+        </tbody>
     )
 }
 

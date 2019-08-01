@@ -5,7 +5,7 @@ const TransVol  = ()=>{
     return(
         <div className="TransBox">
             <br/>
-            <h2>거래 페이지</h2><br/><br/>
+            <h2>거래</h2><br/><br/>
             <Tabs defaultActiveKey="home" transition={false} id="noanim-tab-example" className="list-nav" >
                 <Tab eventKey="home" title="지원자">
                     <Table>
@@ -69,7 +69,7 @@ const TransVol  = ()=>{
                             </tr>
                         </tbody>
                     </Table><br/>
-                    <Button variant="success">지불</Button>
+                    <Button variant="warning">지불</Button>
                 </Tab>
             </Tabs>
             <div>

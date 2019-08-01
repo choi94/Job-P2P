@@ -10,11 +10,13 @@ import axios from 'axios';
 
 class Board extends Component{
     state={
+        bno:8,
+        index:0,
     BoardData:[   
     ],
     }
     componentDidMount(){
-        axios.get(`http://localhost:9000/work/board/list/0`)
+        axios.get(`http://localhost:9000/work/board/list/0/${this.state.bno}`)
         .then(res => {
                 console.log(res.data)
                 res.data.board.forEach((a)=>{
@@ -22,6 +24,9 @@ class Board extends Component{
                         BoardData: this.state.BoardData.concat(a)
                     })
                 })
+                this.state.index=this.state.BoardData.length-1
+                console.log(this.state.BoardData)
+                console.log(this.state.index)
         }).catch( error => {
                 alert('실패')
         })
@@ -40,7 +45,7 @@ class Board extends Component{
                             </select>
                         </div>
                         <MDBInput hint="Search" type="text" containerClass="mt-0" />
-                        <MDBBtn color="primary">검색</MDBBtn>
+                        <MDBBtn color="secondary">검색</MDBBtn>
                         <p><Link to={{pathname :'/write'}}><Button variant="primary">글쓰기</Button></Link></p>
                     </MDBCol>
                 </div>
@@ -52,7 +57,7 @@ class Board extends Component{
                     </ul>
                     </div>
                     <div className="B_PreviewMoreBox">
-                    <NavLink to ="/Board" className="more_listing_btn">+더보기</NavLink>
+                    <button className="more_listing_btn" onClick={this.morebutton}>+더보기</button>
                     </div>
                     <div className="Boardfooter">
                     <Footer/>
@@ -60,6 +65,18 @@ class Board extends Component{
         </div>
         )
     }
+    morebutton=(e)=>{
+        e.preventDefault()
+        if(this.state.BoardData[this.state.index].id!=2)
+        { 
+            this.state.bno*=2
+            this.componentDidMount()
+        }
+        else if(this.state.BoardData[this.state.index].id==2){
+            return alert("더이상 게시물이 없습니다.")
+        }
+    
+   }
 }
 
 export default Board

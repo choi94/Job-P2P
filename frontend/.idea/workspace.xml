@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ebaa2-e7f5-4053-8b27-29c8cdb6adcf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/job/src/mypage/Templates/AttMiniList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/entity/WorkBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/entity/WorkBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/Main/Templates/FooterIntro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/Main/Templates/FooterIntro.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/Main/Templates/Juombo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/Main/Templates/Juombo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Board.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Board.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Template/WriteLocal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Template/WriteLocal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/view/Cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/view/Cards.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/member/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/member/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/mypage/Templates/AttMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Templates/AttMini.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/mypage/Trans.js" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Trans.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/mypage/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/css/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/job/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+            <state relative-caret-position="797">
+              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -60,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/job/src/board/Detail/Detail.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="-53">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -84,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
+              <caret line="31" column="113" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -294,12 +305,12 @@
       <workItem from="1564206227207" duration="6441000" />
       <workItem from="1564357181583" duration="20431000" />
       <workItem from="1564531893304" duration="24397000" />
-      <workItem from="1564616343221" duration="3315000" />
+      <workItem from="1564616343221" duration="3469000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85748000" />
+    <option name="totallyTimeSpent" value="85902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
@@ -494,8 +505,8 @@
     <entry file="file://$PROJECT_DIR$/job/src/board/Detail/DetailList.jsx" />
     <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="797">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -515,7 +526,7 @@
     <entry file="file://$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
+          <caret line="31" column="113" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -550,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/board/Detail/Detail.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="-53">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

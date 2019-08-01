@@ -151,6 +151,7 @@ button a:hover{
 }
 
 
+
 @media (max-width:1500px) {
     .PreviewMoreBox{
         width: 15%;
@@ -161,10 +162,7 @@ button a:hover{
 
     .listingsMain .properties_list li:nth-child(4n+0){
         margin-right: 0;
-    }
-    .listingsMain .properties_list
-    {}
-    
+    }    
     .listingsMain ul.properties_list li{
         display: block;
         width: 20.90909090909091%;
@@ -178,9 +176,7 @@ button a:hover{
         height: auto!important;
         vertical-align: top;
     }
-
 }
-
 @media (max-width: 1150px){
     .PreviewMoreBox{
         width: 80%;
@@ -190,11 +186,17 @@ button a:hover{
 
 }
 @media  (max-width:900px){
+    .listingsMain{
+        width: 90%;
+    }
 
     .PreviewMoreBox{
         width: 80%;
-        margin: auto;
+        margin:auto;
         text-align: center;
+    }
+    .PreviewMoreBox li{
+        margin:2% 0 ; 
     }
     .more_listing_btn{
         padding: 1.2em 2.5em;
@@ -218,6 +220,7 @@ button a:hover{
 
 }
 @media (max-width:700px){
+   
     .listingsMain .properties_list li:nth-child(3n+0){
         margin-right: 0;
     }

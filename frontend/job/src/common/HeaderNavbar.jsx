@@ -48,7 +48,7 @@ class HeaderNavbar extends Component {
                     </Nav>
                     :
                     <Nav className="nav-items">
-                        <Link to={{pathname : "/login"}} className="nav-link">Sign in</Link>
+                        <Link to={{pathname : "/login"}} className="nav-link">Login</Link>
                         <Link to="/join" className="nav-link">Join</Link>
                     </Nav>}
                   </Navbar.Collapse>
