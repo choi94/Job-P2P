@@ -2,8 +2,8 @@ import React,{Component} from 'react'
 import Info from './Info.jsx'
 import ClientInfo from './ClientInfo.jsx'
 import Footer from '../common/Footer.jsx'
-
 import '../mypage/css/index.css';
+
 class MyPage extends Component{
     constructor(props) {
         super(props)

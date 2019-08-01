@@ -33,6 +33,7 @@ class AttMini  extends Component{
                 <thead>
                     <tr className="res">
                         <th>#</th>
+                        <th>기간</th>
                         <th>일자리 명</th>
                         <th>거래페이지로 가기</th>
                     </tr>
