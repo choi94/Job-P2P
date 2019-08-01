@@ -114,6 +114,11 @@
     font-weight: bold;
 }
 
+.TransTitle{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
 @media (max-width:1500px){
 
 }
