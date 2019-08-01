@@ -42,7 +42,7 @@ class Detail extends Component{
 
 
     render(){
-        console.log(this.state.Location)
+  
         return(
             <div className="detail">
                 <Jumbotron className="title">

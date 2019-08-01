@@ -8,14 +8,6 @@
     margin: 5% 0;
 }
 
-.B_PreviewMoreBox{
-    width: 15%;
-    clear: both;
-    margin: 5% auto;
-    text-align: center;
-}
-
-
 /*  listings section  */
 .Board_listings{
     width: 80%;
@@ -65,13 +57,22 @@
 white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
 font-weight: bold;
 }
-.card-text{
+.b-card-title{
+    white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+}
+.b-card-text{
 white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
 }
 .d-flex{
     margin: 5% auto;
 }
 
+.B_PreviewMoreBox{
+    width: 15%;
+    clear: both;
+    margin: 5% auto;
+    text-align: center;
+}
 
 
 @media (max-width:1500px) {
@@ -92,9 +93,26 @@ white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
 }
 
 @media (max-width: 1150px){
-
+    .B_PreviewMoreBox{
+        width: 90%;
+        margin: 10% auto;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .B_PreviewMoreBox{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
 }
+
 @media  (max-width:900px){
+    .B_PreviewMoreBox{
+        width: 90%;
+        margin: 5% auto;
+        margin-bottom: 5%;
+        text-align: center;
+    }
 
     .Board_listings .properties_list li:nth-child(3n+0){
         margin-right: 0;
@@ -128,6 +146,11 @@ white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
 
 
 @media (max-width:500px){
+    .B_PreviewMoreBox{
+        width: 90%;
+        margin: 10% auto;
+        text-align: center;
+    }
     .Board_listings ul.properties_list li{
         width: 100%;
         margin-bottom: 60px!important;
@@ -137,6 +160,11 @@ white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
 }
 
 @media (min-width:300px) and (max-width:500px) {
+    .B_PreviewMoreBox{
+        width: 90%;
+        margin: 10% auto;
+        text-align: center;
+    }
     .Board_listings ul.properties_list li{
         width: 100%;
         margin-bottom: 60px!important;

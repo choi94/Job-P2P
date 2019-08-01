@@ -15,7 +15,7 @@ const Juombo =()=>{
                   당신에게 가장 잘 맞는 일자리와 매칭됩니다.
               </p>
               <p>
-                <Button variant="primary"><Link to="/board">일자리 구하기</Link></Button>
+              <NavLink to="/board"><Button variant="primary">일자리 구하기</Button></NavLink>
               </p>
             </div>
           </div>
