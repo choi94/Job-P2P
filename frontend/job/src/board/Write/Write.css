@@ -1,65 +1,29 @@
-
 /** common*/
-.imfop{
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin: 1% 1%;
-}
+
+
 
 .write{
     width: 80%;
-    margin: 3% auto;
+    margin: 5% auto;
+}
+.W_imfo{
+    width: 100%;
+    margin:4% auto;
 }
 .write h2{
     margin-bottom: 3%;
 }
 
-.table{
-    margin-bottom: 0 !important;
+.gender{
+    font-size: 1.3rem;
 }
 
-.w_choo1{
-    float: left;
-    width: 46% !important;
-}
-.w_choo2{
-  float: left;
-  text-align: center;
-  width: 8%;
-}
-.w_choo3{
-    width: 46% !important;
-}
-.w_choo3::after{
-    clear: both;
+.age{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-
-.footerConfom{
-    list-style-type: disc;
-    margin-left: 2%;
+.buttonBox button{
+    margin: 0 0.5%;
 }
-
-
-/**title*/
-.w_write{
-   width: 100%;
-   margin: auto;
-  
-}
-
-/**Recruit*/
-.imfo{
-    width: 100%;
-    margin:4% auto;
-}
-
-
-/**Location*/
-.w_Location{
-    width: 100%;
-    margin: auto;
-}
-
-
-

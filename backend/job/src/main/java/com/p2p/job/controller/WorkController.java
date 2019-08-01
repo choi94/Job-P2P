@@ -95,7 +95,6 @@ public class WorkController {
             board_list.add(arr);
             member_list.add(arr.getMember());
         });
-
         result.put("board", board_list);
         result.put("member", member_list);
 

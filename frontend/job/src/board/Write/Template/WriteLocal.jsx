@@ -39,30 +39,26 @@ const WriteLocal = (props) => {
     return (
         <div className="write">
             <h2 className="">글쓰기</h2>
-            <div className="w_write">
-                <Table responsive>
-                    <thead>
-                    <p className="imfop">제목</p>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <Form.Control onChange={e => setTitle(e.target.value)} type="text" placeholder="제목" />
-                        </td>
-                    </tr>
-                    </tbody>
-                </Table>
+            <div className="W_imfo">           
+                <Card>
+                    <Card.Header className="D_imfoFont">제목</Card.Header>
+                        <Card.Body>
+                            <Card.Text>
+                            <ListGroup>
+                                <Form.Control onChange={e => setTitle(e.target.value)} type="text" placeholder="제목" />
+                            </ListGroup>
+                            </Card.Text>
+                        </Card.Body>
+                </Card>
             </div>
             <hr/>
-            <div className="imfo">
-                <Table responsive>
-                    <thead>
-                    <p className="imfop">모집 조건</p>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <Form>
+
+
+            <div className="W_imfo">
+                <Card>
+                    <Card.Header className="D_imfoFont">모집 조건</Card.Header>
+                        <Card.Body>
+                        <Form>
                                 <Form.Group controlId="formHorizontalEmail">
                                     <Form.Label column sm={2}>
                                         모집기간
@@ -194,58 +190,37 @@ const WriteLocal = (props) => {
                                     </Col>
                                 </Form.Group>
                             </Form>
-                        </td>
-                    </tr>
-                    </tbody>
-
-                </Table>
+                        </Card.Body>
+                </Card>
             </div>
             <hr/>
-            <div className="w_Location">
-                <Table responsive>
-                    <thead>
-                    <p className="imfop">상세내용</p>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
+            <div className="W_imfo">
+                <Card>
+                    <Card.Header className="D_imfoFont">상세내용</Card.Header>
+                        <Card.Body>
+                            <Card.Text>
+                            <ListGroup>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                 <Form.Control onChange={e => setContents(e.target.value)} as="textarea" rows="10" />
                             </Form.Group>
-                        </td>
-                    </tr>
-                    </tbody>
-                </Table>
+                            </ListGroup>
+                            </Card.Text>
+                        </Card.Body>
+                </Card>
             </div>
             <hr/>
-
-            <hr/>
-            <div className="imfo">
-                <Table responsive>
-                    <thead>
-                    <tr>
-                        <th colSpan="3"  className="imfo1">꼭 확인하세요!</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                  <ListGroup>
-                        <ListGroup.Item>
-                            <Card>
-                                <Card.Body>
-                                    <Card.Title>저장 하기전에 3가지를 꼭 확인하세요.</Card.Title>
-                                    <Card.Text>
-                                        <ul className="footerConfom">
-                                            <li>일자리 명과 근무 위치를 적었는지 확인하세요.</li>
-                                            <li>상세내용을 정확하게 기입해주세요.</li>
-                                            <li>급여를 정확하게 기입해주세요.</li>
-                                        </ul>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                            </ListGroup.Item>
-                        </ListGroup>
-                    </tbody>
-                </Table>
+            <div className="W_imfo">
+            <Card>
+                <Card.Header className="D_imfoFont">꼭 확인하세요!</Card.Header>
+                <Card.Body>
+                <Card.Title>저장 하기전에 3가지를 꼭 확인하세요.</Card.Title>
+                    <ul className="footerConfom">
+                        <li>일자리 명과 근무 위치를 적었는지 확인하세요.</li>
+                        <li>상세내용을 정확하게 기입해주세요.</li>
+                        <li>급여를 정확하게 기입해주세요.</li>
+                    </ul>
+                </Card.Body>
+            </Card>
             </div>
             <div className="buttonBox">
                 <Button onClick={write_check} variant="dark">작성</Button>

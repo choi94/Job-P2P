@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button} from 'react-bootstrap';
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 import '../Main.css'
 
 const Juombo =()=>{
