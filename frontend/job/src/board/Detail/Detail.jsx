@@ -1,26 +1,36 @@
 import React,{Component} from 'react'
-import {ListGroup,Button,Table,Card,Jumbotron} from 'react-bootstrap';
 import axios from 'axios'
-import GoogleMap from './module/GoogleMap.jsx'
+import GoogleMap from "./module/GoogleMap.jsx"
 import Geocode from "react-geocode";
+import {ListGroup,Button,Table,Card,Jumbotron} from "react-bootstrap"
 
 import './Detail.css'
 
 class Detail extends Component{
-    state={
-        member:[],
-        Location:[]
+    constructor(props) {
+        super(props)
+        this.state = {
+            Location : [],
+            test:null
+        }
     }
 
     componentWillMount(){
-        console.log("인근1")
-        axios.get(`http://localhost:9000/work/board/detailList/${this.props.match.params.bno}`)
+        axios.get(`http://localhost:9000/work/board/detailList/${this.props.match.params.id}`)
         .then(res => {
-            this.setState(
-                res.data.board[0],
-            )
+            for(let key in res.data.board) {
+                this.setState({
+                    [key] : res.data.board[key]
+                })
+            }
+            for(let key in res.data.board.member) {
+                this.setState({
+                    [key] : res.data.board.member[key]
+                })
+            }
+
             Geocode.setApiKey("AIzaSyCX4elAhSF-1mAFON3hiV0JrhMmIxLugz4");
-            Geocode.fromAddress(`${res.data.board[0].cityArea}`).then(
+            Geocode.fromAddress(`${res.data.board.cityArea}`).then(
             response => {
                 const { lat, lng } = response.results[0].geometry.location;
                 const latL= lat
@@ -33,22 +43,20 @@ class Detail extends Component{
                 console.error(error);
             }
             );
+
+
         }).catch( error => {
-                alert('실패')
+            alert('실패')
         })
-
-     
-    } 
-
+    }
 
     render(){
-        console.log(this.state.Location)
         return(
             <div className="detail">
                 <Jumbotron className="title">
                 <h2>
                     {this.state.title}
-                </h2>          
+                </h2>
                 </Jumbotron>
                 <Jumbotron className="title">
                         <p>진행 상태 : {this.state.progressState}</p>
@@ -59,34 +67,33 @@ class Detail extends Component{
             <div className="D_imfo">
             <Card>
                 <Card.Header className="D_imfoFont">모집 조건</Card.Header>
-                
+
                 <ListGroup>
                             <ListGroup.Item>근무기간 : {this.state.workDay}</ListGroup.Item>
                             <ListGroup.Item>근무기간 일 : {this.state.workDateDay}</ListGroup.Item>
                             <ListGroup.Item>근무시간 : {this.state.workTime}</ListGroup.Item>
                             <ListGroup.Item>모집연령 : {this.state.workAge}</ListGroup.Item>
-                            <ListGroup.Item>모집연령  : {this.state.workAge}</ListGroup.Item>
                             <ListGroup.Item>근무지 : {this.state.cityArea}</ListGroup.Item>
-                            <ListGroup.Item>하루 급여 : {this.state.daySalary}</ListGroup.Item>
-                            <ListGroup.Item>총 급여 : {this.state.totalSalary}</ListGroup.Item>
+                            <ListGroup.Item>하루 급여 : {this.state.daySalary}만원</ListGroup.Item>
+                            <ListGroup.Item>총 급여 : {this.state.totalSalary}만원</ListGroup.Item>
                 </ListGroup>
             </Card>
             </div>
             <div className="D_imfo">
             <Card>
                 <Card.Header className="D_imfoFont">의뢰인 정보</Card.Header>
-                
+
                 <ListGroup>
-                        <ListGroup.Item>카카오톡 ID : {this.state.kakao}</ListGroup.Item>
-                        <ListGroup.Item>의뢰인의 평점 : {this.state.member.volunteerScore}</ListGroup.Item>
-                    </ListGroup>
+                    <ListGroup.Item>카카오톡 ID : {this.state.kakao}</ListGroup.Item>
+                    <ListGroup.Item>의뢰인의 평점 : {this.state.volunteerScore}</ListGroup.Item>
+                </ListGroup>
             </Card>
             </div>
 
             <div className="D_imfo">
             <Card>
                 <Card.Header className="D_imfoFont">상세내용</Card.Header>
-                
+
                 <Card body>{this.state.contents}</Card>
             </Card>
             </div>
@@ -114,7 +121,7 @@ class Detail extends Component{
         </div>
         )
     }
-   
+
 } 
     
 

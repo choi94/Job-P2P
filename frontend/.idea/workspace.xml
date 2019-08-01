@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cc8ebaa2-e7f5-4053-8b27-29c8cdb6adcf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/entity/WorkBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/main/java/com/p2p/job/entity/WorkBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/job/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,22 +25,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMini.jsx">
+        <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="722">
+              <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx">
+        <entry file="file://$PROJECT_DIR$/job/src/board/view/Cards.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="53" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="53" />
+            <state relative-caret-position="75">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -41,40 +49,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/job/src/mypage/Info.jsx">
+        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/job/src/mypage/MyPage.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/job/src/mypage/ClientInfo.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="15">
+              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/ResMini.jsx">
+        <entry file="file://$PROJECT_DIR$/job/src/board/Detail/Detail.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+            <state relative-caret-position="420">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -83,10 +70,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/ResMiniList.jsx">
+        <entry file="file://$PROJECT_DIR$/job/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,31 +129,33 @@
       <list>
         <option value="$PROJECT_DIR$/job/src/action/index.js" />
         <option value="$PROJECT_DIR$/job/src/reducers/index.js" />
-        <option value="$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/Drop.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/InfoUpdate.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Write/Template/title.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Write/Template/Recruit.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Write/Template/WriteLocal.js" />
         <option value="$PROJECT_DIR$/job/src/board/Write/Write.jsx" />
-        <option value="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" />
         <option value="$PROJECT_DIR$/job/src/member/Join.jsx" />
         <option value="$PROJECT_DIR$/job/src/member/Login.jsx" />
         <option value="$PROJECT_DIR$/job/src/board/Board.jsx" />
-        <option value="$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/Templates/SupMini.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/ClientInfo.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/MyPage.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/Info.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/Templates/ResMiniList.jsx" />
         <option value="$PROJECT_DIR$/job/src/mypage/Templates/ResMini.jsx" />
+        <option value="$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx" />
+        <option value="$PROJECT_DIR$/job/src/board/Detail/DetailList.jsx" />
+        <option value="$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx" />
+        <option value="$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx" />
+        <option value="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" />
       </list>
     </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/job/package.json" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1600" />
     <option name="height" value="900" />
   </component>
@@ -150,7 +165,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,15 +204,6 @@
               <item name="job" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="board" type="462c0819:PsiDirectoryNode" />
-              <item name="Detail" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="board" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -217,6 +222,13 @@
               <item name="board" type="462c0819:PsiDirectoryNode" />
               <item name="Write" type="462c0819:PsiDirectoryNode" />
               <item name="Template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="frontend" type="b2602c69:ProjectViewProjectNode" />
@@ -244,6 +256,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,12 +293,13 @@
       <workItem from="1564056949445" duration="17589000" />
       <workItem from="1564206227207" duration="6441000" />
       <workItem from="1564357181583" duration="20431000" />
-      <workItem from="1564531893304" duration="14545000" />
+      <workItem from="1564531893304" duration="24397000" />
+      <workItem from="1564616343221" duration="3315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72581000" />
+    <option name="totallyTimeSpent" value="85748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
@@ -313,6 +327,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/job/src/board/Detail/Detail.jsx</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/job/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -326,16 +350,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/job/src/action/index.js" />
     <entry file="file://$PROJECT_DIR$/job/src/reducers/index.js" />
-    <entry file="file://$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/job/src/mypage/Drop.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -420,41 +434,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/board/Detail/Detail.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/job/src/mypage/Trans.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMini.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -483,16 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="53" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/ResMiniList.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -504,6 +478,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMini.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/board/Detail/DetailList.jsx" />
+    <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/common/HeaderNavbar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="113" selection-start-line="22" selection-start-column="113" selection-end-line="22" selection-end-column="113" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/board/view/Cards.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/board/Detail/Detail.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>

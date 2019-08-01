@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import {Button, ListGroup, Modal} from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SupMiniList = (props) => {
     const [show, setShow] = useState(false);
@@ -11,7 +12,9 @@ const SupMiniList = (props) => {
             <tr> {/*등록 현황*/}
                 <td>{props.index + 1}</td>
                 <td>{props.list.writeDate.substring(0, 10)}</td>
-                <td>{props.list.title}</td>
+                <Link to={`/detail/${props.list.id}`}>
+                    <td>{props.list.title}</td>
+                </Link>
                 <td>{props.list.recruit.substring(13)}</td>
                 <td>
                     <div>

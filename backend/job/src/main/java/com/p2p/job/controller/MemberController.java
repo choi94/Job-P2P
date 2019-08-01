@@ -151,6 +151,7 @@ public class MemberController {
 
         query.selectFrom(qVolunteer)
                 .where(qVolunteer.member.id.eq(id))
+                .orderBy(qVolunteer.id.desc())
                 .fetch()
                 .forEach(arr -> {
                     vol_list.add(arr);
