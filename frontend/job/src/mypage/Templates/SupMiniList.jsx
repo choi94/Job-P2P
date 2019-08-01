@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react'
-import {Button, ListGroup, Modal} from "react-bootstrap";
+import React, { useState } from 'react'
+import {Button, Modal} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import SupModalList from "./SupModalList"
 
@@ -26,7 +26,7 @@ const SupMiniList = (props) => {
                                 <Modal.Title>지원자 현황</Modal.Title>
                             </Modal.Header>
                                 {props.list.member.map( (value, index) => {
-                                    return <SupModalList modalList={value} index={index}/>
+                                    return <SupModalList vol={props.list.volunteer[index]} modalList={value} index={index}/>
                                 })}
                             <Modal.Footer>
                                 <Button variant="secondary" onClick={handleClose}>Close</Button>

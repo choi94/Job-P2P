@@ -150,15 +150,18 @@ public class WorkController {
 
         for (int i = 0; i < board_list.size(); i++) {
             List<Member> member_list = new ArrayList<>();
+            List<Volunteer> vol_list = new ArrayList<>();
             HashMap<String, Object> list = new HashMap<>();
 
             query.selectFrom(qVolunteer)
                     .where(qVolunteer.workBoard.id.eq(board_list.get(i).getId()))
                     .fetch()
                     .forEach(vol -> {
+                        vol_list.add(vol);
                         member_list.add(vol.getMember());
                     });
 
+            list.put("volunteer", vol_list);
             list.put("board", board_list.get(i));
             list.put("member", member_list);
             result.add(list);

@@ -17,7 +17,7 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
+@ToString(exclude = {"workBoard", "volunteer"})
 @Entity
 @Table(name = "progress")
 public class Progress {

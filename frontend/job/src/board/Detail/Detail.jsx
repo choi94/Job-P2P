@@ -61,7 +61,7 @@ class Detail extends Component{
     volunteer = () => {
 
         if (window.confirm("정말로 지원 하시겠습니까?")) {
-            axios.post(`http://localhost:9000/volunteer/request/${this.state.memberId}/${this.state.boardId}`)
+            axios.post(`http://localhost:9000/volunteer/request/${sessionStorage.getItem('id')}/${this.state.boardId}`)
                 .then( res => {
                     alert("지원에 성공했습니다.")
                     this.props.history.push("/mypage")

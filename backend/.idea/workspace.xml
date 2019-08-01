@@ -6,7 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="" />
+    <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/ProgressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Progress.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Progress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupModalList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupModalList.jsx" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +173,7 @@
       <workItem from="1564357171551" duration="11767000" />
       <workItem from="1564387291456" duration="10000" />
       <workItem from="1564387380461" duration="9442000" />
-      <workItem from="1564531897742" duration="29765000" />
+      <workItem from="1564531897742" duration="32687000" />
     </task>
     <servers />
   </component>
