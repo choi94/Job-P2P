@@ -4,7 +4,6 @@ import ResMiniList from './ResMiniList'
 
 
 const ResMini  = (props) => {
-    console.dir(props)
     return(
         <div>
              <Table responsive>

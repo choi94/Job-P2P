@@ -6,27 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMiniList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/FooterIntro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/FooterIntro.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/Juombo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/Juombo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/PreView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/PreView.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Board.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/WriteLocal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Template/WriteLocal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/view/Cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/view/Cards.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/common/HeaderNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/common/HeaderNavbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/member/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/member/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMini.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/css/index.css" afterDir="false" />
-    </list>
+    <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +164,7 @@
       <workItem from="1564357171551" duration="11767000" />
       <workItem from="1564387291456" duration="10000" />
       <workItem from="1564387380461" duration="9442000" />
-      <workItem from="1564531897742" duration="15354000" />
+      <workItem from="1564531897742" duration="15634000" />
     </task>
     <servers />
   </component>
