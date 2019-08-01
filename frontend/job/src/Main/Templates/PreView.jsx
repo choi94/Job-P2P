@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import '../Main.css'
 import test from '../image/test.png';
 
-const PreView =({board,num})=>{
+const PreView =({board})=>{
 
 	const a=(a)=>{
 		if(a=="모집중"){
@@ -16,7 +16,7 @@ const PreView =({board,num})=>{
     return(
       
 		<li>
-		<NavLink to ={`/detail/`+board.id+`/`+num} >
+		<NavLink to ={`/detail/`+board.id} className="ac" >
 		   <Card className="BoardList_Card">
 		   <Card.Body>
 		   <Card.Title className="b-card-title">{board.title}</Card.Title>
@@ -24,11 +24,11 @@ const PreView =({board,num})=>{
 				{board.contents}
 		   </Card.Text>
 		   <Card.Text>
-				  <p className="text-muted">{board.cityArea} 총{board.totalSalary}만원</p>  
-				  <Badge variant={a(board.progressState)}>{board.progressState}</Badge>  
+				  <p className="text-muted">{board.cityArea} 총{board.totalSalary}만원 <Badge variant={a(board.progressState)}>{board.progressState}</Badge> </p>  
+				   
 		   </Card.Text>
 		   </Card.Body>
-		   <Card.Footer>
+		   <Card.Footer className="b-card-footer">
 			  <p className="text-muted">작성자 : {board.member.nickname} 평점 {board.member.volunteerScore}/5 </p>        
 		   </Card.Footer>
 		   

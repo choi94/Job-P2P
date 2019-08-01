@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import '../Board.css'
 
 
-const Cards =({board,num})=>{
+const Cards =({board})=>{
    const a=(a)=>{
       if(a=="모집중"){
          return "primary"
@@ -13,10 +13,8 @@ const Cards =({board,num})=>{
       else{ return "secondary"}
    }
 	return(
-		<li>
-
-         
-         <NavLink to ={`/detail/`+board.id+`/`+num} >
+		<li>        
+         <NavLink to ={`/detail/`+board.id}>
             <Card className="BoardList_Card">
             <Card.Body>
             <Card.Title className="b-card-title">{board.title}</Card.Title>

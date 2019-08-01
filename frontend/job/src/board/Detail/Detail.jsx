@@ -36,7 +36,7 @@ class Detail extends Component{
                 const latL= lat
                 const lngL= lng
                 this.setState({
-                    Location: this.state.Location.concat({latL,lngL})
+                    Location: this.state.Location.concat(latL,lngL)
                 })
                 },
             error => {
@@ -51,6 +51,7 @@ class Detail extends Component{
     }
 
     render(){
+        console.log(this.state.Location)
         return(
             <div className="detail">
                 <Jumbotron className="title">
@@ -101,7 +102,7 @@ class Detail extends Component{
             <div className="D_imfo">
             <Card>
                 <Card.Header className="D_imfoFont">근무 위치</Card.Header>
-            <Card body>{<GoogleMap Lo={this.state.Location[0]}/>}</Card>
+            <Card body><GoogleMap to ={this.state.Location[1]} Lo={this.state.Location[0]}/></Card>
             </Card>
             </div>
 
@@ -123,8 +124,5 @@ class Detail extends Component{
     }
 
 } 
-    
-
-
 
 export default Detail

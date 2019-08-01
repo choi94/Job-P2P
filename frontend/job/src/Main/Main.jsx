@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import Juombo from './Templates/Juombo.jsx'
 import Introduce from './Templates/Introduce.jsx'
-import BestView from './Templates/BestView.jsx'
 import PreView from './Templates/PreView.jsx'
 import FooterIntro from './Templates/FooterIntro.jsx'
 import Footer from '../common/Footer.jsx'
@@ -13,7 +12,8 @@ import { NavLink } from 'react-router-dom'
 
 class Main extends Component{   
     state={
-        bno:8,
+        pageSize:4,
+        pageNum:0,
         PreviewData:[ 
             ],
         Member:{
@@ -21,7 +21,7 @@ class Main extends Component{
           }   
         }
     componentDidMount(){
-        axios.get(`http://localhost:9000/work/board/list/0/${this.state.bno}`)
+        axios.get(`http://localhost:9000/work/board/list/${this.state.pageNum}/${this.state.pageSize}`)
         .then(res => {
                 res.data.board.forEach((a)=>{
                     this.setState({
@@ -42,7 +42,6 @@ class Main extends Component{
         <div className="m2">
             <Introduce/>
         </div>
-
         <div className="m3">
             <div className="listingsMain">
                 <div className="listingsMainTitle" >
@@ -50,7 +49,7 @@ class Main extends Component{
                 </div>
                 <ul className="properties_list">
                 {this.state.PreviewData.map((PreviewDatas, index) =>{
-                        return <PreView board={PreviewDatas} num={index} key={index}/>
+                        return <PreView board={PreviewDatas} key={index}/>
                 })} 
                 </ul>
             </div>

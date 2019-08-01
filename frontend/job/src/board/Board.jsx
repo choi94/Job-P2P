@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import Cards from './view/Cards.jsx'
+import Cards from './View/Cards.jsx'
 import Footer from '../common/Footer'
 import { Link } from "react-router-dom";
 import {Button} from 'react-bootstrap';
@@ -10,13 +10,15 @@ import axios from 'axios';
 
 class Board extends Component{
     state={
-        bno:8,
+        pageSize:8,
         index:0,
-    BoardData:[   
-    ],
+        pageNum:0,
+        BoardData:
+        [   
+        ],
     }
     componentDidMount(){
-        axios.get(`http://localhost:9000/work/board/list/0/${this.state.bno}`)
+        axios.get(`http://localhost:9000/work/board/list/${this.state.pageNum}/${this.state.pageSize}`)
         .then(res => {
                 console.log(res.data)
                 res.data.board.forEach((a)=>{
@@ -34,8 +36,7 @@ class Board extends Component{
     render(){
         return(
             <div>
-                <div> 
-                {/*검색*/}
+                <div className="Board_searchBox"> 
                     <MDBCol className="d-flex">
                         <div>
                             <select className="browser-default custom-select">
@@ -46,30 +47,33 @@ class Board extends Component{
                         </div>
                         <MDBInput hint="Search" type="text" containerClass="mt-0" />
                         <MDBBtn color="secondary">검색</MDBBtn>
-                        <p><Link to={{pathname :'/write'}}><Button variant="primary">글쓰기</Button></Link></p>
+                        <Link to={{pathname :'/write'}}><Button variant="primary">글쓰기</Button></Link>
                     </MDBCol>
                 </div>
+                
                 <div className="Board_listings">
                     <ul className="properties_list">
                         {this.state.BoardData.map((BoardDatas,index) =>{
-                        return <Cards board={BoardDatas} num={index} key={index}/>
+                        return <Cards board={BoardDatas}  key={index}/>
                             })} 
                     </ul>
                     </div>
-                    <div className="B_PreviewMoreBox">
+                    <div className="PreviewMoreBox">
                     <button className="more_listing_btn" onClick={this.morebutton}>+더보기</button>
-                    </div>
-                    <div className="Boardfooter">
-                    <Footer/>
-                    </div>
+                </div>
+
+                <div className="Boardfooter">
+                <Footer/>
+                </div>
         </div>
         )
     }
     morebutton=(e)=>{
         e.preventDefault()
         if(this.state.BoardData[this.state.index].id!=2)
-        { 
-            this.state.bno*=2
+        {
+            this.state.pageNum++
+            console.log(this.state.pageNum)
             this.componentDidMount()
         }
         else if(this.state.BoardData[this.state.index].id==2){

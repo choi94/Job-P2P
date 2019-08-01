@@ -6,15 +6,20 @@ import '../Detail.css'
 
 
 
+
 //구글맵 확인해야할 사항
 //1.redux로 react-googlemap ..
  
 const AnyReactComponent = ({ text }) => <div style={Im} className="ingeun2">{text}</div>;
 
 
- const GoogleMap=({Lo})=>{
-    console.log(Object(Lo).latL,Object(Lo).lngL)
+ const GoogleMap=(text)=>{
+
+ 
+    console.log(parseFloat(text.to))
+    console.log()
     return (
+    <div>
       <div style={{ height: '40vh', width: '100%' }}>
       <GoogleMapReact 
         bootstrapURLKeys={{ key:"AIzaSyCX4elAhSF-1mAFON3hiV0JrhMmIxLugz4"}}
@@ -27,6 +32,7 @@ const AnyReactComponent = ({ text }) => <div style={Im} className="ingeun2">{tex
           text=""
         />
       </GoogleMapReact>
+    </div>
     </div>
     )
 }
