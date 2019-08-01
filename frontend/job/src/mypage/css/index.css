@@ -112,11 +112,28 @@
 .vol{
     font-size: 1.7rem;
     font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
 }
 
 .TransTitle{
     padding-top: 3rem;
     padding-bottom: 4rem;
+}
+
+/**TransSup*/
+.TransBox1{
+    display: flex;
+    font-weight: bold;
+}
+
+.TransBoxTitle{
+    width: 50%;
+}
+
+.TransBoxButton{
+    margin: 3% 0
 }
 
 @media (max-width:1500px){
