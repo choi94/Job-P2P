@@ -14,6 +14,8 @@ const Cards =({board,num})=>{
    }
 	return(
 		<li>
+
+         
          <NavLink to ={`/detail/`+board.id+`/`+num} >
             <Card className="BoardList_Card">
             <Card.Body>
