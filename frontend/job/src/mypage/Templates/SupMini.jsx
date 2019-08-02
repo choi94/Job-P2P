@@ -14,7 +14,7 @@ class SupMini extends Component {
     componentWillMount() {
         let localhost = 'http://localhost:9000'
 
-        axios.get(`${localhost}/work/test/${sessionStorage.getItem('id')}`)
+        axios.get(`${localhost}/work/board/volunteer/${sessionStorage.getItem('id')}`)
             .then( res => {
                 res.data.forEach( arr => {
                     this.setState({list : this.state.list.concat(arr)})

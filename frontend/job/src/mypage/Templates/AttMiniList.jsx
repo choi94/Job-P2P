@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 
 
 const AttMiniList  = (props)=>{
-    console.dir(props)
     return(
         <tbody>
             <tr>{/*거래*/}
                 <td>{props.index + 1}</td>
                 <td>{props.list.recruit}</td>
-                <td>{props.list.title}</td>
+                <Link to={`/detail/${props.list.id}`}><td>{props.list.title}</td></Link>
                 <td><Link to="/trans"><Button variant="danger">거래</Button></Link></td>
             </tr>
         </tbody>

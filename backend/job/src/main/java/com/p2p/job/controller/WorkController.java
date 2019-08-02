@@ -14,10 +14,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 @Transactional
@@ -32,17 +29,24 @@ public class WorkController {
     @Autowired
     WorkRepository workRepo;
 
-    @GetMapping("/search/{keyword}/{value}")
+    @GetMapping("/search/{keyword}/{value}/{num}/{size}")
     public ResponseEntity search(@PathVariable("keyword")String keyword,
-                                 @PathVariable("value")String value) {
+                                 @PathVariable("value")String value,
+                                 @PathVariable("num")int num,
+                                 @PathVariable("size")int size) {
+
+        Pageable page = PageRequest.of(num, size, Sort.Direction.DESC, "id");
+        List<Object> board_list = new ArrayList<>();
+        List<Object> member_list = new ArrayList<>();
+        Map<String, List<Object>> result = new HashMap<>();
 
         BooleanBuilder builder = new BooleanBuilder();
         QWorkBoard qWorkBoard = QWorkBoard.workBoard;
 
         switch (keyword) {
             case "all":
-//                builder.and(qWorkBoard..contains(value));
-                break;
+
+            break;
 
             case "title":
 //                builder.and(qMember.nickname.contains(value));
@@ -56,14 +60,8 @@ public class WorkController {
                 break;
         }
 
-        List<Object> result = new ArrayList<>();
-
-//        query.from(qMember)
-//                .where(builder.and(qMember.id.gt(0)))
-//                .fetch()
-//                .forEach(arr -> {
-//                    result.add(result);
-//                });
+        result.put("board", board_list);
+        result.put("member", member_list);
 
         if (result.isEmpty())
             return ResponseEntity.notFound().build();
@@ -81,18 +79,19 @@ public class WorkController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/board/list/{id}/{bno}")
-    public ResponseEntity selectBoard(@PathVariable("id")int id,@PathVariable("bno")int bno) {
-        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
-        BooleanBuilder builder = new BooleanBuilder();
-        Pageable page = PageRequest.of(id, bno, Sort.Direction.DESC, "id");
+    @GetMapping("/board/list/{num}/{size}")
+    public ResponseEntity selectBoard(@PathVariable("num")int num,
+                                      @PathVariable("size")int size) {
+        Pageable page = PageRequest.of(num, size, Sort.Direction.DESC, "id");
         List<Object> board_list = new ArrayList<>();
         List<Object> member_list = new ArrayList<>();
         Map<String, List<Object>> result = new HashMap<>();
+
         workRepo.findByIdGreaterThan(0L, page).forEach(arr -> {
             board_list.add(arr);
             member_list.add(arr.getMember());
         });
+
         result.put("board", board_list);
         result.put("member", member_list);
 
@@ -102,8 +101,6 @@ public class WorkController {
     @GetMapping("/board/detailList/{id}")
     public ResponseEntity detailBoard(@PathVariable("id")Long id) {
         QWorkBoard qWorkBoard = QWorkBoard.workBoard;
-        BooleanBuilder builder = new BooleanBuilder();
-
         Map<String, Object> list = new HashMap<>();
 
         query.selectFrom(qWorkBoard)
@@ -132,8 +129,8 @@ public class WorkController {
     }
 
 
-    @GetMapping("/test/{id}")
-    public ResponseEntity test(@PathVariable("id")Long id) {
+    @GetMapping("board/volunteer/{id}")
+    public ResponseEntity volunteerBoard(@PathVariable("id")Long id) {
         QWorkBoard qWorkBoard = QWorkBoard.workBoard;
         QVolunteer qVolunteer = QVolunteer.volunteer;
 
@@ -144,7 +141,7 @@ public class WorkController {
                 .where(qWorkBoard.member.id.eq(id))
                 .orderBy(qWorkBoard.id.desc())
                 .fetch()
-                .forEach(board -> { // 이 리스트를 해쉬맵에 담고 해쉬맵에 값 추가
+                .forEach(board -> {
                     board_list.add(board);
                 });
 
@@ -169,21 +166,6 @@ public class WorkController {
 
         return ResponseEntity.ok(result);
     }
-
-
-
-//    @GetMapping("/board/progress/{pro_id}")
-//    public ResponseEntity progressSave(@PathVariable("id")Long id) {
-//        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
-//        List<Object> list = new ArrayList<>();
-//
-//        query.from(qWorkBoard)
-//                .where(qWorkBoard.member.id.eq(id))
-//                .fetch()
-//                .forEach(arr -> list.add(arr));
-//
-//        return null;
-//    }
 
     @DeleteMapping("/")
     public ResponseEntity deleteWorkBoard(@PathVariable("num")Long num) {

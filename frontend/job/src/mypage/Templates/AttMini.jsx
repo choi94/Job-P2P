@@ -15,7 +15,7 @@ class AttMini  extends Component{
     componentWillMount() {
         let localhost = 'http://localhost:9000'
 
-        axios.get(`${localhost}/work/board/registr/${sessionStorage.getItem('id')}`)
+        axios.get(`${localhost}/progress/my/list/${sessionStorage.getItem('id')}`)
                 .then( res => {
                     res.data.forEach( arr => {
                         this.setState({list : this.state.list.concat(arr)})

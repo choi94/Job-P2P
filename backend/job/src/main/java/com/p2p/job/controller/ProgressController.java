@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 @Transactional
 @CrossOrigin(origins = "*", maxAge = 3600)
@@ -34,7 +37,6 @@ public class ProgressController {
         Progress progress = new Progress();
 
         QWorkBoard qWorkBoard = QWorkBoard.workBoard;
-        QProgress qProgress = QProgress.progress;
 
         volunteer.setId(volId);
         workBoard.setId(boardId);
@@ -49,6 +51,33 @@ public class ProgressController {
                 .execute();
 
         return ResponseEntity.ok("거래 진행");
+    }
+
+    @GetMapping("/my/list/{id}")
+    public ResponseEntity progressSave(@PathVariable("id")Long id) {
+        QVolunteer qVolunteer = QVolunteer.volunteer;
+        QProgress qProgress = QProgress.progress;
+
+        List<WorkBoard> board_list = new ArrayList<>();
+        List<Progress> pro_list = new ArrayList<>();
+
+        query.selectFrom(qVolunteer)
+                .where(qVolunteer.member.id.eq(1L))
+                .fetch()
+                .forEach(vol -> {
+                    query.selectFrom(qProgress)
+                            .where(qProgress.volunteer.id.eq(vol.getId()))
+                            .fetch()
+                            .forEach(arr -> pro_list.add(arr));
+                });
+
+        pro_list.stream()
+                .sorted(Comparator.reverseOrder())
+                .forEach(b -> {
+                    board_list.add(b.getWorkBoard());
+                });
+
+        return ResponseEntity.ok(board_list);
     }
 
 
