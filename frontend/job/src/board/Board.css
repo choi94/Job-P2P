@@ -14,12 +14,9 @@
 
 
 
-.card-title{
-white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
-font-weight: bold;
-}
 .b-card-title{
     white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    font-weight: bold;
 }
 .b-card-text{
 white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
@@ -54,18 +51,7 @@ white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
 
 
 @media (max-width:1500px) {
-     .Board_listings .properties_list li:nth-child(4n+0){
-        margin-right: 0;
-    }    
-    .Board_listings ul.properties_list li{
-        display: block;
-        width: 20.90909090909091%;
-        height: auto;
-        position: relative;
-        float: left;
-        margin: 0 2%;
-    }
-
+   
 }
 @media (max-width: 1024px){
     /**PreView.jsx*/

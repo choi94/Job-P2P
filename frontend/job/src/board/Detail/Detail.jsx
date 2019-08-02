@@ -15,7 +15,6 @@ class Detail extends Component{
             memberId : null
         }
     }
-
     componentWillMount(){
         axios.get(`http://localhost:9000/work/board/detailList/${this.props.match.params.id}`)
         .then(res => {
@@ -27,7 +26,6 @@ class Detail extends Component{
                     this.setState({boardId : res.data.board[key]})
                 }
             }
-
             for(let key in res.data.board.member) {
                 this.setState({
                     [key] : res.data.board.member[key]
@@ -36,7 +34,6 @@ class Detail extends Component{
                     this.setState({memberId : res.data.board.member[key]})
                 }
             }
-
             Geocode.setApiKey("AIzaSyCX4elAhSF-1mAFON3hiV0JrhMmIxLugz4");
             Geocode.fromAddress(`${res.data.board.cityArea}`).then(
             response => {
@@ -51,15 +48,11 @@ class Detail extends Component{
                 console.error(error);
             }
             );
-
-
         }).catch( error => {
             alert('실패')
         })
     }
-
     volunteer = () => {
-
         if (window.confirm("정말로 지원 하시겠습니까?")) {
             axios.post(`http://localhost:9000/volunteer/request/${this.state.memberId}/${this.state.boardId}`)
                 .then( res => {
@@ -71,7 +64,6 @@ class Detail extends Component{
                 })
             }
     }
-
     render(){
         console.log(this.state.Location)
         return(

@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import Cards from './view/Cards.jsx'
+import Cards from './View/Cards.jsx'
 import Footer from '../common/Footer'
 import { Link } from "react-router-dom";
 import {Button} from 'react-bootstrap';
