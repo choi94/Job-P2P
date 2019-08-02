@@ -10,7 +10,7 @@ import MyPage from '../mypage/MyPage.jsx'
 import InfoUpdate from '../mypage/InfoUpdate.jsx'
 import Drop from '../mypage/Drop.jsx'
 import Write from '../board/Write/Write.jsx'
-import Trans from '../mypage/Trans'
+import Trans from '../mypage/Trans.jsx'
 import './css/commom.css'
 
 class HeaderNavbar extends Component {
