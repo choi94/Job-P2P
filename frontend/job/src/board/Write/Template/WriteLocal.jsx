@@ -35,7 +35,6 @@ const WriteLocal = (props) => {
         }
         props.write_summit(data)
     }
-
     return (
         <div className="write">
             <h2 className="">글쓰기</h2>

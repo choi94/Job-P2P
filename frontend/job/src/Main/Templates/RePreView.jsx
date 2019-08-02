@@ -2,9 +2,9 @@ import React from 'react'
 import {Card,Badge} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom'
 import '../Main.css'
-import test from '../image/test.png';
 
-const PreView =({board})=>{
+
+const RePreView =({boarda})=>{
 	const a=(a)=>{
 		if(a=="모집중"){
 		   return "primary"
@@ -12,22 +12,21 @@ const PreView =({board})=>{
 		else if(a=="진행중") {return "danger"}
 		else{ return "secondary"}
 	 }
-	 
     return(
-		<li >
-		<NavLink to ={`/detail/`+board.id} className="ac" >
+		<li keys={boarda.id}>
+		<NavLink to ={`/detail/`+boarda.id} className="ac" >
 		   <Card className="BoardList_Card">
 		   <Card.Body>
-		   <Card.Title className="b-card-title">{board.title}</Card.Title>
+		   <Card.Title className="b-card-title">{boarda.title}</Card.Title>
 		   <Card.Text className="b-card-text">
-				{board.contents}
+				{boarda.contents}
 		   </Card.Text>
 		   <Card.Text>
-				  <span className="text-muted">{board.cityArea} 총{board.totalSalary}만원 <Badge variant={a(board.progressState)}>{board.progressState}</Badge> </span>  
+				  <span className="text-muted">{boarda.cityArea} 총{boarda.totalSalary}만원 <Badge variant={a(boarda.progressState)}>{boarda.progressState}</Badge> </span>  
 		   </Card.Text>
 		   </Card.Body>
 		   <Card.Footer className="b-card-footer">
-			  <div className="text-muted">작성자 : {board.member.nickname} 평점 {board.member.volunteerScore}/5 </div>        
+			  <div className="text-muted">작성자 : {boarda.member.nickname} 평점 {boarda.member.volunteerScore}/5 </div>        
 		   </Card.Footer>
 		   
 		   </Card>
@@ -37,4 +36,4 @@ const PreView =({board})=>{
     );
 }
 
-export default PreView
+export default RePreView

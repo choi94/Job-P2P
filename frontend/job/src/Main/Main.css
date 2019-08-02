@@ -163,24 +163,6 @@ button a:hover{
 
 
 @media (max-width:1500px) {
-    .PreviewMoreBox{
-        width: 15%;
-        clear: both;
-        margin: auto;
-        text-align: center;
-    }
-
-    .listingsMain .properties_list li:nth-child(4n+0){
-        margin-right: 0;
-    }    
-    .listingsMain ul.properties_list li{
-        display: block;
-        width: 20.90909090909091%;
-        height: auto;
-        position: relative;
-        float: left;
-        margin: 0 2%;
-    }
 
 }
 @media (max-width: 1024px){
