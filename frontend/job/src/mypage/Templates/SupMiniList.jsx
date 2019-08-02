@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Button, Modal} from "react-bootstrap";
 import { Link } from "react-router-dom";
-import SupModalList from "./SupModalList"
+import SupModalList from './SupModalList.jsx'
 
 const SupMiniList = (props) => {
     const [show, setShow] = useState(false);

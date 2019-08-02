@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Table, Button} from 'react-bootstrap'
+import {Table} from 'react-bootstrap'
 import axios from "axios";
 import AttMiniList from './AttMiniList'
 
@@ -40,7 +40,7 @@ class AttMini  extends Component{
                 </thead>
                 {this.state.list.map( (value, index) => {
                                 return <AttMiniList list={value} index={index}/>
-                            })}
+                })}
             </Table>
         );
     }
