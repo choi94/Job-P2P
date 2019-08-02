@@ -13,20 +13,20 @@ const TransRes  = (props) => {
                     <div>을지로 </div>
                 </ListGroup.Item>
                 <ListGroup.Item className="TransBox1">
-                    <span className="TransBoxTitle">기간 </span>
-                    <span>2019/07/17 ~ 2019/07/19</span>
+                    <div className="TransBoxTitle">기간 </div>
+                    <div>2019/07/17 ~ 2019/07/19</div>
                 </ListGroup.Item>
                 <ListGroup.Item className="TransBox1">
-                    <span className="TransBoxTitle">등록자 이름 </span>
-                    <span>홍길동</span>
+                    <div className="TransBoxTitle">등록자 이름 </div>
+                    <div>홍길동</div>
                 </ListGroup.Item>
                 <ListGroup.Item className="TransBox1">
-                    <span className="TransBoxTitle">등록자 연락처 </span>
-                    <span >010-0000-0000</span>
+                    <div className="TransBoxTitle">등록자 연락처 </div>
+                    <div >010-0000-0000</div>
                 </ListGroup.Item>
                 <ListGroup.Item className="TransBox1">
-                    <span className="TransBoxTitle">총 급여 </span>
-                    <span>24만원</span>
+                    <div className="TransBoxTitle">총 급여 </div>
+                    <div>24만원</div>
                 </ListGroup.Item>
             </ListGroup>
             <Button variant="warning" className="TransBoxButton">지불</Button>

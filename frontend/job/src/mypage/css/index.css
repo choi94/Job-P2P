@@ -67,7 +67,6 @@
     border: 2px solid rgb(221, 220, 221);
 }
 
-
 /**Drop*/
 .DropBox1{
     font-size: 1.3rem;
@@ -102,6 +101,59 @@
     font-size: 1.1rem;
 }
 
+/**AttMini*/
+.AttBox{
+    display: flex;
+    font-weight: bold;
+}
+
+.AttBoxTitle{
+    width: 7%;
+}
+
+.AttBoxTitle1{
+    width: 30%;
+}
+
+.AttBoxTitle2{
+    width: 30%;
+}
+
+/**ResMini*/
+.ResBox{
+    display: flex;
+    font-weight: bold;
+}
+
+.ResBoxTitle{
+    width: 7%;
+}
+
+.ResBoxTitle1{
+    width: 30%;
+}
+
+.ResBoxTitle2{
+    width: 20%;
+}
+
+/**SupMini*/
+.SupBox{
+    display: flex;
+    font-weight: bold;
+}
+
+.SupBoxTitle{
+    width: 7%;
+}
+
+.SupBoxTitle1{
+    width: 30%;
+}
+
+.SupBoxTitle2{
+    width: 20%;
+}
 
 /**Trans*/
 .TransBox{
