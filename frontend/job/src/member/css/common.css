@@ -15,6 +15,10 @@
 .box h1 {
     text-align: center;
 }
+.JoinBox{
+    margin-Left : 30%; 
+    margin-Right : 30%;
+}
 .button1{
     color: #fff;
     display: block;
@@ -58,12 +62,18 @@
 .grey-text{
     font-weight: bold;
 }
-@media (max-width:1500px){
- 
 
+@media (max-width:375px){
+    .JoinBox{
+        margin-Left : 5%; 
+        margin-Right : 5%;
+    }
 }
-@media (max-width: 1150px){
-
+@media (max-width:425px){
+    .JoinBox{
+        margin-Left : 11%; 
+        margin-Right : 11%;
+    }
 }
 
 @media (max-width:800px){
@@ -79,8 +89,18 @@
     }
 }
 
-@media (max-width:700px){
+@media (max-width:768px){
+    .JoinBox{
+        margin-Left : 15%; 
+        margin-Right : 15%;
+    }
+}
 
+@media (max-width:1024px){
+    .JoinBox{
+        margin-Left : 15%; 
+        margin-Right : 15%;
+    }
 }
 
 @media (max-width:500px){
@@ -95,6 +115,7 @@
         margin: auto;
     }
 }
+
 @media (max-width:411px){
     .box{
         width: 80%;
@@ -118,5 +139,9 @@
         text-align: center;
         width: 80%;
         margin: auto;
+    }
+    .JoinBox{
+        margin-Left : 8%; 
+        margin-Right : 8%;
     }
 }

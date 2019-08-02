@@ -1,40 +1,35 @@
 import React, { useState}from 'react'
-import {Table, Button} from 'react-bootstrap'
+import {ListGroup, Button} from 'react-bootstrap'
+import '../css/index.css'
 
 const TransRes  = (props) => {
     console.dir(props)
     return(
         <div>
-            <Table>
-                <thead>
-                    <tr>
-                        <td className="vol">등록자 정보</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>일자리 제목</th>
-                        <th>을지로 이사 도우미</th>
-                    </tr>
-                    <tr>
-                        <th>기간</th>
-                        <th>2019/07/17 ~ 2019/07/19</th>
-                    </tr>
-                    <tr>
-                        <th>등록자 이름</th>
-                        <th>홍길동</th>
-                    </tr>
-                    <tr>
-                        <th>등록자 연락처</th>
-                        <th>010-0000-0000</th>
-                    </tr>
-                    <tr>
-                        <th>총 급여</th>
-                        <th>24만원</th>
-                    </tr>
-                </tbody>
-            </Table><br/>
-            <Button variant="warning">지불</Button>
+            <h2 className="vol">등록자 정보</h2>
+            <ListGroup>
+                <ListGroup.Item className="TransBox1">
+                    <div className="TransBoxTitle">일자리 제목</div>
+                    <div>을지로 </div>
+                </ListGroup.Item>
+                <ListGroup.Item className="TransBox1">
+                    <div className="TransBoxTitle">기간 </div>
+                    <div>2019/07/17 ~ 2019/07/19</div>
+                </ListGroup.Item>
+                <ListGroup.Item className="TransBox1">
+                    <div className="TransBoxTitle">등록자 이름 </div>
+                    <div>홍길동</div>
+                </ListGroup.Item>
+                <ListGroup.Item className="TransBox1">
+                    <div className="TransBoxTitle">등록자 연락처 </div>
+                    <div >010-0000-0000</div>
+                </ListGroup.Item>
+                <ListGroup.Item className="TransBox1">
+                    <div className="TransBoxTitle">총 급여 </div>
+                    <div>24만원</div>
+                </ListGroup.Item>
+            </ListGroup>
+            <Button variant="warning" className="TransBoxButton">지불</Button>
         </div>
     );
 }
