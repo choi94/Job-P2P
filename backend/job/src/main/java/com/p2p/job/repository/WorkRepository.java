@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface WorkRepository extends CrudRepository<WorkBoard,Long>, QuerydslPredicateExecutor<WorkBoard> {
+public interface WorkRepository extends CrudRepository<WorkBoard, Long>, QuerydslPredicateExecutor<WorkBoard> {
     public List<WorkBoard> findByIdGreaterThan(Long id, Pageable page);
 }

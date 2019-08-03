@@ -17,10 +17,10 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@ToString
+@ToString(exclude = {"workBoard", "volunteer"})
 @Entity
 @Table(name = "progress")
-public class Progress {
+public class Progress implements Comparable<Progress> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "progress_id")
@@ -36,4 +36,9 @@ public class Progress {
 
     @Column(name = "finish_date")
     private LocalDateTime finishDate;
+
+    @Override
+    public int compareTo(Progress o) {
+        return Long.compare(id, o.id);
+    }
 }

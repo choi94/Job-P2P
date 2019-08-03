@@ -8,8 +8,10 @@
 }
 
 .Board_searchBox{
-    width: 40%;
-    margin: 5% auto;
+ 
+  margin-top: 5%;
+  width: 88%;
+  text-align: end;
 }
 
 

@@ -14,12 +14,12 @@ class SupMini extends Component {
     componentWillMount() {
         let localhost = 'http://localhost:9000'
 
-        axios.get(`${localhost}/work/test/${sessionStorage.getItem('id')}`)
-        .then( res => {
-            res.data.forEach( arr => {
-                this.setState({list : this.state.list.concat(arr)})
+        axios.get(`${localhost}/work/board/volunteer/${sessionStorage.getItem('id')}`)
+            .then( res => {
+                res.data.forEach( arr => {
+                    this.setState({list : this.state.list.concat(arr)})
+                })
             })
-        })
         .catch( error => {
             alert('실패')
         })

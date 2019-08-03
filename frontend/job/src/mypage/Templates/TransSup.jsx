@@ -14,7 +14,7 @@ const TransSup  = (props) => {
                 </ListGroup.Item>
                 <ListGroup.Item className="TransBox1">
                     <div className="TransBoxTitle">기간 </div>
-                    <div>2019/07/17 ~ 2019/07/19</div>
+                    <div className="TransBoxYear">2019/07/17 ~ 2019/07/19</div>
                 </ListGroup.Item>
                 <ListGroup.Item className="TransBox1">
                     <div className="TransBoxTitle">지원자 이름 </div>

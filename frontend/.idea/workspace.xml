@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc8ebaa2-e7f5-4053-8b27-29c8cdb6adcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/Main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/Main/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/Main/Templates/PreView.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Board.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Board.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Detail/Detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Detail/module/GoogleMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Detail/module/GoogleMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/Write/Write.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/Write/Write.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/board/view/Cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/board/view/Cards.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/common/css/commom.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/common/css/commom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/member/Join.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/member/Join.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/member/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/member/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/mypage/Templates/AttMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/mypage/Templates/AttMiniList.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +22,79 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupModalList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/AttMini.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/AttMiniList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="28" column="88" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/job/src/board/Write/Write.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+>>>>>>> 828393f8aef1f4e60d89403757f745a7049ccff4
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -29,10 +113,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+<<<<<<< HEAD
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/job/package.json" />
   </component>
   <component name="ProjectId" id="1OqoWVVnamfU5nCgryzjiQkCAps" />
+=======
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/job/src/mypage/Templates/AttMini.jsx" />
+        <option value="$PROJECT_DIR$/job/src/board/Write/Write.css" />
+      </list>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/job/package.json" />
+  </component>
+>>>>>>> 828393f8aef1f4e60d89403757f745a7049ccff4
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -54,6 +152,16 @@
       </list>
     </option>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -69,11 +177,100 @@
       <workItem from="1564206227207" duration="6441000" />
       <workItem from="1564357181583" duration="20431000" />
       <workItem from="1564531893304" duration="24397000" />
-      <workItem from="1564616343221" duration="16817000" />
+      <workItem from="1564616343221" duration="21262000" />
+      <workItem from="1564804361359" duration="1335000" />
     </task>
     <servers />
+  </component>
+<<<<<<< HEAD
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+=======
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1219000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1600" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2178594" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49968335" visible="true" weight="0.20722891" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003167" side_tool="true" weight="0.27349398" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupModalList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/AttMini.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/AttMiniList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/mypage/Templates/SupMiniList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="28" column="88" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/board/Board.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job/src/board/Write/Write.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+>>>>>>> 828393f8aef1f4e60d89403757f745a7049ccff4
 </project>

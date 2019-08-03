@@ -1,4 +1,7 @@
 
+.modal-open{
+    overflow: initial;
+}
 .Header{
     background-color: #0c151c;
     /**background: linear-gradient( to bottom, #f8f9fa 94%, rgba(238, 237, 237, 0.986) 1% );*/
@@ -37,6 +40,3 @@
 
 }
 
-.nav-link:hover{
-    color: #ffff !important;
-}

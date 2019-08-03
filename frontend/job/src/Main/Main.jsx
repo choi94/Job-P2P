@@ -38,7 +38,7 @@ class Main extends Component{
         return(
     <div className="Mainbody">
         <div className="m1" style={Im}>
-                <Juombo/>
+            <Juombo/>
         </div>
         <div className="m2">
             <Introduce/>
@@ -60,11 +60,6 @@ class Main extends Component{
                
             </div>
         </div>
-        
-        <div className="m4">
-                    
-        </div>
-      
         <div className="PreviewMoreBox">
 			<NavLink to ="/Board" className="more_listing_btn">+더보기</NavLink>
 		</div>
