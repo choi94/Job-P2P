@@ -1,19 +1,16 @@
 import React, { useState }from 'react'
 import axios from 'axios'
+import {MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBInput} from 'mdbreact';
 import {ListGroup, Button} from 'react-bootstrap'
 import '../css/index.css'
 
 const TransRes  = (props) => {
     const localhost = 'http://localhost:9000'
+    const [modal, setModal] = useState(false)
+    const [radio, setRadio] = useState(5)
 
     const payment = () => {
-        let data = {
-            vol_id : props.volunteer.id,
-            req_id : props.board.board.member.id,
-            point : props.board.board.totalSalary * 10000,
-        }
-
-        axios.post(`${localhost}/progress/payment/${props.board.board.member.id}/${props.volunteer.id}/${props.board.board.totalSalary * 10000}`)
+        axios.post(`${localhost}/progress/payment/${props.board.board.member.id}/${props.volunteer.id}/${props.board.board.totalSalary * 10000}/${radio}`)
             .then( res => {
                 props.mypageMove()
             })
@@ -54,9 +51,29 @@ const TransRes  = (props) => {
                 </ListGroup.Item>
             </ListGroup>
             {props.board.board.member.id == sessionStorage.getItem('id') ?
-                <Button onClick={payment} variant="success" className="TransBoxButton">급여 지불</Button> :
+                <MDBBtn color="success" onClick={() => setModal(!modal)} className="TransBoxButton">급여 지불</MDBBtn> :
                 null
             }
+
+            <MDBModal isOpen={modal} toggle={() => setModal(!modal)} centered>
+                <MDBModalHeader toggle={() => setModal(!modal)}>후기 평점</MDBModalHeader>
+                <MDBModalBody>
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={() => setRadio(1)} checked={radio === 1 ? true : false} label="1점" type="radio"
+                              id="radio1" />
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={() => setRadio(2)} checked={radio === 2 ? true : false} label="2점" type="radio"
+                              id="radio2" />
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={() => setRadio(3)} checked={radio === 3 ? true : false} label="3점" type="radio"
+                              id="radio3" />
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={() => setRadio(4)} checked={radio === 4 ? true : false} label="4점" type="radio"
+                              id="radio4" />
+                    <MDBInput style={{width : 15, height : 15}} gap onClick={() => setRadio(5)} checked={radio === 5 ? true : false} label="5점" type="radio"
+                              id="radio5" />
+                </MDBModalBody>
+                <MDBModalFooter>
+                    <MDBBtn color="dark" onClick={() => setModal(!modal)}>Close</MDBBtn>
+                    <MDBBtn color="success" onClick={payment}>완료</MDBBtn>
+                </MDBModalFooter>
+            </MDBModal>
 
         </div>
     );

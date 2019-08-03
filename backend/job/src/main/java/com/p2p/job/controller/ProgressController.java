@@ -84,7 +84,7 @@ public class ProgressController {
                     board_temp.add(b.getWorkBoard());
                 });
 
-        board_list.stream()
+        board_temp.stream()
                 .filter(b -> b.getProgressState()
                 .contains("진행중"))
                 .forEach(bp -> board_list.add(bp));
@@ -112,7 +112,7 @@ public class ProgressController {
         List<Member> members = new ArrayList<>();
 
         query.selectFrom(qProgress)
-                .where(qProgress.workBoard.id.eq(26L))
+                .where(qProgress.workBoard.id.eq(id))
                 .fetch()
                 .forEach(pro -> {
                     query.selectFrom(qVolunteer)
@@ -124,10 +124,11 @@ public class ProgressController {
         return ResponseEntity.ok(members);
     }
 
-    @PostMapping("/payment/{req_id}/{vol_id}/{point}")
+    @PostMapping("/payment/{req_id}/{vol_id}/{point}/{score}")
     public ResponseEntity payment(@PathVariable("req_id")Long req_id,
                                   @PathVariable("vol_id")Long vol_id,
-                                  @PathVariable("point")int point) {
+                                  @PathVariable("point")int point,
+                                  @PathVariable("score")int score) {
         QMember qMember = QMember.member;
 
         List<Member> req = query.selectFrom(qMember)
@@ -144,14 +145,30 @@ public class ProgressController {
 
         new JPAUpdateClause(entityManager, qMember).where(qMember.id.eq(vol_id))
                 .set(qMember.point, vol.get(0).getPoint() + point)
+                .set(qMember.volunteerScore, vol.get(0).getVolunteerScore() + score)
+                .set(qMember.volScoreCount, vol.get(0).getVolScoreCount() + 1)
                 .execute();
 
         return ResponseEntity.ok().build();
     }
 
-    @PostMapping("/trans/end/{id}")
-    public ResponseEntity end(@PathVariable("id")Long id) {
+    @PostMapping("/trans/end/{id}/{score}/{reqId}")
+    public ResponseEntity end(@PathVariable("id")Long id,
+                              @PathVariable("score")int score,
+                              @PathVariable("reqId")Long reqId) {
         QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+        QMember qMember = QMember.member;
+
+        query.selectFrom(qMember)
+                .where(qMember.id.eq(reqId))
+                .fetch()
+                .forEach(m -> {
+                    new JPAUpdateClause(entityManager, qMember)
+                            .where(qMember.id.eq(reqId))
+                            .set(qMember.requestScore, m.getRequestScore() + score)
+                            .set(qMember.reqScoreCount, m.getReqScoreCount() + 1)
+                            .execute();
+                });
 
         new JPAUpdateClause(entityManager, qWorkBoard)
                 .where(qWorkBoard.id.eq(id))

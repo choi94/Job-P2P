@@ -22,7 +22,7 @@ class Main extends Component{
     componentDidMount(){
         axios.get(`http://localhost:9000/work/board/list/${this.state.pageNum}/${this.state.pageSize}`)
         .then(res => {
-                res.data.board.forEach((a)=>{
+                res.data.board.forEach( (a) => {
                     this.setState({
                         PreviewData: this.state.PreviewData.concat(a)
                     })

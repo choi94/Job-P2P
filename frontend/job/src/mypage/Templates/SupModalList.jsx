@@ -9,7 +9,7 @@ const SupModalList = (props) => {
     const progress = () => {
         axios.post(`${localhost}/progress/${props.vol.id}/${props.vol.workBoard.id}`)
             .then(res => {
-                console.dir(res)
+                window.location = './mypage'
             })
             .catch(error => {
                 alert("알 수 없는 오류가 발생 했습니다.")

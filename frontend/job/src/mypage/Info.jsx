@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBInput } from 'mdbreact';
-import {CardGroup,Card,Button,ListGroup} from 'react-bootstrap'
+import {CardGroup,Card,Button} from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
 const DeclarInfo = (props) => {

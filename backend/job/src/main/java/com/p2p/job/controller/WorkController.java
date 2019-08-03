@@ -141,6 +141,8 @@ public class WorkController {
                 .where(qWorkBoard.member.id.eq(id))
                 .orderBy(qWorkBoard.id.desc())
                 .fetch()
+                .stream()
+                .filter(b -> b.getProgressState().contains("모집중"))
                 .forEach(board -> {
                     board_list.add(board);
                 });
