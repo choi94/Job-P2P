@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom";
 import '../Write.css'
-import {Button, Card, Col, Form, Table,ListGroup,} from "react-bootstrap";
+import {Button, Card, Col, Form, ListGroup,} from "react-bootstrap";
 
 const WriteLocal = (props) => {
     const [title, setTitle] = useState()
@@ -51,7 +51,6 @@ const WriteLocal = (props) => {
                 </Card>
             </div>
             <hr/>
-
 
             <div className="W_imfo">
                 <Card>

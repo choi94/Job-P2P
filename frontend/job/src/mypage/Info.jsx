@@ -4,7 +4,6 @@ import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBInpu
 import {CardGroup,Card,Button,ListGroup} from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
-
 const DeclarInfo = (props) => {
     const localhost = 'http://localhost:9000'
     const [email, setEmail] = useState()
@@ -53,65 +52,84 @@ const DeclarInfo = (props) => {
     const onClick = (nr) => () => {
         setRadio(nr)
     }
+
     return(
-        <CardGroup>
-            <Card>
-                <Card.Body>
-                    <Card.Title className="aa">{nickname}님의 정보</Card.Title>
-                        <div>E-메일 :</div>
-                        <div>{email}</div>
-                        <div>이름 :</div>
-                        <div>{name}</div>
-                        <div>성별 :</div>
-                        <div>{gender}</div>
-                </Card.Body>
-            </Card>
-            <Card>
-                <Card.Body>
-                    <Card.Title className="aa">평점/Point</Card.Title>
-                        <div>지원 평점 :</div>
-                        <div>{volunteer}점 / 5점</div>
-                        <div>의뢰 평점 :</div>
-                        <div>{request}점 / 5점</div>
-                        <div>포인트 :</div>
-                        <div>{point}원 <Button variant="info" size="sm" onClick={modal_toggle} >충전하기</Button></div>
-                </Card.Body>
-            </Card>
-            <Card>
-                <Card.Body>
-                    <Card.Title className="aa">회원정보 <Link to={{pathname : '/infoUpdate',
-                        state : {
-                            email : email,
-                            nickname : nickname,
-                            phone : phone
+        <div>
+            <CardGroup>
+                <Card>
+                    <Card.Body>
+                        <Card.Title className="aa">{nickname}님의 정보</Card.Title>
+                            <div className="bb">
+                                <div>E-메일 : </div>
+                                <div>{email}</div>
+                            </div>
+                            <div className="bb">
+                                <div>이름 : </div>
+                                <div>{name}</div>
+                            </div>
+                            <div className="bb">
+                                <div>성별 : </div>
+                                <div>{gender}</div>
+                            </div>
+                    </Card.Body>
+                </Card>
+                <Card>
+                    <Card.Body>
+                        <Card.Title className="aa">평점/Point</Card.Title>
+                            <div className="bb">
+                                <div>지원 평점 :</div>
+                                <div>{volunteer}점 / 5점</div>
+                            </div>
+                            <div className="bb">
+                                <div>의뢰 평점 :</div>
+                                <div>{request}점 / 5점</div>
+                            </div>
+                            <div className="bb">
+                                <div>포인트 :</div>
+                                <div>{point}원 <Button variant="info" size="sm" onClick={modal_toggle} >충전하기</Button></div>
+                            </div>
+                    </Card.Body>
+                </Card>
+    
+                <Card>
+                    <Card.Body>
+                        <Card.Title className="aa">회원정보 <Link to={{pathname : '/infoUpdate',
+                            state : {
+                                email : email,
+                                nickname : nickname,
+                                phone : phone
+                            }
                         }
-                    }
-                    }>
-                    <Button  variant="warning" >수정</Button></Link></Card.Title>
-                    <Card.Title className="aa">회원탈퇴 <Link to={{pathname : '/drop', state : {email : email}}}><Button variant="success">탈퇴</Button></Link></Card.Title>
-                </Card.Body>
-            </Card>
+                        }>
+                        <Button  variant="warning" >수정</Button></Link></Card.Title>
+                        <Card.Text>
+                        </Card.Text>
+                        <Card.Title className="aa">회원탈퇴 <Link to={{pathname : '/drop', state : {email : email}}}><Button variant="success">탈퇴</Button></Link></Card.Title>
+                        <Card.Text>
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
 
-
-            {/*modal*/}
-            <MDBModal isOpen={modal} toggle={modal_toggle} centered>
-                <MDBModalHeader toggle={modal_toggle}>포인트 충전</MDBModalHeader>
-                <MDBModalBody className="d-flex justify-content-center">
-                    <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(10000)} checked={radio === 10000 ? true : false} label="1만원" type="radio"
-                              id="radio1" />
-                    <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(50000)} checked={radio === 50000 ? true : false} label="5만원" type="radio"
-                              id="radio2" />
-                    <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(100000)} checked={radio === 100000 ? true : false} label="10만원" type="radio"
-                              id="radio3" />
-                    <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(300000)} checked={radio === 300000 ? true : false} label="30만원" type="radio"
-                              id="radio4" />
-                </MDBModalBody>
-                <MDBModalFooter>
-                    <MDBBtn color="secondary" onClick={modal_toggle}>취소</MDBBtn>
-                    <MDBBtn color="primary" onClick={point_charging}>충전하기</MDBBtn>
-                </MDBModalFooter>
-            </MDBModal>
-    </CardGroup>
+                {/*modal*/}
+                <MDBModal isOpen={modal} toggle={modal_toggle} centered>
+                    <MDBModalHeader toggle={modal_toggle}>포인트 충전</MDBModalHeader>
+                    <MDBModalBody className="d-flex justify-content-center">
+                        <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(10000)} checked={radio === 10000 ? true : false} label="1만원" type="radio"
+                                id="radio1" />
+                        <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(50000)} checked={radio === 50000 ? true : false} label="5만원" type="radio"
+                                id="radio2" />
+                        <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(100000)} checked={radio === 100000 ? true : false} label="10만원" type="radio"
+                                id="radio3" />
+                        <MDBInput style={{width : 15, height : 15}} gap onClick={onClick(300000)} checked={radio === 300000 ? true : false} label="30만원" type="radio"
+                                id="radio4" />
+                    </MDBModalBody>
+                    <MDBModalFooter>
+                        <MDBBtn color="secondary" onClick={modal_toggle}>취소</MDBBtn>
+                        <MDBBtn color="primary" onClick={point_charging}>충전하기</MDBBtn>
+                    </MDBModalFooter>
+                </MDBModal>
+        </CardGroup>
+    </div>
     )
 }
 

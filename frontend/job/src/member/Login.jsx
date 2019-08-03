@@ -34,11 +34,11 @@ const Login = ({history, logins}) => {
           <Form>
             <h1>로그인</h1><br/>
           <Form.Group controlId="formGroupEmail">
-            <Form.Label>이메일<label class="k">*</label></Form.Label>
+            <Form.Label>이메일<label className="k">*</label></Form.Label>
             <Form.Control type="email" onChange={e => {setEmail(e.target.value)}} />
           </Form.Group>
           <Form.Group controlId="formGroupPassword">
-            <Form.Label>비밀번호<label class="k">*</label></Form.Label>
+            <Form.Label>비밀번호<label className="k">*</label></Form.Label>
             <Form.Control type="password"  onChange={e => {setPassword(e.target.value)}}/>
           </Form.Group>
         </Form>

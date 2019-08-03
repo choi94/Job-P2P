@@ -7,10 +7,9 @@ const AttMiniList  = (props)=>{
     return(
         <ListGroup>
             <ListGroup.Item className="ResBoxList">
-                <div className="ResBoxTitle2">{props.index + 1}</div>
-                <div className="ResBoxTitle2">{props.list.recruit}</div>
                 <div className="ResBoxTitle2"><Link to={`/detail/${props.list.id}`}>{props.list.title}</Link></div>
-                <div><Link to="/trans"><Button variant="danger">거래</Button></Link></div>
+                <div className="ResBoxTitle2">{props.list.recruit}</div>
+                <div className="ResBoxTitle2"><Link to="/trans"><Button variant="danger">거래</Button></Link></div>
             </ListGroup.Item>
         </ListGroup>
     );

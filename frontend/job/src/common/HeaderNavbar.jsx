@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import {Navbar,Nav,Juombo,Footer} from 'react-bootstrap';
+import {Navbar,Nav} from 'react-bootstrap';
 import Login from '../member/Login'
 import Join from '../member/Join'
 import Main from '../Main/Main.jsx'

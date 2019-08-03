@@ -18,12 +18,11 @@ class AttMini  extends Component{
 
         axios.get(`${localhost}/progress/my/list/${sessionStorage.getItem('id')}`)
                 .then( res => {
-                    console.log("date",res)
-                    res.data.volunteer.forEach( arr => {
-                        this.setState({list : this.state.vol_list.concat(arr)})
+                    res.data.volunteer.forEach( vol => {
+                        this.setState({vol_list : this.state.vol_list.concat(vol)})
                     })
-                    res.data.request.forEach( arr => {
-                        this.setState({list : this.state.req_list.concat(arr)})
+                    res.data.request.forEach( req => {
+                        this.setState({req_list : this.state.req_list.concat(req)})
                     })
                 })
                 .catch( error => {
@@ -36,9 +35,9 @@ class AttMini  extends Component{
         return(
             <ListGroup>
                 <ListGroup.Item className="ResBox">
-                    <div className="AttBoxTitle2">일자리 명</div>
-                    <div className="AttBoxTitle1">기간</div>
-                    <div>거래페이지로 가기</div>
+                    <div className="ResBoxTitle1">일자리 명</div>
+                    <div className="ResBoxTitle1">기간</div>
+                    <div className="ResBoxTitle1">거래페이지로 가기</div>
                 </ListGroup.Item>
                 {this.state.vol_list.map( (value, index) => {
                     return <AttMiniList list={value} index={index}/>

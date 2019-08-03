@@ -7,7 +7,7 @@ const SupMiniList = (props) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-
+    console.log(props)
     return (
         <ListGroup>
             <ListGroup.Item className="ResBoxList">
@@ -27,7 +27,7 @@ const SupMiniList = (props) => {
                             return <SupModalList vol={props.list.volunteer[index]} modalList={value} index={index}/>
                         })}
                         <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>Close</Button>
+                            <Button variant="dark" onClick={handleClose}>Close</Button>
                         </Modal.Footer>
                     </Modal>
                 </div>

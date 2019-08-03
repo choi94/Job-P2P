@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import axios from 'axios'
 import GoogleMap from "./module/GoogleMap.jsx"
 
-import {ListGroup,Button,Table,Card,Jumbotron} from "react-bootstrap"
+import {ListGroup,Button,Card,Jumbotron} from "react-bootstrap"
 import './Detail.css'
 
 class Detail extends Component{
@@ -24,7 +24,7 @@ class Detail extends Component{
                     this.setState({
                         [key] : res.data.board[key]
                     })
-                    if (key == 'id') {
+                    if (key === 'id') {
                         this.setState({boardId : res.data.board[key]})
                     }
                 }
@@ -32,7 +32,7 @@ class Detail extends Component{
                     this.setState({
                         [key] : res.data.board.member[key]
                     })
-                    if (key == 'id') {
+                    if (key === 'id') {
                         this.setState({memberId : res.data.board.member[key]})
                     }
                 }
@@ -68,7 +68,10 @@ class Detail extends Component{
                 <Jumbotron className="title">
                         <p>진행 상태 : {this.state.progressState}</p>
                         <p>마감 일자 : {this.state.recruit}</p>
-                        <Button onClick={this.volunteer} variant="primary">지원하기</Button>
+                    {sessionStorage.getItem('id') && this.state.progressState === '모집중' ?
+                        <Button onClick={this.volunteer} variant="primary">지원하기</Button> :
+                    null}
+
                 </Jumbotron>
             <hr/>
             <div className="D_imfo">
@@ -128,7 +131,6 @@ class Detail extends Component{
         </div>
         )
     }
-
 } 
 
 export default Detail

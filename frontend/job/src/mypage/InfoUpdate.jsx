@@ -30,7 +30,7 @@ const InfoUpdate = ({history,location}) => {
     },[])
 
     const nickname_checking = n => {
-      if (n.target.value != '' && n.target.value != tempNick) {
+      if (n.target.value !== '' && n.target.value !== tempNick) {
         axios.get(`${localhost}/member/join/nickname/${n.target.value}`)
           .then(res => {
               setNickname_boolean(true)
@@ -80,7 +80,7 @@ const InfoUpdate = ({history,location}) => {
         <hr className="line"/>
         <form className="UpdateFrom">
               <div className="grey-text">
-                <label>이메일<label class="k"></label></label>
+                <label>이메일<label className="k"></label></label>
                 <MDBInput
                   icon="envelope"
                   group
@@ -91,7 +91,7 @@ const InfoUpdate = ({history,location}) => {
                   value={email}
                   readOnly
                 />
-                <label>닉네임<label class="k"></label></label>
+                <label>닉네임<label className="k"></label></label>
                 <MDBInput
                   icon="id-card"
                   group
@@ -103,8 +103,8 @@ const InfoUpdate = ({history,location}) => {
                   onBlur={nickname_checking}
                   onChange={ e => {setNickname(e.target.value)}}
                 />
-                <div class="d-flex" className="red-text">{nickname_check}</div>
-                <label>비밀번호<label class="k"></label></label>
+                <div className="d-flex" className="red-text">{nickname_check}</div>
+                <label>비밀번호<label className="k"></label></label>
                 <MDBInput
                   icon="lock"
                   group
@@ -112,7 +112,7 @@ const InfoUpdate = ({history,location}) => {
                   validate
                   onChange={p => {setPass_one(p.target.value)}}
                 />
-                <label>비밀번호 재입력<label class="k"></label></label>
+                <label>비밀번호 재입력<label className="k"></label></label>
                 <MDBInput
                   icon="exclamation-triangle"
                   group
@@ -122,8 +122,8 @@ const InfoUpdate = ({history,location}) => {
                   success="right"
                   onBlur={p => {setPass_two(p.target.value)}}
                 />
-                <div className="red-text">{pass_one != pass_two ? "재입력 비밀번호가 다릅니다." : null}</div>
-                <label>연락처 (예 : 01012345678)<label class="k"></label></label>
+                <div className="red-text">{pass_one !== pass_two ? "재입력 비밀번호가 다릅니다." : null}</div>
+                <label>연락처 (예 : 01012345678)<label className="k"></label></label>
                 <MDBInput
                   icon="user"
                   group
