@@ -15,12 +15,12 @@ const SupMiniList = (props) => {
                 <div className="SupBoxTitle1">{props.list.board.writeDate.substring(0, 10)}</div>
                 <div className="SupBoxTitle1">
                     <Link to={`/detail/${props.list.board.id}`}>
-                        <td>{props.list.board.title}</td>
+                        {props.list.board.title}
                     </Link>
                 </div>
                 <div className="SupBoxTitle2">{props.list.board.recruit.substring(13)}</div>
                 <div className="SupBoxTitle2">
-                {props.list.member.length != 0 ? <Button variant="primary" onClick={handleShow}>지원자 현황</Button> : null}
+                {props.list.member.length !== 0 ? <Button variant="primary" onClick={handleShow}>지원자 현황</Button> : null}
                     <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>
                             <Modal.Title>지원자 현황</Modal.Title>
@@ -29,7 +29,7 @@ const SupMiniList = (props) => {
                             return <SupModalList vol={props.list.volunteer[index]} modalList={value} index={index}/>
                         })}
                         <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>Close</Button>
+                            <Button variant="dark" onClick={handleClose}>Close</Button>
                         </Modal.Footer>
                     </Modal>
                 </div>

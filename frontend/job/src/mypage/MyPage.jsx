@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import Info from './Info.jsx'
 import ClientInfo from './ClientInfo.jsx'
-import Footer from '../common/Footer.jsx'
 import '../mypage/css/index.css';
 
 class MyPage extends Component{
@@ -26,7 +25,7 @@ class MyPage extends Component{
                         <Info vol_boardList={this.setVol}/>
                     </div>
                     <div className="myPageBox2">
-                    <ClientInfo vol_boardList={this.state.vol_boardList}/>
+                        <ClientInfo vol_boardList={this.state.vol_boardList}/>
                     </div>
                 </div>
             </div>

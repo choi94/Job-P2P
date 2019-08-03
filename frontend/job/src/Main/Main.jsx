@@ -1,12 +1,10 @@
 import React,{Component} from 'react'
 import Juombo from './Templates/Juombo.jsx'
 import Introduce from './Templates/Introduce.jsx'
-import RePreView from './Templates/RePreView.jsx'
 import PreView from './Templates/PreView.jsx'
 import FooterIntro from './Templates/FooterIntro.jsx'
 import Footer from '../common/Footer.jsx'
 import './Main.css'
-import ReactSwipe from 'react-swipe';
 import windowSize from 'react-window-size';
 import axios from 'axios'
 import im from './image/시안4.png'

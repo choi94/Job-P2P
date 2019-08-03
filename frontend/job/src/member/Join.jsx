@@ -42,10 +42,10 @@ const Join = ({history}) => {
     }
   }
   const nickname_checking = n => {
-    if (n.target.value != '') {
+    if (n.target.value !== '') {
       axios.get(`${localhost}/member/join/nickname/${n.target.value}`)
         .then(res => {
-          if (res.data.length != 0) {
+          if (res.data.length !== 0) {
             setNickname_boolean(false)
             setNickname_check('이미 존재하는 닉네임입니다.')
           }
@@ -136,7 +136,7 @@ const Join = ({history}) => {
                   success="right"
                   onBlur={(p) => {setPass_two(p.target.value)}}
                 />
-                <div className="red-text">{pass_one != pass_two ? "재입력 비밀번호가 다릅니다." : null}</div>
+                <div className="red-text">{pass_one !== pass_two ? "재입력 비밀번호가 다릅니다." : null}</div>
                 <label>성함<label className="k">*</label></label>
                 <MDBInput
                   icon="user"
@@ -169,9 +169,9 @@ const Join = ({history}) => {
                 />
               </div> 
               <div className="d-flex justify-content-between mx-5 mb-4">
-                <MDBInput style={{width : 15, height : 16}} gap label="남자" type="radio" onClick={gender} checked={radio == '남' ? true : false} value="남"
+                <MDBInput style={{width : 15, height : 16}} gap label="남자" type="radio" onClick={gender} checked={radio === '남' ? true : false} value="남"
                   id="radio1" />
-                <MDBInput style={{width : 15, height : 16}} gap label="여자" type="radio" onClick={gender} checked={radio == '여' ? true : false} value="여"
+                <MDBInput style={{width : 15, height : 16}} gap label="여자" type="radio" onClick={gender} checked={radio === '여' ? true : false} value="여"
                   id="radio2" />
               </div>  
               <div className="text-center mb-5">

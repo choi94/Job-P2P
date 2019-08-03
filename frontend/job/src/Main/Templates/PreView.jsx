@@ -2,14 +2,13 @@ import React from 'react'
 import {Card,Badge} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom'
 import '../Main.css'
-import test from '../image/test.png';
 
 const PreView =({board})=>{
 	const a=(a)=>{
-		if(a=="모집중"){
+		if(a==="모집중"){
 		   return "primary"
 		}
-		else if(a=="진행중") {return "danger"}
+		else if(a==="진행중") {return "danger"}
 		else{ return "secondary"}
 	 }
 	 
@@ -33,8 +32,7 @@ const PreView =({board})=>{
 		   
 		   </Card>
 		</NavLink>   
-	  </li> 
-
+	  </li>
     );
 }
 

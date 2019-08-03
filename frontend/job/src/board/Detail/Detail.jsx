@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import axios from 'axios'
 import GoogleMap from "./module/GoogleMap.jsx"
 
-import {ListGroup,Button,Table,Card,Jumbotron} from "react-bootstrap"
+import {ListGroup,Button,Card,Jumbotron} from "react-bootstrap"
 import './Detail.css'
 
 class Detail extends Component{
@@ -24,7 +24,7 @@ class Detail extends Component{
                     this.setState({
                         [key] : res.data.board[key]
                     })
-                    if (key == 'id') {
+                    if (key === 'id') {
                         this.setState({boardId : res.data.board[key]})
                     }
                 }
@@ -32,7 +32,7 @@ class Detail extends Component{
                     this.setState({
                         [key] : res.data.board.member[key]
                     })
-                    if (key == 'id') {
+                    if (key === 'id') {
                         this.setState({memberId : res.data.board.member[key]})
                     }
                 }
@@ -128,7 +128,6 @@ class Detail extends Component{
         </div>
         )
     }
-
 } 
 
 export default Detail

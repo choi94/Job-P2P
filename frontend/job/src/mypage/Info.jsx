@@ -71,16 +71,16 @@ const DeclarInfo = (props) => {
                     <Card.Text>
                     <table>
                         <tr>
-                            <td class="bb">E-메일</td>
-                            <td class="cc">{email}</td>
+                            <td className="bb">E-메일</td>
+                            <td className="cc">{email}</td>
                         </tr>
                         <tr>
-                            <td class="bb">이름</td>
-                            <td class="cc">{name}</td>
+                            <td className="bb">이름</td>
+                            <td className="cc">{name}</td>
                         </tr>
                         <tr>
-                            <td class="bb">성별</td>
-                            <td class="cc">{gender}</td>
+                            <td className="bb">성별</td>
+                            <td className="cc">{gender}</td>
                         </tr>
                     </table>
                     </Card.Text>
@@ -92,24 +92,24 @@ const DeclarInfo = (props) => {
                     <Card.Text>
                     <table>
                         <tr>
-                            <td class="bb">지원 평점 :</td>
-                            <td class="cc">{volunteer}점 / 5점</td>
+                            <td className="bb">지원 평점 :</td>
+                            <td className="cc">{volunteer}점 / 5점</td>
                         </tr>
                     </table>
                     </Card.Text>
                     <Card.Text>
                     <table>
                         <tr>
-                            <td class="bb">의뢰 평점 :</td>
-                            <td class="cc">{request}점 / 5점</td>
+                            <td className="bb">의뢰 평점 :</td>
+                            <td className="cc">{request}점 / 5점</td>
                         </tr>
                     </table>
                     </Card.Text>
                     <Card.Text>
                     <table>
                         <tr>
-                            <td class="bb">포인트 :</td>
-                            <td class="cc">{point}원 <MDBBtn color="info" onClick={modal_toggle} size="sm">충전하기</MDBBtn></td>
+                            <td className="bb">포인트 :</td>
+                            <td className="cc">{point}원 <MDBBtn color="info" onClick={modal_toggle} size="sm">충전하기</MDBBtn></td>
                         </tr>
                     </table>
                     </Card.Text>

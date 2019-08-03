@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {ListGroup, Button} from 'react-bootstrap'
+import {ListGroup} from 'react-bootstrap'
 
 const ResMiniList = (props) => {
     return (
@@ -10,7 +10,7 @@ const ResMiniList = (props) => {
                     <div className="ResBoxTitle1">{props.list.volunteer_Date.substring(0, 10)}</div>
                     <div className="ResBoxTitle1">
                         <Link to={`/detail/${props.list.workBoard.id}`}>
-                        <td>{props.list.workBoard.title}</td>
+                        {props.list.workBoard.title}
                         </Link>
                     </div>
                     <div className="ResBoxTitle2">{props.list.workBoard.totalSalary}만원</div>

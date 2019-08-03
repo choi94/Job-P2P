@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
-import axios from "axios";
-import {Table, Button, Tabs, Tab} from 'react-bootstrap'
+import {Tabs, Tab} from 'react-bootstrap'
 import './css/index.css'
 import TransRes from './Templates/TransRes';
 import TransSup from './Templates/TransSup';

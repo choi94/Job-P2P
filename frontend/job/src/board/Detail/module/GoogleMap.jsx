@@ -1,22 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import Location from './Location.png'
 import '../Detail.css'
-import Geocode from "react-geocode";
-
  
 const AnyReactComponent = ({ text }) => <div style={Im} className="ingeun2">{text}</div>;
 
-function gocode(){
-  Geocode.setApiKey("AIzaSyCX4elAhSF-1mAFON3hiV0JrhMmIxLugz4");
-    let a = 
-    console.log(a)
-}
+
 function GoogleMap(){
     return (
     <div>
-      {
-      }
       <div style={{ height: '40vh', width: '100%' }}>
       <GoogleMapReact 
         bootstrapURLKeys={{ key:"AIzaSyCX4elAhSF-1mAFON3hiV0JrhMmIxLugz4"}}

@@ -6,10 +6,10 @@ import '../Main.css'
 
 const RePreView =({boarda})=>{
 	const a=(a)=>{
-		if(a=="모집중"){
+		if(a==="모집중"){
 		   return "primary"
 		}
-		else if(a=="진행중") {return "danger"}
+		else if(a==="진행중") {return "danger"}
 		else{ return "secondary"}
 	 }
     return(
