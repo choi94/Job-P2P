@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="543bf8b0-ce61-4a1e-b34b-7e6e09c0e47c" name="Default Changelist" comment="" />
-=======
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/ProgressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMini.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMiniList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransRes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransRes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupModalList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupModalList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransSup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransSup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.jsx" afterDir="false" />
     </list>
->>>>>>> 828393f8aef1f4e60d89403757f745a7049ccff4
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="job" />
@@ -38,18 +35,15 @@
       </MavenImportingSettings>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="ProjectId" id="1OqoG6R5HOXguiwgQZSrrr5eS1u" />
-=======
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1OaHhfXxCKdIt8w3i2nkEcc4XGt" />
->>>>>>> 828393f8aef1f4e60d89403757f745a7049ccff4
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -65,11 +59,6 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager">
-    <configuration name="JobApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.p2p.job.JobApplication" />
-=======
   <component name="RunManager" selected="Application.JobApplication">
     <configuration name="JobApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.p2p.job.JobApplication" />
@@ -85,7 +74,6 @@
       </method>
     </configuration>
     <configuration name="JobApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
->>>>>>> 828393f8aef1f4e60d89403757f745a7049ccff4
       <module name="job" />
       <extension name="coverage">
         <pattern>
@@ -93,72 +81,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="job" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="job" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.JobApplication" />
-=======
     <list>
       <item itemvalue="Application.JobApplication" />
       <item itemvalue="JUnit.JobApplicationTests.contextLoads" />
-      <item itemvalue="Spring Boot.JobApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.JobApplication" />
         <item itemvalue="JUnit.JobApplicationTests.contextLoads" />
->>>>>>> 828393f8aef1f4e60d89403757f745a7049ccff4
       </list>
     </recent_temporary>
   </component>
@@ -167,15 +102,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="543bf8b0-ce61-4a1e-b34b-7e6e09c0e47c" name="Default Changelist" comment="" />
+      <changelist id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="" />
       <created>1564714389070</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-<<<<<<< HEAD
-      <updated>1564714389070</updated>
-      <workItem from="1564714391321" duration="249000" />
-=======
       <updated>1563779241599</updated>
+      <workItem from="1564714391321" duration="249000" />
       <workItem from="1563779242860" duration="1058000" />
       <workItem from="1563780339017" duration="3472000" />
       <workItem from="1563785229175" duration="859000" />
@@ -200,12 +132,9 @@
       <workItem from="1564387291456" duration="10000" />
       <workItem from="1564387380461" duration="9442000" />
       <workItem from="1564531897742" duration="32687000" />
-<<<<<<< HEAD
       <workItem from="1564804362505" duration="3476000" />
->>>>>>> 828393f8aef1f4e60d89403757f745a7049ccff4
-=======
       <workItem from="1564804362505" duration="8840000" />
->>>>>>> choi
+      <workItem from="1564824255181" duration="4011000" />
     </task>
     <servers />
   </component>
@@ -227,6 +156,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/job$JobApplicationTests_contextLoads.ic" NAME="JobApplicationTests.contextLoads Coverage Results" MODIFIED="1564810457812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.p2p.job.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/job$JobApplication.ic" NAME="JobApplication Coverage Results" MODIFIED="1564824263059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.p2p.job.*</FILTER>
     </SUITE>
   </component>
