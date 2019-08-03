@@ -8,7 +8,8 @@ class AttMini  extends Component{
     constructor(props) {
         super(props)
         this.state = {
-            list : []
+            vol_list : [],
+            req_list : []
         }
     }
 
@@ -17,8 +18,12 @@ class AttMini  extends Component{
 
         axios.get(`${localhost}/progress/my/list/${sessionStorage.getItem('id')}`)
                 .then( res => {
-                    res.data.forEach( arr => {
-                        this.setState({list : this.state.list.concat(arr)})
+                    console.log("date",res)
+                    res.data.volunteer.forEach( arr => {
+                        this.setState({list : this.state.vol_list.concat(arr)})
+                    })
+                    res.data.request.forEach( arr => {
+                        this.setState({list : this.state.req_list.concat(arr)})
                     })
                 })
                 .catch( error => {
@@ -38,8 +43,11 @@ class AttMini  extends Component{
                         <th>거래페이지로 가기</th>
                     </tr>
                 </thead>
-                {this.state.list.map( (value, index) => {
-                                return <AttMiniList list={value} index={index}/>
+                {this.state.vol_list.map( (value, index) => {
+                    return <AttMiniList list={value} index={index}/>
+                })}
+                {this.state.req_list.map( (value, index) => {
+                    return <AttMiniList list={value} index={index}/>
                 })}
             </Table>
         );

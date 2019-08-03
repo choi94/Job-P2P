@@ -47,6 +47,18 @@ public class JobApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		QVolunteer qVolunteer = QVolunteer.volunteer;
+		QProgress qProgress = QProgress.progress;
+		QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+		QMember qMember = QMember.member;
+
+		List<WorkBoard> board_list = new ArrayList<>();
+
+
+
+//		board_list.stream()
+//				.filter(b -> b.getProgressState().contains("진행중"))
+//				.forEach(System.out::println);
 
 
 

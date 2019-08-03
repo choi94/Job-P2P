@@ -12,6 +12,7 @@ import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 
 @Transactional
@@ -57,12 +58,17 @@ public class ProgressController {
     public ResponseEntity progressSave(@PathVariable("id")Long id) {
         QVolunteer qVolunteer = QVolunteer.volunteer;
         QProgress qProgress = QProgress.progress;
+        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+
+        HashMap<String, Object> result = new HashMap<>();
 
         List<WorkBoard> board_list = new ArrayList<>();
+        List<WorkBoard> board_req_list = new ArrayList<>();
+
         List<Progress> pro_list = new ArrayList<>();
 
         query.selectFrom(qVolunteer)
-                .where(qVolunteer.member.id.eq(1L))
+                .where(qVolunteer.member.id.eq(id))
                 .fetch()
                 .forEach(vol -> {
                     query.selectFrom(qProgress)
@@ -77,7 +83,19 @@ public class ProgressController {
                     board_list.add(b.getWorkBoard());
                 });
 
-        return ResponseEntity.ok(board_list);
+
+        query.selectFrom(qWorkBoard)
+                .where(qWorkBoard.member.id.eq(id))
+                .orderBy(qWorkBoard.id.desc())
+                .fetch()
+                .stream()
+                .filter(b -> b.getProgressState().contains("진행중"))
+                .forEach(req -> board_req_list.add(req));
+
+        result.put("volunteer", board_list);
+        result.put("request", board_req_list);
+
+        return ResponseEntity.ok(result);
     }
 
 

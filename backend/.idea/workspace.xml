@@ -7,14 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/ProgressController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/WorkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Progress.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/entity/Progress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/ProgressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupModalList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupModalList.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,8 +136,9 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.JobApplicationTests.contextLoads" />
       <item itemvalue="Application.JobApplication" />
+      <item itemvalue="JUnit.JobApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.JobApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -184,6 +181,7 @@
       <workItem from="1564387291456" duration="10000" />
       <workItem from="1564387380461" duration="9442000" />
       <workItem from="1564531897742" duration="32687000" />
+      <workItem from="1564804362505" duration="3335000" />
     </task>
     <servers />
   </component>
@@ -220,5 +218,10 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/job$JobApplicationTests_contextLoads.ic" NAME="JobApplicationTests.contextLoads Coverage Results" MODIFIED="1564810457812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.p2p.job.*</FILTER>
+    </SUITE>
   </component>
 </project>
