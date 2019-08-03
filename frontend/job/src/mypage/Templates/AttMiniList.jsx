@@ -10,7 +10,7 @@ const AttMiniList  = (props)=>{
                 <div className="AttBoxTitle">{props.index + 1}</div>
                 <div className="AttBoxTitle1">{props.list.recruit}</div>
                 <div className="AttBoxTitle2"><Link to={`/detail/${props.list.id}`}>{props.list.title}</Link></div>
-                <div><Link to="/trans"><Button variant="danger">거래</Button></Link></div>
+                <div><Link to={{pathname : "/trans", state : {board : props.list}}}><Button variant="danger">거래</Button></Link></div>
             </ListGroup.Item>
         </ListGroup>
     );

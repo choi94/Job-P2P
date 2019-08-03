@@ -68,7 +68,10 @@ class Detail extends Component{
                 <Jumbotron className="title">
                         <p>진행 상태 : {this.state.progressState}</p>
                         <p>마감 일자 : {this.state.recruit}</p>
-                        <Button onClick={this.volunteer} variant="primary">지원하기</Button>
+                    {sessionStorage.getItem('id') ?
+                        <Button onClick={this.volunteer} variant="primary">지원하기</Button> :
+                    null}
+
                 </Jumbotron>
             <hr/>
             <div className="D_imfo">

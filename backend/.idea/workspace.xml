@@ -7,22 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/common/HeaderNavbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/common/HeaderNavbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/member/Join.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/member/Join.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/member/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/member/css/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Drop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Drop.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/MyPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/MyPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/ProgressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/java/com/p2p/job/controller/ProgressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/test/java/com/p2p/job/JobApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMini.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMiniList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/ResMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/ResMini.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/ResMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/ResMiniList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMini.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransRes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransRes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransSup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransSup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +186,7 @@
       <workItem from="1564387291456" duration="10000" />
       <workItem from="1564387380461" duration="9442000" />
       <workItem from="1564531897742" duration="32687000" />
-      <workItem from="1564804362505" duration="3476000" />
+      <workItem from="1564804362505" duration="8840000" />
     </task>
     <servers />
   </component>

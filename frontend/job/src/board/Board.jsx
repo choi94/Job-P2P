@@ -36,8 +36,10 @@ class Board extends Component{
     render(){
         return(
             <div>
-                <div className="Board_searchBox"> 
-                <Link to={{pathname :'/write'}}><Button variant="primary">글쓰기</Button></Link>
+                <div className="Board_searchBox">
+                    {sessionStorage.getItem('id') ?
+                        <Link to={{pathname :'/write'}}><Button variant="primary">글쓰기</Button></Link> :
+                    null}
                 </div>
                
                 <div className="Board_listings">
