@@ -18,6 +18,18 @@
     margin-top: 1%;
 }
 
+/**info */
+.aa{
+    font-weight: bold;
+ }
+ .bb{
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+ }
+ .cc{
+    padding-right: 1rem;
+ }
 
 /**InUpdate*/
 .InfoUpdateBox{

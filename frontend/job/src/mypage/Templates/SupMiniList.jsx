@@ -10,14 +10,14 @@ const SupMiniList = (props) => {
 
     return (
         <ListGroup>
-            <ListGroup.Item className="SupBox">
-                <div className="SupBoxTitle1">
+            <ListGroup.Item className="ResBoxList">
+                <div className="ResBoxTitle2">
                     <Link to={`/detail/${props.list.board.id}`}>
                         {props.list.board.title}
                     </Link>
                 </div>
-                <div className="SupBoxTitle2">{props.list.board.recruit.substring(13)}</div>
-                <div className="SupBoxTitle2">
+                <div className="ResBoxTitle2">{props.list.board.recruit.substring(13)}</div>
+                <div className="ResBoxTitle2">
                 {props.list.member.length != 0 ? <Button variant="primary" onClick={handleShow}>지원자 현황</Button> : null}
                     <Modal show={show} onHide={handleClose}>
                         <Modal.Header closeButton>

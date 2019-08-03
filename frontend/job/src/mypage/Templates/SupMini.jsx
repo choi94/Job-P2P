@@ -28,10 +28,10 @@ class SupMini extends Component {
     render() {
         return(
             <ListGroup>
-                <ListGroup.Item className="SupBox">
-                    <div className="SupBoxTitle1">일자리 명</div>
-                    <div className="SupBoxTitle2">마감일</div>
-                    <div className="SupBoxTitle2">지원자 현황 보기</div>
+                <ListGroup.Item className="ResBox">
+                    <div className="ResBoxTitle1">일자리 명</div>
+                    <div className="ResBoxTitle1">마감일</div>
+                    <div className="ResBoxTitle1">지원자 현황 보기</div>
                 </ListGroup.Item>
                 {this.state.list.map( (value, index) => {
                     return <SupMiniList list={value} index={index}/>

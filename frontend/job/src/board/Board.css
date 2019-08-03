@@ -6,16 +6,11 @@
 
     border: 2px solid #a0c3e5;    
 }
-
 .Board_searchBox{
- 
   margin-top: 5%;
   width: 88%;
   text-align: end;
 }
-
-
-
 .b-card-title{
     white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
     font-weight: bold;
@@ -24,8 +19,8 @@
 white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
 }
 
-/*  board section  */
 
+/*  board section  */
 .Board_listings{
     width: 80%;
     margin: auto;

@@ -35,10 +35,9 @@ class AttMini  extends Component{
     render(){
         return(
             <ListGroup>
-                <ListGroup.Item className="AttBox">
-                    <div className="AttBoxTitle">#</div>
-                    <div className="AttBoxTitle1">기간</div>
+                <ListGroup.Item className="ResBox">
                     <div className="AttBoxTitle2">일자리 명</div>
+                    <div className="AttBoxTitle1">기간</div>
                     <div>거래페이지로 가기</div>
                 </ListGroup.Item>
                 {this.state.vol_list.map( (value, index) => {
