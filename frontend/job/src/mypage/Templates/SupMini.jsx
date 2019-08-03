@@ -29,8 +29,6 @@ class SupMini extends Component {
         return(
             <ListGroup>
                 <ListGroup.Item className="SupBox">
-                    <div className="SupBoxTitle">#</div>
-                    <div className="SupBoxTitle1">등록일</div>
                     <div className="SupBoxTitle1">일자리 명</div>
                     <div className="SupBoxTitle2">마감일</div>
                     <div className="SupBoxTitle2">지원자 현황 보기</div>

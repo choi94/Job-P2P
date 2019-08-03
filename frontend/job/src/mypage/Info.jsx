@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBInput } from 'mdbreact';
-import {CardGroup,Card,Button} from 'react-bootstrap'
+import {CardGroup,Card,Button,ListGroup} from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
 
@@ -15,10 +15,8 @@ const DeclarInfo = (props) => {
     const [request, setRequest] = useState()
     const [point, setPoint] = useState()
     const [phone, setPhone] = useState()
-
     const [modal , setModal] = useState(false)
     const [radio, setRadio] = useState(10000)
-
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
@@ -36,9 +34,6 @@ const DeclarInfo = (props) => {
                 // alert('오류가 발생했습니다.')
             })
     },[])
-
-
-
     const point_charging = () => {
         if (window.confirm("정말로 충전 하시겠습니까?")){
             setModal(!modal)
@@ -52,71 +47,37 @@ const DeclarInfo = (props) => {
                     })
         }
     }
-
     const modal_toggle = () => {
         setModal(!modal)
     }
-
     const onClick = (nr) => () => {
         setRadio(nr)
     }
-
-
-
     return(
         <CardGroup>
-            <Card style={{ width: '18rem' }}>
+            <Card>
                 <Card.Body>
                     <Card.Title className="aa">{nickname}님의 정보</Card.Title>
-                    <Card.Text>
-                    <table>
-                        <tr>
-                            <td class="bb">E-메일</td>
-                            <td class="cc">{email}</td>
-                        </tr>
-                        <tr>
-                            <td class="bb">이름</td>
-                            <td class="cc">{name}</td>
-                        </tr>
-                        <tr>
-                            <td class="bb">성별</td>
-                            <td class="cc">{gender}</td>
-                        </tr>
-                    </table>
-                    </Card.Text>
+                        <div>E-메일 :</div>
+                        <div>{email}</div>
+                        <div>이름 :</div>
+                        <div>{name}</div>
+                        <div>성별 :</div>
+                        <div>{gender}</div>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem' }}>
+            <Card>
                 <Card.Body>
                     <Card.Title className="aa">평점/Point</Card.Title>
-                    <Card.Text>
-                    <table>
-                        <tr>
-                            <td class="bb">지원 평점 :</td>
-                            <td class="cc">{volunteer}점 / 5점</td>
-                        </tr>
-                    </table>
-                    </Card.Text>
-                    <Card.Text>
-                    <table>
-                        <tr>
-                            <td class="bb">의뢰 평점 :</td>
-                            <td class="cc">{request}점 / 5점</td>
-                        </tr>
-                    </table>
-                    </Card.Text>
-                    <Card.Text>
-                    <table>
-                        <tr>
-                            <td class="bb">포인트 :</td>
-                            <td class="cc">{point}원 <MDBBtn color="info" onClick={modal_toggle} size="sm">충전하기</MDBBtn></td>
-                        </tr>
-                    </table>
-                    </Card.Text>
+                        <div>지원 평점 :</div>
+                        <div>{volunteer}점 / 5점</div>
+                        <div>의뢰 평점 :</div>
+                        <div>{request}점 / 5점</div>
+                        <div>포인트 :</div>
+                        <div>{point}원 <Button variant="info" size="sm" onClick={modal_toggle} >충전하기</Button></div>
                 </Card.Body>
             </Card>
- 
-            <Card style={{ width: '18rem' }}>
+            <Card>
                 <Card.Body>
                     <Card.Title className="aa">회원정보 <Link to={{pathname : '/infoUpdate',
                         state : {
@@ -127,13 +88,10 @@ const DeclarInfo = (props) => {
                     }
                     }>
                     <Button  variant="warning" >수정</Button></Link></Card.Title>
-                    <Card.Text>
-                    </Card.Text>
                     <Card.Title className="aa">회원탈퇴 <Link to={{pathname : '/drop', state : {email : email}}}><Button variant="success">탈퇴</Button></Link></Card.Title>
-                    <Card.Text>
-                    </Card.Text>
                 </Card.Body>
             </Card>
+
 
             {/*modal*/}
             <MDBModal isOpen={modal} toggle={modal_toggle} centered>
@@ -153,7 +111,6 @@ const DeclarInfo = (props) => {
                     <MDBBtn color="primary" onClick={point_charging}>충전하기</MDBBtn>
                 </MDBModalFooter>
             </MDBModal>
-
     </CardGroup>
     )
 }

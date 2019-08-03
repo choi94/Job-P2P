@@ -19,7 +19,6 @@ class MyPage extends Component{
     render(){
         console.dir(this.state)
         return(
-            <div className="myPageBox3">
                 <div className="myPageBox">
                     <div className="myPageBox_1">
                         <h1>MyPage</h1>
@@ -29,7 +28,6 @@ class MyPage extends Component{
                     <ClientInfo vol_boardList={this.state.vol_boardList}/>
                     </div>
                 </div>
-            </div>
         )
     }
 }
