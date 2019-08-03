@@ -18,12 +18,11 @@ class AttMini  extends Component{
 
         axios.get(`${localhost}/progress/my/list/${sessionStorage.getItem('id')}`)
                 .then( res => {
-                    console.log("date",res)
-                    res.data.volunteer.forEach( arr => {
-                        this.setState({list : this.state.vol_list.concat(arr)})
+                    res.data.volunteer.forEach( vol => {
+                        this.setState({vol_list : this.state.vol_list.concat(vol)})
                     })
-                    res.data.request.forEach( arr => {
-                        this.setState({list : this.state.req_list.concat(arr)})
+                    res.data.request.forEach( req => {
+                        this.setState({req_list : this.state.req_list.concat(req)})
                     })
                 })
                 .catch( error => {

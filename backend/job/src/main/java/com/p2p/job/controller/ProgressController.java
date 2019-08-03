@@ -62,6 +62,7 @@ public class ProgressController {
 
         HashMap<String, Object> result = new HashMap<>();
 
+        List<WorkBoard> board_temp = new ArrayList<>();
         List<WorkBoard> board_list = new ArrayList<>();
         List<WorkBoard> board_req_list = new ArrayList<>();
 
@@ -80,8 +81,13 @@ public class ProgressController {
         pro_list.stream()
                 .sorted(Comparator.reverseOrder())
                 .forEach(b -> {
-                    board_list.add(b.getWorkBoard());
+                    board_temp.add(b.getWorkBoard());
                 });
+
+        board_list.stream()
+                .filter(b -> b.getProgressState()
+                .contains("진행중"))
+                .forEach(bp -> board_list.add(bp));
 
 
         query.selectFrom(qWorkBoard)
@@ -98,6 +104,62 @@ public class ProgressController {
         return ResponseEntity.ok(result);
     }
 
+    @GetMapping("/trans/{id}")
+    public ResponseEntity trans(@PathVariable("id")Long id) {
+        QProgress qProgress = QProgress.progress;
+        QVolunteer qVolunteer = QVolunteer.volunteer;
+
+        List<Member> members = new ArrayList<>();
+
+        query.selectFrom(qProgress)
+                .where(qProgress.workBoard.id.eq(26L))
+                .fetch()
+                .forEach(pro -> {
+                    query.selectFrom(qVolunteer)
+                            .where(qVolunteer.id.eq(pro.getVolunteer().getId()))
+                            .fetch()
+                            .forEach(v -> members.add(v.getMember()));
+                });
+
+        return ResponseEntity.ok(members);
+    }
+
+    @PostMapping("/payment/{req_id}/{vol_id}/{point}")
+    public ResponseEntity payment(@PathVariable("req_id")Long req_id,
+                                  @PathVariable("vol_id")Long vol_id,
+                                  @PathVariable("point")int point) {
+        QMember qMember = QMember.member;
+
+        List<Member> req = query.selectFrom(qMember)
+                .where(qMember.id.eq(req_id))
+                .fetch();
+
+        List<Member> vol = query.selectFrom(qMember)
+                .where(qMember.id.eq(vol_id))
+                .fetch();
+
+        new JPAUpdateClause(entityManager, qMember).where(qMember.id.eq(req_id))
+                .set(qMember.point, req.get(0).getPoint() - point)
+                .execute();
+
+        new JPAUpdateClause(entityManager, qMember).where(qMember.id.eq(vol_id))
+                .set(qMember.point, vol.get(0).getPoint() + point)
+                .execute();
+
+        return ResponseEntity.ok().build();
+    }
+
+    @PostMapping("/trans/end/{id}")
+    public ResponseEntity end(@PathVariable("id")Long id) {
+        QWorkBoard qWorkBoard = QWorkBoard.workBoard;
+
+        new JPAUpdateClause(entityManager, qWorkBoard)
+                .where(qWorkBoard.id.eq(id))
+                .set(qWorkBoard.progressState, "종료")
+                .execute();
+
+        return ResponseEntity.ok().build();
+    }
 
 
 }
