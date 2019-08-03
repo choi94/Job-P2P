@@ -81,16 +81,17 @@
 /**Info*/
 .aa{
     font-weight: bold;
+    
 }
 
 .bb{
     font-size: 1.2rem;
     font-weight: bold;
+    display: flex;
 }
 
 .cc{
-    padding-left: 1rem;
-    font-weight: bold;
+    padding-right: 1rem;
 }
 
 .list{
@@ -208,6 +209,11 @@
         margin-Left : -11%;
         width: 120%;
         overflow: scroll;
+    }
+
+    .DropBox3{
+        margin-Left : -70%;
+        width: 240%;
     }
 }
 
