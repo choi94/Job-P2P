@@ -22,8 +22,8 @@ const Cards =({board})=>{
                  {board.contents}
             </Card.Text>
             <Card.Text>
-                   <p className="text-muted">{board.cityArea} 총{board.totalSalary}만원</p>
-                   <Badge variant={a(board.progressState)}>{board.progressState}</Badge>  
+                  <span className="text-muted">{board.cityArea} 총{board.totalSalary}만원</span><br/>
+                  <Badge variant={a(board.progressState)}>{board.progressState}</Badge>  
             </Card.Text>
             </Card.Body>
             <Card.Footer>
