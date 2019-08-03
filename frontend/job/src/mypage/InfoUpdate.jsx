@@ -12,7 +12,6 @@ const InfoUpdate = ({history,location}) => {
     const [pass_one, setPass_one] = useState()
     const [pass_two, setPass_two] = useState()
     const [phone, setPhone] = useState()
-
     const [nickname_check, setNickname_check] = useState()
     const [nickname_boolean, setNickname_boolean] = useState(true)
 
@@ -71,13 +70,13 @@ const InfoUpdate = ({history,location}) => {
 
         
     return (
-      <div align="center">
-      <br/>
-        <h2>회원정보 수정</h2>
-        <br/>
-        <div className="update1">
-          <p>회원정보는 개인정보처리방침에 따라 안전하게 보호되며, 회원님의 동의 없이 공개 또는 제 3자에게 제공되지 않습니다.</p>
-        </div>
+      <div className="InfoUpdateBox">
+
+          <div className="InfoUpdateBox_title">
+              <h1>회원정보 수정</h1>
+              <p>회원정보는 개인정보처리방침에 따라 안전하게 보호되며, 회원님의 동의 없이 공개 또는 제 3자에게 제공되지 않습니다.</p>
+          </div>  
+
         <hr className="line"/>
         <form className="UpdateFrom">
               <div className="grey-text">
@@ -137,10 +136,11 @@ const InfoUpdate = ({history,location}) => {
                 />
               </div> 
             </form>
-                <div className="buttonBox">
-                    <Button variant="dark" onClick={update_check}>수정 완료</Button>
-                    <Link to="/mypage"><Button variant="danger">취소</Button></Link>
-                </div>   
+
+            <div className="buttonBox">
+                <Button variant="dark" onClick={update_check}>수정 완료</Button>
+                <Link to="/mypage"><Button variant="danger">취소</Button></Link>
+            </div>   
         </div>
         );
 }

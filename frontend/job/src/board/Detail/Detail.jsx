@@ -68,7 +68,7 @@ class Detail extends Component{
                 <Jumbotron className="title">
                         <p>진행 상태 : {this.state.progressState}</p>
                         <p>마감 일자 : {this.state.recruit}</p>
-                    {sessionStorage.getItem('id') ?
+                    {sessionStorage.getItem('id') && this.state.progressState === '모집중' ?
                         <Button onClick={this.volunteer} variant="primary">지원하기</Button> :
                     null}
 

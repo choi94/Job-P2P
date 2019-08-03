@@ -1,280 +1,256 @@
-
+/**mypage*/
 .myPageBox{
     width: 80%;
     margin: auto;
-}
-.myPageBox_1{
+ 
+ }
+ .myPageBox_1{
     width: 100%;
     margin-top: 2%;
-}
-.myPageBox_1 h1{
+ }
+ .myPageBox_1 h1{
     margin: 1.5% 1.5% ;
-}
-
-.myPageBox2{
+ }
+ 
+ .myPageBox2{
     margin-top: 1%;
-}
-
-.DropBox{
-    width: 80%;
-    margin: 2% auto;
-}
-.DropBtnBox{
-    margin-top: 1%;
-    text-align: center;
-}
-
-.UpdateFrom{
-    margin: 0 30%;
-    text-align: left;
-}
-
-.UpdateFrom label {
-    margin: 1% 0 ;
-}
-
-/** nav tap*/
-.list-nav{
-    width: 100%;
-    font-size: 1.3rem;
+ }
+ 
+ /**info */
+ .aa{
     font-weight: bold;
+  
 }
-
-.list-nav a{
-    width: 30%;
-    text-align: center;
-}
-
-
-/**InUpdate*/
-.buttonBox{
-    text-align: center;
-}
-
-.buttonBox button{
-    margin: 0 0.5%;
-}
-
-.update1{
-    font-size: 1.1rem;
-}
-
-.grey-text{
-    font-size: 1.1rem;
-}
-
-.line{
-    border: 2px solid rgb(221, 220, 221);
-}
-
-/**Drop*/
-.DropBox1{
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.DropBox2{
-    color:red;
-    font-weight: bold;
-}
-
-/**Info*/
-.aa{
-    font-weight: bold;
-    
-}
-
+  
 .bb{
     font-size: 1.2rem;
     font-weight: bold;
     display: flex;
 }
-
+  
 .cc{
     padding-right: 1rem;
 }
-
-.list{
-    padding-right: 1rem;
-}
-
-.res{
+ 
+ /**InUpdate*/
+ .InfoUpdateBox{
+ 
+ }
+ .InfoUpdateBox_title{
+    width: 80%;
+    margin: 3% auto;
+    text-align: center
+ }
+ .InfoUpdateBox_title h1{
+    padding-bottom: 1%;
+    font-size: 2.4rem;
+ }
+ .InfoUpdateBox_title p{
     font-size: 1.1rem;
-}
-
-/**AttMini*/
-.AttBox{
+ }
+ .UpdateFrom{
+    width: 60%;
+    margin: auto;
+    text-align: left;
+ }
+ .UpdateFrom label {
+    padding: 1% 0 ;
+ }
+ 
+ .buttonBox{
+    text-align: center;
+ }
+ 
+ .buttonBox button{
+    margin: 0 0.5%;
+ }
+ 
+ 
+ .grey-text{
+    font-size: 1.1rem;
+ }
+ 
+ .line{
+    border: 2px solid rgb(221, 220, 221);
+ }
+ 
+ /**Drop*/
+ .DropBox1{
+    font-size: 1.3rem;
+    font-weight: bold;
+ }
+ 
+ .DropBox2{
+    color:red;
+    font-weight: bold;
+ }
+ .DropBox{
+    width: 80%;
+    margin: 2% auto;
+ }
+ .DropBtnBox{
+    margin-top: 1%;
+    text-align: center;
+ }
+ 
+ 
+ 
+ /** nav tap*/
+ .list-nav{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+ }
+ .list-nav a{
+    width: 33.3%;
+    text-align: center;
+ }
+ 
+ /**ResMini*/
+ .ResBox{
+    display: flex;
+    border-bottom: 2px solid #dee2e6;
+    background-color:rgba(0,0,0,.05);
+ }
+ .ResBoxList{
+    display: flex;
+ }
+ 
+ .ResBoxTitle{
+    width: 7%;
+ 
+ }
+ 
+ .ResBoxTitle1{
+    width: 33.3%;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center
+ }
+ 
+ .ResBoxTitle2{
+    width: 33.3%;
+    font-size: 0.8rem;
+    text-align: center
+ }
+ 
+ /**SupMini*/
+ .SupBox{
     display: flex;
     font-weight: bold;
-}
-
-.AttBoxTitle{
+ }
+ 
+ .SupBoxTitle{
     width: 7%;
-}
-
-.AttBoxTitle1{
+ }
+ 
+ .SupBoxTitle1{
     width: 30%;
-}
-
-.AttBoxTitle2{
-    width: 30%;
-}
-
-/**ResMini*/
-.ResBox{
-    display: flex;
-    font-weight: bold;
-}
-
-.ResBoxTitle{
-    width: 7%;
-}
-
-.ResBoxTitle1{
-    width: 30%;
-}
-
-.ResBoxTitle2{
+ }
+ 
+ .SupBoxTitle2{
     width: 20%;
-}
-
-/**SupMini*/
-.SupBox{
+ }
+ 
+ /**AttMini*/
+ .AttBox{
     display: flex;
     font-weight: bold;
-}
-
-.SupBoxTitle{
+ }
+ 
+ .AttBoxTitle{
     width: 7%;
-}
-
-.SupBoxTitle1{
+ }
+ 
+ .AttBoxTitle1{
     width: 30%;
-}
-
-.SupBoxTitle2{
-    width: 20%;
-}
-
-.progress1{
-    width: 40%;
-    margin-top: 5%;
-    margin-left: 30%;
-}
-
-/**Trans*/
-.TransBox{
+ }
+ 
+ .AttBoxTitle2{
+    width: 30%;
+ }
+ 
+ 
+ /**Trans*/
+ .TransBox{
     width: 80%;
     margin: auto;
-}
-
-.vol{
+ }
+ 
+ .vol{
     font-size: 1.7rem;
     font-weight: bold;
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
-}
-
-.TransTitle{
+ }
+ 
+ .TransTitle{
     padding-top: 3rem;
     padding-bottom: 4rem;
-}
-
-/**TransSup*/
-.TransBox1{
+ }
+ 
+ /**TransSup*/
+ .TransBox1{
     display: flex;
     font-weight: bold;
-}
-
-.TransBoxTitle{
+ }
+ 
+ .TransBoxTitle{
     width: 50%;
-}
-
-.TransBoxButton{
+ }
+ 
+ .TransBoxButton{
     margin: 3% 0
-}
-
-@media (max-width:375px){
+ }
+ 
+ 
+ @media (max-width:1500px) {
+ 
+ 
+ }
+ @media (max-width: 1150px){
+ 
+ 
+ 
+ }
+ @media (max-width: 1024px){
+     /**InfoUpdate*/
+     .InfoUpdateBox_title h1{
+        padding-bottom: 1%;
+    }
+ }
+ 
+ @media (min-width:700px) and (max-width:900px){
+ 
+ 
+ 
+ }
+ 
+ 
+ @media (min-width:300px) and (max-width:500px) {
+ 
+ 
+    /**InfoUpdate*/
+    .InfoUpdateBox_title{
+        margin: 7% auto;
+    }
+    .InfoUpdateBox_title h1{
+        font-size: 2.4rem;
+    }
+    .InfoUpdateBox_title p{
+        font-size: 1.0rem;
+    }
+ 
+ 
+ 
     .TransBox{
-        margin-Left : 7%; 
         width: 90%;
     }
-
+ 
     .TransBoxYear{
-        margin-Left : 14%;
+ 
     }
-
-    .myPageBox3{
-        margin-Left : -11%;
-        width: 120%;
-        overflow: scroll;
-    }
-
-    .DropBox3{
-        margin-Left : -70%;
-        width: 240%;
-    }
-}
-
-@media (max-width:320px){
-    .TransBox{
-        margin-Left : 0%; 
-        width: 101%;
-    }
-
-    .TransBoxYear{
-        margin-Left : 14%;
-    }
-}
-
-@media (max-width:425px){
-    .TransBoxYear{
-        margin-Left : 14%;
-    }
-}
-
-@media (max-width: 1150px){
-
-/**InUpdate*/
-.UpdateFrom{
-        margin: 0 25%;
-        text-align: left;
-    }    
-}
-
-@media (max-width:800px){
-
-/**InUpdate*/
-.UpdateFrom{
-        margin: 0 20%;
-        text-align: left;
-    }    
-}
-
-@media (max-width:700px){
-
-/**InUpdate*/
-.UpdateFrom{
-        margin: 0 20%;
-        text-align: left;
-    }   
-}
-
-@media (max-width:500px){
-    
-/**InUpdate*/
-.UpdateFrom{
-        margin: 0 10%;
-        text-align: left;
-    }
-}
-
-@media (max-width:411px){
-
-/**InUpdate*/
-.UpdateFrom{
-        margin: 0 10%;
-        text-align: left;
-    }
-}
+ 
+ 
+ }

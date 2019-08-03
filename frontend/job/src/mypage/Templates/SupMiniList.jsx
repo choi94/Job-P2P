@@ -11,8 +11,6 @@ const SupMiniList = (props) => {
     return (
         <ListGroup>
             <ListGroup.Item className="SupBox">
-                <div className="SupBoxTitle">{props.index + 1}</div>
-                <div className="SupBoxTitle1">{props.list.board.writeDate.substring(0, 10)}</div>
                 <div className="SupBoxTitle1">
                     <Link to={`/detail/${props.list.board.id}`}>
                         {props.list.board.title}

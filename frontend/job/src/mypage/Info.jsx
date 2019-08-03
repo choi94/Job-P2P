@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBInput } from 'mdbreact';
-import {CardGroup,Card,Button} from 'react-bootstrap'
+import {CardGroup,Card,Button,ListGroup} from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
 const DeclarInfo = (props) => {
@@ -16,7 +16,6 @@ const DeclarInfo = (props) => {
     const [phone, setPhone] = useState()
     const [modal , setModal] = useState(false)
     const [radio, setRadio] = useState(10000)
-
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
@@ -34,7 +33,6 @@ const DeclarInfo = (props) => {
                 // alert('오류가 발생했습니다.')
             })
     },[])
-
     const point_charging = () => {
         if (window.confirm("정말로 충전 하시겠습니까?")){
             setModal(!modal)
@@ -48,11 +46,9 @@ const DeclarInfo = (props) => {
                     })
         }
     }
-
     const modal_toggle = () => {
         setModal(!modal)
     }
-
     const onClick = (nr) => () => {
         setRadio(nr)
     }
