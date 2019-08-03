@@ -1,5 +1,5 @@
 import React, {useEffect, useState, Component} from 'react'
-import {Table} from 'react-bootstrap'
+import {ListGroup} from 'react-bootstrap'
 import SupMiniList from './SupMiniList'
 import axios from "axios";
 
@@ -20,33 +20,27 @@ class SupMini extends Component {
                     this.setState({list : this.state.list.concat(arr)})
                 })
             })
-            .catch( error => {
-                alert('실패')
-            })
-
+        .catch( error => {
+            alert('실패')
+        })
     }
 
     render() {
         return(
-                <div>
-                    <Table responsive>
-                        <thead>
-                        <tr className="res">
-                            <th>#</th>
-                            <th>등록일</th>
-                            <th>일자리명 </th>
-                            <th>마감일</th>
-                            <th>지원자 현황 보기</th>
-                        </tr>
-                        </thead>
-                        {this.state.list.map( (value, index) => {
-                            return <SupMiniList list={value} index={index}/>
-                        })}
-
-                    </Table>
-                </div>
+            <ListGroup>
+                <ListGroup.Item className="SupBox">
+                    <div className="SupBoxTitle">#</div>
+                    <div className="SupBoxTitle1">등록일</div>
+                    <div className="SupBoxTitle1">일자리 명</div>
+                    <div className="SupBoxTitle2">마감일</div>
+                    <div className="SupBoxTitle2">지원자 현황 보기</div>
+                </ListGroup.Item>
+                {this.state.list.map( (value, index) => {
+                    return <SupMiniList list={value} index={index}/>
+                })}
+            </ListGroup>
         );
     }
-
 }
+
 export default SupMini;

@@ -92,8 +92,8 @@ class Drop extends Component{
                             </Form>
                             </div>
                         <div className="DropBtnBox">
-                            <Button variant="warning" onClick={this.drop_pass}>탈퇴</Button>
-                            <Link to="/Mypage"><Button variant="">취소</Button></Link>
+                            <Button variant="dark" onClick={this.drop_pass}>탈퇴</Button>
+                            <Link to="/Mypage"><Button variant="danger">취소</Button></Link>
                         </div>
                         </Card.Body>
                         </Accordion.Collapse>

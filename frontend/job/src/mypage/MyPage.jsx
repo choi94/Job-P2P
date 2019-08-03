@@ -19,15 +19,17 @@ class MyPage extends Component{
     render(){
         console.dir(this.state)
         return(
-        <div className="myPageBox">
-            <div className="myPageBox_1">
-                <h1>MyPage</h1>
-                <Info vol_boardList={this.setVol}/>
+            <div className="myPageBox3">
+                <div className="myPageBox">
+                    <div className="myPageBox_1">
+                        <h1>MyPage</h1>
+                        <Info vol_boardList={this.setVol}/>
+                    </div>
+                    <div className="myPageBox2">
+                    <ClientInfo vol_boardList={this.state.vol_boardList}/>
+                    </div>
+                </div>
             </div>
-            <div className="myPageBox2">
-               <ClientInfo vol_boardList={this.state.vol_boardList}/>
-            </div>
-        </div>
         )
     }
 }

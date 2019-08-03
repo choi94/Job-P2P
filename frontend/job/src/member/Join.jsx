@@ -90,7 +90,7 @@ const Join = ({history}) => {
   return (
     <div>
           <div class="col-12 mt-5">
-            <form style={{marginLeft : '40%', marginRight : '40%'}}>
+            <form className="JoinBox">
               <h1 align="center">회원가입</h1>
               <div className="grey-text">
                 <label>이메일<label class="k">*</label></label>

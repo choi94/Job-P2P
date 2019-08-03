@@ -67,7 +67,6 @@
     border: 2px solid rgb(221, 220, 221);
 }
 
-
 /**Drop*/
 .DropBox1{
     font-size: 1.3rem;
@@ -102,6 +101,59 @@
     font-size: 1.1rem;
 }
 
+/**AttMini*/
+.AttBox{
+    display: flex;
+    font-weight: bold;
+}
+
+.AttBoxTitle{
+    width: 7%;
+}
+
+.AttBoxTitle1{
+    width: 30%;
+}
+
+.AttBoxTitle2{
+    width: 30%;
+}
+
+/**ResMini*/
+.ResBox{
+    display: flex;
+    font-weight: bold;
+}
+
+.ResBoxTitle{
+    width: 7%;
+}
+
+.ResBoxTitle1{
+    width: 30%;
+}
+
+.ResBoxTitle2{
+    width: 20%;
+}
+
+/**SupMini*/
+.SupBox{
+    display: flex;
+    font-weight: bold;
+}
+
+.SupBoxTitle{
+    width: 7%;
+}
+
+.SupBoxTitle1{
+    width: 30%;
+}
+
+.SupBoxTitle2{
+    width: 20%;
+}
 
 /**Trans*/
 .TransBox{
@@ -112,6 +164,9 @@
 .vol{
     font-size: 1.7rem;
     font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
 }
 
 .TransTitle{
@@ -119,12 +174,56 @@
     padding-bottom: 4rem;
 }
 
-@media (max-width:1500px){
-
+/**TransSup*/
+.TransBox1{
+    display: flex;
+    font-weight: bold;
 }
+
+.TransBoxTitle{
+    width: 50%;
+}
+
+.TransBoxButton{
+    margin: 3% 0
+}
+
+@media (max-width:375px){
+    .TransBox{
+        margin-Left : 7%; 
+        width: 90%;
+    }
+
+    .TransBoxYear{
+        margin-Left : 14%;
+    }
+
+    .myPageBox3{
+        margin-Left : -11%;
+        width: 120%;
+        overflow: scroll;
+    }
+}
+
+@media (max-width:320px){
+    .TransBox{
+        margin-Left : 0%; 
+        width: 101%;
+    }
+
+    .TransBoxYear{
+        margin-Left : 14%;
+    }
+}
+
+@media (max-width:425px){
+    .TransBoxYear{
+        margin-Left : 14%;
+    }
+}
+
 @media (max-width: 1150px){
 
-    
 /**InUpdate*/
 .UpdateFrom{
         margin: 0 25%;
@@ -134,7 +233,6 @@
 
 @media (max-width:800px){
 
-    
 /**InUpdate*/
 .UpdateFrom{
         margin: 0 20%;
@@ -144,7 +242,6 @@
 
 @media (max-width:700px){
 
-    
 /**InUpdate*/
 .UpdateFrom{
         margin: 0 20%;
@@ -153,7 +250,6 @@
 }
 
 @media (max-width:500px){
-
     
 /**InUpdate*/
 .UpdateFrom{
@@ -161,6 +257,7 @@
         text-align: left;
     }
 }
+
 @media (max-width:411px){
 
 /**InUpdate*/
@@ -169,16 +266,3 @@
         text-align: left;
     }
 }
-
-@media (max-width:320px){
-
-}
-
-
-
-
-
-
-
-
-
