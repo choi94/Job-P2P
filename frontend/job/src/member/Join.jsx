@@ -89,11 +89,11 @@ const Join = ({history}) => {
   }
   return (
     <div>
-          <div class="col-12 mt-5">
-            <form style={{marginLeft : '40%', marginRight : '40%'}}>
+          <div className="col-12 mt-5">
+            <form className="JoinBox">
               <h1 align="center">회원가입</h1>
               <div className="grey-text">
-                <label>이메일<label class="k">*</label></label>
+                <label>이메일<label className="k">*</label></label>
                 <MDBInput
                   icon="envelope"
                   group
@@ -104,8 +104,8 @@ const Join = ({history}) => {
                   onBlur={email_checking}
                   onChange={ e => {setEmail(e.target.value)}}
                 />
-                <div class="d-flex" className="red-text">{email_check}</div>
-                <label>닉네임<label class="k">*</label></label>
+                <div className="d-flex" className="red-text">{email_check}</div>
+                <label>닉네임<label className="k">*</label></label>
                 <MDBInput
                   icon="id-card"
                   group
@@ -116,8 +116,8 @@ const Join = ({history}) => {
                   onBlur={nickname_checking}
                   onChange={ e => {setNickname(e.target.value)}}
                 />
-                <div class="d-flex" className="red-text">{nickname_check}</div>
-                <label>비밀번호<label class="k">*</label></label>
+                <div className="d-flex" className="red-text">{nickname_check}</div>
+                <label>비밀번호<label className="k">*</label></label>
                 <MDBInput
                   icon="lock"
                   group
@@ -126,7 +126,7 @@ const Join = ({history}) => {
                   onBlur={(p) => {setPass_one(p.target.value)}}
                   onChange={ e => {setPassword(e.target.value)}}
                 />
-                <label>비밀번호 재입력<label class="k">*</label></label>
+                <label>비밀번호 재입력<label className="k">*</label></label>
                 <MDBInput
                   icon="exclamation-triangle"
                   group
@@ -137,7 +137,7 @@ const Join = ({history}) => {
                   onBlur={(p) => {setPass_two(p.target.value)}}
                 />
                 <div className="red-text">{pass_one != pass_two ? "재입력 비밀번호가 다릅니다." : null}</div>
-                <label>성함<label class="k">*</label></label>
+                <label>성함<label className="k">*</label></label>
                 <MDBInput
                   icon="user"
                   group
@@ -147,7 +147,7 @@ const Join = ({history}) => {
                   success="right"
                   onChange={ e => {setName(e.target.value)}}
                 />
-                <label>주민번호 앞 6자리<label class="k">*</label></label>
+                <label>주민번호 앞 6자리<label className="k">*</label></label>
                 <MDBInput
                   icon="user"
                   group
@@ -157,7 +157,7 @@ const Join = ({history}) => {
                   success="right"
                   onChange={ e => {setSsn(e.target.value)}}
                 />
-                <label>연락처 (예 : 01012345678)<label class="k">*</label></label>
+                <label>연락처 (예 : 01012345678)<label className="k">*</label></label>
                 <MDBInput
                   icon="user"
                   group
@@ -168,7 +168,7 @@ const Join = ({history}) => {
                   onChange={ e => {setPhone(e.target.value)}}
                 />
               </div> 
-              <div class="d-flex justify-content-between mx-5 mb-4">
+              <div className="d-flex justify-content-between mx-5 mb-4">
                 <MDBInput style={{width : 15, height : 16}} gap label="남자" type="radio" onClick={gender} checked={radio == '남' ? true : false} value="남"
                   id="radio1" />
                 <MDBInput style={{width : 15, height : 16}} gap label="여자" type="radio" onClick={gender} checked={radio == '여' ? true : false} value="여"

@@ -1,56 +1,48 @@
 import React,{Component} from 'react'
 import axios from 'axios'
 import GoogleMap from "./module/GoogleMap.jsx"
-import Geocode from "react-geocode";
-import {ListGroup,Button,Table,Card,Jumbotron} from "react-bootstrap"
 
+import {ListGroup,Button,Table,Card,Jumbotron} from "react-bootstrap"
 import './Detail.css'
 
 class Detail extends Component{
     constructor(props) {
         super(props)
         this.state = {
-            Location : [],
+            Location :"",
+
             boardId : null,
             memberId : null
         }
     }
-    componentWillMount(){
-        axios.get(`http://localhost:9000/work/board/detailList/${this.props.match.params.id}`)
-        .then(res => {
-            for(let key in res.data.board) {
-                this.setState({
-                    [key] : res.data.board[key]
-                })
-                if (key == 'id') {
-                    this.setState({boardId : res.data.board[key]})
+    _axios= async ()=>{
+        return await axios.get(`http://localhost:9000/work/board/detailList/${this.props.match.params.id}`)
+        .then(res => 
+            {
+                Location = res.data.board.cityArea
+                for(let key in res.data.board) {
+                    this.setState({
+                        [key] : res.data.board[key]
+                    })
+                    if (key == 'id') {
+                        this.setState({boardId : res.data.board[key]})
+                    }
                 }
-            }
-            for(let key in res.data.board.member) {
-                this.setState({
-                    [key] : res.data.board.member[key]
-                })
-                if (key == 'id') {
-                    this.setState({memberId : res.data.board.member[key]})
+                for(let key in res.data.board.member) {
+                    this.setState({
+                        [key] : res.data.board.member[key]
+                    })
+                    if (key == 'id') {
+                        this.setState({memberId : res.data.board.member[key]})
+                    }
                 }
-            }
-            Geocode.setApiKey("AIzaSyCX4elAhSF-1mAFON3hiV0JrhMmIxLugz4");
-            Geocode.fromAddress(`${res.data.board.cityArea}`).then(
-            response => {
-                const { lat, lng } = response.results[0].geometry.location;
-                const latL= lat
-                const lngL= lng
-                this.setState({
-                    Location: this.state.Location.concat(latL,lngL)
-                })
-                },
-            error => {
-                console.error(error);
-            }
-            );
-        }).catch( error => {
+            })
+        .catch( error => {
             alert('실패')
         })
+    }
+    componentWillMount(){
+        this._axios()
     }
     volunteer = () => {
         if (window.confirm("정말로 지원 하시겠습니까?")) {
@@ -62,10 +54,10 @@ class Detail extends Component{
                 .catch( error => {
                     alert("알수 없는 오류가 발생 했습니다.")
                 })
-            }
+        }
     }
     render(){
-        console.log(this.state.Location)
+        console.log(this.state.cityArea)
         return(
             <div className="detail">
                 <Jumbotron className="title">
