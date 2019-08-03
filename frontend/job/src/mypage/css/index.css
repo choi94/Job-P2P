@@ -201,6 +201,7 @@
     .myPageBox3{
         margin-Left : -11%;
         width: 120%;
+        overflow: scroll;
     }
 }
 
