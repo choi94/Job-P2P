@@ -47,23 +47,23 @@
  .InfoUpdateBox{
  
  }
- .InfoUpdateBox_title{
+.InfoUpdateBox_title{
     width: 80%;
     margin: 3% auto;
     text-align: center
- }
- .InfoUpdateBox_title h1{
+}
+.InfoUpdateBox_title h1{
     padding-bottom: 1%;
     font-size: 2.4rem;
- }
- .InfoUpdateBox_title p{
+}
+.InfoUpdateBox_title p{
     font-size: 1.1rem;
- }
- .UpdateFrom{
+}
+.UpdateFrom{
     width: 60%;
     margin: auto;
     text-align: left;
- }
+}
  .UpdateFrom label {
     padding: 1% 0 ;
  }
@@ -86,23 +86,25 @@
  }
  
  /**Drop*/
- .DropBox1{
+.DropBox1{
     font-size: 1.3rem;
     font-weight: bold;
- }
- 
- .DropBox2{
+}
+
+.DropBox2{
     color:red;
     font-weight: bold;
- }
- .DropBox{
-    width: 80%;
+    margin: 1% 1.2%;
+}
+
+.DropBox{
+    width: 65%;
     margin: 2% auto;
- }
- .DropBtnBox{
+}
+.DropBtnBox{
     margin-top: 1%;
     text-align: center;
- }
+}
  
  
  
@@ -194,10 +196,9 @@
  
  
  /**Trans*/
- .TransBox{
-    width: 80%;
-    margin: auto;
- }
+.TransBox{
+    width: 90%;
+}
  
  .vol{
     font-size: 1.7rem;

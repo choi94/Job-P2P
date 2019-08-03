@@ -5,6 +5,7 @@ import '../Board.css'
 
 
 const Cards =({board})=>{
+   console.dir(board.member)
    const a=(a)=>{
       if(a==="모집중"){
          return "primary"
@@ -27,7 +28,7 @@ const Cards =({board})=>{
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-               <p className="text-muted">작성자 : {board.member.nickname} 평점 {board.member.volunteerScore}/5 </p>        
+               <p className="text-muted">작성자 : {board.member.nickname} 평점 {board.member.requestScore/board.member.reqScoreCount ? board.member.requestScore/board.member.reqScoreCount : 0}/5 </p>
             </Card.Footer>
             </Card>
          </NavLink>   

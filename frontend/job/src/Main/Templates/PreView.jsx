@@ -27,7 +27,7 @@ const PreView =({board})=>{
 		   </Card.Text>
 		   </Card.Body>
 		   <Card.Footer className="b-card-footer">
-			  <div className="text-muted">작성자 : {board.member.nickname} 평점 {board.member.volunteerScore}/5 </div>        
+			  <div className="text-muted">작성자 : {board.member.nickname} 평점 {board.member.requestScore/board.member.reqScoreCount ? board.member.requestScore/board.member.reqScoreCount : 0}/5 </div>
 		   </Card.Footer>
 		   
 		   </Card>

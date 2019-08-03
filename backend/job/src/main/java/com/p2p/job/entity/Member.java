@@ -69,13 +69,13 @@ public class Member {
     @Column(name = "admin", nullable = false, columnDefinition = "boolean default 0")
     private int admin;
 
-    @Column(name = "volunteer_score", nullable = false, columnDefinition = "Decimal(1,1) default '0' ")
+    @Column(name = "volunteer_score", nullable = false, columnDefinition = "Decimal(10,1) default '0' ")
     private double volunteerScore;
 
     @Column(name = "volunteer_score_count", nullable = false, columnDefinition = "int default '0' ")
     private double volScoreCount;
 
-    @Column(name = "request_score", nullable = false, columnDefinition = "Decimal(1,1) default '0' ")
+    @Column(name = "request_score", nullable = false, columnDefinition = "Decimal(10,1) default '0' ")
     private double requestScore;
 
     @Column(name = "request_score_count", nullable = false, columnDefinition = "int default '0' ")

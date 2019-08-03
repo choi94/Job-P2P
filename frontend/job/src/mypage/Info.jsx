@@ -16,9 +16,14 @@ const DeclarInfo = (props) => {
     const [phone, setPhone] = useState()
     const [modal , setModal] = useState(false)
     const [radio, setRadio] = useState(10000)
+    const [reqScoreCount, setReqScoreCount] = useState()
+    const [volScoreCount, setVolScoreCount] = useState()
+
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
+                setVolScoreCount(res.data.member.volScoreCount)
+                setReqScoreCount(res.data.member.reqScoreCount)
                 setName(res.data.member.name)
                 setNickname(res.data.member.nickname)
                 setEmail(res.data.member.email)
@@ -78,11 +83,11 @@ const DeclarInfo = (props) => {
                         <Card.Title className="aa">평점/Point</Card.Title>
                             <div className="bb">
                                 <div>지원 평점 :</div>
-                                <div>{volunteer}점 / 5점</div>
+                                <div>{volunteer/volScoreCount ? volunteer/volScoreCount : 0}점 / 5점</div>
                             </div>
                             <div className="bb">
                                 <div>의뢰 평점 :</div>
-                                <div>{request}점 / 5점</div>
+                                <div>{request/reqScoreCount ? request/reqScoreCount : 0}점 / 5점</div>
                             </div>
                             <div className="bb">
                                 <div>포인트 :</div>

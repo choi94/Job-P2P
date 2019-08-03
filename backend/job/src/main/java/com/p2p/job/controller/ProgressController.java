@@ -128,7 +128,7 @@ public class ProgressController {
     public ResponseEntity payment(@PathVariable("req_id")Long req_id,
                                   @PathVariable("vol_id")Long vol_id,
                                   @PathVariable("point")int point,
-                                  @PathVariable("score")int score) {
+                                  @PathVariable("score")double score) {
         QMember qMember = QMember.member;
 
         List<Member> req = query.selectFrom(qMember)
@@ -154,21 +154,21 @@ public class ProgressController {
 
     @PostMapping("/trans/end/{id}/{score}/{reqId}")
     public ResponseEntity end(@PathVariable("id")Long id,
-                              @PathVariable("score")int score,
+                              @PathVariable("score")double score,
                               @PathVariable("reqId")Long reqId) {
         QWorkBoard qWorkBoard = QWorkBoard.workBoard;
         QMember qMember = QMember.member;
 
-        query.selectFrom(qMember)
+        List<Member> member = query.selectFrom(qMember)
                 .where(qMember.id.eq(reqId))
-                .fetch()
-                .forEach(m -> {
-                    new JPAUpdateClause(entityManager, qMember)
-                            .where(qMember.id.eq(reqId))
-                            .set(qMember.requestScore, m.getRequestScore() + score)
-                            .set(qMember.reqScoreCount, m.getReqScoreCount() + 1)
-                            .execute();
-                });
+                .fetch();
+
+        new JPAUpdateClause(entityManager, qMember)
+                .where(qMember.id.eq(reqId))
+                .set(qMember.requestScore, member.get(0).getRequestScore() + score)
+                .set(qMember.reqScoreCount, member.get(0).getReqScoreCount() + 1)
+                .execute();
+
 
         new JPAUpdateClause(entityManager, qWorkBoard)
                 .where(qWorkBoard.id.eq(id))
