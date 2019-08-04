@@ -13,24 +13,26 @@ const DeclarInfo = (props) => {
     const [volunteer, setVolunteer] = useState()
     const [request, setRequest] = useState()
     const [point, setPoint] = useState()
+    const [currentPoint, setCurrentPoint] = useState()
     const [phone, setPhone] = useState()
     const [modal , setModal] = useState(false)
     const [radio, setRadio] = useState(10000)
-    const [reqScoreCount, setReqScoreCount] = useState()
-    const [volScoreCount, setVolScoreCount] = useState()
+    const [reqScore, setReqScore] = useState()
+    const [volScore, setVolScore] = useState()
 
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
-                setVolScoreCount(res.data.member.volScoreCount)
-                setReqScoreCount(res.data.member.reqScoreCount)
                 setName(res.data.member.name)
                 setNickname(res.data.member.nickname)
                 setEmail(res.data.member.email)
                 setGender(res.data.member.gender)
                 setVolunteer(res.data.member.volunteerScore)
                 setRequest(res.data.member.requestScore)
-                setPoint(res.data.member.point)
+                setVolScore(res.data.member.volunteerScore / res.data.member.volScoreCount)
+                setReqScore(res.data.member.requestScore /res.data.member.reqScoreCount)
+                setPoint(res.data.member.point.toLocaleString())
+                setCurrentPoint(res.data.member.point)
                 setPhone(res.data.member.phone)
                 props.vol_boardList(res.data.volunteer_board)
             })
@@ -38,19 +40,24 @@ const DeclarInfo = (props) => {
                 // alert('오류가 발생했습니다.')
             })
     },[])
+
     const point_charging = () => {
         if (window.confirm("정말로 충전 하시겠습니까?")){
             setModal(!modal)
-                axios.patch(`${localhost}/member/${sessionStorage.getItem('id')}/${point + radio}`)
+                axios.patch(`${localhost}/member/${sessionStorage.getItem('id')}/${currentPoint + radio}`)
                     .then( res => {
-                        setPoint(point + radio)
-                        alert("포인트 충전 완료")
+                        setPoint( () => {
+                            let temp = currentPoint + radio
+                            return temp.toLocaleString()
+                        })
+                        alert("지갑 충전완료")
                     })
                     .catch( error => {
                         alert("알수 없는 오류가 발생했습니다.")
                     })
         }
     }
+
     const modal_toggle = () => {
         setModal(!modal)
     }
@@ -83,14 +90,14 @@ const DeclarInfo = (props) => {
                         <Card.Title className="aa">평점/Point</Card.Title>
                             <div className="bb">
                                 <div>지원 평점 :</div>
-                                <div>{volunteer/volScoreCount ? volunteer/volScoreCount : 0}점 / 5점</div>
+                                <div>{volScore ? volScore.toFixed(1) : 0}점 / 5점</div>
                             </div>
                             <div className="bb">
                                 <div>의뢰 평점 :</div>
-                                <div>{request/reqScoreCount ? request/reqScoreCount : 0}점 / 5점</div>
+                                <div>{reqScore ? reqScore.toFixed(1) : 0}점 / 5점</div>
                             </div>
                             <div className="bb">
-                                <div>포인트 :</div>
+                                <div>지갑 :</div>
                                 <div>{point}원 <Button variant="info" size="sm" onClick={modal_toggle} >충전하기</Button></div>
                             </div>
                     </Card.Body>

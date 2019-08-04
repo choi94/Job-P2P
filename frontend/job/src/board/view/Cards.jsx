@@ -1,11 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Card,Badge} from 'react-bootstrap';
 import { NavLink } from 'react-router-dom'
 import '../Board.css'
 
 
 const Cards =({board})=>{
-   console.dir(board.member)
+   const [reqScore, setReqScore] = useState(board.member.requestScore/board.member.reqScoreCount)
+
    const a=(a)=>{
       if(a==="모집중"){
          return "primary"
@@ -28,7 +29,7 @@ const Cards =({board})=>{
             </Card.Text>
             </Card.Body>
             <Card.Footer>
-               <p className="text-muted">작성자 : {board.member.nickname} 평점 {board.member.requestScore/board.member.reqScoreCount ? board.member.requestScore/board.member.reqScoreCount : 0}/5 </p>
+               <p className="text-muted">작성자 : {board.member.nickname} 평점 {reqScore ? reqScore.toFixed(1)  : 0}/5 </p>
             </Card.Footer>
             </Card>
          </NavLink>   

@@ -37,7 +37,7 @@ class AttMini  extends Component{
                 <ListGroup.Item className="ResBox">
                     <div className="ResBoxTitle1">일자리 명</div>
                     <div className="ResBoxTitle1">기간</div>
-                    <div className="ResBoxTitle1">거래페이지로 가기</div>
+                    <div className="ResBoxTitle1">매칭페이지</div>
                 </ListGroup.Item>
                 {this.state.vol_list.map( (value, index) => {
                     return <AttMiniList list={value} index={index}/>
