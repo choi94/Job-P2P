@@ -67,9 +67,9 @@ class Drop extends Component{
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
                         <Card.Body>
-                        <div className="DropBox3">
+          
                             <Form>
-                                <Form.Group as={Row} controlId="formPlaintextEmail">
+                                <Form.Group  controlId="formPlaintextEmail">
                                     <Form.Label column sm="2">
                                     Email
                                     </Form.Label>
@@ -77,19 +77,17 @@ class Drop extends Component{
                                     <Form.Control plaintext readOnly defaultValue={this.props.location.state.email} />
                                     </Col>
                                 </Form.Group>
-                                <Form.Group as={Row} controlId="formPlaintextPassword">
+                                <Form.Group  controlId="formPlaintextPassword">
                                     <Form.Label column sm="2">
                                     Password
                                     </Form.Label>
                                     <Col sm="10">
                                     <Form.Control type="password" placeholder="Password" onChange={ e => {this.setState({password : e.target.value})}}/>
                                     </Col>
-                                    <Col sm="10">
-                                        <label className="DropBox2">※ 탈퇴 후에는 동일 아이디로 다시 가입할 수 없으며, <br/>아이디와 데이터는 복구할 수 없으니 신중하게 선택해 주세요.</label>
-                                    </Col>
+                                    <label className="DropBox2">※ 탈퇴 후에는 동일 아이디로 다시 가입할 수 없으며, 아이디와 데이터는 복구할 수 없으니 신중하게 선택해 주세요.</label>
                                 </Form.Group>
                             </Form>
-                        </div>
+                    
                         <div className="DropBtnBox">
                             <Button variant="dark" onClick={this.drop_pass}>탈퇴</Button>
                             <Link to="/Mypage"><Button variant="danger">취소</Button></Link>

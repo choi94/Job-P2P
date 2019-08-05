@@ -83,9 +83,10 @@
  .DropBox2{
     color:red;
     font-weight: bold;
+    margin: 1% 1.2%;
  }
  .DropBox{
-    width: 80%;
+    width: 65%;
     margin: 2% auto;
  }
  .DropBtnBox{
@@ -98,7 +99,7 @@
  /** nav tap*/
  .list-nav{
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
  }
  .list-nav a{
@@ -242,15 +243,11 @@
         font-size: 1.0rem;
     }
  
- 
+    .DropBox2{
+        font-size: 0.8rem;
+    }
  
     .TransBox{
         width: 90%;
     }
- 
-    .TransBoxYear{
- 
-    }
- 
- 
  }
