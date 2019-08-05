@@ -15,17 +15,14 @@ class Board extends Component{
         ],
     }
     componentDidMount(){
-        axios.get(`http://localhost:9000/work/board/list/${this.state.pageNum}/${this.state.pageSize}`)
+        axios.get(`http://13.125.244.235:8080/work/board/list/${this.state.pageNum}/${this.state.pageSize}`)
         .then(res => {
-                console.log(res.data)
                 res.data.board.forEach((a)=>{
                     this.setState({
                         BoardData: this.state.BoardData.concat(a)
                     })
                 })
                 this.state.index=this.state.BoardData.length-1
-                console.log(this.state.BoardData)
-                console.log(this.state.index)
         }).catch( error => {
                 alert('실패')
         })
@@ -59,13 +56,12 @@ class Board extends Component{
     }
     morebutton=(e)=>{
         e.preventDefault()
-        if(this.state.BoardData[this.state.index].id!==2)
+        if(this.state.BoardData[this.state.index].id!==1)
         {
             this.state.pageNum++
-            console.log(this.state.pageNum)
             this.componentDidMount()
         }
-        else if(this.state.BoardData[this.state.index].id===2){
+        else if(this.state.BoardData[this.state.index].id===1){
             return alert("더이상 게시물이 없습니다.")
         }
     

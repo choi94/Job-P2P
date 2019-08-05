@@ -3,7 +3,7 @@ import axios from 'axios';
 import {MDBBtn, MDBInput } from 'mdbreact';
 import validator from 'email-validator'
 const Join = ({history}) => {
-  const localhost = 'http://localhost:9000'
+  const localhost = 'http://13.125.244.235:8080'
   const [radio, setRadio] = useState()
   const [nickname_check, setNickname_check] = useState()
   const [nickname_boolean, setNickname_boolean] = useState(false)
@@ -76,7 +76,6 @@ const Join = ({history}) => {
         }
         axios.post(`${localhost}/member/`, data)
           .then( res => {
-            console.log('성공')
             history.push("/");
           })
           .catch( error => {

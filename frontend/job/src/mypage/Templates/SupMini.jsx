@@ -12,7 +12,7 @@ class SupMini extends Component {
     }
 
     componentWillMount() {
-        let localhost = 'http://localhost:9000'
+        let localhost = 'http://13.125.244.235:8080'
 
         axios.get(`${localhost}/work/board/volunteer/${sessionStorage.getItem('id')}`)
             .then( res => {

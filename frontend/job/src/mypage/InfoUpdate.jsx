@@ -5,7 +5,7 @@ import { MDBInput } from 'mdbreact';
 import {Button} from 'react-bootstrap'
 
 const InfoUpdate = ({history,location}) => {
-    const localhost = 'http://localhost:9000'
+    const localhost = 'http://13.125.244.235:8080'
     const [email, setEmail] = useState()
     const [tempNick, setTempNick] = useState()
     const [nickname, setNickname] = useState()
@@ -18,7 +18,6 @@ const InfoUpdate = ({history,location}) => {
     useEffect( () => {
         axios.get(`${localhost}/member/my/${sessionStorage.getItem('id')}`)
             .then( res => {
-                console.dir(location)
                 setEmail(location.state.email)
                 setTempNick(location.state.nickname)
                 setNickname(location.state.nickname)

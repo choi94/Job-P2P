@@ -3,7 +3,7 @@ import axios from 'axios'
 import WriteLocal from './Template/WriteLocal.jsx'
 
 const Write = ({history}) => {
-    const localhost = 'http://localhost:9000'
+    const localhost = 'http://13.125.244.235:8080'
 
     const write_summit = w => {
         console.dir(w)

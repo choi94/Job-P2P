@@ -8,7 +8,7 @@ const TransSup  = (props) => {
     const [modal, setModal] = useState(false)
     const [radio, setRadio] = useState(5)
 
-    const localhost = 'http://localhost:9000'
+    const localhost = 'http://13.125.244.235:8080'
 
     const trans_end = () => {
         axios.post(`${localhost}/progress/trans/end/${props.board.board.id}/${radio}/${props.board.board.member.id}`)

@@ -16,7 +16,6 @@ class MyPage extends Component{
     }
 
     render(){
-        console.dir(this.state)
         return(
                 <div className="myPageBox">
                     <div className="myPageBox_1">

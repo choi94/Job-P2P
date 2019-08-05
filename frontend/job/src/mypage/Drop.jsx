@@ -9,7 +9,7 @@ class Drop extends Component{
     constructor(props) {
         super(props)
         this.state = {
-            localhost : 'http://localhost:9000',
+            localhost : 'http://13.125.244.235:8080',
             email : this.props.location.state.email,
             password : null
         }

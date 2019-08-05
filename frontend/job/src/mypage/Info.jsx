@@ -5,7 +5,7 @@ import {CardGroup,Card,Button} from 'react-bootstrap'
 import { Link } from "react-router-dom";
 
 const DeclarInfo = (props) => {
-    const localhost = 'http://localhost:9000'
+    const localhost = 'http://13.125.244.235:8080'
     const [email, setEmail] = useState()
     const [name, setName] = useState()
     const [nickname, setNickname] = useState()

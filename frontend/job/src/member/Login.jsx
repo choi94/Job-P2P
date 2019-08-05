@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import './css/common.css'
 
 const Login = ({history, logins}) => {
-    const localhost = 'http://localhost:9000'
+    const localhost = 'http://13.125.244.235:8080'
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
     

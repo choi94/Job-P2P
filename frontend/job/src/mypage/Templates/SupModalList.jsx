@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import { ListGroup, Modal } from "react-bootstrap";
 
 const SupModalList = (props) => {
-    const localhost = 'http://localhost:9000'
+    const localhost = 'http://13.125.244.235:8080'
 
     const progress = () => {
         axios.post(`${localhost}/progress/${props.vol.id}/${props.vol.workBoard.id}`)

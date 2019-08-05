@@ -16,7 +16,7 @@ class Trans extends Component{
     }
 
     componentWillMount() {
-        let localhost = 'http://localhost:9000'
+        let localhost = 'http://13.125.244.235:8080'
         axios.get(`${localhost}/progress/trans/${this.props.location.state.board.id}`)
             .then( res => {
                 this.setState({

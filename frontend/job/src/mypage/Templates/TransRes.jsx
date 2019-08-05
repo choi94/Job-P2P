@@ -5,7 +5,7 @@ import {ListGroup, Button} from 'react-bootstrap'
 import '../css/index.css'
 
 const TransRes  = (props) => {
-    const localhost = 'http://localhost:9000'
+    const localhost = 'http://13.125.244.235:8080'
     const [modal, setModal] = useState(false)
     const [radio, setRadio] = useState(5)
 
@@ -20,7 +20,6 @@ const TransRes  = (props) => {
     }
 
 
-    console.dir(props)
     return(
         <div>
             <h2 className="vol">의뢰자 정보</h2>

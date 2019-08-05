@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="job" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a694817a-541d-413e-8b83-9a3517e20d3b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/job.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/PreView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Templates/PreView.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/view/Cards.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/view/Cards.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/ClientInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/ClientInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/job/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/job/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/Main/Main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/Main/Main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Board.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Detail/Detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/board/Write/Write.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/member/Join.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/member/Join.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/member/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/member/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Drop.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Drop.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/InfoUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/InfoUpdate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/MyPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/MyPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMini.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/AttMiniList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMiniList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMini.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupMini.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupModalList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/SupModalList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransRes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransRes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransSup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Templates/TransSup.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/job/src/mypage/Trans.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +65,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -87,9 +109,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JobApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="job" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.p2p.job.JobApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.JobApplication" />
       <item itemvalue="JUnit.JobApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.JobApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -136,7 +166,9 @@
       <workItem from="1564804362505" duration="3476000" />
       <workItem from="1564804362505" duration="8840000" />
       <workItem from="1564824255181" duration="6190000" />
-      <workItem from="1564890909404" duration="451000" />
+      <workItem from="1564890909404" duration="609000" />
+      <workItem from="1564961885629" duration="2008000" />
+      <workItem from="1564973614374" duration="1997000" />
     </task>
     <servers />
   </component>

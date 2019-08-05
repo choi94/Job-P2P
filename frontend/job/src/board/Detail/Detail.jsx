@@ -16,7 +16,7 @@ class Detail extends Component{
         }
     }
     _axios= async ()=>{
-        return await axios.get(`http://localhost:9000/work/board/detailList/${this.props.match.params.id}`)
+        return await axios.get(`http://13.125.244.235:8080/work/board/detailList/${this.props.match.params.id}`)
         .then(res => 
             {
                 Location = res.data.board.cityArea
@@ -46,7 +46,7 @@ class Detail extends Component{
     }
     volunteer = () => {
         if (window.confirm("정말로 지원 하시겠습니까?")) {
-            axios.post(`http://localhost:9000/volunteer/request/${sessionStorage.getItem('id')}/${this.state.boardId}`)
+            axios.post(`http://13.125.244.235:8080/volunteer/request/${sessionStorage.getItem('id')}/${this.state.boardId}`)
                 .then( res => {
                     alert("지원에 성공했습니다.")
                     this.props.history.push("/mypage")
@@ -57,7 +57,6 @@ class Detail extends Component{
         }
     }
     render(){
-        console.log(this.state.cityArea)
         return(
             <div className="detail">
                 <Jumbotron className="title">

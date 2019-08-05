@@ -20,7 +20,7 @@ class Main extends Component{
             ]
         }
     componentDidMount(){
-        axios.get(`http://localhost:9000/work/board/list/${this.state.pageNum}/${this.state.pageSize}`)
+        axios.get(`http://13.125.244.235:8080/work/board/list/${this.state.pageNum}/${this.state.pageSize}`)
         .then(res => {
                 res.data.board.forEach( (a) => {
                     this.setState({
@@ -32,7 +32,6 @@ class Main extends Component{
         })
     }
     render(){
-        console.log(this.state.PreviewData)
         return(
     <div className="Mainbody">
         <div className="m1" style={Im}>
