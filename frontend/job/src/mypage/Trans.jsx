@@ -38,7 +38,7 @@ class Trans extends Component{
     render(){
         return(
             <div className="TransBox">
-                <h2 className="TransTitle">거래</h2>
+                <h1 className="TransTitle">Maching Page</h1>
                 <Tabs defaultActiveKey="home" transition={false} id="noanim-tab-example" className="list-nav">
                     <Tab eventKey="home" title="지원자">
                         <TransSup mypageMove={this.mypageMove} volunteer={this.state} board={this.props.location.state} />
