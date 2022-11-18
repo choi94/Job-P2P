@@ -26,7 +26,7 @@
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "react-router-redux": "^5.0.0-alpha.9",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "react-swipe": "^6.0.4",
     "react-window-size": "^1.2.2",
     "redux": "^4.0.4",
